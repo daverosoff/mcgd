@@ -155,3 +155,32 @@ tr.odd {
 tr.even {
     background-color: #f8f8f8
 }
+.lining-nums {
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
+.oldstyle-nums 
+{
+    -moz-font-feature-settings:"lnum=0";
+    -ms-font-feature-settings:"lnum" 0;
+    -o-font-feature-settings:"lnum" 0;
+    -webkit-font-feature-settings:"lnum" 0;
+    font-feature-settings:"lnum" 0;
+
+}
+.opentype-off {
+    -moz-font-feature-settings:"liga=0, dlig=0";
+    -ms-font-feature-settings:"liga" 0, "dlig" 0;
+    -o-font-feature-settings:"liga" 0, "dlig" 0;
+    -webkit-font-feature-settings:"liga" 0, "dlig" 0;
+    font-feature-settings:"liga" 0, "dlig" 0;
+}
+.opentype-on {
+    -moz-font-feature-settings:"liga=1, dlig=1";
+    -ms-font-feature-settings:"liga" 1, "dlig" 1;
+    -o-font-feature-settings:"liga" 1, "dlig" 1;
+    -webkit-font-feature-settings:"liga" 1, "dlig" 1;
+    font-feature-settings:"liga" 1, "dlig" 1;
