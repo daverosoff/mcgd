@@ -1,0 +1,13 @@
+Hi everyone,
+
+As advertised, we'll spend tomorrow's class time reviewing for Tuesday's exam, which will cover all the material we've discussed to date: namely, sections 11.1 and 11.2 together with 12.1 through 12.4. Hence you are responsible for these sections. 
+
+I don't have any particular review activities planned; come with questions and be ready to discuss the sections listed above. I'm willing to work problems, explain solutions, revisit topics, and so forth. 
+
+I know some of you are a little nervous about the arc length section because you won't be able to use software to help you integrate on the exam. All the integrals that appear on the exam will be evaluable using only the formulas for integrating power functions, exponentials and logarithms, and sine and cosine, together with the techniques of substitution and integration by parts. 
+
+The exam is written in order that you be able to complete in 60 minutes, but you are welcome to begin as early as 7:30.
+
+I think that's all for right now. See you all tomorrow--bring your questions!
+
+-dr

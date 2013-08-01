@@ -1,0 +1,76 @@
+\documentclass[12pt]{amsart}
+\usepackage[width=6.5in,height=9.5in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,latexsym}
+\setlength{\parskip}{1.08ex}
+\setlength{\parindent}{0pt}
+\title{Riemann sums and definite integrals}
+\begin{document}
+
+\maketitle
+This document is intended to remind the reader of the definition and properties of \emph{Riemann sums} as the foundation of integral calculus. Let $a \leq b$ be real numbers and let $f \colon [a,b] \to \mathbf{R}$ be a function.
+
+\section{One variable}
+
+A \emph{partition} of the interval $[a,b]$ is a choice of numbers $x_0 < x_1 < \cdots < x_n$, where $x_0 = a$ and $x_n = b$. The integer $n$ is called the \emph{length} of the partition. The partition gives rise to a subdivision of $[a,b]$ into $n$ subintervals $[x_0,x_1], [x_1,x_2], \ldots, [x_{n-1}, x_n]$. Notice that the $i$th subinterval is $[x_{i-1},x_i]$. Let $\Delta x_i$ be the width of this subinterval, that is, $\Delta x_i = x_i - x_{i-1}$. The partition is called \emph{regular} or \emph{uniform} if $\Delta x_i$ does not depend on $i$, that is, if the distance from one $x_i$ to the next is constant. A great flexibility of the Riemann integral is that it need not be calculated using uniform partitions. In fact, the proof of the Fundamental Theorem of Calculus (FTC) depends on this flexibility.
+
+For a uniform partition we may write $\Delta x$ for the common value of the differences $\Delta x_i$. In this case we find $x_1 = a + \Delta x$, $x_2 = a + 2 \Delta x$, and in general $x_i = a + i \Delta x$. Note also that in this case, $\Delta x = (b-a)/n$.
+
+Riemann sums are area-sums associated with a partition of the domain of some function $f$ and a bit more data. If $f(x) \geq 0$ for $x \in [a,b]$, then the Riemann sum is an approximation to the area under the graph of $f$ over $[a,b]$. Riemann sums arise from partitions in the following way. In each subinterval $[x_{i-1},x_i]$, choose a \emph{sample point} $x^{\ast}_i$. The choice does not have to be made the same way in each subinterval, although for convenience in specific calculations it often is. Thus we define a \emph{sampled partition}\footnote{This terminology is not standard.} of the interval $[a,b]$ into $n$ parts to be a partition of $[a,b]$ of length $n$, together with $n$ points $x^{\ast}_i \in [x_{i-1},x_i]$. To each sampled partition corresponds a Riemann sum. Let $\mathcal{P}$ refer to the sampled partition. Then the Riemann sum associated to $\mathcal{P}$ is
+\[
+S_{\mathcal{P}} = \sum_{i=1}^n f(x^{\ast}_i) \Delta x_i.
+\]
+Each term in the sum is a signed box-area. The box in question is a rectangle whose base is the interval $[x_{i-1},x_i]$ in the $(x,y)$-plane. The height of the rectangle is $|f(x^{\ast}_i)|$. If the value of $f$ is negative at the $i$th sample point $x^{\ast}_i$, the box lies below the $x$-axis. By convention we regard the area of such a box as negative, and thus we may interpret the Riemann sum as suggested: a sum of signed areas.
+
+There are at least three obvious ways to systematically sample a partition. We might choose $x^{\ast}_i = x_{i-1}$. This uses the left endpoint of each subinterval as the sample point and gives rise to a Riemann sum called the \emph{left-endpoint approximation} (to the weighted area coming from the graph of $f$). Clearly we may also choose $x^{\ast}_i = x_i$, the right endpoint. The corresponding Riemann sum is called the \emph{right-endpoint approximation}. The last choice is to choose the midpoint of the $i$th subinterval as the $i$th sample point:
+\[
+x^{\ast}_i = \frac{x_i + x_{i-1}}{2}, \quad \text{which yields the \emph{midpoint approximation}}.
+\]
+Thus we have constructed the left-endpoint, right-endpoint, and midpoint approximations coming from the uniform partition of $[a,b]$ of length $n$. Writing $\Delta x = (b-a)/n$ (since the partition is uniform of length $n$), these are
+\begin{align*}
+L_n &= \sum_{i=1}^n f(x_{i-1}) \Delta x = \sum_{i=1}^n f(x_{i-1}) \frac{b-a}{n} \\
+R_n &= \sum_{i=1}^n f(x_i) \Delta x = \sum_{i=1}^n f(x_i) \frac{b-a}{n} \\
+M_n &= \sum_{i=1}^n f \left( \frac{x_{i-1}+x_i}{2} \right) \frac{b-a}{n}.
+\end{align*}
+Notice that since these sampled partitions are chosen in such a systematic way, all that is needed to compute $L_n$ is the data of $f(x)$ and $[a,b]$. The partition and sample points are built into the definition. Hence there is a sequence $L = (L_0, L_1, L_2, \ldots, )$ whose $n$th term is the left-endpoint approximation coming from the uniform partition of $[a,b]$ of length $n$. There are similar sequences $R$ and $M$ whose terms are the values of the other approximations above.
+
+The first fundamental theorem about Riemann integrals is that if $f$ is continuous on $[a,b]$, then the sequences $L$, $R$, and $M$ defined above are \emph{convergent}. This means they have definite, findable limiting values. In fact, the three limiting values are equal, and their common value is called the Riemann integral of $f$ over the interval $[a,b]$. What is not often mentioned in a first calculus course is that this doesn't depend on how we chose the partitions. If you choose any, absolutely \emph{any} sequence of ever-finer partitions (no matter in what wacky way you choose the subinterval lengths or the sample points, so long as $\lim_{n \to \infty} \max \Delta x_i = 0$), the sequence of box-area sums you obtain converges to the integral of $f$ over $[a,b]$. Compare with Definition 1 on page 313 of our textbook. The definition is in terms of such a completely general partition.
+
+\newcommand{\R}{\mathbf{R}}
+
+\section{Two Variables}
+The most convenient regions $D$ of the plane over which we can integrate are the rectangles. If $D$ is the rectangle whose vertices are $(a,c)$, $(a,d)$, $(b,c)$, and $(b,d)$ (here $a \leq b$ and $c \leq d$), we regard $D$ as a product of intervals\footnote{In general, the product of sets $S$ and $T$ is the set $S \times T$ whose elements are ordered pairs $(s,t)$, where $s \in S$ and $t \in T$. Thus $\R^2 = \R \times \R$, for example.}: $D = [a,b] \times [c,d]$. The rectangle $D$ may be partitioned by partitioning the factor intervals $[a,b]$ and $[c,d]$. Namely, a partition of $D$ is a set of numbers $x_0, x_1, \ldots, x_N, y_0, y_1, \ldots, y_M$ satisfying
+\[
+a = x_0 < x_1 < \cdots < x_N = b, \quad c = y_0 < y_1 < \cdots < y_M = d.
+\]
+This partitions $D$ into $MN$ subrectangles $D_{ij}$. The subrectangle $D_{ij}$ has vertices $(x_{i-1},y_{j-1})$, $(x_{i-1},y_j)$, $(x_{i},y_{j-1})$, and $(x_i,y_j)$. Writing $\Delta x_i = x_i - x_{i-1}$ and $\Delta y_j = y_j - y_{j-1}$, we find that $D_{ij}$ has area $\Delta x_i \Delta y_j$. Let us denote this area by $\Delta A_{ij}$. In sum:
+\[
+D_{ij} = [x_{i-1},x_i] \times [y_{j-1}, y_j], \quad \mathrm{area}(D_{ij}) = \Delta A_{ij} = \Delta x_i \Delta y_j.
+\]
+The partition of $D$ is \emph{regular} or \emph{uniform} if the individual partitions of $[a,b]$ and $[c,d]$ are uniform as defined previously. In this case all the subrectangles have equal bases and equal heights, hence equal areas. For a uniform partition we write $\Delta A = \Delta x \Delta y$. Finally, a sampling of the partition of $D$ is a choice of points $P_{ij} \in D_{ij}$.
+
+If we are given a function $f \colon D \to \R$ and a sampled partition $\mathcal{P}$ of $D$, we may construct the Riemann sum that comes from this partition. It is the sum
+\[
+S(\mathcal{P}) = \sum_{i,j} f(P_{ij}) \Delta A_{ij}.
+\]
+Compare with the definitions of Riemann sums in the previous section. This summation over all pairs $(i,j)$ may be rewritten as a double sum:
+\[
+S(\mathcal{P}) = \sum_{i=1}^N \sum_{j=1}^M f(P_{ij}) \Delta A_{ij} = \sum_{i=1}^N \sum_{j=1}^M f(P_{ij}) \Delta y_j \Delta x_i.
+\]
+In my printing of our textbook, there is an error in the corresponding formula at the top of page 875. The last symbol should be $\Delta y_j$, not $\Delta x_j$.
+There are $NM$ terms in the sum. Each is a signed box-volume. The base of a typical box is one of the subrectangles $D_{ij}$. The height of this box is $|f(P_{ ij})|$. The values of the box-volumes are positive and negative according as $f(P_{ij})$ is positive or negative. Any sampled partition gives rise to such a sum, which can be regarded as an approximation to the signed volume under the graph of $f$. If you choose a sequence of sampled partitions such that \emph{the maximum area of any subrectangle goes to zero}, you can ask whether the limit of the corresponding Riemann sums exists. The answer is ``yes'', provided that $f$ is continuous\footnote{The condition of continuity is sufficient, but not necessary. Piecewise continuous functions are clearly integrable, but more general functions than this are integrable as well.}. In this case, the value of the limit is the same no matter which partition you choose, or how you sample it. This common value is called the integral of $f$ over the rectangle $D$.
+
+We compute such integrals, in practice, as iterated integrals. An iterated integral is one that looks like this:
+\[
+\int_c^d \int_a^b f(x,y) \; dx \; dy
+\]
+We work from the inside out. Notice that
+\[
+\int_a^b f(x,y) \; dx
+\]
+is a function of $y$ alone, and can be integrated from $y = c$ to $y = d$ in the usual way. The iterated integral above is equal to
+\[
+\int_a^b \int_c^d f(x,y) \; dy \; dx.
+\]
+This equality, together with the fact that $\int_D f(x,y) \; dA$ is equal to both of these, is the content of \emph{Fubini's Theorem}.
+
+\end{document}

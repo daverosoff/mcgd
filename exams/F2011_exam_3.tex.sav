@@ -1,0 +1,144 @@
+\documentclass[12pt]{exam}
+% \usepackage{pslatex}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Math 251: Fall 2011}}
+ {\ifcontinuation{\textbf{Problem continues}}{}}
+ {\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\runningfooter{}{\ifincomplete{continues on next page}{}}{}
+\setlength{\parskip}{1.2ex}
+\setlength{\parindent}{0pt}
+\pagestyle{headandfoot}
+\newcommand{\N}{\mathbf{N}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\R}{\mathbf{R}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\begin{document}
+
+% \printanswers
+\addpoints
+
+\noindent
+\textbf{{\large Mathematics 251 \\ Exam 3}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+November 22, 2011  \hfill Name: \underline{\hspace{3in}}
+
+
+\noindent
+\textbf{Instructions}: This exam is closed book: you may refer to one $8.5 \times 11$ page of handwritten notes, but no electronic aids or
+other printed references are permitted. \emph{Justification of all answers is required
+for partial credit.} Unless
+specifically directed, leave all answers in \textbf{exact form}, e.g.\
+$\sqrt{3}$ instead of~1.732 and $\pi/2$ instead of~$1.57$.
+
+Show all pertinent work. \emph{Correct answers without accompanying work will receive little or no credit.} Results from homework or from class can be cited freely. It is in your interest to display your solution in a
+clear, readable fashion. Note that standards of justification are not as high as for homework.
+
+\emph{Budget your time wisely.} It is a good idea, whenever possible, to look through the entire exam before beginning work on a particular problem.
+
+If your work continues onto the back of another page, please indicate
+this. Check and make sure you have all of the pages in the
+exam; there should be \numpages, including this one. If you have a
+question, please raise your hand.
+
+Be sure to read all questions carefully and completely.
+
+\vspace*{1.0in}
+
+\begin{center}
+\combinedgradetable[h]
+\end{center}
+
+\vspace*{0.5in}
+
+\begin{center}
+{\Large \emph{Good luck!}}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question Consider a differentiable function $z = f(x,y)$ under the polar coordinate transform $x = r \cos \theta$, $y = r \sin \theta$.
+
+\begin{parts}
+
+\part[12] Use the chain rule to express the partial derivatives $\partial z / \partial r$ and $\partial z / \partial \theta$ in terms of the partial derivatives $\partial z / \partial x$ and $\partial z / \partial y$. 
+
+\vspace{\stretch{2}}
+
+\part[12] Referring to your answer above, show that
+\[
+|| \nabla \! f ||^2 = \left( \frac{\partial z}{\partial r} \right)^2 + \frac{1}{r^2} \left( \frac{\partial z}{\partial \theta} \right)^2.
+\]
+
+\vspace{\stretch{3}}
+
+\end{parts} 
+
+\newpage
+
+\question Recall that the linearization of the function $f(x,y)$ at a point $(a,b)$ is the function $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$. Here $f_x$ and $f_y$ are the partial derivatives of $f(x,y)$.
+
+\begin{parts}
+
+\part[8] State a condition on $f_x$ and $f_y$ that will ensure that the plane $z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is tangent to the graph of $f$. No justification is necessary.
+
+\vspace{\stretch{1}}
+
+\part[8] Find the gradient of the function $F(x,y,z) = x^2 + y^2 + z^2$, and evaluate this gradient at the point $(\sqrt{3}, \sqrt{3}, \sqrt{3})$.
+
+\vspace{\stretch{2}}
+
+\part[8] Is there a plane that is tangent to the sphere $x^2 + y^2 + z^2 = 9$ at the point $(\sqrt{3}, \sqrt{3}, \sqrt{3})$? If not, explain why. If so, find an equation for such a tangent plane. \emph{Hint.} You may find the previous part helpful, but it is not strictly necessary to use it. If you choose not to, implicit differentiation may prove useful.
+
+\vspace{\stretch{2}}
+
+\end{parts}
+
+\newpage
+
+\question \emph{Note.} The parts of this problem are independent; the solution to one part does not require the solution to the other.
+
+\begin{parts}
+ 
+\part[12] Find the critical points of the function $f(x,y) = \sin x \cos y$ in the region $0 \leq x \leq \pi$, $0 \leq y \leq \pi$ and identify the global maximum and minimum of $f$ in the region. Justify your answers for full credit. Elementary properties of the sine and cosine functions may be cited without justification.
+
+\vspace{\stretch{1}}
+
+\part[12] Use Lagrange multipliers to find the maximum value of $g(x,y) = x^2+2y^2$ on the circle $x^2+y^2 = 4$. For full credit, give the coordinates of all the points on the circle where this maximum value is attained.
+
+\vspace{\stretch{2}}
+
+\end{parts}
+
+\newpage
+
+\question Evaluate the double integrals.
+
+\begin{parts}
+
+\part[12] ${\displaystyle \iint_D 1 \; dA}$, where $D$ is the region bounded by the curve $x = y^2-4y/5$ and the line $y = 5x$.
+
+\vspace{\stretch{3}}
+
+\part[12] ${\displaystyle \iint_D x^2 + 2y \; dA}$, where $D$ is the region in the first quadrant bounded by the line $y = x$ and the curve $y = x^3$.
+
+\vspace{\stretch{3}}
+
+\end{parts}
+
+\bonusquestion[4] I need new music to listen to. Do you have a recommendation? I like electronic music (especially IDM, jungle/drum and bass, and breakbeats), hip-hop, dub and roots reggae, straight-ahead rock, and related genres. For example: Squarepusher, Plastikman, Autechre, Blackalicious, Jurassic 5, Scientist, Dennis Brown, The White Stripes. Thanks for your suggestions.
+
+\vspace{\stretch{1}}
+
+\end{questions}
+
+\end{document} 

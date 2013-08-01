@@ -1,0 +1,104 @@
+\documentclass[12pt]{exam}
+% \usepackage{pslatex}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\firstpageheader{Math 251 Fall 2012}{}{Partial Solutions to HW14.4}
+\runningheader{}
+ {}
+ {}
+\runningheadrule
+\runningfooter{}{}{}
+\setlength{\parskip}{1.2ex}
+\setlength{\parindent}{0pt}
+\pagestyle{headandfoot}
+\newcommand{\N}{\mathbf{N}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\R}{\mathbf{R}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\begin{document}
+
+\printanswers
+\begin{questions}
+
+\question Find an equation of the tangent plane to the graph of 
+\[
+G(u,w) = \sin (uw)
+\]
+at $(\pi/6, 1)$.
+
+\begin{solution}
+    We first compute the partial derivatives of $G$, finding
+    \begin{align*}
+        G_u(u,w) &= w \cos (uw), \\
+        G_w(u,w) &= u \cos (uw).
+    \end{align*}
+    Then we evaluate each of $G$, $G_u$, $G_w$ at the point $(\pi/6,1)$, obtaining
+    \[
+        G(\pi/6, 1) = 1/2, \quad G_u(\pi/6,1) = \frac{\sqrt{3}}{2}, \quad G_w(\pi/6, 1) = \frac{\pi}{4 \sqrt{3}}.
+    \]
+    Hence, the desired equation is
+    \[
+        z = L(u,w) = \frac{1}{2} + \frac{\sqrt{3}}{2} \left(x - \frac{\pi}{6}\right) + \frac{\pi}{4 \sqrt{3}} \left(y-1\right).
+    \]
+\end{solution}
+
+\question Find the points on the graph of $z = 3x^2 - 4y^2$ at which the vector $\vec{n} = \langle 3, 2, 2 \rangle$ is normal to the tangent plane.
+
+\begin{solution}
+    Evidently, the tangent plane to the graph of any function $g(x,y)$ at the point $(a,b,g(a,b))$ has the normal vector $\langle g_x(a,b), g_y(a,b), -1 \rangle$. For us $g(x,y) = 3x^2 - 4y^2$, and so the normal vector becomes $\langle 6a, -8b, -1 \rangle$. If $\vec{n}$ is to be normal to the tangent plane, it must be parallel (not necessarily equal) to this vector; that is, there must be some nonzero scalar $\lambda$ satisfying
+    \[
+        \lambda \langle 3, 2, 2 \rangle = \langle 6a, -8b, -1 \rangle.
+    \]
+    Equating entries of this vector we find that 
+    \begin{align*}
+        3 \lambda &= 6a, \\
+        2 \lambda &= -8b, \\
+        2 \lambda &= -1.
+    \end{align*}
+    We see from the last equation that $\lambda$ must be equal to $-1/2$. It follows immediately that $a = -1/4$ and $b = 1/8$. Hence, there is only one point on the graph of $g(x,y)$ at which the tangent plane is normal to $\vec{n}$: namely, $(-1/4, 1/8, 1/8)$.
+\end{solution}
+
+\question Use the linear approximation of $f(x,y) = e^{x^2+y}$ at $(0,0)$ to estimate $f(0.01,-0.02)$. Compare with the value obtained using a calculator.
+
+\begin{solution}
+    First, we find the linear approximation $L(x,y)$ of $f(x,y)$ at $(0,0)$. The partial derivatives are
+    \begin{align*}
+        f_x(x,y) &= 2x e^{x^2+y}, \\
+        f_y(x,y) &= e^{x^2+y},
+    \end{align*}
+    with values $f_x(0,0) = 0$ and $f_y(0,0) = 1$. Since $f(0,0) = 1$, we have
+    \[
+        L(x,y) = 1 + y.
+    \]
+    We conclude that $f(0.01,-0.02) \approx L(0.01,-0.02) = 1 - 0.02 = 0.98$. \emph{Mathematica} gives an approximate numerical value of $0.980297$ for $f(0.01,-0.02)$. The approximation is accurate to within 0.04\%.
+\end{solution}
+
+\question Use the linear approximation to $f(x,y) = \sqrt{x/y}$ at $(9,4)$ to estimate $\sqrt{9.1/3.9}$. 
+
+\begin{solution}
+    First, we find the linear approximation $L(x,y)$ of $f(x,y)$ at $(9,4)$. The partial derivatives are
+    \begin{align*}
+        f_x(x,y) &= \frac{1}{2 \sqrt{xy}}, \\
+        f_y(x,y) &= -\frac{\sqrt{x}}{2y \sqrt{y}}.
+    \end{align*}
+    The alert reader will have noticed that these formulas are invalid at $(0,0)$. This is true, but there is no difficulty in using them at other points, in particular $(9,4)$, since $f$ is differentiable in a small enough neighborhood of this point. The values of the partial derivatives are
+    \[
+        f_x(9,4) = 1/12, \quad f_y(9,4) = -3/16.
+    \]
+    Since $f(9,4) = 3/2$, we find the linear approximation at $(9,4)$ to be
+    \[
+        L(x,y) = \frac{3}{2} + \frac{1}{12} \left( x - 9 \right) - \frac{3}{16} \left( y - 4 \right).
+    \]
+    The fundamental property of the linear approximation is that $L(x,y) \approx f(x,y)$ near $(9,4)$, so it is legit to say that
+    \[
+        f(9.1,3.9) \approx L(9.1,3.9) = \frac{3}{2} + \frac{1}{120} + \frac{3}{160}. 
+    \]
+    This last value is about $1.52708$, whereas $f(9.1,3.9)$ is about $1.52753$. This is correct to within 0.03\%.
+\end{solution}
+
+\end{questions}
+\end{document}

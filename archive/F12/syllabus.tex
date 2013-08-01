@@ -1,0 +1,82 @@
+\documentclass[12pt,twoside]{amsart}
+\usepackage{graphicx,wrapfig,amsmath,amsthm,amssymb,latexsym}%,wrapfig,floatflt}
+%\usepackage[matrix,arrow,cmtip,curve,dvips]{xy}
+\DeclareGraphicsExtensions{.png}
+\input{commands}
+\usepackage[top=1.0in,bottom=1.0in,left=1.0in,right=1.0in]{geometry}
+\setlength{\parskip}{7.5pt} \setlength{\parindent}{0pt}
+%\pretolerance=4000 \setlength{\topmargin}{-1.0in}
+%\setlength{\textheight}{10.0in} \setlength{\textwidth}{7in}
+%\setlength{\headheight}{26pt} \setlength{\headsep}{8pt}
+%\setlength{\oddsidemargin}{-0.25in}
+%\setlength{\evensidemargin}{-0.25in}
+\title{{\Large Mathematics 251, Fall 2012 \\ September 10}}
+\pagestyle{empty}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+% \begin{wrapfigure}{r}{140px}
+%     \begin{tabular}{ccccc} %%%%% set heights to 60px for two figures
+% 	   \hspace*{-5mm} & \includegraphics[height=55px]{qr-facpage.png} & \hspace*{0mm} &
+%         \includegraphics[height=55px]{qr-homework.png} & \hfill
+%     \end{tabular}
+% %    \caption{web}
+% \end{wrapfigure}
+
+\textbf{Instructor:} Dr.\ Dave Rosoff  \\
+\textbf{Office:} Boone Hall 102C \\
+\textbf{Office hours:} M 1--2, T 9:30--10:30, W 10:30--11:20, F 12:45--1:45, or by appointment \hspace*{0.25in}\\
+\textbf{Email:} \verb[drosoff@collegeofidaho.edu[ \\
+\textbf{Website:} \verb]https://docralphv.collegeofidaho.edu/webwork2/MAT251_01_F12/]
+\begin{center}
+
+{\large \emph{The pursuit of knowledge, brother, is the askin' of many questions.}\footnote{Raymond Chandler, \emph{Farewell, My Lovely}.}}
+
+\end{center}
+\textbf{Text:} The text is \emph{Calculus: Early Transcendentals} by Jon Rogawski, second edition. It is OK if you have the first edition, although your section numbers may be different.
+
+\textbf{Course objectives:} A study of real functions of several real variables. Topics include differentiability and continuity, differential geometry, extrema, Lagrange multipliers, multiple integration, line and surface integrals, and the theorems of Green, Gauss and Stokes. %Successful students in Math 251 will demonstrate mastery of univariate calculus sufficient to investigate vector analysis including Frenet--Serret (TNB) frames, parametric equations, elementary partial differentiation, and integration over rectangles and parallelepipeds using Fubini's theorem. They will use the change of variable theorem to apply these ideas to more general regions of integration (of full dimension) and finally, if time permits, develop the elementary theory of line and surface integrals with an eye toward Green's theorem, Stokes's theorem, and Gauss's divergence theorem.
+
+\textbf{Course overview:} We generalize the main ideas and results of single-variable calculus to multivariate situations. There are two ways to proceed. First, we keep the domains of our functions the usual real numbers (or appropriate subsets thereof) and let their codomains (ranges) be higher-dimensional Euclidean spaces. This approach entails an investigation into the related concepts of \emph{parametrization} and \emph{vectors}. We may also ask what happens in the reverse scenario, when the domain of the functions at hand is allowed to be 2-, 3-, or higher-dimensional, and the function's values are real numbers in the usual sense. Here we will meet the essential concepts of \emph{partial derivative} and \emph{total} or \emph{Jacobian derivative} and revisit the familiar themes of differential calculus (related rates, optimization, etc.). Just as functions of several variables may be differentiated via their partial derivatives, so too can they be integrated over appropriate \emph{regions} (rather than intervals) in their domains. We study the important change-of-variable theorem that allows integrals over complicated regions to be reckoned in terms of simpler ones (e.g., rectangles) and examine some applications.
+
+Many students encounter a significant increase in conceptual difficulty on passage to the third course in calculus. This is because of the multivariate nature of the investigations. There are notions in this realm that merge when specializing to the one-dimensional case: for example, a $1$-vector is the same thing as a point in $\mathbf{R}$, which is to say \emph{a number}. One must be careful when identifying $n$-vectors with points in $\mathbf{R}^n$, even though such identification is  legitimate. Another way to understand this phenomenon is that familiar ideas or objects may ramify, on passage to higher dimensions, into several parts: so that, for example, there are many types of $2$-dimensional analogues of the $1$-dimensional object we call ``open interval''.
+
+The last part of the course comprises first steps toward a synthesis of the two approaches mentioned above. The technology of \emph{vector fields} is employed to study integrals not over flat rectangles, but over curves and (curved) surfaces. This is the very beginning of the important field of \emph{differential geometry}. The laws of electromagnetism, Maxwell's equations, are formulated in this language. We will make as much progress as we can toward the fundamental theorems of G.\ Green, C.\ F.\ Gauss, and G.\ Stokes\footnote{Famously, Stokes's theorem is due not to Stokes, but to Lord Kelvin; Stokes merely \emph{assigned} it, in 1854.}. All three are vast generalizations of the usual Fundamental Theorem of Calculus, and all have extremely important implications for physics, engineering, and the rest of mathematics.
+
+\newpage
+
+\textbf{Homework:} Homework in this class comprises both online and traditional written assignments.
+\begin{itemize}
+    \item WeBWorK assigned daily for each section: \verb]https://docralphv.collegeofidaho.edu/webwork2/MAT251_01_F12/]
+    \item Occasional pencil-and-paper homework, lab assignments using Mathematica or group exercises assigned as homework.
+\end{itemize}
+Whenever you are writing a solution to a math problem, it is important to strive for the clearest exposition you can manage. Good mathematical writing is essential for anyone who wishes to think clearly about mathematics---sloppy writing invariably reflects underlying sloppy thinking. The process of making your ideas and reasoning \emph{clear, complete, and unambiguously correct} is the most powerful amplifier of mathematical power there is. Hence your solutions should be composed in brilliant English prose (e.g., accepted scientific usage, more or less correct grammar and spelling, and above all \emph{complete sentences}) sprinkled with tangy, delicious equations here and there. Solutions in the popular ``pile-of-equations'' style are to be avoided and will not get much credit. You must explain what is happening as the action unfolds.
+
+I encourage all of you to form study groups and collaborate on your homework; each student is of course individually responsible for their own work. Collaborators must be acknowledged. \textbf{Late homework is generally not accepted without significant penalties}, and its acceptance is determined on a case-by-case basis according to the student's situation. No written homework will be accepted after it is returned to the class.
+
+\textbf{Presentations:} Each student should present to the class six times over the semester. A presentation consists of an explanation of the problem, a solution to that problem, and any justification of the solution requested by the class. I will select a few problems from each section that are eligible as presentation problems. To be assigned a problem, email me (see above for address). When enough people are ready to present we'll have a ``presentation day''. I will maintain a list of problems together with when they were presented on my office door for your reference.
+
+\textbf{Exams:} Three exams are given in class (see below for dates). A missed exam results in an exam grade of zero. Arrangements for absences, again, must be made well in advance (two weeks suffices). \emph{If arrangements are not made in advance, I will consider make-ups only with compelling, documented reasons.}
+\begin{itemize}
+	\item Exam 1 (tentative): Tuesday, September 25
+	\item Exam 2 (tentative): Tuesday, October 30
+    \item Exam 3 (tentative): Tuesday, November 20
+	\item Final Exam: Monday, December 10, 1:30--4:30, Boone 103
+\end{itemize}
+
+\textbf{Grading:} Scores are computed as a weighted average, with the following weights: homework $0.15 = 15\%$, presentations $0.15 = 15\%$, three in-class exams $0.51 = 51\%$, and final exam $0.19 = 19\%$. Observe that the weights sum to $1 = 100\%$. The exact determination of letter grades from these scores depends on the final distribution of scores in the class, but you can expect a C for earning 75\% of the points, a C+ for 80\%, a B-- for 83\%, and so on.
+
+\textbf{Laptops, phones, and other screens:} Unless given explicit directions otherwise, please do not use class time to work on WeBWorK homework on a laptop or smart phone. Please make sure to turn all phones to silent during class. Unless there is an emergency situation, phones should not be out during lecture. If you have a laptop out during lecture, it will be assumed that the laptop is being used to take notes. As such, it is expected that any student using a laptop during class will email a copy of these notes to \verb]drosoff@collegeofidaho.edu] immediately following class. Failure to do so will result in the loss of laptop privileges for the rest of the semester.
+
+\textbf{Academic integrity:} Students are expected to complete all graded work in accordance with the College Honor Code. Plagiarism, cheating, or borrowing without proper credit will not be tolerated.  Violations of academic honesty can result in loss of credit on an assignment, failure on an exam, or failure in the course. A referral will be made to the Vice President for Academic Affairs for all parties involved in academic dishonesty.
+
+\textbf{A note on studying math:} By now you have studied enough mathematics to have learned something about how it is that the material passes through your shapely skull and into your soft, spongy brain. Nevertheless, you may find that this course is rather more difficult than your previous calculus courses. To really understand it, we will have to dig into subtle distinctions and nuances that no one has asked you to think about before. The reasons for this are outlined above: in the one-dimensional world, they simply do not signify. It is also more difficult to picture what is going on mentally, again owing to the presence of extra dimensions. Part of what I'm here to tell you is that while the material may seem wholly new and unfamiliar, the underlying principles of calculus (what do derivatives \emph{do}? what are integrals \emph{for}?) are immutable.
+
+\textbf{Special accommodations:} Students who have documented disabilities as addressed by the Americans With Disabilities Act and who need any test or course materials to be furnished in an alternative format should notify me immediately (during the first week of class).  Reasonable efforts will be made to accommodate the needs of such students.
+
+\begin{center}
+\emph{ {\LARGE Good luck this semester!} }
+\end{center}
+
+\end{document}
