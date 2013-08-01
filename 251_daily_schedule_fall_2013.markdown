@@ -1,6 +1,4 @@
 % Math 251 Schedule of Topics: Fall 2013
-% Dr. Dave Rosoff
-% 26 July 2013
 
 Here is a second try at the table.
 
@@ -30,9 +28,9 @@ Here is a second try at the table.
                                                                    
   11       Tue 24 Sept      **EXAM 1**
                                                                   
-  12       Wed 25 Sept      Partial derivatives; differentials
+  12       Wed 25 Sept      Partial derivatives; &ldquo;differentials&rdquo;
                                                                   
-  13       Fri 27 Sept      &quot;Differentials&quot; and local linearity; gradients in 2 dimensions 
+  13       Fri 27 Sept      &ldquo;Differentials&rdquo; and local linearity; gradients in 2 dimensions 
                                                                   
   14       Mon 30 Sept      Gradients of 2- and 3-variable functions
                                                                   
