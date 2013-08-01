@@ -1,0 +1,561 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     18072,        552]
+NotebookOptionsPosition[     15093,        452]
+NotebookOutlinePosition[     15457,        468]
+CellTagsIndexPosition[     15414,        465]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " for new users"
+}], "Title",
+ CellChangeTimes->{{3.50669398834933*^9, 3.5066939936150556`*^9}}],
+
+Cell["(Some skills you will need for Phy-400 HW 1)", "Subtitle",
+ CellChangeTimes->{{3.5066940038808775`*^9, 3.506694018240528*^9}}],
+
+Cell["K. Devine", "Subsubtitle",
+ CellChangeTimes->{{3.506694023646882*^9, 3.5066940296469975`*^9}, {
+  3.5371135615625*^9, 3.537113562109375*^9}}],
+
+Cell["\<\
+Note:  To make pretty text lines, titles, and formatting, go to the Menu Bar \
+and select \"Format.\"  Go to the drop down menu under \"Style.\"  You will \
+see options such as \"title\", \"subtitle\", and \"text.\"  The short-cut on \
+a PC for a text format is \"alt+7\".\
+\>", "Text",
+ CellChangeTimes->{{3.5066940475535913`*^9, 3.506694128040962*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Part 1:  A tour of Mathematica", "Section",
+ CellChangeTimes->{{3.5066941674799767`*^9, 3.5066942162787256`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Mathematica \"quirks\"", "Subsection",
+ CellChangeTimes->{{3.5066943609405303`*^9, 3.506694379347348*^9}, {
+  3.506694741606154*^9, 3.5066947449499683`*^9}}],
+
+Cell[TextData[{
+ "Remember:  in Mathematica, capital letters matter (",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " would treat Plot as a command, and plot as a variable), choice of brackets \
+matters (Plot[f[x],{x,0,10}] will work, Plot(F(x), [x,0,10]) will not), and \
+the enter key matters.  Keep these things in mind if you're ever left \
+wondering, \"Why the *#$% did that not work?\" because those three things are \
+the most common Mathematica rookie mistakes."
+}], "Text",
+ CellChangeTimes->{{3.5066947481375294`*^9, 3.5066948722649126`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Help Files", "Subsection",
+ CellChangeTimes->{{3.5066943609405303`*^9, 3.506694379347348*^9}}],
+
+Cell[TextData[{
+ "First, learn how to help yourself if you get stuck while using ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ".  First off, lets learn about the help files.  Help files can be retrieved \
+for a Mathematica command by typing a ? behind the command.  Try it out in \
+the next cell: "
+}], "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.5066943413929048`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "Sqrt"}]], "Input",
+ CellChangeTimes->{{3.506694343158598*^9, 3.5066943445492764`*^9}}],
+
+Cell["\<\
+Click on the >> in the output from  Mathematica to see the full view of the \
+help file.   Note that examples are provided, as well as more details on a \
+function.  Try viewing the help files for the following commands:\
+\>", "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.506694314204361*^9}, {
+  3.506694390050747*^9, 3.5066944558493066`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "Plot"}]], "Input",
+ CellChangeTimes->{{3.5066944473490887`*^9, 3.506694459005637*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "ListPlot"}]], "Input",
+ CellChangeTimes->{{3.5066944506460485`*^9, 3.5066944530367346`*^9}}],
+
+Cell["\<\
+Alternatively, you can select \"Help\" on the menu bar, and go to the \
+Documentation Center to look up various commands.\
+\>", "Text",
+ CellChangeTimes->{{3.5066944868969765`*^9, 3.506694525929226*^9}}],
+
+Cell["\<\
+What happens if you can't remember the exact name of the command you want to \
+use?  You can use an asterix (*) as a wildcard to prompt Mathematica to tell \
+you commands that use a certain key word.  For example,\
+\>", "Text",
+ CellChangeTimes->{{3.5066945304137154`*^9, 3.5066945317106237`*^9}, {
+   3.50669472266829*^9, 3.50669473227785*^9}, {3.5066948811088324`*^9, 
+   3.5066949099062605`*^9}, 3.5066957874594955`*^9}],
+
+Cell[BoxData[
+ RowBox[{"?", "*Plot*"}]], "Input",
+ CellChangeTimes->{{3.5066949116875443`*^9, 3.5066949138750863`*^9}}],
+
+Cell["\<\
+Remember, capital letters matter.  Look what happens if you forget to \
+capitalize \"Plot\":\
+\>", "Text",
+ CellChangeTimes->{{3.5066949229846363`*^9, 3.5066949455631948`*^9}, {
+  3.506695316292078*^9, 3.5066953178703647`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "*plot*"}]], "Input",
+ CellChangeTimes->{{3.5066949470007224`*^9, 3.5066949497664003`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Palettes", "Subsection",
+ CellChangeTimes->{{3.5066953293559155`*^9, 3.5066953319343047`*^9}}],
+
+Cell["\<\
+There are several \"palettes\" that provide  useful short cuts for commands \
+that can make your Mathematica formating prettier.   Go to to the menu bar, \
+select \"Palettes\", and open the Basic Math Assitant palette.  Figure out \
+how I used to palettes to do the following.  Note that I've written each line \
+the \"long (or ugly)\" way, and using the palette, to prove they are \
+equivalent:\
+\>", "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.506694314204361*^9}, {
+  3.5066953340751486`*^9, 3.506695432083145*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", "4", "]"}]], "Input",
+ CellChangeTimes->{{3.5066953965500755`*^9, 3.506695399425223*^9}}],
+
+Cell[BoxData[
+ SqrtBox["4"]], "Input",
+ CellChangeTimes->{3.506695391487277*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"2", "-", "5"}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{"4", "*", "2"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.5066954060974393`*^9, 3.5066954416773863`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", "-", "5"}], 
+  RowBox[{"4", "*", "2"}]]], "Input",
+ CellChangeTimes->{{3.5066954468964033`*^9, 3.5066954521310463`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"10", "^", "4"}]], "Input",
+ CellChangeTimes->{{3.506695517071871*^9, 3.5066955187750835`*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox["10", "4"]], "Input",
+ CellChangeTimes->{3.5066955256035576`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 2:  Defining functions", "Section",
+ CellChangeTimes->{{3.5066941674799767`*^9, 3.506694204231388*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["The basics", "Subsection",
+ CellChangeTimes->{{3.506695960809902*^9, 3.5066959619661965`*^9}}],
+
+Cell[TextData[{
+ "Let's say you want to define a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", 
+      RowBox[{"(", "x", ")"}]}], "=", 
+     SuperscriptBox["x", "2"]}], ",", " ", 
+    RowBox[{"and", " ", "then", " ", "plot", " ", "the", " ", 
+     RowBox[{"function", ".", "  "}]}]}], TraditionalForm]]],
+ "Use the formatting below.  Remember, brackets matter, and so does the \
+underscore in the function:"
+}], "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.5066941996218357`*^9}, {
+  3.506695804553902*^9, 3.506695837117653*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], "=", 
+  SuperscriptBox["x", "2"]}]], "Input",
+ CellChangeTimes->{{3.5066958385083313`*^9, 3.50669584369603*^9}}],
+
+Cell["Check to make sure it works:", "Text",
+ CellChangeTimes->{{3.506695851055688*^9, 3.5066958690563793`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"f", "[", "1", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "2", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "3", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "4", "]"}]}], "Input",
+ CellChangeTimes->{{3.506695846743022*^9, 3.5066958936198225`*^9}}],
+
+Cell["\<\
+Note that capitalization still matters!  Try finding \"F[4]\".  It won't work \
+because Mathematica thinks F[x] is a different function (one you haven't \
+defined yet) than f[x].\
+\>", "Text",
+ CellChangeTimes->{{3.5066959012294893`*^9, 3.5066959499969873`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Clear ", "Subsection",
+ CellChangeTimes->{{3.506695976560507*^9, 3.5066959781074414`*^9}}],
+
+Cell[TextData[{
+ "Let's say you want to change f(x) to be a new function, like ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], "=", 
+    RowBox[{
+     SuperscriptBox["x", "3"], ".", "  ", "It", " "}]}], TraditionalForm]]],
+ "is a good habit to clear out your definition of f so that Mathematica does \
+not get confused."
+}], "Text",
+ CellChangeTimes->{{3.50669598067004*^9, 3.5066960194994817`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "f", "]"}]], "Input",
+ CellChangeTimes->{{3.506696020280757*^9, 3.5066960255621758`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], "=", 
+  SuperscriptBox["x", "3"]}]], "Input",
+ CellChangeTimes->{{3.506696028921658*^9, 3.506696034515587*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"f", "[", "1", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "2", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "3", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "4", "]"}]}], "Input",
+ CellChangeTimes->{{3.5066960368125353`*^9, 3.506696042843979*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 3:  Defining Data Lists", "Section",
+ CellChangeTimes->{{3.5066941674799767`*^9, 3.506694204231388*^9}, {
+  3.5066962653532076`*^9, 3.506696271259722*^9}}],
+
+Cell["\<\
+Let's say you want to define a list of data, for example, the age vs weight \
+(in pounds) of some children.  In the list, data is arranged as {age, weight}.\
+\>", "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.5066941996218357`*^9}, {
+  3.506695804553902*^9, 3.506695837117653*^9}, {3.506696277650634*^9, 
+  3.5066962927450595`*^9}, {3.5066963721079903`*^9, 3.506696372358001*^9}, {
+  3.506696416906868*^9, 3.506696491628009*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "mylist", "]"}]], "Input",
+ CellChangeTimes->{{3.5066962949014063`*^9, 3.506696298104675*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mylist", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "20"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", " ", "40"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"13", ",", " ", "120"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", " ", "40"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", " ", "80"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", " ", "200"}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.506696299245351*^9, 3.5066963169805202`*^9}, {
+  3.506696374608102*^9, 3.5066963761237946`*^9}, {3.506696458658204*^9, 
+  3.5066965447234583`*^9}}],
+
+Cell["\<\
+Mathematica has now stored that data for future use.  Check for yourself:\
+\>", "Text",
+ CellChangeTimes->{{3.5066965528330927`*^9, 3.5066965668647914`*^9}}],
+
+Cell[BoxData["mylist"], "Input",
+ CellChangeTimes->{{3.506696538879521*^9, 3.506696539910804*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 4:  Plotting functions", "Section",
+ CellChangeTimes->{{3.5066941674799767`*^9, 3.506694204231388*^9}, {
+  3.5066960783763657`*^9, 3.506696082360868*^9}, {3.5066962530245304`*^9, 
+  3.506696253274542*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["The Plot[] Command", "Subsection",
+ CellChangeTimes->{{3.506695960809902*^9, 3.5066959619661965`*^9}, {
+  3.5066960880329247`*^9, 3.5066960963300653`*^9}}],
+
+Cell[TextData[{
+ "Let's say you want to define a function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", 
+      RowBox[{"(", "x", ")"}]}], "=", 
+     SuperscriptBox["x", "2"]}], ",", " ", 
+    RowBox[{"and", " ", "then", " ", "plot", " ", "the", " ", 
+     RowBox[{"function", ".", "  "}]}]}], TraditionalForm]]],
+ "Again, define your function f(x):"
+}], "Text",
+ CellChangeTimes->{{3.5066941814805145`*^9, 3.5066941996218357`*^9}, {
+  3.506695804553902*^9, 3.506695837117653*^9}, {3.5066961044710007`*^9, 
+  3.506696110393141*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "f", "]"}]], "Input",
+ CellChangeTimes->{{3.5066961113775597`*^9, 3.506696112877627*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], "=", 
+  SuperscriptBox["x", "2"]}]], "Input",
+ CellChangeTimes->{{3.5066958385083313`*^9, 3.50669584369603*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox["x", "2"]], "Output",
+ CellChangeTimes->{3.506696115252733*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", " ", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<My Plot\>\""}], ",", " ", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", " ", "\"\<f(x)\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5066961202998343`*^9, 3.5066961568170958`*^9}}],
+
+Cell["\<\
+Take a second to play with the inputs in the Plot command.  What happens if \
+you use {x, -2, 2} or {x, 0, 100} instead?  What happens when you change \"My \
+Plot\" and the inputs to AxesLabel?\
+\>", "Text",
+ CellChangeTimes->{{3.5066961683957396`*^9, 3.506696232992383*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["ListPlot[] Command", "Subsection",
+ CellChangeTimes->{{3.5066965792558126`*^9, 3.5066965851778774`*^9}}],
+
+Cell["\<\
+Lets say you want to plot a list of data, for example, a list of ages vs. \
+weight for kids.  ListPlot is the tool you need here.\
+\>", "Text",
+ CellChangeTimes->{{3.5066965882404757`*^9, 3.506696613788168*^9}, 
+   3.537113676328125*^9}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "mylist", "]"}]], "Input",
+ CellChangeTimes->{{3.5066962949014063`*^9, 3.506696298104675*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mylist", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "20"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", " ", "40"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"13", ",", " ", "120"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", " ", "40"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", " ", "80"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", " ", "200"}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.506696299245351*^9, 3.5066963169805202`*^9}, {
+  3.506696374608102*^9, 3.5066963761237946`*^9}, {3.506696458658204*^9, 
+  3.5066965447234583`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"mylist", ",", " ", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<Age vs. Weight of Kids\>\""}], ",", 
+   " ", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Age\>\"", ",", " ", "\"\<Weight\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.506696615694479*^9, 3.5066966557426357`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Good luck!  ", "Section",
+ CellChangeTimes->{{3.506696694290744*^9, 3.5066966975564737`*^9}}],
+
+Cell["\<\
+Remember, ask questions if you get stuck, and explore the extensive help \
+files of Mathematica if you want to learn more about the options for a \
+command, or see more examples of how a command is used.\
+\>", "Text",
+ CellChangeTimes->{{3.506696707447415*^9, 3.506696737432616*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{678, 621},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 162, 5, 83, "Title"],
+Cell[732, 29, 132, 1, 49, "Subtitle"],
+Cell[867, 32, 147, 2, 28, "Subsubtitle"],
+Cell[1017, 36, 364, 6, 65, "Text"],
+Cell[CellGroupData[{
+Cell[1406, 46, 119, 1, 71, "Section"],
+Cell[CellGroupData[{
+Cell[1550, 51, 163, 2, 36, "Subsection"],
+Cell[1716, 55, 558, 10, 83, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2311, 70, 100, 1, 36, "Subsection"],
+Cell[2414, 73, 388, 8, 65, "Text"],
+Cell[2805, 83, 115, 2, 31, "Input"],
+Cell[2923, 87, 363, 6, 47, "Text"],
+Cell[3289, 95, 115, 2, 31, "Input"],
+Cell[3407, 99, 121, 2, 31, "Input"],
+Cell[3531, 103, 213, 4, 47, "Text"],
+Cell[3747, 109, 433, 7, 47, "Text"],
+Cell[4183, 118, 119, 2, 31, "Input"],
+Cell[4305, 122, 237, 5, 29, "Text"],
+Cell[4545, 129, 119, 2, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4701, 136, 100, 1, 36, "Subsection"],
+Cell[4804, 139, 538, 9, 83, "Text"],
+Cell[5345, 150, 125, 2, 31, "Input"],
+Cell[5473, 154, 80, 2, 35, "Input"],
+Cell[5556, 158, 213, 6, 31, "Input"],
+Cell[5772, 166, 163, 4, 47, "Input"],
+Cell[5938, 172, 118, 2, 31, "Input"],
+Cell[6059, 176, 95, 2, 31, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6203, 184, 114, 1, 71, "Section"],
+Cell[CellGroupData[{
+Cell[6342, 189, 100, 1, 36, "Subsection"],
+Cell[6445, 192, 572, 15, 47, "Text"],
+Cell[7020, 209, 169, 4, 31, "Input"],
+Cell[7192, 215, 112, 1, 29, "Text"],
+Cell[7307, 218, 289, 5, 92, "Input"],
+Cell[7599, 225, 272, 5, 47, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7908, 235, 96, 1, 36, "Subsection"],
+Cell[8007, 238, 426, 11, 47, "Text"],
+Cell[8436, 251, 126, 2, 31, "Input"],
+Cell[8565, 255, 168, 4, 31, "Input"],
+Cell[8736, 261, 289, 5, 92, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9074, 272, 166, 2, 71, "Section"],
+Cell[9243, 276, 447, 7, 47, "Text"],
+Cell[9693, 285, 131, 2, 31, "Input"],
+Cell[9827, 289, 714, 19, 31, "Input"],
+Cell[10544, 310, 167, 3, 29, "Text"],
+Cell[10714, 315, 98, 1, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10849, 321, 216, 3, 71, "Section"],
+Cell[CellGroupData[{
+Cell[11090, 328, 161, 2, 36, "Subsection"],
+Cell[11254, 332, 557, 15, 29, "Text"],
+Cell[11814, 349, 126, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[11965, 355, 169, 4, 31, "Input"],
+Cell[12137, 361, 93, 2, 30, "Output"]
+}, Open  ]],
+Cell[12245, 366, 469, 12, 31, "Input"],
+Cell[12717, 380, 285, 5, 47, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13039, 390, 110, 1, 36, "Subsection"],
+Cell[13152, 393, 247, 5, 47, "Text"],
+Cell[13402, 400, 131, 2, 31, "Input"],
+Cell[13536, 404, 714, 19, 31, "Input"],
+Cell[14253, 425, 368, 9, 52, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14670, 440, 99, 1, 71, "Section"],
+Cell[14772, 443, 293, 5, 47, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

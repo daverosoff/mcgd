@@ -1,0 +1,453 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     13695,        444]
+NotebookOptionsPosition[     11547,        370]
+NotebookOutlinePosition[     12361,        397]
+CellTagsIndexPosition[     12276,        392]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Integrating Using Mathematica", "Title",
+ CellChangeTimes->{{3.5389141626684513`*^9, 3.538914167980033*^9}}],
+
+Cell["Helpful Hints and Methods", "Subtitle",
+ CellChangeTimes->{{3.5389141813995886`*^9, 3.5389141858050776`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Examples of integrating using the palette\
+\>", "Section",
+ CellChangeTimes->{{3.538914195256569*^9, 3.538914206004711*^9}}],
+
+Cell["\<\
+First define some function f[x] that you wish to integrate:\
+\>", "Text",
+ CellChangeTimes->{{3.5389142098634195`*^9, 3.5389142255950756`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{"F", ",", " ", "x", ",", "a", ",", " ", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.538914227891554*^9, 3.5389142315003047`*^9}, {
+  3.538914344559972*^9, 3.5389143447164936`*^9}, {3.5389145373481193`*^9, 
+  3.538914537880294*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"x", "^", "2"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Sin", "[", "x", "]"}], ")"}], "^", "2"}]}]}]], "Input",
+ CellChangeTimes->{{3.5389142370462217`*^9, 3.5389142549667788`*^9}}],
+
+Cell["\<\
+Let\[CloseCurlyQuote]s perform a definite (limits 0, a) and indefinite \
+integral for this function.  Both of these integral symbols can be found \
+under \[OpenCurlyDoubleQuote]Basic Commands\[CloseCurlyDoubleQuote] in the \
+\[OpenCurlyDoubleQuote]Basic Math Assistant\[CloseCurlyDoubleQuote] pallette. \
+\>", "Text",
+ CellChangeTimes->{{3.538914261243311*^9, 3.538914333791258*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Integral]", 
+  RowBox[{
+   RowBox[{"F", "[", "x", "]"}], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.5389142972746754`*^9, 3.538914300514681*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "24"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}], "-", 
+    RowBox[{"6", " ", "x", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"2", " ", "x"}], "]"}]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"3", "-", 
+       RowBox[{"6", " ", 
+        SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", "x"}], "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.5389143014851174`*^9, 3.53891434767476*^9, 
+  3.5389145414489956`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "a"], 
+  RowBox[{
+   RowBox[{"F", "[", "x", "]"}], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.5389143063686037`*^9, 3.538914309217304*^9}, {
+  3.538914340709531*^9, 3.5389143516973753`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "24"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"4", " ", 
+     SuperscriptBox["a", "3"]}], "-", 
+    RowBox[{"6", " ", "a", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"2", " ", "a"}], "]"}]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"3", "-", 
+       RowBox[{"6", " ", 
+        SuperscriptBox["a", "2"]}]}], ")"}], " ", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", "a"}], "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.5389143536852045`*^9, 3.5389145422472577`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Examples of integrating using the Integrate[] command\
+\>", "Section",
+ CellChangeTimes->{{3.538914195256569*^9, 3.538914206004711*^9}, {
+  3.5389143772261133`*^9, 3.538914383033079*^9}}],
+
+Cell["\<\
+First define some function f[x] that you wish to integrate:\
+\>", "Text",
+ CellChangeTimes->{{3.5389142098634195`*^9, 3.5389142255950756`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{"F", ",", " ", "x", ",", "a", ",", " ", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.538914227891554*^9, 3.5389142315003047`*^9}, {
+  3.538914344559972*^9, 3.5389143447164936`*^9}, {3.538914544689001*^9, 
+  3.538914546003786*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"x", "^", "2"}], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", 
+       RowBox[{"Pi", "/", "a"}], " ", "x"}], "]"}], ")"}], "^", 
+    "2"}]}]}]], "Input",
+ CellChangeTimes->{{3.5389142370462217`*^9, 3.5389142549667788`*^9}, {
+  3.538914389090481*^9, 3.538914394897447*^9}}],
+
+Cell["\<\
+Let\[CloseCurlyQuote]s perform an indefinite and definite (limits 0, a)  \
+integral on this function.  Note that one of the benefits of using the \
+Integrate commands is that I can set Assumptions.  First, the indefinite \
+integral:\
+\>", "Text",
+ CellChangeTimes->{{3.538914261243311*^9, 3.538914333791258*^9}, {
+  3.5389144031931133`*^9, 3.538914429723592*^9}, {3.538914469182788*^9, 
+  3.538914505308066*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5389144527636304`*^9, 3.538914457349725*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   SuperscriptBox["x", "3"], "6"], "-", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["a", "2"], " ", "x", " ", 
+    RowBox[{"Cos", "[", 
+     FractionBox[
+      RowBox[{"2", " ", "n", " ", "\[Pi]", " ", "x"}], "a"], "]"}]}], 
+   RowBox[{"4", " ", 
+    SuperscriptBox["n", "2"], " ", 
+    SuperscriptBox["\[Pi]", "2"]}]], "-", 
+  FractionBox[
+   RowBox[{"a", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", 
+       SuperscriptBox["a", "2"]}], "+", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["n", "2"], " ", 
+       SuperscriptBox["\[Pi]", "2"], " ", 
+       SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+    RowBox[{"Sin", "[", 
+     FractionBox[
+      RowBox[{"2", " ", "n", " ", "\[Pi]", " ", "x"}], "a"], "]"}]}], 
+   RowBox[{"8", " ", 
+    SuperscriptBox["n", "3"], " ", 
+    SuperscriptBox["\[Pi]", "3"]}]]}]], "Output",
+ CellChangeTimes->{3.5389144583201613`*^9, 3.5389145488026314`*^9}]
+}, Open  ]],
+
+Cell["\<\
+Now the definite integral, with no assumptions set:\
+\>", "Text",
+ CellChangeTimes->{{3.5389145086419845`*^9, 3.538914519942873*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "x", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", " ", "a"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5389142972746754`*^9, 3.538914300514681*^9}, {
+  3.5389144869793396`*^9, 3.538914524575924*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["a", "3"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"4", " ", 
+      SuperscriptBox["n", "3"], " ", 
+      SuperscriptBox["\[Pi]", "3"]}], "-", 
+     RowBox[{"6", " ", "n", " ", "\[Pi]", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", " ", "n", " ", "\[Pi]"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"3", "-", 
+        RowBox[{"6", " ", 
+         SuperscriptBox["n", "2"], " ", 
+         SuperscriptBox["\[Pi]", "2"]}]}], ")"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", " ", "n", " ", "\[Pi]"}], "]"}]}]}], ")"}]}], 
+  RowBox[{"24", " ", 
+   SuperscriptBox["n", "3"], " ", 
+   SuperscriptBox["\[Pi]", "3"]}]]], "Output",
+ CellChangeTimes->{
+  3.5389143014851174`*^9, 3.53891434767476*^9, {3.538914525890709*^9, 
+   3.5389145520543995`*^9}}]
+}, Open  ]],
+
+Cell["\<\
+But let\[CloseCurlyQuote]s say I know \[OpenCurlyDoubleQuote]n\
+\[CloseCurlyDoubleQuote] is an integer.  Let\[CloseCurlyQuote]s set the \
+assumptions.  For more about assumptions, use the ? function\
+\>", "Text",
+ CellChangeTimes->{{3.5389145577918935`*^9, 3.538914577724606*^9}, {
+  3.5389150134535575`*^9, 3.5389150150787554`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Assumptions"}]], "Input",
+ CellChangeTimes->{{3.53891457872515*^9, 3.5389145829930954`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"Assumptions is an option for functions such as Simplify, \
+Refine and Integrate which specifies default assumptions to be made about \
+symbolic quantities. \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Assumptions"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.5389145843219433`*^9},
+ CellTags->"Info3538889383-9640416"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "x", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", "0", ",", " ", "a"}], "}"}], ",", " ", 
+   RowBox[{"Assumptions", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"n", ">=", "0"}], ",", " ", 
+      RowBox[{"n", "\[Element]", "Integers"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.538914619309716*^9, 3.5389146300968313`*^9}, {
+  3.538914664756301*^9, 3.538914674214568*^9}, {3.538914707670258*^9, 
+  3.538914708107996*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["a", "3"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"4", " ", 
+      SuperscriptBox["n", "3"], " ", 
+      SuperscriptBox["\[Pi]", "3"]}], "+", 
+     RowBox[{"3", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", " ", "n", " ", "\[Pi]"}], "]"}]}], "-", 
+     RowBox[{"6", " ", "n", " ", "\[Pi]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Cos", "[", 
+         RowBox[{"2", " ", "n", " ", "\[Pi]"}], "]"}], "+", 
+        RowBox[{"n", " ", "\[Pi]", " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"2", " ", "n", " ", "\[Pi]"}], "]"}]}]}], ")"}]}]}], 
+    ")"}]}], 
+  RowBox[{"24", " ", 
+   SuperscriptBox["n", "3"], " ", 
+   SuperscriptBox["\[Pi]", "3"]}]]], "Output",
+ CellChangeTimes->{3.5389146339270387`*^9, 3.538914711594267*^9}]
+}, Open  ]],
+
+Cell["\<\
+Actually, this isn\[CloseCurlyQuote]t the slickest demonstration of \
+Assumptions since Mathematica leaves \[OpenCurlyDoubleQuote]n\
+\[CloseCurlyDoubleQuote] in the Sine and Cosine parts of the answer to give \
+you the most general solution possible.  You can use Simplify to apply the \
+assumption and get a nice result.\
+\>", "Text",
+ CellChangeTimes->{{3.5389147782242436`*^9, 3.5389148962361803`*^9}, {
+  3.5389149279744143`*^9, 3.538914935209669*^9}, {3.538914981434039*^9, 
+  3.538914992607273*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"F", "[", "x", "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "0", ",", " ", "a"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"Assumptions", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"n", ">", "0"}], ",", " ", 
+      RowBox[{"n", "\[Element]", "Integers"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5389148677170877`*^9, 3.538914901361804*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "12"], " ", 
+  SuperscriptBox["a", "3"], " ", 
+  RowBox[{"(", 
+   RowBox[{"2", "-", 
+    FractionBox["3", 
+     RowBox[{
+      SuperscriptBox["n", "2"], " ", 
+      SuperscriptBox["\[Pi]", "2"]}]]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.53891487274895*^9, 3.5389149025025673`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{715, 559},
+WindowMargins->{{24, Automatic}, {Automatic, 30}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, WindowSize -> {715, 559}, 
+  WindowMargins -> {{48, Automatic}, {Automatic, 60}}, Visible -> False, 
+  FrontEndVersion -> "8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+   StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3538889383-9640416"->{
+  Cell[8254, 269, 474, 11, 62, "Print",
+   CellTags->"Info3538889383-9640416"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3538889383-9640416", 12172, 386}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 114, 1, 83, "Title"],
+Cell[696, 25, 115, 1, 49, "Subtitle"],
+Cell[CellGroupData[{
+Cell[836, 30, 134, 3, 71, "Section"],
+Cell[973, 35, 153, 3, 29, "Text"],
+Cell[1129, 40, 281, 5, 31, "Input"],
+Cell[1413, 47, 278, 8, 31, "Input"],
+Cell[1694, 57, 393, 6, 47, "Text"],
+Cell[CellGroupData[{
+Cell[2112, 67, 203, 5, 43, "Input"],
+Cell[2318, 74, 564, 18, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2919, 97, 286, 7, 44, "Input"],
+Cell[3208, 106, 540, 17, 47, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3797, 129, 197, 4, 71, "Section"],
+Cell[3997, 135, 153, 3, 29, "Text"],
+Cell[4153, 140, 279, 5, 31, "Input"],
+Cell[4435, 147, 398, 12, 31, "Input"],
+Cell[4836, 161, 422, 8, 47, "Text"],
+Cell[CellGroupData[{
+Cell[5283, 173, 182, 4, 31, "Input"],
+Cell[5468, 179, 944, 29, 58, "Output"]
+}, Open  ]],
+Cell[6427, 211, 143, 3, 29, "Text"],
+Cell[CellGroupData[{
+Cell[6595, 218, 302, 7, 31, "Input"],
+Cell[6900, 227, 847, 25, 52, "Output"]
+}, Open  ]],
+Cell[7762, 255, 343, 6, 29, "Text"],
+Cell[CellGroupData[{
+Cell[8130, 265, 121, 2, 31, "Input"],
+Cell[8254, 269, 474, 11, 62, "Print",
+ CellTags->"Info3538889383-9640416"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8765, 285, 536, 13, 31, "Input"],
+Cell[9304, 300, 822, 24, 52, "Output"]
+}, Open  ]],
+Cell[10141, 327, 515, 9, 65, "Text"],
+Cell[CellGroupData[{
+Cell[10681, 340, 494, 13, 31, "Input"],
+Cell[11178, 355, 329, 10, 48, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
