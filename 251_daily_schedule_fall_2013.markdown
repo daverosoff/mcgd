@@ -1,18 +1,22 @@
 % Math 251 Schedule of Topics: Fall 2013
 
-Here is a second try at the table.
+Here, you can find a rough guide to what was discussed in class on any
+particular day. If you missed class, you can also find workshop handouts
+and other materials here. You should also find a classmate who will share
+more specific notes from the days you missed.
+
 
 -------------------------------------------------------------------------------
-  No          Date          Topics
-------  -----------------   ---------------------------------------------------
+ Module         Date        Topics
+--------  ---------------   ---------------------------------------------------
   01       Fri 6 Sept       Introduction; 2-variable functions
                                                                   
-  02       Mon 9 Sept       2-variable functions; vectors as displacements<br />
-                            Now let's add a second [link](http://www.collegeofidaho.edu/)
-                                                                  
+  02       Mon 9 Sept       2-variable functions; vectors as displacements
+
   03       Tue 10 Sept      Vectors in general; linear functions
                                                                   
-  04       Wed 11 Sept      Linear functions; the dot product
+  04       Wed 11 Sept      Linear functions; the dot product. <br />
+                            *Quiz 1* on Modules 01--02.
                                                                   
   05       Fri 13 Sept      The dot product; the cross product
                                                                   
@@ -26,7 +30,7 @@ Here is a second try at the table.
                                                                   
   10       Mon 23 Sept      Idea of partial derivatives; review for **Exam 1**
                                                                    
-  11       Tue 24 Sept      **EXAM 1**
+  11       Tue 24 Sept      **Exam 1**
                                                                   
   12       Wed 25 Sept      Partial derivatives; &ldquo;differentials&rdquo;
                                                                   
@@ -50,7 +54,7 @@ Here is a second try at the table.
                                                                   
   22       Mon 14 Oct       Polar coordinates; review for **Exam 2**
                                                                   
-  23       Tue 15 Oct       **EXAM 2**
+  23       Tue 15 Oct       **Exam 2**
                                                                   
   24       Wed 16 Oct       Double integrals in polar coordinates; idea of triple integrals
                                                                   
@@ -76,7 +80,7 @@ Here is a second try at the table.
                                                                   
   35       Tue 12 Nov       Green's theorem; review for **Exam 3**
                                                                   
-  36       Wed 13 Nov       **EXAM 3**
+  36       Wed 13 Nov       **Exam 3**
                                                                   
            Fri 15 Nov       No class; Thanksgiving break
                                                                   
@@ -103,5 +107,4 @@ Here is a second try at the table.
   47       Wed 4 Dec        Calculus on curved surfaces, Stokes, and cosmic topology
                                                                   
   48       Fri 6 Dec        Review for final exam
-                                                                  
 ---------------------------------------------------------------------------------
