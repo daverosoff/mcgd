@@ -1,0 +1,186 @@
+@font-face 
+{
+    font-family: MgOpenCanonica;
+    src: url{http://www.fonts2u.com/download/mgopen-canonica.font-face};
+
+}
+body 
+{
+  background-color:#f8f8f8; 
+  margin: 5% 20% 5% 20%;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:active {text-decoration:none;}
+p 
+{
+  font-size:100%;
+  font-family:MgOpenCanonica,Georgia,Garamond,"Palatino Linotype",serif;
+  color:#202020;
+}
+.light {
+  color:#888888;
+}
+.sage {
+    font-family:Lucidatypewriter,Courier,monospace; 
+    text-align: left;
+    border: 2px dashed #D1C7AC;
+    width: 70%;
+    padding: 4%;
+    margin: 5% auto 5% auto;
+}
+.tip {
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    font-style:italic; 
+    text-align: right;
+    font-size:90%;}
+em.red {color:red;
+    font-style:normal;}
+em.ita {font-style:italic;}
+em.code {font-style:normal;
+    font-family:Lucidatypewriter,Courier,monospace;}
+li {font-size:100%;
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    color:#202020;
+    line-height:120%;}
+li.mult 
+{ 
+    border-bottom: 1px solid #404040;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+li.problems 
+{
+    font-size:100%;
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    line-height:100%;
+}
+li.portfolio 
+{
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    color:red;
+}
+.tiled li
+{
+    display: inline;
+    float: center;
+}
+a.tile
+{
+    display: block;
+    padding: auto;
+    margins: 0% auto 0% auto;
+}
+h1 
+{
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    text-align:center;}
+h2 {font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    color: #8b4513;
+    text-align:center;
+    margin: 5% auto 5% auto;
+    border: 2px solid #D1C7AC;
+    padding: 5%;}
+h3 {font-size:90%;
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    text-align:center;
+    color: #8b4513;
+    margin: 2% auto 2% auto;
+    border-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #D1C7AC;
+    padding: 1%;
+    width: 50%;}
+h3.old {font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    color: #8b4513;
+    text-align:center;
+    margin: 5% auto 5% auto;
+    border: 2px solid #D1C7AC;
+    padding: 3%;
+    width: 70%;}
+h4 {
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    text-align:center;
+    color: #8b4513;
+    margin: 2% auto 2% auto;
+    border-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #D1C7AC;
+    padding: 1%;
+    width: 50%;}
+h5 {
+    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+}
+h6 {font-family:Georgia,Garamond,"Palatino Linotype",serif;}
+.left-space {margin-left: 15%;}
+.tab {padding-left: 5%;}
+pre {line-height: normal;}
+code {line-height: normal;}
+
+table {
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: text-top;
+    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+}
+thead {
+    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    border-bottom: solid #D1C7AC 1px;
+}
+tbody {
+    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    border-bottom: solid #D1C7AC 1px;
+}
+th {
+    text-align: center;
+    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    color: #8b4513;
+    padding-bottom: 6px
+}
+td {
+    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    padding: 6px;
+}
+tr.odd {
+    background-color: #e8e8e8
+}
+tr.even {
+    background-color: #f8f8f8
+}
+.lining-nums {
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
+.oldstyle-nums 
+{
+    -moz-font-feature-settings:"lnum=0";
+    -ms-font-feature-settings:"lnum" 0;
+    -o-font-feature-settings:"lnum" 0;
+    -webkit-font-feature-settings:"lnum" 0;
+    font-feature-settings:"lnum" 0;
+
+}
+.opentype-off {
+    -moz-font-feature-settings:"liga=0, dlig=0";
+    -ms-font-feature-settings:"liga" 0, "dlig" 0;
+    -o-font-feature-settings:"liga" 0, "dlig" 0;
+    -webkit-font-feature-settings:"liga" 0, "dlig" 0;
+    font-feature-settings:"liga" 0, "dlig" 0;
+}
+.opentype-on {
+    -moz-font-feature-settings:"liga=1, dlig=1";
+    -ms-font-feature-settings:"liga" 1, "dlig" 1;
+    -o-font-feature-settings:"liga" 1, "dlig" 1;
+    -webkit-font-feature-settings:"liga" 1, "dlig" 1;
+    font-feature-settings:"liga" 1, "dlig" 1;
