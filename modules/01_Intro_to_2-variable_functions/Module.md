@@ -72,3 +72,5 @@ There's no real reason our functions or variables need to have single-letter nam
 In the printing example, it's easy to see that adding a page to our document increases the bill by $0.04c$ dollars, where $c$ is the number of copies as before. In other words, changing $p$ (the number of pages) has an effect that depends on the value of $c$. The name of this phenomenon is "nonlinearity". In the expressions given above, the term $pc$ is the term that introduces it. A term is *linear* if it has the form "constant-times-variable", and a function (for us) is *linear* if it is a sum of constant terms and linear terms.
 
 ### Modeling with linear functions
+
+Some more text goes here.

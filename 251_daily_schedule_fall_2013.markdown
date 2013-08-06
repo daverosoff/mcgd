@@ -11,7 +11,7 @@ more specific notes from the days you missed.
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
                                                                   
-  02            Mon 9 Sept       2-variable functions; vectors as displacements
+  [02][m02]     Mon 9 Sept       2-variable functions; vectors as displacements
       
   03            Tue 10 Sept      Vectors in general; linear functions
                                                                        
@@ -111,3 +111,4 @@ more specific notes from the days you missed.
 ------------------------------------------------------------------------------------
 
 [m01]: modules/01_Intro_to_2-variable_functions/Module.html
+[m02]: modules/02_More_functions_and_vectors/Module.html
