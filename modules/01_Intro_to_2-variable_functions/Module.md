@@ -1,5 +1,5 @@
 % Module 01:
-  Intro to 2-variable functions
+  Geometry of $\mathbf{R}^3$ and 2-variable functions
 % Dr. Dave Rosoff
 % Fall 2013
 
