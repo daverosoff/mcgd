@@ -1,4 +1,9 @@
-% Module 01: Intro to 2-variable functions
+% Module 01:
+  Intro to 2-variable functions
+% Dr. Dave Rosoff
+% Fall 2013
+
+Welcome to the first online module for Calculus 3. These modules should be read, along with any other assigned readings or videos, prior to attending class. They are carefully designed to fit in with our class discussions, workshop activities, and WeBWorK.
 
 ### Our Context: $\mathbf{R}^3$
 

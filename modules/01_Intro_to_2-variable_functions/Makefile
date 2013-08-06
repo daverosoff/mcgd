@@ -1,5 +1,5 @@
-src = LectureNotes.md
-target = LectureNotes.html
+src = Module.md
+target = Module.html
 template = LecNotes
 css = https://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
 browser = maxthon
