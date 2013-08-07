@@ -7,13 +7,12 @@
   <meta name="author" content="Dr. Dave Rosoff" />
   <title>Module 01: Geometry of R3 and 2-variable functions</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="https://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css" type="text/css" />
+  <link rel="stylesheet" href="http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css" type="text/css" />
 </head>
 <body>
 <div id="header">
 <h2 class="title">Module 01: Geometry of <span class="math"><strong>R</strong><sup>3</sup></span> and 2-variable functions</h2>
-<h3 class="author">Dr. Dave Rosoff</h3>
-<h3 class="date">Fall 2013</h3>
+<h3 class="author">Dr. Dave Rosoff — Fall 2013</h3>
 </div>
 <p>Welcome to the first online module for Calculus 3. These modules should be read, along with any other assigned readings or videos, prior to attending class. They are carefully designed to fit in with our class discussions, workshop activities, and WeBWorK.</p>
 <h3 id="our-context-mathbfr3">Our Context: <span class="math"><strong>R</strong><sup>3</sup></span></h3>
@@ -54,9 +53,16 @@
 <blockquote>
 <p><em>Let <span class="math"><em>c</em></span> be the number of copies, and let <span class="math"><em>p</em></span> be the number of pages in each copy. Then the amount <span class="math"><em>b</em></span> of the bill is given by <br /><span class="math"><em>b</em> = <em>f</em>(<em>c</em>, <em>p</em>) = 10 + (4<em>p</em><em>c</em> + 75<em>c</em>) / 100. </span><br /></em></p>
 </blockquote>
-<p>There’s no real reason our functions or variables need to have single-letter names. When we work with the R programming language, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.</p>
+<p>There’s no real reason our functions or variables need to have single-letter names. When we work with the R or Sage mathematical programming systems, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.</p>
 <p>In the printing example, it’s easy to see that adding a page to our document increases the bill by <span class="math">0. 04<em>c</em></span> dollars, where <span class="math"><em>c</em></span> is the number of copies as before. In other words, changing <span class="math"><em>p</em></span> (the number of pages) has an effect that depends on the value of <span class="math"><em>c</em></span>. The name of this phenomenon is “nonlinearity”. In the expressions given above, the term <span class="math"><em>p</em><em>c</em></span> is the term that introduces it. A term is <em>linear</em> if it has the form “constant-times-variable”, and a function (for us) is <em>linear</em> if it is a sum of constant terms and linear terms.</p>
 <h3 id="modeling-with-linear-functions">Modeling with linear functions</h3>
-<p>Some more text goes here.</p>
+<p>The following slogan is a way to recognize and characterize linear phenomena. Mathematicians and math users love linear phenomena, because they are the easiest phenomena to understand.</p>
+<p><strong>Slogan</strong>. A phenomenon is linear with respect to some input if changing the input always produces the same change in the output.</p>
+<p>In the previous section, we observed that the printer’s bill was not linear with respect to the number of pages. This is because adding a fixed number of pages doesn’t always produces the same change in the bill. It depends on the number of copies.</p>
+<p><strong>Exercise</strong>. Decide whether the printer’s bill is linear with respect to the number of <em>copies</em>. It’s OK to mimic the reasoning from the previous part.</p>
+<p>Here is a modeling situation that is linear in both of its inputs. A trip to the clothing store might result in the purchase of <span class="math"><em>s</em></span> shirts and <span class="math"><em>t</em></span> pairs of trousers. Let’s assume all the shirts have the same price, and all the trousers share a (possibly different) price. Travel to and from the store costs the same no matter what we buy, so that there is a fixed cost in this situation as well.</p>
+<pre><code>cost = trip_cost + s*(shirt_price) + t*(trou_price)</code></pre>
+<p><strong>Exercise</strong>. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?</p>
+<p><a href = "../../251_daily_schedule_fall_2013.html">Back</a></p>
 </body>
 </html>
