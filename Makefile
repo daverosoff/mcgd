@@ -7,8 +7,8 @@ browser = maxthon
 all: compile
 
 compile: 
-	pandoc -s --template=$(template) --css=$(css) \
-	-o $(target) -S $(src)
+		pandoc -s --template=$(template) --css=$(css) \
+		-o $(target) -S $(src)
 
 preview: compile
-	$(browser) $(target)
+		$(browser) $(target)
