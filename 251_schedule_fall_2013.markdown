@@ -76,8 +76,6 @@ TBA                   TBA                       TBA                       TBA
 
 Table: Schedule of topics, through the end of the semester.
 
-</div>
-
 Divergence of         Divergence thm;           Curl of vector fields;    Stokes's Thm
 fields; idea of       curl of a vector field    idea of Stokes's Thm  
 divergence thm      
