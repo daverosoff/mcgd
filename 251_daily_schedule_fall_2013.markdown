@@ -110,5 +110,5 @@ more specific notes from the days you missed.
   48            Fri 6 Dec        Review for final exam
 ------------------------------------------------------------------------------------
 
-[m01]: modules/01_Intro_to_2-variable_functions/Module.html
-[m02]: modules/02_More_functions_and_vectors/Module.html
+[m01]: modules/01/Module.html
+[m02]: modules/02/Module.html
