@@ -36,6 +36,21 @@ For each fixed hue, the points that are colored with it form a curve (or several
 
 ### Cross-sectional functions
 
-If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output.
+If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output. **MORE IS NEEDED**
+
+### Surfaces and graphs
+
+Returning to the abstract geometry of $\mathbf{R}^3$, it is time to consider the meaning of equations among the three variables $x$, $y$, and $z$.
+
+It is important to remember that most equations are neither "true" or "false" without further context. For example, the equation
+$$ a^2 + b^2 = c^2 $$
+might be either, for certain $a$, $b$, or $c$, either true or false. Because of this, it lacks a truth-value without such context. The equations we graph in calculus are similar. It is just this vagueness that allows us to use equations to describe curves in the plane.
+
+> An equation involving $x$ and $y$, but no other variables, describes a 
+> curve in the plane. A point of the plane is said to lie on this curve when 
+> its coordinates, when substituted in the curve's equation, yield truth. In 
+> this case, the pair $(x,y)$ is said to *be a solution* of the equation.
+
+
 
 [Module 01]: ../01/Module.html

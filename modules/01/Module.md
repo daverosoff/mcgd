@@ -63,9 +63,9 @@ Functions are important to mathematicians for a lot of reasons, but they are imp
 
 This may look strange, if you are used to reading math books. A mathematician might be more accustomed to writing something like this:
 
-> *Let $c$ be the number of copies, and let $p$ be the number of pages in
+> Let $c$ be the number of copies, and let $p$ be the number of pages in
 > each copy. Then the amount $b$&nbsp;of the bill is given by 
-> $$b = f(c,p) = 10 + (4pc + 75c)/100.$$*
+> $$b = f(c,p) = 10 + \frac{4pc + 75c}{100}.$$
 
 There's no real reason our functions or variables need to have single-letter names. When we work with the R or Sage mathematical programming systems, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.
 
