@@ -16,7 +16,7 @@ more specific notes from the days you missed.
   03            Tue 10 Sept      Vectors in general; linear functions
                                                                        
   04            Wed 11 Sept      Linear functions; the dot product. <br />
-                <br />           *Quiz 1* on Modules 01--02.
+                <br />           Quiz 1 on Modules 01--02.
                 *Quiz 1*         
                                                                        
   05            Fri 13 Sept      The dot product; the cross product
