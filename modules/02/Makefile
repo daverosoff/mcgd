@@ -1,7 +1,8 @@
 src = Module.md
 target = Module.html
 template = LecNotes
-css = http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
+#css = http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
+css = ../../css/master.css
 browser = maxthon
 up = ../../251_daily_schedule_fall_2013.html
 back = ../01/Module.html
