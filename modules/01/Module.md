@@ -47,6 +47,11 @@ By analogy with the situation in the plane, we define the $z$-axis of $\mathbf{R
 
 As we progress through the semester, most of the action will happen in this space $\mathbf{R}^3$. For now, we will spend a couple of weeks getting better acquainted with it, and learning some mentally convenient ways to talk about its points and its subspaces.
 
+### Distances between points
+
+This is the subject of [Workshop 01], which we will complete Friday in class.
+<!--Workshop 01 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
+
 ### 2-variable functions
 
 I have some bad news for you: you may be very misinformed, based on my previous experience, about what a *function* is. It is the most important concept in mathematics, so I tend to be very picky when talking about it, at least until I am sure everyone is on board.
