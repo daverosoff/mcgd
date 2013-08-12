@@ -46,6 +46,8 @@ p
 blockquote
 {
     font-style:italic;
+    border: 2px solid #D1C7AC;
+    padding-left: 2%;
 }
 em.red {color:red;
     font-style:normal;}
