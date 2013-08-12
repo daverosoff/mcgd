@@ -7,7 +7,7 @@ more specific notes from the days you missed.
 
 
 ------------------------------------------------------------------------------------
- Module            Date          Topics
+ Module            Date          Topics <!--links are workshops-->
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
                                                                   
