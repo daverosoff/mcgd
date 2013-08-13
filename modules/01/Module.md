@@ -47,6 +47,11 @@ By analogy with the situation in the plane, we define the $z$-axis of $\mathbf{R
 
 As we progress through the semester, most of the action will happen in this space $\mathbf{R}^3$. For now, we will spend a couple of weeks getting better acquainted with it, and learning some mentally convenient ways to talk about its points and its subspaces.
 
+### Distances between points
+
+This is the subject of [Workshop 01], which we will complete Friday in class.
+<!--Workshop 01 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
+
 ### 2-variable functions
 
 I have some bad news for you: you may be very misinformed, based on my previous experience, about what a *function* is. It is the most important concept in mathematics, so I tend to be very picky when talking about it, at least until I am sure everyone is on board.
@@ -63,14 +68,26 @@ Functions are important to mathematicians for a lot of reasons, but they are imp
 
 This may look strange, if you are used to reading math books. A mathematician might be more accustomed to writing something like this:
 
-> *Let $c$ be the number of copies, and let $p$ be the number of pages in
+> Let $c$ be the number of copies, and let $p$ be the number of pages in
 > each copy. Then the amount $b$&nbsp;of the bill is given by 
-> $$b = f(c,p) = 10 + (4pc + 75c)/100.$$*
+> $$b = f(c,p) = 10 + \frac{4pc + 75c}{100}.$$
 
-There's no real reason our functions or variables need to have single-letter names. When we work with the R programming language, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.
+There's no real reason our functions or variables need to have single-letter names. When we work with the R or Sage mathematical programming systems, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.
 
 In the printing example, it's easy to see that adding a page to our document increases the bill by $0.04c$ dollars, where $c$ is the number of copies as before. In other words, changing $p$ (the number of pages) has an effect that depends on the value of $c$. The name of this phenomenon is "nonlinearity". In the expressions given above, the term $pc$ is the term that introduces it. A term is *linear* if it has the form "constant-times-variable", and a function (for us) is *linear* if it is a sum of constant terms and linear terms.
 
 ### Modeling with linear functions
 
-Some more text goes here.
+The following slogan is a way to recognize and characterize linear phenomena. Mathematicians and math users love linear phenomena, because they are the easiest phenomena to understand. 
+
+**Slogan**. A phenomenon is linear with respect to some input if changing the input always produces the same change in the output.
+
+In the previous section, we observed that the printer's bill was not linear with respect to the number of pages. This is because adding a fixed number of pages doesn't always produces the same change in the bill. It depends on the number of copies.
+
+**Exercise**. Decide whether the printer's bill is linear with respect to the number of *copies*. It's OK to mimic the reasoning from the previous part.
+
+Here is a modeling situation that is linear in both of its inputs. A trip to the clothing store might result in the purchase of $s$ shirts and $t$ pairs of trousers. Let's assume all the shirts have the same price, and all the trousers share a (possibly different) price. Travel to and from the store costs the same no matter what we buy, so that there is a fixed cost in this situation as well. 
+
+    cost = trip_cost + s*(shirt_price) + t*(trou_price)
+
+**Exercise**. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?

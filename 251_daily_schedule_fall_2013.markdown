@@ -7,7 +7,7 @@ more specific notes from the days you missed.
 
 
 ------------------------------------------------------------------------------------
- Module            Date          Topics
+ Module            Date          Topics <!--links are workshops-->
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
                                                                   
@@ -16,7 +16,7 @@ more specific notes from the days you missed.
   03            Tue 10 Sept      Vectors in general; linear functions
                                                                        
   04            Wed 11 Sept      Linear functions; the dot product. <br />
-                <br />           *Quiz 1* on Modules 01--02.
+                <br />           Quiz 1 on Modules 01--02.
                 *Quiz 1*         
                                                                        
   05            Fri 13 Sept      The dot product; the cross product
@@ -110,5 +110,5 @@ more specific notes from the days you missed.
   48            Fri 6 Dec        Review for final exam
 ------------------------------------------------------------------------------------
 
-[m01]: modules/01_Intro_to_2-variable_functions/Module.html
-[m02]: modules/02_More_functions_and_vectors/Module.html
+[m01]: modules/01/Module.html
+[m02]: modules/02/Module.html
