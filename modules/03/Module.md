@@ -3,6 +3,12 @@
 % Dr. Dave Rosoff
 % Fall 2013
 
+Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, spheres, and cylinders. We conclude that discussion with the topic of slicing graphs.
+
+### Slicing graphs
+
+
+
 ### Displacement numbers
 
 When we are considering motion that is confined to a single line, one number suffices to describe a movement---that is, after we have agreed on the units of the length dimension and the origin of the line. Once these are settled, every pair of positions gives rise to a number: the distance between them. Conventionally, the distance between two positions on a line is always a nonnegative number, but it is convenient to use our notion of negativity as well. This leads to the notion of displacement, which we might also call "directed distance" or "signed distance". The idea is that we no longer regard the two positions as equivalent. Instead, one is the "initial" and one is the "final" position. We agree, once and for all, that displacements are calculated by subtracting the initial position from the final one:
