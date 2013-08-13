@@ -1,12 +1,13 @@
 src 			= Module.md
 target 			= Module.html
+targetpath		= $(abspath Module.html)
 template 		= LecNotes
 #css 			= http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
-base 			= c:/users/drosoff/documents/courses/M251/modules/02
 css 			= ../../css/master.css
+browserprefix	= file:
 browser 		= maxthon
-browserprefix 	= file://
-up 				= ../../251_daily_schedule_fall_2013.htmlup = ../../251_daily_schedule_fall_2013.html
+browsertarget	= $(browserprefix)$(targetpath:C\:=)
+up 				= ../../251_daily_schedule_fall_2013.html
 next 			= ../02/Module.html
 
 all: compile
@@ -20,4 +21,4 @@ compile:
 		-o $(target) -S $(src) 
 
 preview: compile
-		$(browser) $(browserprefix)$(base)/$(target)
+		$(browser) $(browsertarget)
