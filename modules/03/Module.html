@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Dr. Dave Rosoff" />
+  <title>Module 03: Slicing graphs; vectors as displacements</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 03: Slicing graphs; vectors as displacements</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../251_daily_schedule_fall_2013.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Dr. Dave Rosoff — Fall 2013</h3>
+</div>
+<h3 id="displacement-numbers">Displacement numbers</h3>
+<p>When we are considering motion that is confined to a single line, one number suffices to describe a movement—that is, after we have agreed on the units of the length dimension and the origin of the line. Once these are settled, every pair of positions gives rise to a number: the distance between them. Conventionally, the distance between two positions on a line is always a nonnegative number, but it is convenient to use our notion of negativity as well. This leads to the notion of displacement, which we might also call “directed distance” or “signed distance”. The idea is that we no longer regard the two positions as equivalent. Instead, one is the “initial” and one is the “final” position. We agree, once and for all, that displacements are calculated by subtracting the initial position from the final one:</p>
+<pre><code>displacement = pos_final - pos_initial</code></pre>
+<p>With these ideas firmly in place, it is not too hard to generalize them to the case of motion in a plane. We will assume that the origin and suitable coordinate axes and units are already agreed upon.</p>
+<p>Notice that displacement numbers don’t depend on a particular starting (or ending) position. The <span class="math">\(3\)</span> you get by moving from <span class="math">\(2\)</span> to <span class="math">\(5\)</span> is identical to the one you get moving from <span class="math">\(-166\)</span> to <span class="math">\(-163\)</span>.</p>
+<p>But what distinguishes the <em>position</em> <span class="math">\(3\)</span> from the <em>displacement</em> <span class="math">\(3\)</span>?</p>
+<h3 id="displacement-vectors">Displacement vectors</h3>
+<p>The framework of vectors arises from the desire to be able to compute displacements by subtracting points in the plane, just like in the one- dimensional case described above.</p>
+<p>In the one-dimensional case, positions and displacements seem like the same kind of object. Only context allows us to really determine whether a particular <span class="math">\(3\)</span> is a position or a displacement between positions. Keep this in mind as you continue reading.</p>
+<p>Here is a plot of a few paths connecting the points <span class="math">\((1,1)\)</span> and <span class="math">\((2,3)\)</span> in the plane.</p>
+<p><code>{r} plot(c(1,1),c(3,3),xlab=&quot;x&quot;,ylab=&quot;y&quot;) arrows(1,1,2,2, angle=45, col=&quot;red&quot;) arrows(2,2,2,3, angle=45, col=&quot;red&quot;) arrows(1,1,2,3, angle=45,col=&quot;blue&quot;)</code></p>
+<p>A moment’s reflection shows that, no matter how you walk from <span class="math">\((1,1)\)</span> to <span class="math">\((2,3)\)</span>, your net change in the <span class="math">\(x\)</span>-direction is <span class="math">\(1\)</span>. In the <span class="math">\(y\)</span>-direction, it is evidently <span class="math">\(2\)</span>. If we start out at <span class="math">\((2,3)\)</span> and end at <span class="math">\((1,1)\)</span>, these changes become negative.</p>
+<p>The idea of a displacement <em>vector</em> is to bind these two separate numbers, which we might call <span class="math">\(\Delta x\)</span> and <span class="math">\(\Delta y\)</span>, together into one mathematical object. We say the displacement from initial position <span class="math">\((1,1)\)</span> to final position <span class="math">\((2,3)\)</span> is <span class="math">\(\langle 1, 2 \rangle\)</span>.</p>
+<blockquote>
+<p>Just like a point in the plane, a displacement vector is specified as a pair of numbers. We distinguish between the two by using round brackets for points <span class="math">\((3,-2)\)</span> and angle brackets for vectors <span class="math">\(\langle 3, -2 \rangle\)</span>. If we don’t want to refer to the coordinates separately, we give the vector a letter name and use an arrow decoration, like <span class="math">\(\vec{v}\)</span>.</p>
+</blockquote>
+<p>For any particular initial and final point, there’s only one displacement between them. But there are many paths between them, which we can visualize as chains of vectors. For example, in the figure above, the points <span class="math">\((1,1)\)</span> and <span class="math">\((2,3)\)</span> are linked via the intermediate point <span class="math">\((2,2)\)</span>.</p>
+<blockquote>
+<p>What are the displacements incurred with initial point <span class="math">\((1,1)\)</span> and final point <span class="math">\((2,2)\)</span>? With initial point <span class="math">\((2,2)\)</span> and final point <span class="math">\((2,3)\)</span>?</p>
+</blockquote>
+<p>Notice that these displacements add appropriately! Their “sum”, adding coordinate-wise, is the overall displacement incurred in moving from <span class="math">\((1,1)\)</span> to <span class="math">\((2,3)\)</span>. For this reason, we define the <em>sum</em> of two vectors to be the vector whose entries are the sums of the corresponding entries:</p>
+<p><span class="math">\[ \langle x_1, y_1 \rangle + \langle x_2, y_2 \rangle =
+     \langle x_1 + x_2, y_1 + y_2 \rangle \]</span></p>
+<p>Observe that the <em>zero vector</em> <span class="math">\(\langle 0, 0 \rangle\)</span> behaves appropriately under this conception. If adding vectors corresponds to accumulating displacements, adding 0, 0 should be an operation with no effect—and indeed, it is.</p>
+<p>What about subtracting vectors? Well, if we make sense of the <em>negative</em> of a vector we will be free to regard <span class="math">\(\vec{v} - \vec{w}\)</span> as an abbreviation for <span class="math">\(\vec{v} + (-\vec{w})\)</span>. A negative displacement has a clear physical meaning: the same distance, but the opposite direction. Therefore negation and subtraction are accomplished coordinate-wise, just like addition.</p>
+<h3 id="parallel-vectors-a-simple-test">Parallel vectors: a simple test</h3>
+<p>Much of the time we are concerned just with the <em>direction</em> of a motion, and not as much with its distance (“magnitude”). We’ll need a test to see whether two vectors, described in coordinates, point in the same direction in the plane. This is the subject of [Workshop 02][Workshop 02]. For now, let us discuss the subtleties of the concept of “parallel” in our new context of vectors.</p>
+<p>Since lines in the plane are not directed, we don’t need a word to describe this situation in ordinary geometry:</p>
+<p><code>{r} plot(c(1,1),c(3,3),xlab=&quot;x&quot;,ylab=&quot;y&quot;) arrows(1,1,2,2, angle=45, col=&quot;red&quot;) arrows(3,3,2,2, angle=45, col=&quot;blue&quot;)</code></p>
+<p>Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term “anti-parallel” for this situation.</p>
+<h3 id="linear-relations-among-vectors">Linear relations among vectors</h3>
+<p>Suppose that <span class="math">\(\vec{u}\)</span>, <span class="math">\(\vec{v}\)</span>, <span class="math">\(\vec{w}\)</span>, and <span class="math">\(\vec{z}\)</span> are vectors in the plane. What kind of equations involving them might we consider? We haven’t defined most familiar algebraic operations, like multiplication, logarithms, exponents… seems like all we can build are linear equations, like this one:</p>
+<p><span class="math">\[ 2 \vec{u} + 5 \vec{v} = -3 \vec{w} + \vec{z} \]</span></p>
+<p>Regarded as an equation of displacements, it is easy to interpret: the equation states that the overall displacement incurred by following <span class="math">\(\vec{u}\)</span> twice and <span class="math">\(\vec{v}\)</span> five times is equal to that incurred by following <span class="math">\(\vec{w}\)</span> backwards three times and <span class="math">\(\vec{z}\)</span> once (forward).</p>
+<p>Any such linear equation can be converted, by the standard rules of algebra, into an equation with the zero vector on the right-hand side. Such an equation states that a particular combination of displacements cancels out exactly, that the overall <span class="math">\(x\)</span>- and <span class="math">\(y\)</span>-displacements are both <span class="math">\(0\)</span>.</p>
+<!--document ends; links past here-->
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../251_daily_schedule_fall_2013.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
