@@ -49,8 +49,8 @@ As we progress through the semester, most of the action will happen in this spac
 
 ### Distances between points
 
-This is the subject of [Workshop 01], which we will complete Friday in class.
-<!--Workshop 01 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
+This is the subject of [Workshop 00], which we will complete Monday in class.
+<!--Workshop 00 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
 
 ### 2-variable functions
 
