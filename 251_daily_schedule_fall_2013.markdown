@@ -3,7 +3,7 @@
 Here, you can find a rough guide to what was discussed in class on any
 particular day. If you missed class, you can also find workshop handouts
 and other materials here. You should also find a classmate who will share
-more specific notes from the days you missed.
+more specific notes from the days you were unable to attend..
 
 
 ------------------------------------------------------------------------------------
