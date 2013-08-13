@@ -1,11 +1,11 @@
 @font-face 
 {
     font-family: 'CallunaRegular';
-    src: url('webfonts/CallunaRegular-webfont.eot');
-    src: url('webfonts/CallunaRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/CallunaRegular-webfont.woff') format('woff'),
-         url('webfonts/CallunaRegular-webfont.ttf') format('truetype'),
-         url('webfonts/CallunaRegular-webfont.svg') format('svg');
+    src: url('webfonts/Calluna-Regular-webfont.eot');
+    src: url('webfonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('webfonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('webfonts/Calluna-Regular-webfont.svg') format('svg');
 }
 @font-face 
 {
@@ -35,7 +35,7 @@ a:visited {text-decoration:none;}
 a:active {text-decoration:none;}
 p 
 {
-  font-size:128%;
+  font-size:138%;
   font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
   color:#202020;
   line-height: 140%;
@@ -262,7 +262,7 @@ li.nav
 }
 a:link.nav,a:visited.nav 
 {
-    font-family:'CallunaSansRegular', Helvetica, Optima, sans;
+    font-family:'MuseoSans500', Helvetica, Optima, sans;
     display:block;
     font-weight:normal;
     color:#FFFFFF;
