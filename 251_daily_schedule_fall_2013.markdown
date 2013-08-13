@@ -11,16 +11,17 @@ more specific notes from the days you were unable to attend.
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
                                                                   
-  [02][m02]     Mon 9 Sept       2-variable functions; spheres and cylinders;
+  [02][m02]     Mon 9 Sept       2-variable functions; spheres and cylinders
+                                 <br />
                                  Workshop 00<!--add link-->.
       
   03            Tue 10 Sept      Slicing graphs; vectors as displacements
                                  
   04            Wed 11 Sept      Vectors in general; linear functions
-                <br />           Quiz 1 on Modules 01--02.                 
-                *Quiz 1*                                                               
+                                 <br />                 
+                                 Quiz 1 on Modules 01--02.                                                      
 
-  05            Fri 13 Sept      Linear functions; the dot product. <br />
+  05            Fri 13 Sept      Linear functions; the dot product.
 
   06            Mon 16 Sept      The dot product; the cross product
                                                                        
