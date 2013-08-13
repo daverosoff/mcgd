@@ -1,7 +1,29 @@
 @font-face 
 {
-    font-family: MgOpenCanonica;
-    src: url{'http://www.fonts2u.com/download/mgopen-canonica.font-face'};
+    font-family: 'CallunaRegular';
+    src: url('webfonts/Calluna-Regular-webfont.eot');
+    src: url('webfonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('webfonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('webfonts/Calluna-Regular-webfont.svg') format('svg');
+}
+@font-face 
+{
+    font-family: 'CallunaSansRegular';
+    src: url('webfonts/CallunaSansRegular-webfont.eot');
+    src: url('webfonts/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/CallunaSansRegular-webfont.woff') format('woff'),
+         url('webfonts/CallunaSansRegular-webfont.ttf') format('truetype'),
+         url('webfonts/CallunaSansRegular-webfont.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'MuseoSans500';
+    src: url('webfonts/MuseoSans_500-webfont.eot');
+    src: url('webfonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('webfonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('webfonts/MuseoSans_500-webfont.svg') format('svg');
 }
 body 
 {
@@ -13,8 +35,8 @@ a:visited {text-decoration:none;}
 a:active {text-decoration:none;}
 p 
 {
-  font-size:128%;
-  font-family:MgOpenCanonica,Georgia,Garamond,"Palatino Linotype",serif;
+  font-size:138%;
+  font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
   color:#202020;
   line-height: 140%;
   -moz-font-feature-settings:"liga=1, dlig=0";
@@ -45,14 +67,15 @@ p
 }
 .tip 
 {
-    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
     font-style:italic; 
     text-align: right;
     font-size:90%;
 }
 blockquote
 {
-    font-style:italic;
+    font-family: 'CallunaSansRegular';
+    font-style: italic;
     border: 2px solid #e8e8e8;
     padding-left: 2%;
     padding-right: 2%;
@@ -60,7 +83,7 @@ blockquote
 li 
 {
     font-size: 114%;
-    font-family:Georgia,Garamond,"Palatino Linotype",serif;
+    font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
     color:#202020;
     line-height:120%;
 }
@@ -94,11 +117,11 @@ a.tile
 }
 h1 
 {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
     text-align:center;
 }
 h2 {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
     color: #8b4513;
     text-align:center;
     margin: 5% auto 5% auto;
@@ -107,7 +130,7 @@ h2 {
     padding: 5%;}
 h3 {
     font-size:100%;
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
     text-align:center;
     color: #8b4513;
     margin: 2% auto 2% auto;
@@ -121,7 +144,7 @@ h3 {
     width: 70%;
 }
 h3.old {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
     color: #8b4513;
     text-align:center;
     margin: 5% auto 5% auto;
@@ -131,7 +154,7 @@ h3.old {
 }
 h4 
 {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
     text-align:center;
     color: #8b4513;
     margin: 2% auto 2% auto;
@@ -146,11 +169,11 @@ h4
     width: 50%;}
 h5
 {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
 }
 h6 
 {
-    font-family:"MgOpen Moderna", Optima, Helvetica, sans;
+    font-family:'MuseoSans500', Optima, Helvetica, sans;
 }
 .left-space {margin-left: 15%;}
 .tab {padding-left: 5%;}
@@ -167,24 +190,24 @@ table {
     margin-left: auto;
     margin-right: auto;
     vertical-align: text-top;
-    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
 }
 thead {
-    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
     border-bottom: solid #D1C7AC 1px;
 }
 tbody {
-    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
     border-bottom: solid #D1C7AC 1px;
 }
 th {
     text-align: center;
-    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
     color: #8b4513;
     padding-bottom: 6px
 }
 td {
-    font-family: Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
     padding: 6px;
 }
 tr.odd {
@@ -239,7 +262,7 @@ li.nav
 }
 a:link.nav,a:visited.nav 
 {
-    font-family:"MgOpen Moderna", Helvetica, Optima, sans;
+    font-family:'MuseoSans500', Helvetica, Optima, sans;
     display:block;
     font-weight:normal;
     color:#FFFFFF;
