@@ -190,24 +190,24 @@ table {
     margin-left: auto;
     margin-right: auto;
     vertical-align: text-top;
-    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
 }
 thead {
-    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
     border-bottom: solid #D1C7AC 1px;
 }
 tbody {
-    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
     border-bottom: solid #D1C7AC 1px;
 }
 th {
     text-align: center;
-    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'MuseoSans500', Georgia, Garamond, "Palatino Linotype", serif;
     color: #8b4513;
     padding-bottom: 6px
 }
 td {
-    font-family: 'CallunaRegular', Georgia, Garamond, "Palatino Linotype", serif;
+    font-family: 'CallunaSansRegular', Georgia, Garamond, "Palatino Linotype", serif;
     padding: 6px;
 }
 tr.odd {
