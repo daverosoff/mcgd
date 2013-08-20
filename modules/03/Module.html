@@ -7,6 +7,25 @@
   <meta name="author" content="Dr. Dave Rosoff" />
   <title>Module 03: Slicing graphs; vectors as displacements</title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
   <link rel="stylesheet" href="../../css/master.css" type="text/css" />
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
@@ -33,7 +52,13 @@
 <p>The framework of vectors arises from the desire to be able to compute displacements by subtracting points in the plane, just like in the one- dimensional case described above.</p>
 <p>In the one-dimensional case, positions and displacements seem like the same kind of object. Only context allows us to really determine whether a particular <span class="math">\(3\)</span> is a position or a displacement between positions. Keep this in mind as you continue reading.</p>
 <p>Here is a plot of a few paths connecting the points <span class="math">\((1,1)\)</span> and <span class="math">\((2,3)\)</span> in the plane.</p>
-<p><code>{r} plot(c(1,1),c(3,3),xlab=&quot;x&quot;,ylab=&quot;y&quot;) arrows(1,1,2,2, angle=45, col=&quot;red&quot;) arrows(2,2,2,3, angle=45, col=&quot;red&quot;) arrows(1,1,2,3, angle=45,col=&quot;blue&quot;)</code></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="dt">xlab =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y&quot;</span>)
+<span class="kw">arrows</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)
+<span class="kw">arrows</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)
+<span class="kw">arrows</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</code></pre>
+<div class="figure">
+<img src="figure/first_plot.png" alt="plot of chunk first_plot" /><p class="caption">plot of chunk first_plot</p>
+</div>
 <p>A moment’s reflection shows that, no matter how you walk from <span class="math">\((1,1)\)</span> to <span class="math">\((2,3)\)</span>, your net change in the <span class="math">\(x\)</span>-direction is <span class="math">\(1\)</span>. In the <span class="math">\(y\)</span>-direction, it is evidently <span class="math">\(2\)</span>. If we start out at <span class="math">\((2,3)\)</span> and end at <span class="math">\((1,1)\)</span>, these changes become negative.</p>
 <p>The idea of a displacement <em>vector</em> is to bind these two separate numbers, which we might call <span class="math">\(\Delta x\)</span> and <span class="math">\(\Delta y\)</span>, together into one mathematical object. We say the displacement from initial position <span class="math">\((1,1)\)</span> to final position <span class="math">\((2,3)\)</span> is <span class="math">\(\langle 1, 2 \rangle\)</span>.</p>
 <blockquote>
@@ -51,7 +76,12 @@
 <h3 id="parallel-vectors-a-simple-test">Parallel vectors: a simple test</h3>
 <p>Much of the time we are concerned just with the <em>direction</em> of a motion, and not as much with its distance (“magnitude”). We’ll need a test to see whether two vectors, described in coordinates, point in the same direction in the plane. This is the subject of [Workshop 02][Workshop 02]. For now, let us discuss the subtleties of the concept of “parallel” in our new context of vectors.</p>
 <p>Since lines in the plane are not directed, we don’t need a word to describe this situation in ordinary geometry:</p>
-<p><code>{r} plot(c(1,1),c(3,3),xlab=&quot;x&quot;,ylab=&quot;y&quot;) arrows(1,1,2,2, angle=45, col=&quot;red&quot;) arrows(3,3,2,2, angle=45, col=&quot;blue&quot;)</code></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="dt">xlab =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y&quot;</span>)
+<span class="kw">arrows</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)
+<span class="kw">arrows</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</code></pre>
+<div class="figure">
+<img src="figure/second_plot.png" alt="plot of chunk second_plot" /><p class="caption">plot of chunk second_plot</p>
+</div>
 <p>Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term “anti-parallel” for this situation.</p>
 <h3 id="linear-relations-among-vectors">Linear relations among vectors</h3>
 <p>Suppose that <span class="math">\(\vec{u}\)</span>, <span class="math">\(\vec{v}\)</span>, <span class="math">\(\vec{w}\)</span>, and <span class="math">\(\vec{z}\)</span> are vectors in the plane. What kind of equations involving them might we consider? We haven’t defined most familiar algebraic operations, like multiplication, logarithms, exponents… seems like all we can build are linear equations, like this one:</p>

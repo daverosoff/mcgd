@@ -1,4 +1,5 @@
-src 		= Module.md
+src 		= Module.Rmd
+intermed	= Module.md
 target 		= Module.html
 targetpath	= $(abspath Module.html)
 template 	= LecNotes
@@ -10,16 +11,19 @@ browsertarget	= $(browserprefix)$(targetpath:C:=)
 up 		= ../../251_daily_schedule_fall_2013.html
 back		= ../02/Module.html
 next 		= ../04/Module.html
+rscript		= Rscript.exe
 
 all: compile
 
 compile:
+	$(rscript) -e 'library(knitr); \
+	knit(\"Module.Rmd\")';
 	pandoc -s --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \
 	--variable next=$(next) \
 	--variable up=$(up) \
-	-o $(target) -S $(src) 
+	-o $(target) -S $(intermed) 
 
 preview: compile
 	$(browser) $(browsertarget)

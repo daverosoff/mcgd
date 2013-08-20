@@ -31,16 +31,12 @@ In the one-dimensional case, positions and displacements seem like the same kind
 
 Here is a plot of a few paths connecting the points $(1,1)$ and $(2,3)$ in the plane.
 
-
-```r
-plot(c(1, 3), c(1, 3), xlab = "x", ylab = "y")
-arrows(1, 1, 2, 2, angle = 45, col = "red")
-arrows(2, 2, 2, 3, angle = 45, col = "red")
-arrows(1, 1, 2, 3, angle = 45, col = "blue")
+```{r, first_plot}
+plot(c(1,3),c(1,3),xlab="x",ylab="y")
+arrows(1,1,2,2, angle=45, col="red")
+arrows(2,2,2,3, angle=45, col="red")
+arrows(1,1,2,3, angle=45,col="blue")
 ```
-
-![plot of chunk first_plot](figure/first_plot.png) 
-
 
 A moment's reflection shows that, no matter how you walk from $(1,1)$ to $(2,3)$, your net change in the $x$-direction is $1$. In the $y$-direction, it is evidently $2$. If we start out at $(2,3)$ and end at $(1,1)$, these changes become negative.
 
@@ -67,15 +63,11 @@ Much of the time we are concerned just with the *direction* of a motion, and not
 
 Since lines in the plane are not directed, we don't need a word to describe this situation in ordinary geometry:
 
-
-```r
-plot(c(1, 3), c(1, 3), xlab = "x", ylab = "y")
-arrows(1, 1, 2, 2, angle = 45, col = "red")
-arrows(3, 3, 2, 2, angle = 45, col = "blue")
+```{r, second_plot, fig.align='center'}
+plot(c(1,3),c(1,3),xlab="x",ylab="y")
+arrows(1,1,2,2, angle=45, col="red")
+arrows(3,3,2,2, angle=45, col="blue")
 ```
-
-![plot of chunk second_plot](figure/second_plot.png) 
-
 
 Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term "anti-parallel" for this situation.
 
