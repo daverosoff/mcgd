@@ -15,7 +15,9 @@ When we are considering motion that is confined to a single line, one number suf
 
     displacement = pos_final - pos_initial
 
-With these ideas firmly in place, it is not too hard to generalize them to the case of motion in a plane. We will assume that the origin and suitable coordinate axes and units are already agreed upon.
+$$ \Delta x = x_1 - x_0 $$
+
+With these ideas firmly in place, it is not too hard to generalize them to the case of motion in a plane. This is done in the next section. We will assume that the origin and suitable coordinate axes and units are already agreed upon.
 
 Notice that displacement numbers don't depend on a particular starting (or ending) position. The $3$ you get by moving from $2$ to $5$ is identical to the one you get moving from $-166$ to $-163$.
 
