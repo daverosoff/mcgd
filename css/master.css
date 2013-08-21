@@ -30,9 +30,37 @@ body
   background-color:#f8f8fa; 
   margin: 5% 20% 5% 20%;
 }
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:active {text-decoration:none;}
+a:link 
+{
+    
+    text-decoration:none;
+    color:inherit;
+}
+a:visited 
+{
+    text-decoration:none;
+    color:inherit;
+}
+a:active 
+{
+    text-decoration:none;
+    color:inherit;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+a:before {
+    content: "◊ ";
+    color: #8b4513;
+    font-weight: normal;
+    font-family: concourse-t3;
+    font-weight: bold;
+}
+li.a 
+{
+    color:#8b4513;
+}
 p 
 {
   font-size:138%;
@@ -82,7 +110,7 @@ blockquote
 }
 li 
 {
-    font-size: 114%;
+    font-size: inherit;
     font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
     color:#202020;
     line-height:120%;
@@ -170,10 +198,12 @@ h4
 h5
 {
     font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
 }
 h6 
 {
     font-family:'MuseoSans500', Optima, Helvetica, sans;
+    color: #8b4513;
 }
 .left-space {margin-left: 15%;}
 .tab {padding-left: 5%;}
