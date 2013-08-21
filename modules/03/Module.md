@@ -7,7 +7,7 @@ Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of
 
 ### Slicing graphs
 
-
+Blah blah slicing graphs.
 
 ### Displacement numbers
 
@@ -34,12 +34,12 @@ Here is a plot of a few paths connecting the points $(1,1)$ and $(2,3)$ in the p
 
 ```r
 plot(c(1, 3), c(1, 3), xlab = "x", ylab = "y")
-arrows(1, 1, 2, 2, angle = 45, col = "red")
-arrows(2, 2, 2, 3, angle = 45, col = "red")
-arrows(1, 1, 2, 3, angle = 45, col = "blue")
+arrows(1, 1, 2, 2, angle = 30, col = "red")
+arrows(2, 2, 2, 3, angle = 30, col = "red")
+arrows(1, 1, 2, 3, angle = 30, col = "blue")
 ```
 
-![plot of chunk first_plot](figure/first_plot.png) 
+<img src="figure/first_plot.png" title="plot of chunk first_plot" alt="plot of chunk first_plot" style="display: block; margin: auto;" />
 
 
 A moment's reflection shows that, no matter how you walk from $(1,1)$ to $(2,3)$, your net change in the $x$-direction is $1$. In the $y$-direction, it is evidently $2$. If we start out at $(2,3)$ and end at $(1,1)$, these changes become negative.
@@ -57,7 +57,7 @@ Notice that these displacements add appropriately! Their "sum", adding coordinat
 $$ \langle x_1, y_1 \rangle + \langle x_2, y_2 \rangle =
      \langle x_1 + x_2, y_1 + y_2 \rangle $$
 
-Observe that the *zero vector* $\langle 0, 0 \rangle$ behaves appropriately under this conception. If adding vectors corresponds to accumulating displacements, adding \langle 0, 0 \rangle should be an operation with no effect---and indeed, it is.
+Observe that the *zero vector* $\langle 0, 0 \rangle$ behaves appropriately under this conception. If adding vectors corresponds to accumulating displacements, adding $\langle 0, 0 \rangle$ should be an operation with no effect---and indeed, it is.
 
 What about subtracting vectors? Well, if we make sense of the *negative* of a vector we will be free to regard $\vec{v} - \vec{w}$ as an abbreviation for $\vec{v} + (-\vec{w})$. A negative displacement has a clear physical meaning: the same distance, but the opposite direction. Therefore negation and subtraction are accomplished coordinate-wise, just like addition.
 
@@ -69,12 +69,12 @@ Since lines in the plane are not directed, we don't need a word to describe this
 
 
 ```r
-plot(c(1, 3), c(1, 3), xlab = "x", ylab = "y")
-arrows(1, 1, 2, 2, angle = 45, col = "red")
-arrows(3, 3, 2, 2, angle = 45, col = "blue")
+plot(c(1.5, 3), c(1.5, 3), xlab = "x", ylab = "y")
+arrows(1.75, 1.5, 2.75, 2.5, angle = 30, col = "red")
+arrows(3, 3, 2, 2, angle = 30, col = "blue")
 ```
 
-![plot of chunk second_plot](figure/second_plot.png) 
+<img src="figure/second_plot.png" title="plot of chunk second_plot" alt="plot of chunk second_plot" style="display: block; margin: auto;" />
 
 
 Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term "anti-parallel" for this situation.
@@ -94,3 +94,7 @@ Any such linear equation can be converted, by the standard rules of algebra, int
 
 [Module 01]: ../01/Module.html
 [Module 02]: ../02/Module.html
+<!--placeholder link-->
+[Workshop 02]: ../../workshops/02/Workshop.pdf 
+
+
