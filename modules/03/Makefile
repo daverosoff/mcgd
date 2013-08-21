@@ -18,7 +18,7 @@ all: compile
 compile:
 	$(rscript) -e 'library(knitr); \
 	knit(\"Module.Rmd\")';
-	pandoc -s --mathjax \
+	pandoc -s --toc --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \
 	--variable next=$(next) \

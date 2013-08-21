@@ -13,7 +13,7 @@ next 		= ../02/Module.html
 all: compile
 
 compile:
-	pandoc -s --mathjax \
+	pandoc -s --toc --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \
 	--variable next=$(next) \
