@@ -103,7 +103,6 @@ p
 blockquote
 {
     font-family: 'CallunaSansRegular';
-    font-style: italic;
     border: 2px solid #e8e8e8;
     padding-left: 2%;
     padding-right: 2%;
@@ -111,7 +110,7 @@ blockquote
 li 
 {
     font-size: inherit;
-    font-family:'CallunaRegular',Georgia,Garamond,"Palatino Linotype",serif;
+    font-family: "MuseoSans500", Optima, Helvetica, sans;
     color:#202020;
     line-height:120%;
 }
@@ -275,6 +274,11 @@ tr.even {
     -o-font-feature-settings:"liga" 1, "dlig" 1;
     -webkit-font-feature-settings:"liga" 1, "dlig" 1;
     font-feature-settings:"liga" 1, "dlig" 1;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 ul.nav 
