@@ -7,7 +7,40 @@ Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of
 
 ### Slicing graphs
 
-Blah blah slicing graphs.
+The idea of "slicing graphs" is one that is probably familiar to you, but with disguised terminology. 
+
+#### The "vertical line test" revisited
+
+"The vertical line test" is a criterion used to decide whether a plane curve is the graph of a function (of the horizontal coordinate). To employ it, you visualize all the vertical lines in the plane. Each of these gives a "slice" of the curve---the intersection of the vertical line with the curve. The vertical line test says that the curve is the graph of a function if, and only if, no slice has more than one point in it.
+
+As soon as you find a slice with two (or more) points in it, then you know the curve is not the graph of any function of the horizontal coordinate. 
+
+Slicing curves in the plane is not so interesting, because most of the time the slices are boring: a handful of points, possibly empty. Think of the vertical lines as the knives doing the slicing. In the cases of interest to us, the knives won't necessarily be lines. Instead, they will be planes.
+
+The knives don't have to be vertical for slicing to make sense. It would be possible to talk about the slice obtained by intersecting the curve with any line, of any slope.
+
+#### Slicing in 3 dimensions
+
+3 dimensions is one up from 2, and *surfaces* are one up from *curves*. So what does it mean to slice a surface? We have to say what the knife is. Usually, it will be some plane. The *slice* we get is the intersection of that plane with the surface---usually, a handful of curves.
+
+> **Exercise**. What are the slices that can result from slicing a sphere?
+Make sure you include all the possibilities for what the intersection looks like.
+
+> **Exercise**. What does the slice of a circular cylinder look like if the slicing plane is perpendicular to the cylinder? If it is parallel? If it is neither? What can you say about the shapes that are so obtained?
+
+#### The vertical line test for 2-variable functions
+
+Slicing can be used to determine whether a particular surface is the graph of a function of the two horizontal coordinates. 
+
+> **Exercise**. Describe the knives used to slice for the 3-dimensional vertical line test.
+
+> **Exercise**. Formulate the vertical line test for 2-variable functions.
+
+#### Coordinate slices and level curves
+
+The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane $z = 0$ (that is, the $(x,y)$-plane) merits special attention.
+
+> **Definition**. If $f(x,y)$ is a 2-variable function, the slice of its graph obtained by slicing with the plane $z = c$ is called the level curve of $f(x,y)$ with level $c$. In general, it is actually a handful of curves, but the usage does not reflect this. We're stuck with it.
 
 ### Displacement numbers
 
