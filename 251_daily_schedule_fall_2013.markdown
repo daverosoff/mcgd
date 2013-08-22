@@ -15,7 +15,9 @@ more specific notes from the days you were unable to attend.
                                  <br />
                                  Workshop 00<!--add link-->.
       
-  03            Tue 10 Sept      Slicing graphs; vectors as displacements
+  [03][m03]     Tue 10 Sept      Slicing graphs; vectors as displacements
+                                 <br />
+                                 Workshop 01<!--add link-->.
                                  
   04            Wed 11 Sept      Vectors in general; linear functions
                                  <br />                 
@@ -114,3 +116,4 @@ more specific notes from the days you were unable to attend.
 
 [m01]: modules/01/Module.html
 [m02]: modules/02/Module.html
+[m03]: modules/03/Module.html
