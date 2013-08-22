@@ -40,15 +40,17 @@ Slicing can be used to determine whether a particular surface is the graph of a 
 
 The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane $z = 0$ (that is, the $(x,y)$-plane) merits special attention.
 
-> **Definition**. If $f(x,y)$ is a 2-variable function, the slice of its graph obtained by slicing with the plane $z = c$ is called the level curve of $f(x,y)$ with level $c$. In general, it is actually a handful of curves, but the usage does not reflect this. We're stuck with it.
+> *Definition*. If $f(x,y)$ is a 2-variable function, the slice of its graph obtained by slicing with the plane $z = c$ is called the level curve of $f(x,y)$ with level $c$. 
 
 ### Displacement numbers
 
-When we are considering motion that is confined to a single line, one number suffices to describe a movement---that is, after we have agreed on the units of the length dimension and the origin of the line. Once these are settled, every pair of positions gives rise to a number: the distance between them. Conventionally, the distance between two positions on a line is always a nonnegative number, but it is convenient to use our notion of negativity as well. This leads to the notion of displacement, which we might also call "directed distance" or "signed distance". The idea is that we no longer regard the two positions as equivalent. Instead, one is the "initial" and one is the "final" position. We agree, once and for all, that displacements are calculated by subtracting the initial position from the final one:
+When we are considering motion that is confined to a single line, one number suffices to describe a distance---that is, after we have agreed on the units of the length dimension and the origin of the line. Once these are settled, every pair of positions gives rise to a number: the distance between them. Conventionally, the distance between two positions on a line is always a nonnegative number, but it is convenient to use our notion of negativity as well. This leads to the notion of *displacement*, which we might also call "directed distance" or "signed distance". The idea is that we no longer regard the two positions as equivalent. Instead, one is the "initial" and one is the "final" position. We agree, once and for all, that displacements are calculated by subtracting the initial position from the final one:
 
     displacement = pos_final - pos_initial
 
 $$ \Delta x = x_1 - x_0 $$
+
+Then, every ordered pair of positions corresponds to a number, perhaps a negative one; and every number corresponds to a movement.
 
 With these ideas firmly in place, it is not too hard to generalize them to the case of motion in a plane. This is done in the next section. We will assume that the origin and suitable coordinate axes and units are already agreed upon.
 
