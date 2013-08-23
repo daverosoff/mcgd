@@ -41,47 +41,29 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </div>
 <div id="TOC">
 <ul>
-<li><a href="#slicing-graphs">Slicing graphs</a><ul>
-<li><a href="#the-vertical-line-test-revisited">The “vertical line test” revisited</a></li>
-<li><a href="#slicing-in-3-dimensions">Slicing in 3 dimensions</a></li>
-<li><a href="#the-vertical-line-test-for-2-variable-functions">The vertical line test for 2-variable functions</a></li>
-<li><a href="#coordinate-slices-and-level-curves">Coordinate slices and level curves</a></li>
-</ul></li>
+<li><a href="#slices-of-curved-surfaces">Slices of curved surfaces</a></li>
 <li><a href="#displacement-numbers">Displacement numbers</a></li>
 <li><a href="#displacement-vectors">Displacement vectors</a></li>
 <li><a href="#parallel-vectors-a-simple-test">Parallel vectors: a simple test</a></li>
 <li><a href="#linear-relations-among-vectors">Linear relations among vectors</a></li>
 </ul>
 </div>
-<p>Last time, we discussed surfaces in <span class="math">\(\mathbf{R}^3\)</span>: in particular, the graphs of 2-variable functions, spheres, and cylinders. We conclude that discussion with the topic of slicing graphs.</p>
-<h3 id="slicing-graphs"><a href="#slicing-graphs">Slicing graphs</a></h3>
-<p>The idea of “slicing graphs” is one that is probably familiar to you, but with disguised terminology.</p>
-<h4 id="the-vertical-line-test-revisited"><a href="#the-vertical-line-test-revisited">The “vertical line test” revisited</a></h4>
-<p>“The vertical line test” is a criterion used to decide whether a plane curve is the graph of a function (of the horizontal coordinate). To employ it, you visualize all the vertical lines in the plane. Each of these gives a “slice” of the curve—the intersection of the vertical line with the curve. The vertical line test says that the curve is the graph of a function if, and only if, no slice has more than one point in it.</p>
-<p>As soon as you find a slice with two (or more) points in it, then you know the curve is not the graph of any function of the horizontal coordinate.</p>
-<p>Slicing curves in the plane is not so interesting, because most of the time the slices are boring: a handful of points, possibly empty. Think of the vertical lines as the knives doing the slicing. In the cases of interest to us, the knives won’t necessarily be lines. Instead, they will be planes.</p>
-<p>The knives don’t have to be vertical for slicing to make sense. It would be possible to talk about the slice obtained by intersecting the curve with any line, of any slope.</p>
-<h4 id="slicing-in-3-dimensions"><a href="#slicing-in-3-dimensions">Slicing in 3 dimensions</a></h4>
-<p>3 dimensions is one up from 2, and <em>surfaces</em> are one up from <em>curves</em>. So what does it mean to slice a surface? We have to say what the knife is. Usually, it will be some plane. The <em>slice</em> we get is the intersection of that plane with the surface—usually, a handful of curves.</p>
+<p>Last time, we discussed surfaces in <span class="math">\(\mathbf{R}^3\)</span>: in particular, the graphs of 2-variable functions, and spheres, cylinders, and cones. We also introduced surface <em>slicing</em>. We conclude that discussion with more on slicing.</p>
+<h3 id="slices-of-curved-surfaces"><a href="#slices-of-curved-surfaces">Slices of curved surfaces</a></h3>
+<p>Let us analyze the possible slices of a sphere—this time, in greater detail and precision. Here, we must make a choice: are we going to immediately slap coordinates on everything in sight, choosing centers and radii and so on, ending up with a huge pile of equations to solve? This is what we use to call the brute-force approach. It will succeed, with patience and stamina. But it is usually not illuminating.</p>
+<p>It is always best to use symmetry to our advantage and try to choose coordinates that will best allow us to exploit it. A sphere is a highly symmetric shape, and the center is the most symmetric point: it looks the same from each point of the sphere. Hence we should center our sphere at the origin. By adjusting the scale of the axes, we can also assume that it has radius 1. This sphere is called the “unit” sphere.</p>
 <blockquote>
-<p><strong>Exercise</strong>. What are the slices that can result from slicing a sphere? Make sure you include all the possibilities for what the intersection looks like.</p>
+<p>It would be even better to just picture the sphere in a blank space, empty of axes and scale, but perhaps this is too disorienting for a first pass.</p>
 </blockquote>
+<p>Now, let us imagine all the planes that are parallel to the <span class="math">\((y,z)\)</span>-plane as our knives, and see which slices of the sphere we get. Most such planes miss the sphere entirely, so one class of slice is “empty”.</p>
 <blockquote>
-<p><strong>Exercise</strong>. What does the slice of a circular cylinder look like if the slicing plane is perpendicular to the cylinder? If it is parallel? If it is neither? What can you say about the shapes that are so obtained?</p>
+<p><em>Exercise</em>. Give equations of all the planes parallel to the <span class="math">\((y,z)\)</span>-plane that miss the unit sphere.</p>
 </blockquote>
-<h4 id="the-vertical-line-test-for-2-variable-functions"><a href="#the-vertical-line-test-for-2-variable-functions">The vertical line test for 2-variable functions</a></h4>
-<p>Slicing can be used to determine whether a particular surface is the graph of a function of the two horizontal coordinates.</p>
+<p>What if the sphere and the plane do, in fact, meet? You can get a good idea of what the slices are by thinking “perturbatively”. Imagine a plane that misses the sphere, and slide it closer and closer. At some time, they will touch for the first time. The slice at that instant is a point.</p>
 <blockquote>
-<p><strong>Exercise</strong>. Describe the knives used to slice for the 3-dimensional vertical line test.</p>
+<p><em>Exercise</em>. How many planes parallel to the <span class="math">\((y,z)\)</span>-plane meet the sphere at one point? Give equations for all of them.</p>
 </blockquote>
-<blockquote>
-<p><strong>Exercise</strong>. Formulate the vertical line test for 2-variable functions.</p>
-</blockquote>
-<h4 id="coordinate-slices-and-level-curves"><a href="#coordinate-slices-and-level-curves">Coordinate slices and level curves</a></h4>
-<p>The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane <span class="math">\(z = 0\)</span> (that is, the <span class="math">\((x,y)\)</span>-plane) merits special attention.</p>
-<blockquote>
-<p><em>Definition</em>. If <span class="math">\(f(x,y)\)</span> is a 2-variable function, the slice of its graph obtained by slicing with the plane <span class="math">\(z = c\)</span> is called the level curve of <span class="math">\(f(x,y)\)</span> with level <span class="math">\(c\)</span>.</p>
-</blockquote>
+<p>Now push the plane <em>a little further</em> into the sphere. What is the intersection? You might not have a clear mental picture of it, or maybe you just have a guess you’re not convinced is correct. In Workshop 01, we will use algebra (greatly simplified by our diligent attention to symmetry) to illuminate the situation.</p>
 <h3 id="displacement-numbers"><a href="#displacement-numbers">Displacement numbers</a></h3>
 <p>When we are considering motion that is confined to a single line, one number suffices to describe a distance—that is, after we have agreed on the units of the length dimension and the origin of the line. Once these are settled, every pair of positions gives rise to a number: the distance between them. Conventionally, the distance between two positions on a line is always a nonnegative number, but it is convenient to use our notion of negativity as well. This leads to the notion of <em>displacement</em>, which we might also call “directed distance” or “signed distance”. The idea is that we no longer regard the two positions as equivalent. Instead, one is the “initial” and one is the “final” position. We agree, once and for all, that displacements are calculated by subtracting the initial position from the final one:</p>
 <pre><code>displacement = pos_final - pos_initial</code></pre>

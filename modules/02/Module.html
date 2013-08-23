@@ -25,17 +25,10 @@
 <li><a href="#contour-maps">Contour maps</a></li>
 <li><a href="#cross-sectional-functions">Cross-sectional functions</a></li>
 <li><a href="#surfaces-and-graphs">Surfaces and graphs</a></li>
+<li><a href="#slicing-graphs">Slicing graphs</a></li>
 </ul>
 </div>
 <p>Welcome to Module 2. You should have been able to make some progress on WeBWorK assignment 1. In this module, we’ll discuss the remaining topics you’ll need to understand to complete it.</p>
-<ul>
-<li>contour maps and cross-sectional functions</li>
-<li>spheres, cylinders, and cones</li>
-<li>intersections of some common surfaces</li>
-<li>displacement vectors as differences of positions</li>
-<li>detect whether two vectors in <span class="math">\(\mathbf{R}^3\)</span> are parallel</li>
-<li>graphical depiction of linear relations among vectors</li>
-</ul>
 <h3 id="contour-maps"><a href="#contour-maps">Contour maps</a></h3>
 <p>The easiest way to visualize 2-variable functions is with <em>contour maps</em>. These are easily created in both R and Sage. The following R code initializes a random 2-variable function and includes its contour plot into the document.</p>
 <p><strong>FIND SOME CODE</strong></p>
@@ -82,7 +75,35 @@
 </blockquote>
 <p>As with cylinders, it is possible to find equations for arbitrary cones: those whose axes and perpendicular planes are completely random. But in general, it is not so useful to do so. It would be smarter to choose coordinates in a clever way, so that it is not even necessary.</p>
 <blockquote>
-<p>Use the definition above and the formulas from <a href="../00/Workshop.html">Workshop 00</a> to write down an equation for the coordinates of points on a circular cone</p>
+<p>Use the definition above and the formulas from <a href="../00/Workshop.html">Workshop 00</a> to write down an equation for the coordinates of points on a circular cone.</p>
+</blockquote>
+<h3 id="slicing-graphs"><a href="#slicing-graphs">Slicing graphs</a></h3>
+<p>The idea of “slicing graphs” is one that is probably familiar to you, but with disguised terminology.</p>
+<h4 id="the-vertical-line-test-revisited"><a href="#the-vertical-line-test-revisited">The “vertical line test” revisited</a></h4>
+<p>“The vertical line test” is a criterion used to decide whether a plane curve is the graph of a function (of the horizontal coordinate). To employ it, you visualize all the vertical lines in the plane. Each of these gives a “slice” of the curve—the intersection of the vertical line with the curve. The vertical line test says that the curve is the graph of a function if, and only if, no slice has more than one point in it.</p>
+<p>As soon as you find a slice with two (or more) points in it, then you know the curve is not the graph of any function of the horizontal coordinate.</p>
+<p>Slicing curves in the plane is not so interesting, because most of the time the slices are boring: a handful of points, possibly empty. Think of the vertical lines as the knives doing the slicing. In the cases of interest to us, the knives won’t necessarily be lines. Instead, they will be planes.</p>
+<p>The knives don’t have to be vertical for slicing to make sense. It would be possible to talk about the slice obtained by intersecting the curve with any line, of any slope.</p>
+<h4 id="slicing-in-3-dimensions"><a href="#slicing-in-3-dimensions">Slicing in 3 dimensions</a></h4>
+<p>3 dimensions is one up from 2, and <em>surfaces</em> are one up from <em>curves</em>. So what does it mean to slice a surface? We have to say what the knife is. Usually, it will be some plane. The <em>slice</em> we get is the intersection of that plane with the surface—usually, a handful of curves.</p>
+<blockquote>
+<p><strong>Exercise</strong>. What are the slices that can result from slicing a sphere? Make sure you include all the possibilities for what the intersection looks like.</p>
+</blockquote>
+<blockquote>
+<p><strong>Exercise</strong>. What does the slice of a circular cylinder look like if the slicing plane is perpendicular to the cylinder? If it is parallel? If it is neither? What can you say about the shapes that are so obtained?</p>
+</blockquote>
+<h4 id="the-vertical-line-test-for-2-variable-functions"><a href="#the-vertical-line-test-for-2-variable-functions">The vertical line test for 2-variable functions</a></h4>
+<p>Slicing can be used to determine whether a particular surface is the graph of a function of the two horizontal coordinates.</p>
+<blockquote>
+<p><strong>Exercise</strong>. Describe the knives used to slice for the 3-dimensional vertical line test.</p>
+</blockquote>
+<blockquote>
+<p><strong>Exercise</strong>. Formulate the vertical line test for 2-variable functions.</p>
+</blockquote>
+<h4 id="coordinate-slices-and-level-curves"><a href="#coordinate-slices-and-level-curves">Coordinate slices and level curves</a></h4>
+<p>The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane <span class="math">\(z = 0\)</span> (that is, the <span class="math">\((x,y)\)</span>-plane) merits special attention.</p>
+<blockquote>
+<p><em>Definition</em>. If <span class="math">\(f(x,y)\)</span> is a 2-variable function, the slice of its graph obtained by slicing with the plane <span class="math">\(z = c\)</span> is called the level curve of <span class="math">\(f(x,y)\)</span> with level <span class="math">\(c\)</span>.</p>
 </blockquote>
 <!--document ends; links past here-->
 
