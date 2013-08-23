@@ -24,10 +24,14 @@ more specific notes from the days you were unable to attend.
                                  Quiz 1 on Modules 01--02.                                                      
 
   05            Fri 13 Sept      Linear functions; the dot product.
+                                 <br />
+                                 WeBWorK 02 is due at 10 pm.
 
   06            Mon 16 Sept      The dot product; the cross product
                                                                        
   07            Tue 17 Sept      The cross product; graphing 2-variable functions
+                                 <br />
+                                 WeBWorK 03 is due at 10 pm.
                                                                        
   08            Wed 18 Sept      Graphing 2-variable functions; contour plots
                                  
