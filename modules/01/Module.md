@@ -9,7 +9,7 @@ Welcome to the first online module for Calculus 3. These modules should be read,
 
 This module introduces two related mathematical frameworks: the geometry of the three-dimensional Euclidean space $\mathbf{R}^3$ and functions of two variables. 
 
-We will explore the following topics in this module and the next:
+<!-- We will explore the following topics in this module and the next:
 
 * relationship between coordinates of a point and distances to coordinate planes
 * relationship between coordinates of a point and distances to other points
@@ -19,7 +19,7 @@ We will explore the following topics in this module and the next:
 * intersections of some common surfaces
 * detect whether two vectors in $\mathbf{R}^3$ are parallel
 * displacement vectors as differences of positions
-* graphical depiction of linear relations among vectors
+* graphical depiction of linear relations among vectors -->
 
 ### Coordinate geometry of $\mathbf{R}^2$
 
@@ -47,16 +47,16 @@ By analogy with the situation in the plane, we define the $z$-axis of $\mathbf{R
 
 As we progress through the semester, most of the action will happen in this space $\mathbf{R}^3$. For now, we will spend a couple of weeks getting better acquainted with it, and learning some mentally convenient ways to talk about its points and its subspaces.
 
-### Distances between points
+### Distances among points, lines, and planes
 
-This is the subject of [Workshop 00], which we will complete Monday in class.
+This is the subject of [Workshop 00], which we will complete Friday in class.
 <!--Workshop 00 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
 
 ### 2-variable functions
 
-I have some bad news for you: you may be very misinformed, based on my previous experience, about what a *function* is. It is the most important concept in mathematics, so I tend to be very picky when talking about it, at least until I am sure everyone is on board.
+I have some bad news for you: you may be misinformed, based on my previous experience, about what a *function* is. It is the most important concept in mathematics, so I tend to be very picky when talking about it, at least until I am sure everyone is on board.
 
-Most people have done so much algebraic training that they confuse *functions* with *expressions*, which are what mathematicians call algebraic formulae. Every expression gives rise to one (or many) functions, but the reverse is arguable. A function is rather a *rule* associating each of a collection of predetermined permissible "inputs" to exactly one output. The reason that most people think that expressions and functions are the same thing is that very often in mathematics, the rule is given algebraically. For example, the familiar *squaring function* is the function (rule) associating to each number the number obtained by multiplying it by itself. Who could argue that $f(x) = x^2$ is a more precise and easily understood description? 
+Most people have done so much algebraic training that they confuse *functions* with *expressions*, which are what mathematicians call algebraic formulas. Every expression gives rise to one (or many) functions, but the reverse is arguable. A function is rather a *rule* associating each of a collection of predetermined permissible "inputs" to exactly one output. The reason that most people think that expressions and functions are the same thing is that very often in mathematics, the rule is given algebraically. For example, the familiar *squaring function* is the function (rule) associating to each number the number obtained by multiplying it by itself. Who could argue that $f(x) = x^2$ is a more precise and easily understood description? 
 
 Well, I might. I think this notation reinforces the confusion of the expression defining the rule---$x^2$---with the rule---$f(x)$---itself! Unfortunately, we are stuck with it. 
 

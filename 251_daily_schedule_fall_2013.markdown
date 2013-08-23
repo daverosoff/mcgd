@@ -10,10 +10,10 @@ more specific notes from the days you were unable to attend.
  Module            Date          Topics <!--links are workshops-->
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
-                                                                  
-  [02][m02]     Mon 9 Sept       2-variable functions; spheres, cylinders, cones
                                  <br />
                                  Workshop 00<!--add link-->.
+                                                                  
+  [02][m02]     Mon 9 Sept       2-variable functions; spheres, cylinders, cones
       
   [03][m03]     Tue 10 Sept      Slicing graphs; vectors as displacements
                                  <br />
@@ -25,7 +25,7 @@ more specific notes from the days you were unable to attend.
 
   05            Fri 13 Sept      Linear functions; the dot product.
                                  <br />
-                                 WeBWorK 02 is due at 10 pm.
+                                 WeBWorK 02 is due at 10 pm.10
 
   06            Mon 16 Sept      The dot product; the cross product
                                                                        
