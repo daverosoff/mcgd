@@ -50,13 +50,25 @@ a:hover
 {
     text-decoration: underline;
 }
-a:before {
+a:before 
+{
     content: "◊ ";
     color: #8b4513;
     font-weight: normal;
-    font-family: concourse-t3;
-    font-weight: bold;
 }
+div.footnotes.a, a.footnoteRef:before
+{
+    content: "";
+
+}
+{
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
+
 li.a 
 {
     color:#8b4513;
@@ -86,7 +98,7 @@ p
   color:#888888;
 }
 .sage {
-    font-family:Lucidatypewriter,Courier,monospace; 
+    font-family:Consolas,Lucidatypewriter,Courier,monospace; 
     text-align: left;
     border: 2px dashed #D1C7AC;
     width: 70%;
