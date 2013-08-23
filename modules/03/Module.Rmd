@@ -3,7 +3,7 @@
 % Dr. Dave Rosoff
 % Fall 2013
 
-Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, spheres, and cylinders. We conclude that discussion with the topic of slicing graphs.
+Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, and spheres, cylinders, and cones. We also introduced surface *slicing*. We conclude that discussion with more on slicing.
 
 ### Slicing graphs
 
