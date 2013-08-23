@@ -17,7 +17,7 @@ more specific notes from the days you were unable to attend.
       
   [03][m03]     Tue 10 Sept      Slicing graphs; vectors as displacements
                                  <br />
-                                 Workshop 01<!--add link-->.
+                                 Workshop 01<!--add link-->. WeBWorK 01 is due at 10 pm.
                                  
   04            Wed 11 Sept      Vectors in general; linear functions
                                  <br />                 
