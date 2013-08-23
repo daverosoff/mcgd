@@ -11,7 +11,7 @@ more specific notes from the days you were unable to attend.
 ------------  ---------------    ---------------------------------------------------
   [01][m01]     Fri 6 Sept       Introduction; 2-variable functions
                                                                   
-  [02][m02]     Mon 9 Sept       2-variable functions; spheres and cylinders
+  [02][m02]     Mon 9 Sept       2-variable functions; spheres, cylinders, cones
                                  <br />
                                  Workshop 00<!--add link-->.
       
