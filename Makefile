@@ -1,17 +1,20 @@
-src 			= schedule.md
-target 			= schedule.html
-template 		= dave
-#css 			= http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
-base 			= u:/courses/M251
-css 			= css/master.css
+base 			= $(abspath schedule.md)
 browser 		= maxthon
-browserprefix 	= file://
+browserprefix 		= file://
+css 			= css/master.css
+template 		= dave
+MODULES 		= $(shell find modules -maxdepth 1 -type d)
 
-all: schedule
+.PHONY: all $(MODULES) preview
 
-schedule: 
-		pandoc -s --template=$(template) --css=$(css) \
-		-o $(target) -S $(src)
+all: $(MODULES) schedule.html
 
-preview: schedule
-		$(browser) $(browserprefix)$(base)/$(target)
+schedule.html: 
+	pandoc -s --template=$(template) --css=$(css) \
+	-o schedule.html -S schedule.md
+
+preview: schedule.html
+	$(browser) $(browserprefix)$(base)/$(target)
+
+$(MODULES):
+	$(MAKE) -C $@
