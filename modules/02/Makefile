@@ -4,9 +4,9 @@ targetpath	= $(abspath Module.html)
 template 	= LecNotes
 #css 		= http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
 css 		= ../../css/master.css
-browserprefix	= file:
+browserprefix	= file://
 browser 	= maxthon
-browsertarget	= $(browserprefix)$(targetpath:C\:=)
+browsertarget	= $(targetpath)
 up 		= ../../schedule.html
 back		= ../01/Module.html
 next 		= ../03/Module.html
