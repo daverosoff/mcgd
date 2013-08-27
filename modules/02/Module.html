@@ -64,16 +64,22 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <span class="kw">plotFun</span>(<span class="kw">quad</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(-<span class="dv">6</span>, <span class="dv">6</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(-<span class="dv">3</span>, <span class="dv">3</span>), <span class="dt">npts =</span> <span class="dv">200</span>, 
     <span class="dt">nlevels =</span> <span class="dv">20</span>)</code></pre>
 <p><img src="figure/quadric_contour_plot.png" title="plot of chunk quadric_contour_plot" alt="plot of chunk quadric_contour_plot" style="display: block; margin: auto;" /></p>
-<p>These are easily created in both R and Sage. The following R code<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> initializes a random 2-variable function and includes its contour plot into the document.</p>
-<pre><code>f &lt;- rfun( ~ x &amp; y, seed = 1066)
-plotfun( f(x=x,y=y) ~ x &amp; y, x.lim=c(-4,4), y.lim=c(-4,4) )</code></pre>
-<p>By default, this produces a full-color contour map.</p>
-<p>Sage lacks a facility for machine-generated random functions (as far as I am aware), but it can plot a function the user provides quite readily.</p>
-<p><strong>SAGE CODE GOES HERE</strong></p>
+<p>These are easily created in R, as you see above<!-- , and Sage -->. The following R code<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> initializes a random 2-variable function and includes its contour plot into the document, as you see.</p>
+<pre class="sourceCode r"><code class="sourceCode r">random &lt;-<span class="st"> </span><span class="kw">rfun</span>(~x &amp;<span class="st"> </span>y, <span class="dt">seed =</span> <span class="dv">1066</span>)
+<span class="kw">plotFun</span>(<span class="kw">random</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(-<span class="dv">4</span>, <span class="dv">4</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(-<span class="dv">4</span>, <span class="dv">4</span>))</code></pre>
+<p><img src="figure/random_contour_plot.png" title="plot of chunk random_contour_plot" alt="plot of chunk random_contour_plot" style="display: block; margin: auto;" /></p>
+<p>By default, this produces a full-color contour map. Use the <code>plotFun()</code> option <code>filled=FALSE</code> to generate a black and white contour map.</p>
+<!-- Sage lacks a facility for machine-generated random functions (as far as I am 
+aware), but it can plot a function the user provides quite readily. See the documentation for the ```ContourPlot``` function. 
+
+```{sage}
+
+``` -->
+
 <blockquote>
-<p>Like most plotting commands, the R and Sage commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio’s builtin help interface. Try <code>?plotFun</code> for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.</p>
+<p>Like most plotting commands, the R <!-- and Sage  -->commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio’s builtin help interface. Try <code>?plotFun</code> for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.</p>
 </blockquote>
-<p><strong>Exercise</strong>. What do you notice about the contours in the contour plot of<br />the shopping function?</p>
+<p><strong>Exercise</strong>. What do you notice about the contours in the contour plot of the shopping function?</p>
 <h3 id="cross-sectional-functions"><a href="#cross-sectional-functions">Cross-sectional functions</a></h3>
 <p>If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output. <strong>MORE IS NEEDED</strong></p>
 <h3 id="surfaces-and-graphs"><a href="#surfaces-and-graphs">Surfaces and graphs</a></h3>

@@ -3,6 +3,12 @@
 % Dr. Dave Rosoff
 % Fall 2013
 
+
+
+
+
+
+
 Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, and spheres, cylinders, and cones. We also introduced surface *slicing*. We conclude that discussion with more on slicing.
 
 ### Slices of curved surfaces
@@ -55,7 +61,7 @@ arrows(2, 2, 2, 3, angle = 30, col = "red")
 arrows(1, 1, 2, 3, angle = 30, col = "blue")
 ```
 
-<img src="figure/first_plot.png" title="plot of chunk first_plot" alt="plot of chunk first_plot" style="display: block; margin: auto;" />
+<img src="figure/first_plot.png" title="plot of chunk first_plot" alt="plot of chunk first_plot" width="3in" style="display: block; margin: auto;" />
 
 
 A moment's reflection shows that, no matter how you walk from $(1,1)$ to $(2,3)$, your net change in the $x$-direction is $1$. In the $y$-direction, it is evidently $2$. If we start out at $(2,3)$ and end at $(1,1)$, these changes become negative.
@@ -90,7 +96,7 @@ arrows(1.75, 1.5, 2.75, 2.5, angle = 30, col = "red")
 arrows(3, 3, 2, 2, angle = 30, col = "blue")
 ```
 
-<img src="figure/second_plot.png" title="plot of chunk second_plot" alt="plot of chunk second_plot" style="display: block; margin: auto;" />
+<img src="figure/second_plot.png" title="plot of chunk second_plot" alt="plot of chunk second_plot" width="3in" style="display: block; margin: auto;" />
 
 
 Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term "anti-parallel" for this situation.

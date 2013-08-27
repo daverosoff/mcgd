@@ -31,7 +31,7 @@ plotFun(linear(x = x, y = y) ~ x & y, x.lim = c(0, 10), y.lim = c(0, 10), npts =
 <img src="figure/linear_contour_plot.png" title="plot of chunk linear_contour_plot" alt="plot of chunk linear_contour_plot" style="display: block; margin: auto;" />
 
 
-> Even though the axes are labeled $x$ and $y$, you can infer from the code above the figure which is which. Use the <code>xlab=\"\"</code> and <code>ylab=\"\"</code> options to <code>plotFun()</code> to specify your own labels. 
+> Even though the axes are labeled $x$ and $y$, you can infer from the code above the figure which is which. Use the ```xlab=""``` and ```ylab=""``` options to ```plotFun()``` to specify your own labels. 
 
 The points of the plane are grouped into different colors. Each color forms a diagonal line across the plot, called a contour. The colors 
 represent the different output values (the labels on the contours) that are possible with our function. 
@@ -53,23 +53,29 @@ plotFun(quad(x = x, y = y) ~ x & y, x.lim = c(-6, 6), y.lim = c(-3, 3), npts = 2
 <img src="figure/quadric_contour_plot.png" title="plot of chunk quadric_contour_plot" alt="plot of chunk quadric_contour_plot" style="display: block; margin: auto;" />
 
 
-These are easily created in both R and Sage. The following R code[^usingR] 
-initializes a random 2-variable function and includes its contour plot into 
-the document.
+These are easily created in R, as you see above<!-- , and Sage -->. The following R code[^usingR] initializes a random 2-variable function and includes its contour plot into the document, as you see.
 
-    f <- rfun( ~ x & y, seed = 1066)
-    plotfun( f(x=x,y=y) ~ x & y, x.lim=c(-4,4), y.lim=c(-4,4) )
 
-By default, this produces a full-color contour map. 
+```r
+random <- rfun(~x & y, seed = 1066)
+plotFun(random(x = x, y = y) ~ x & y, x.lim = c(-4, 4), y.lim = c(-4, 4))
+```
 
-Sage lacks a facility for machine-generated random functions (as far as I am 
-aware), but it can plot a function the user provides quite readily.
+<img src="figure/random_contour_plot.png" title="plot of chunk random_contour_plot" alt="plot of chunk random_contour_plot" style="display: block; margin: auto;" />
 
-**SAGE CODE GOES HERE**
 
-> Like most plotting commands, the R and Sage commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio's builtin help interface. Try <code>?plotFun</code> for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.
+By default, this produces a full-color contour map. Use the ```plotFun()``` option ```filled=FALSE``` to generate a black and white contour map.
 
-**Exercise**. What do you notice about the contours in the contour plot of \
+<!-- Sage lacks a facility for machine-generated random functions (as far as I am 
+aware), but it can plot a function the user provides quite readily. See the documentation for the ```ContourPlot``` function. 
+
+```{sage}
+
+``` -->
+
+> Like most plotting commands, the R <!-- and Sage  -->commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio's builtin help interface. Try ```?plotFun``` for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.
+
+**Exercise**. What do you notice about the contours in the contour plot of 
 the shopping function?
 
 ### Cross-sectional functions
@@ -111,7 +117,7 @@ $$ (x-a)^2 + (y-b)^2 + (z-c)^2 = r^2 $$
 
 As before, working with squares of distances minimizes how much we must put up with unpleasant square roots.
 
-The other surfaces which concern us at present---the cones and the circular cylinders---are also obtained by the equating of various distances.
+The other surfaces which concern us at present---the cones and the circular cylinders---are also obtained by the equating of various distances. 
 
 > A *circular cylinder* is a surface whose interior has a special line, called the *axis* of the cylinder, such that all points on the surface have the same distance to the axis. To nobody's surprise, this length is called the *radius* of the cylinder.
 
