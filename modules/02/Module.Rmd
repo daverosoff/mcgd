@@ -3,11 +3,15 @@
 % Dr. Dave Rosoff
 % Fall 2013 
 
+```{r echo=FALSE,results="hide",label="options"}
+require(knitr, quietly=TRUE)
+opts_chunk$set(fig.align="center")
+```
 
-
-
-
-
+```{r echo=FALSE,warning=FALSE,error=FALSE,message=FALSE,results="hide"}
+library(mosaic,quietly=TRUE)
+trellis.par.set(theme=col.mosaic())
+```
 
 Welcome to Module 2. You should have been able to make some progress on 
 WeBWorK assignment 1. In this module, we'll discuss the remaining topics 
@@ -21,15 +25,10 @@ In a contour plot, the points in the plane represent different output values
 coming from the various inputs. Here is a contour plot from the [shopping example][shex] in
 [Module 01][Module 01]. Shirts are $\$15$ and trousers are $\$20$. The cost of the trip (both ways) is $\$4$.
 
-
-```r
-linear <- makeFun(4 + 15 * x + 20 * y ~ x & y)
-plotFun(linear(x = x, y = y) ~ x & y, x.lim = c(0, 10), y.lim = c(0, 10), npts = 200, 
-    nlevels = 10)
+```{r, linear_contour_plot, fig.align="center"}
+linear <- makeFun(4 + 15*x + 20*y ~ x & y)
+plotFun(linear(x=x,y=y) ~ x & y, x.lim=c(0,10), y.lim=c(0,10), npts=200, nlevels=10)
 ```
-
-<img src="figure/linear_contour_plot.png" title="plot of chunk linear_contour_plot" alt="plot of chunk linear_contour_plot" style="display: block; margin: auto;" />
-
 
 > Even though the axes are labeled $x$ and $y$, you can infer from the code above the figure which is which. Use the <code>xlab=\"\"</code> and <code>ylab=\"\"</code> options to <code>plotFun()</code> to specify your own labels. 
 
@@ -43,15 +42,10 @@ For each fixed hue, the points that are colored with it form a curve (or
 several curves) in the plane, called a *contour*. Mathematicians also call 
 them "level curves". Here is an example of a contour plot of a nonlinear function. What do you notice about this plot that distinguishes it from the first plot?
 
-
-```r
-quad <- makeFun(x^2 - 4 * x * y + 2 * y^2 ~ x & y)
-plotFun(quad(x = x, y = y) ~ x & y, x.lim = c(-6, 6), y.lim = c(-3, 3), npts = 200, 
-    nlevels = 20)
+```{r, quadric_contour_plot}
+quad <- makeFun(x^2 - 4*x*y + 2*y^2 ~ x & y)
+plotFun(quad(x=x,y=y) ~ x & y, x.lim=c(-6,6), y.lim=c(-3,3), npts=200, nlevels=20)
 ```
-
-<img src="figure/quadric_contour_plot.png" title="plot of chunk quadric_contour_plot" alt="plot of chunk quadric_contour_plot" style="display: block; margin: auto;" />
-
 
 These are easily created in both R and Sage. The following R code[^usingR] 
 initializes a random 2-variable function and includes its contour plot into 

@@ -7,6 +7,25 @@
   <meta name="author" content="Dr. Dave Rosoff" />
   <title>Module 02: Contour maps and some common quadric surfaces</title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
   <link rel="stylesheet" href="../../css/master.css" type="text/css" />
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
@@ -30,15 +49,30 @@
 </div>
 <p>Welcome to Module 2. You should have been able to make some progress on WeBWorK assignment 1. In this module, we’ll discuss the remaining topics you’ll need to understand to complete it.</p>
 <h3 id="contour-maps"><a href="#contour-maps">Contour maps</a></h3>
-<p>The easiest way to visualize 2-variable functions is with <em>contour maps</em>. These are easily created in both R and Sage. The following R code<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> initializes a random 2-variable function and includes its contour plot into the document.</p>
-<p><strong>FIND SOME CODE</strong></p>
+<p>The easiest way to visualize 2-variable functions is with <em>contour maps</em>.</p>
+<p>In a contour plot, the points in the plane represent different output values coming from the various inputs. Here is a contour plot from the <a href="../01/Module.html#modeling-with-linear-functions">shopping example</a> in <a href="../01/Module.html">Module 01</a>. Shirts are <span class="math">\(\$15\)</span> and trousers are <span class="math">\(\$20\)</span>. The cost of the trip (both ways) is <span class="math">\(\$4\)</span>.</p>
+<pre class="sourceCode r"><code class="sourceCode r">linear &lt;-<span class="st"> </span><span class="kw">makeFun</span>(<span class="dv">4</span> +<span class="st"> </span><span class="dv">15</span> *<span class="st"> </span>x +<span class="st"> </span><span class="dv">20</span> *<span class="st"> </span>y ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
+<span class="kw">plotFun</span>(<span class="kw">linear</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">npts =</span> <span class="dv">200</span>, 
+    <span class="dt">nlevels =</span> <span class="dv">10</span>)</code></pre>
+<p><img src="figure/linear_contour_plot.png" title="plot of chunk linear_contour_plot" alt="plot of chunk linear_contour_plot" style="display: block; margin: auto;" /></p>
+<blockquote>
+<p>Even though the axes are labeled <span class="math">\(x\)</span> and <span class="math">\(y\)</span>, you can infer from the code above the figure which is which. Use the <code>xlab=&quot;&quot;</code> and <code>ylab=&quot;&quot;</code> options to <code>plotFun()</code> to specify your own labels.</p>
+</blockquote>
+<p>The points of the plane are grouped into different colors. Each color forms a diagonal line across the plot, called a contour. The colors represent the different output values (the labels on the contours) that are possible with our function. When two points share a color, they give the same value of the function, and when two points have different colors, they give different values of the function.</p>
+<p>For each fixed hue, the points that are colored with it form a curve (or several curves) in the plane, called a <em>contour</em>. Mathematicians also call them “level curves”. Here is an example of a contour plot of a nonlinear function. What do you notice about this plot that distinguishes it from the first plot?</p>
+<pre class="sourceCode r"><code class="sourceCode r">quad &lt;-<span class="st"> </span><span class="kw">makeFun</span>(x^<span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>x *<span class="st"> </span>y +<span class="st"> </span><span class="dv">2</span> *<span class="st"> </span>y^<span class="dv">2</span> ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
+<span class="kw">plotFun</span>(<span class="kw">quad</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(-<span class="dv">6</span>, <span class="dv">6</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(-<span class="dv">3</span>, <span class="dv">3</span>), <span class="dt">npts =</span> <span class="dv">200</span>, 
+    <span class="dt">nlevels =</span> <span class="dv">20</span>)</code></pre>
+<p><img src="figure/quadric_contour_plot.png" title="plot of chunk quadric_contour_plot" alt="plot of chunk quadric_contour_plot" style="display: block; margin: auto;" /></p>
+<p>These are easily created in both R and Sage. The following R code<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> initializes a random 2-variable function and includes its contour plot into the document.</p>
+<pre><code>f &lt;- rfun( ~ x &amp; y, seed = 1066)
+plotfun( f(x=x,y=y) ~ x &amp; y, x.lim=c(-4,4), y.lim=c(-4,4) )</code></pre>
+<p>By default, this produces a full-color contour map.</p>
 <p>Sage lacks a facility for machine-generated random functions (as far as I am aware), but it can plot a function the user provides quite readily.</p>
 <p><strong>SAGE CODE GOES HERE</strong></p>
-<p>In a contour plot, the points in the plane represent different values of the inputs. Here is a contour plot from the shopping example in <a href="../01/Module.html">Module 01</a>.</p>
-<p><strong>R CODE FOR LINEAR CONTOUR PLOT</strong></p>
-<p>The points of the plane are grouped into different colors. The colors represent the different output values that are possible with our function. When two points share a color, they give the same value of the function, and when two points have different colors, they give different values of the function.</p>
-<p>For each fixed hue, the points that are colored with it form a curve (or several curves) in the plane, called a <em>contour</em>. Mathematicians also call them “level curves”.</p>
-<p><strong>ANOTHER FIGURE</strong></p>
+<blockquote>
+<p>Like most plotting commands, the R and Sage commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio’s builtin help interface. Try <code>?plotFun</code> for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.</p>
+</blockquote>
 <p><strong>Exercise</strong>. What do you notice about the contours in the contour plot of<br />the shopping function?</p>
 <h3 id="cross-sectional-functions"><a href="#cross-sectional-functions">Cross-sectional functions</a></h3>
 <p>If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output. <strong>MORE IS NEEDED</strong></p>
