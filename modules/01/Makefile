@@ -10,9 +10,13 @@ browsertarget	= $(browserprefix)$(targetpath:C\:=)
 up 		= ../../schedule.html
 next 		= ../02/Module.html
 
+.PHONY: all compile preview
+
 all: compile
 
-compile:
+compile: $(target)
+
+$(target):
 	pandoc -s --toc --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \

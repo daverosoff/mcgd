@@ -11,9 +11,13 @@ up 		= ../../schedule.html
 back		= ../01/Module.html
 next 		= ../03/Module.html
 
+.PHONY: all compile preview
+
 all: compile
 
-compile:
+compile: $(target)
+
+$(target): $(src)
 	pandoc -s --toc --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \

@@ -12,11 +12,15 @@ up 		= ../../schedule.html
 back		= ../02/Module.html
 next 		= ../04/Module.html
 rscript		= Rscript.exe
-rcommand	= -e 'library(knitr); knit(\"Module.Rmd\")';
+rcommand	= -e 'library("knitr"); knit(\"Module.Rmd\")';
+
+.PHONY: all compile preview
 
 all: compile
 
-compile:
+compile: $(target)
+
+$(target): $(src)  
 	$(rscript) $(rcommand) 
 	pandoc -s --toc-depth=5 --mathjax \
 	--template=$(template) --css=$(css) \
