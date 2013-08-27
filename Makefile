@@ -3,7 +3,7 @@ browser 		= maxthon
 browserprefix 		= file://
 css 			= css/master.css
 template 		= dave
-MODULES 		= $(shell find modules -maxdepth 1 -type d)
+MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
 
 .PHONY: all $(MODULES) preview
 
