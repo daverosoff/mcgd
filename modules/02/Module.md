@@ -10,19 +10,9 @@ you'll need to understand to complete it.
 ### Contour maps
 
 The easiest way to visualize 2-variable functions is with *contour maps*. 
-These are easily created in both R and Sage. The following R code 
-initializes a random 2-variable function and includes its contour plot into 
-the document.
 
-**FIND SOME CODE**
-
-Sage lacks a facility for machine-generated random functions (as far as I am 
-aware), but it can plot a function the user provides quite readily.
-
-**SAGE CODE GOES HERE**
-
-In a contour plot, the points in the plane represent different values of the 
-inputs. Here is a contour plot from the shopping example in 
+In a contour plot, the points in the plane represent different output values
+coming from the various inputs. Here is a contour plot from the shopping example in
 [Module 01][Module 01].
 
 **R CODE FOR LINEAR CONTOUR PLOT**
@@ -38,6 +28,22 @@ several curves) in the plane, called a *contour*. Mathematicians also call
 them "level curves".
 
 **ANOTHER FIGURE**
+
+These are easily created in both R and Sage. The following R code[^usingR] 
+initializes a random 2-variable function and includes its contour plot into 
+the document.
+
+    f <- rfun( ~ x & y, seed = 1066)
+    plotfun( f(x=x,y=y) ~ x & y, x.lim=c(-4,4), y.lim=c(-4,4) )
+
+By default, this produces a full-color contour map. 
+
+Sage lacks a facility for machine-generated random functions (as far as I am 
+aware), but it can plot a function the user provides quite readily.
+
+**SAGE CODE GOES HERE**
+
+
 
 **Exercise**. What do you notice about the contours in the contour plot of \
 the shopping function?
@@ -142,3 +148,5 @@ The most important special case of slicing surfaces is when the knife is a plane
 [^degen]: We allow the case $r = 0$, even though the sphere degenerates to a single point. Such degenerate cases are harmless, and often useful.
 
 [^right]: You may be listening, especially if you have taken certain standardized mathematics tests, for the phrases "right circular cylinder" and "right circular cone". The word "perpendicular" in the definition of the circular cone hints where it has gone; in the definition of the cylinder its absence is a different mystery.
+
+[^usingR]: If you are using R Studio installed on your personal computer, you may need to install additional packages, in particular the <pre>mosaic</pre> package. I recommend you use [the College's server](https://rstudio.collegeofidaho.edu/) in preference to a local installation.
