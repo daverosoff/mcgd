@@ -1,5 +1,5 @@
-src 			= 251_daily_schedule_fall_2013.markdown
-target 			= 251_daily_schedule_fall_2013.html
+src 			= schedule.md
+target 			= schedule.html
 template 		= dave
 #css 			= http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
 base 			= u:/courses/M251
@@ -7,11 +7,11 @@ css 			= css/master.css
 browser 		= maxthon
 browserprefix 	= file://
 
-all: compile
+all: schedule
 
-compile: 
+schedule: 
 		pandoc -s --template=$(template) --css=$(css) \
 		-o $(target) -S $(src)
 
-preview: compile
+preview: schedule
 		$(browser) $(browserprefix)$(base)/$(target)

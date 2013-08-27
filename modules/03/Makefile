@@ -8,16 +8,16 @@ css 		= ../../css/master.css
 browserprefix	= file:
 browser 	= maxthon
 browsertarget	= $(browserprefix)$(targetpath:C:=)
-up 		= ../../251_daily_schedule_fall_2013.html
+up 		= ../../schedule.html
 back		= ../02/Module.html
 next 		= ../04/Module.html
 rscript		= Rscript.exe
+rcommand	= -e 'library(knitr); knit(\"Module.Rmd\")';
 
 all: compile
 
 compile:
-	$(rscript) -e 'library(knitr); \
-	knit(\"Module.Rmd\")';
+	$(rscript) $(rcommand) 
 	pandoc -s --toc-depth=5 --mathjax \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \

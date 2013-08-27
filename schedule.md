@@ -21,11 +21,11 @@ more specific notes from the days you were unable to attend.
                                  
   04            Wed 11 Sept      Vectors in general; linear functions
                                  <br />                 
-                                 Quiz 1 on Modules 01--02.                                                      
+                                 Quiz 01 on Modules 01--02.                                                      
 
   05            Fri 13 Sept      Linear functions; the dot product.
                                  <br />
-                                 WeBWorK 02 is due at 10 pm.10
+                                 WeBWorK 02 is due at 10 pm.
 
   06            Mon 16 Sept      The dot product; the cross product
                                                                        

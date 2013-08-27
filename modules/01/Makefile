@@ -7,7 +7,7 @@ css 		= ../../css/master.css
 browserprefix	= file:
 browser 	= maxthon
 browsertarget	= $(browserprefix)$(targetpath:C\:=)
-up 		= ../../251_daily_schedule_fall_2013.html
+up 		= ../../schedule.html
 next 		= ../02/Module.html
 
 all: compile
