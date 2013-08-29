@@ -4,12 +4,12 @@
 % Fall 2013
 
 ```{r echo=FALSE,results="hide",label="options"}
-require(knitr, quietly=TRUE)
-opts_chunk$set(fig.align="center")
+require(knitr)
+opts_chunk$set(fig.align="center", fig.width=6, fig.height=6)
 ```
 
 ```{r echo=FALSE,warning=FALSE,error=FALSE,message=FALSE,results="hide"}
-library(mosaic,quietly=TRUE)
+library(mosaic)
 trellis.par.set(theme=col.mosaic())
 ```
 
