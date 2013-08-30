@@ -17,7 +17,7 @@ all: compile
 
 compile: $(target)
 
-$(target):
+$(target): $(src)
 	pandoc -s --toc --mathjax=$(mathjax) \
 	--template=$(template) --css=$(css) \
 	--variable back=$(back) \

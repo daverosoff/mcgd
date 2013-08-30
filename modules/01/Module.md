@@ -31,7 +31,7 @@ Notice that the $y$-axis is the same thing as the collection or set of points wh
 
 ### Moving up a dimension
 
-Where $\mathbf{R}^2$ has 2 coordinate axes, $\mathbf{R}^3$ has 3 *coordinate planes*. These are a system of 3 mutually perpendicular planes that all meet at a single point, called the origin. Its coordinates are $(0,0,0)$. Usually, we visualize one of the coordinate planes, called the $(y,z)$-plane, as horizontal. This plane consists of all the points whose coordinates look like $(0, y, z)$. That is, a point is in the $(y,z)$-plane if, and only if, its $x$-coordinate is zero.
+Where $\mathbf{R}^2$ has 2 coordinate axes, $\mathbf{R}^3$ has 3 *coordinate planes*. These are a system of 3 mutually perpendicular planes that all meet at a single point, called the origin. Its coordinates are $(0,0,0)$. Usually, we visualize one of the coordinate planes, called the $(x,y)$-plane, as horizontal. This plane consists of all the points whose coordinates look like $(x,y,0)$. That is, a point is in the $(x,y)$-plane if, and only if, its $z$-coordinate is zero.
 
 The other two coordinate planes are defined similarly: the $(x,z)$-plane consists of points $(x, 0, z)$---that is, points whose $y$-coordinates are zero. 
 
@@ -56,13 +56,13 @@ This is the subject of [Workshop 00], which we will complete Friday in class.
 
 I have some bad news for you: you may be misinformed, based on my previous experience, about what a *function* is. It is the most important concept in mathematics, so I tend to be very picky when talking about it, at least until I am sure everyone is on board.
 
-Most people have done so much algebraic training that they confuse *functions* with *expressions*, which are what mathematicians call algebraic formulas. Every expression gives rise to one (or many) functions, but the reverse is arguable. A function is rather a *rule* associating each of a collection of predetermined permissible "inputs" to exactly one output. The reason that most people think that expressions and functions are the same thing is that very often in mathematics, the rule is given algebraically. For example, the familiar *squaring function* is the function (rule) associating to each number the number obtained by multiplying it by itself. Who could argue that $f(x) = x^2$ is a more precise and easily understood description? 
+Most people have done so much algebraic training that they confuse *functions* with *expressions*, which are what mathematicians call algebraic formulas. Every expression gives rise to one (or many) functions, but the reverse is arguable. A function is rather a *rule* associating each of a collection of predetermined permissible "inputs" to exactly one output. The reason most people think expressions and functions are the same thing is that very often in mathematics, functions' rules are given algebraically. For example, the familiar *squaring function* is the function (rule) associating to each number the number obtained by multiplying it by itself. Who could argue that $f(x) = x^2$ is a more precise and easily understood description? 
 
 Well, I might. I think this notation reinforces the confusion of the expression defining the rule---$x^2$---with the rule---$f(x)$---itself! Unfortunately, we are stuck with it. 
 
-Functions are important to mathematicians for a lot of reasons, but they are important to physicists and chemists and biologists and engineers and psychologists and sociologists and statisticians and criminologists and so on because they *model phenomena*---that is to say, they evidently exist in what we usually call "reality", whatever that means. 
+Functions are important to mathematicians for a lot of reasons, but they are important to physicists and chemists and biologists and engineers and psychologists and sociologists and statisticians and criminologists and so on because they *model phenomena*---that is to say, they evidently "exist" in what we usually call "reality", whatever that means. 
 
-**Example**. The bill for a large print job depends on the number of pages in the document and on the number of copies printed. To be more specific, Phil's Phancy Printing charges a ten-dollar flat fee, plus 4 cents per page, plus a 75 cents per copy for spiral binding. We can express this function more concisely as:
+**Example**. The bill for a large print job depends on the number of pages in the document and on the number of copies printed. To be more specific, Phil's Phancy Printing charges a ten-dollar flat fee, plus 4 cents per page, plus 75 cents per copy for spiral binding. We can express this function more concisely as:
 
     bill = 10 + 4/100*(pages)*(copies) + 75/100*(copies)
 
