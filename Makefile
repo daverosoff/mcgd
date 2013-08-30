@@ -1,22 +1,29 @@
-base 			= $(abspath schedule.html)
+src			= schedule.md
+target			= schedule.html
+base 			= $(abspath $(target))
 browser 		= maxthon
 browserprefix 		= file://
+mathjax			= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 css 			= css/master.css
 template 		= dave
 MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
 
-.PHONY: all $(MODULES) preview
+.PHONY: all $(MODULES) preview clean
 
-all: $(MODULES) schedule.html
+all: $(MODULES) $(target)
 
-compile: schedule.html
+compile: $(target)
 
-schedule.html: schedule.md
+$(target): $(src)
 	pandoc -s --template=$(template) --css=$(css) \
-	-o schedule.html -S schedule.md
+	--mathjax=$(mathjax) \
+	-o $(target) -S $(src)
 
-preview: schedule.html
+preview: $(target)
 	$(browser) $(browserprefix)$(base)
 
 $(MODULES):
 	$(MAKE) -C $@
+
+clean:
+	rm $(target)
