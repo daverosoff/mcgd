@@ -3,7 +3,6 @@ intermed	= Module.md
 target 		= Module.html
 targetpath	= $(abspath $(target))
 template 	= LecNotes
-#css 		= http://zeus.collegeofidaho.edu/academics/MathPhysics/faculty/Rosoff/CSS/test.css
 css 		= ../../css/master.css
 mathjax		= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 browserprefix	= file://
