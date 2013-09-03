@@ -1,11 +1,12 @@
 \documentclass[12pt,twoside]{amsart}
-\usepackage{graphicx,wrapfig,amsmath,amsthm,amssymb,latexsym}
+\usepackage{graphicx,wrapfig,amsmath,amsthm,amssymb,latexsym,paralist}
 \usepackage{fourier, MnSymbol}
 \DeclareGraphicsExtensions{.png}
-\input{commands}
+%\input{commands}
 \usepackage[top=1.0in,bottom=1.0in,left=1.2in,right=1.2in]{geometry}
-\setlength{\parskip}{1.4ex}
-\setlength{\parindent}{0pt}
+\usepackage{parskip}
+%\setlength{\parskip}{1.4ex}
+%\setlength{\parindent}{0pt}
 \linespread{1.135}
 \frenchspacing
 \hyphenation{pa-ra-met-riz-a-tion}
@@ -42,7 +43,7 @@ The name of the course is traditional, and at one time all colleges and universi
 The fundamental idea and theme of the course is what is called ``parametrization''. Too many related concepts are built into the meaning of this word to explain it more here, but the main goal of the course is for you to have an enduring understanding of this idea that permits you to recognize, employ, and interpret parametrization in your future mathematical enterprises. See the section \emph{Course overview} below for a more comprehensive introduction.
 
 \textbf{Learning outcomes:} This course is designed so that, upon successful completion, you will be able to:
-\begin{itemize}
+\begin{compactitem}
     \item Recognize and describe fundamental ideas from multivariable calculus.
     \item Illustrate these ideas with examples and translate them into everyday terminology.
     \item Demonstrate the use of calculus on specific numerical problems.
@@ -51,7 +52,7 @@ The fundamental idea and theme of the course is what is called ``parametrization
     \item Explain why arguments making use of calculus are sound or not, as appropriate.
     \item Plan, organize, and combine arguments to solve new problems, as appropriate.
     \item Generalize or modify to create new arguments, as appropriate.
-\end{itemize}
+\end{compactitem}
 
 \textbf{Text}: The text is \emph{Calculus: Early Transcendentals} by Jon Rogawski, second edition. It is OK if you have the first edition, although your section numbers may be different. If you choose to use a different edition than the recommended one, it is your responsibility to make sure you submit homework assignments correctly. 
 
@@ -60,11 +61,11 @@ A second, recommended text is \emph{Start R with Calculus}, by Daniel Kaplan, av
 \textbf{Catalog description}: ``A study of real functions of several real variables. Topics include differentiability and continuity, differential geometry, extrema, Lagrange multipliers, multiple integration, line and surface integrals, and the theorems of Green, Gauss and Stokes.''
 
 \textbf{Homework}: Homework in this class comprises both online and traditional written assignments.
-\begin{itemize}
+\begin{compactitem}
     \item WeBWorK assigned almost-daily, available at \\
     \url{https://webwork.collegeofidaho.edu/webwork2/MAT251_01_F13/}
     \item \emph{Portfolio problems}, assigned in weekly batches and collected regularly throughout the term. These problems mostly come from the textbook and are intended to stretch your thinking beyond the level of the online homework. It is these problems that you have opportunities to present at the board.
-\end{itemize}
+\end{compactitem}
 
 \textbf{How to do homework:} Whenever you are writing a solution to a math problem, it is important to strive for the clearest exposition you can manage. Good mathematical writing is essential for anyone who wishes to think clearly about mathematics. The process of making your ideas and reasoning \emph{clear, complete, and unambiguously correct} is the most effective amplifier of mathematical power there is. Hence your solutions should be composed in brilliant English prose. This means employing accepted scientific usage, more or less correct grammar and spelling, and above all \emph{complete sentences}---sprinkled here and there with tangy, delicious equations. Solutions in the popular ``pile-of-equations'' style with little or no explanatory text will not get much credit. You must explain what is happening as the action unfolds. 
 
@@ -79,11 +80,11 @@ I encourage all students to form study groups and collaborate on homework; each 
 \textbf{Quizzes}: To make sure each student is keeping up with the online problems, we will have frequent quizzes. Quiz problems are simple variants of WeBWorK problems and all quizzes are open-note. Therefore, if you have solved the WeBWorK problems prior to the quiz day, a score of $100\%$ is very possible.
 
 \textbf{Exams}: Two exams are given in class (see below for dates). Exams comprise both portfolio problems and new problems intended to stretch your thinking. During the exam, you may refer freely to your portfolio. A missed exam results in an exam grade of zero. Arrangements for absences, again, must be made well in advance (two weeks suffices). \emph{If arrangements are not made in advance, I will consider make-ups only with compelling, documented reasons.} 
-\begin{itemize}
+\begin{compactitem}
 	\item Exam 1 (tentative): Tuesday, September 24 (week 3)
     \item Exam 2 (tentative): Tuesday, November 5 (week 8)
 	\item Final Exam (cannot be rescheduled \emph{for any reason}): Monday, December 9, 1:30--4:30
-\end{itemize}
+\end{compactitem}
 
 \textbf{Course overview}: We generalize the main ideas and results of single-variable calculus to multivariate situations, with particular attention to applications and modeling. There are two ways to proceed. First, we allow the domains (inputs) of the functions at hand to be 2-, 3-, or higher-dimensional, while maintaining the restriction that the function's values are real numbers in the usual sense. Here we will meet the essential concepts of \emph{partial derivative} and \emph{total} or \emph{Jacobian derivative} and revisit the familiar themes of differential calculus (related rates, optimization, etc.). We will introduce the powerful modern algebraic framework of \emph{vectors} in which the rest of the theory is cast. At this level of abstraction there are many opportunities to discuss mathematical modeling, of which we avail ourselves as appropriate.
 
