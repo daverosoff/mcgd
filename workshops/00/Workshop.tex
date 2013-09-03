@@ -1,0 +1,93 @@
+\documentclass[12pt]{exam}
+\usepackage{xparse}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{fourier}
+\usepackage{MnSymbol}
+\usepackage{amsthm}
+\usepackage{paralist,enumerate,listings}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Fall 2013}}
+ {}
+ {\textbf{Math 251}}
+ %{\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+%\newcommand{\R}{\mathbb{R}}
+%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\NewDocumentCommand\N{}{\mathbf{N}}
+\NewDocumentCommand\R{}{\mathbf{R}}
+\NewDocumentCommand\Z{}{\mathbf{Z}}
+\NewDocumentCommand\Q{}{\mathbf{Q}}
+\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\begin{document}
+\lstset{language=R}
+\noindent
+\textbf{{\large Math 251 \hfill Workshop 00: Coordinates revisited}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+September 6, 2013 
+
+\noindent
+Due: Monday, September 9 \hfill Name: \underline{\hspace{3in}} 
+
+\noindent
+
+\subsection{Coordinates revisited}
+
+The first major topic in this course is the geometry of 3-dimensional
+Euclidean space $\mathbf{R}^3$. Many people struggle with visualizing in
+this space or find it difficult to translate coordinate information into
+geometric information. This workshop will encourage you to rethink
+coordinates in the familiar Euclidean plane in preparation for the later
+discussion.
+
+\subsection{Origin and axes}
+
+The plane doesn't come to us with a grid of coordinate axes pre-marked
+on it. That is a structure we impose from outside. In particular, there
+is no rule that says coordinate axes must be perpendicular to one
+another. We choose them that way for convenience.
+
+We'll take the meaning of ``perpendicular'' for granted. The next few
+sections develop the idea of coordinates using it.
+
+Picture the plane, blank and unmarked. Its expanse is infinite in all
+directions, motionless and unchanging. Pick a line---any line at all.
+We'll call it \emph{the axis} for now to distinguish it from other
+lines. The axis can be used to divide the plane into a family of
+parallel lines, each perpendicular to the axis. This family of lines
+fills up the entire plane. That is, every point of the plane is on
+exactly one such line. To see this, we must appeal to a bit of Greek
+geometry. Euclid tells us how to draw a perpendicular to a line through
+a given point in Propositions
+\href{http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI11.html}{11}
+and
+\href{http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI12.html}{12}
+of \href{http://aleph0.clarku.edu/~djoyce/java/elements/bookI.html}{Book
+I of the Elements}.
+
+Thus, we have a set of lines, each perpendicular to our axis, that fill
+up the plane. This is \emph{almost} everything we need to
+\emph{coordinatize} the set of lines. Coordinatizing means assigning a
+different real number---a \emph{coordinate}---to each line. We don't do
+it just at random: we do it so that if two lines are chosen, the one to
+the left has the smaller coordinate. This ensures that the numeric order
+and the geographic order are the same.
+
+To coordinatize the set of lines perpendicular to the axis, we need to
+choose which line has coordinate 1. Once this is done, there is a unique
+choice of coordinate for each line
+
+\subsection{Coordinates} 
+
+\end{document}
