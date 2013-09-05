@@ -77,20 +77,20 @@ more specific notes from the days you were unable to attend.
                                                                        
   28            Wed 30 Oct       Cylindrical and spherical coordinates; intro to triple integrals in curved coordinates
                                                                        
-  29            Fri 1 Nov        Presentations; flex time
+  29            Fri 1 Nov        Presentations; Parametrization, families, and curves
                                  
-  30            Mon 4 Nov        Flex time; Review for **Exam 2**
-                                                                       
-  31            Tue 5 Nov        **Exam 2**
+  30            Mon 4 Nov        Parametrized curves: lines and arcs
                                  
-  32            Wed 6 Nov        Parametrization, families, and curves
+  31            Tue 5 Nov        Parametrization and vector values
                                                                        
-  33            Fri 8 Nov        Parametrized curves: lines and arcs
+  32            Wed 6 Nov        Vector fields; idea of line integrals
+                                                                                                             
+  33            Fri 8 Nov        Line integrals with parametrization; flex time
                                                                        
-  34            Mon 11 Nov       Vector fields; idea of line integrals
-                                                                       
-  35            Tue 12 Nov       Line integrals with parametrization
-                                                                       
+  34            Mon 11 Nov       Flex time; Review for **Exam 2**
+                                 
+  35            Tue 12 Nov       **Exam 2**
+                                 
   36            Wed 13 Nov       More on line integrals; gradient vector fields
                                                                        
   37            Fri 15 Nov       Gradient fields and path-independence; idea of Green's theorem
