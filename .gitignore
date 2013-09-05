@@ -1,2 +1,8 @@
-Makefile.txt
-Thumbs.db
+/Makefile.txt
+/Thumbs.db
+/*.log
+/*.pdf
+/*.synctex.gz
+/*.aux
+/*.out
+
