@@ -5,14 +5,14 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Dr. Dave Rosoff" />
-  <title>Module 01: Geometry of \(\mathbf{R}^3\) and 2-variable functions</title>
+  <title>Module 01: Geometry of 3-dimensional space; 2-variable functions</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="../../css/master.css" type="text/css" />
   <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <div id="header">
-<h2 class="title">Module 01: Geometry of <span class="math">\(\mathbf{R}^3\)</span> and 2-variable functions</h2>
+<h2 class="title">Module 01: Geometry of 3-dimensional space; 2-variable functions</h2>
 <ul class="nav">
 <li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
 <li class="nav"><a class = "nav" href = "../02/Module.html">Next</a></li>
@@ -51,11 +51,15 @@
 <h3 id="moving-up-a-dimension"><a href="#moving-up-a-dimension">Moving up a dimension</a></h3>
 <p>Where <span class="math">\(\mathbf{R}^2\)</span> has 2 coordinate axes, <span class="math">\(\mathbf{R}^3\)</span> has 3 <em>coordinate planes</em>. These are a system of 3 mutually perpendicular planes that all meet at a single point, called the origin. Its coordinates are <span class="math">\((0,0,0)\)</span>. Usually, we visualize one of the coordinate planes, called the <span class="math">\((x,y)\)</span>-plane, as horizontal. This plane consists of all the points whose coordinates look like <span class="math">\((x,y,0)\)</span>. That is, a point is in the <span class="math">\((x,y)\)</span>-plane if, and only if, its <span class="math">\(z\)</span>-coordinate is zero.</p>
 <p>The other two coordinate planes are defined similarly: the <span class="math">\((x,z)\)</span>-plane consists of points <span class="math">\((x, 0, z)\)</span>—that is, points whose <span class="math">\(y\)</span>-coordinates are zero.</p>
+<blockquote>
 <p><strong>Exercise</strong>. Name and define the remaining coordinate plane. By “define”, we mean to concretely describe the collection of points making up the plane, in terms of coordinates.</p>
+</blockquote>
 <p>In <span class="math">\(\mathbf{R}^3\)</span>, two planes that meet must intersect along a line. Any pair of coordinate planes thus have a line’s worth of points in common.</p>
 <p>For example, we may consider a point that lies on both the <span class="math">\((x,z)\)</span>-plane and the <span class="math">\((y,z)\)</span>-plane. Such a point has coordinates, say <span class="math">\((a,b,c)\)</span>. Since the point is on the <span class="math">\((x,z)\)</span>-plane, <span class="math">\(b = 0\)</span>. On the other hand, the point is also on the <span class="math">\((y,z)\)</span>-plane, so <span class="math">\(a = 0\)</span> as well. This shows the point’s coordinates look like <span class="math">\((0,0,c)\)</span>. It’s clear by looking at the definitions that any point whose coordinates are of this form is on both coordinate planes.</p>
 <p>By analogy with the situation in the plane, we define the <span class="math">\(z\)</span>-axis of <span class="math">\(\mathbf{R}^3\)</span> to be the intersection of the <span class="math">\((x,z)\)</span>-plane and the <span class="math">\((y,z)\)</span>-plane. The example above shows that the <span class="math">\(z\)</span>-axis is indeed a line, and that it is perpendicular to the remaining coordinate plane, which you defined in a previous Exercise.</p>
+<blockquote>
 <p><strong>Exercise</strong>. Name and define two more coordinate axes. Characterize the points that live on these axes by describing how their coordinates look.</p>
+</blockquote>
 <p>As we progress through the semester, most of the action will happen in this space <span class="math">\(\mathbf{R}^3\)</span>. For now, we will spend a couple of weeks getting better acquainted with it, and learning some mentally convenient ways to talk about its points and its subspaces.</p>
 <h3 id="distances-among-points-lines-and-planes"><a href="#distances-among-points-lines-and-planes">Distances among points, lines, and planes</a></h3>
 <p>This is the subject of [Workshop 00], which we will complete Friday in class. <!--Workshop 00 needs to introduce distance formula and also things like distance to coordinate planes & axes.--></p>
@@ -76,10 +80,14 @@
 <p>The following slogan is a way to recognize and characterize linear phenomena. Mathematicians and math users love linear phenomena, because they are the easiest phenomena to understand.</p>
 <p><strong>Slogan</strong>. A phenomenon is linear with respect to some input if changing the input always produces the same change in the output.</p>
 <p>In the previous section, we observed that the printer’s bill was not linear with respect to the number of pages. This is because adding a fixed number of pages doesn’t always produces the same change in the bill. It depends on the number of copies.</p>
+<blockquote>
 <p><strong>Exercise</strong>. Decide whether the printer’s bill is linear with respect to the number of <em>copies</em>. It’s OK to mimic the reasoning from the previous part.</p>
+</blockquote>
 <p>Here is a modeling situation that is linear in both of its inputs. A trip to the clothing store might result in the purchase of <span class="math">\(s\)</span> shirts and <span class="math">\(t\)</span> pairs of trousers. Let’s assume all the shirts have the same price, and all the trousers share a (possibly different) price. Travel to and from the store costs the same no matter what we buy, so that there is a fixed cost in this situation as well.</p>
 <pre><code>cost = trip_cost + s*(shirt_price) + t*(trou_price)</code></pre>
+<blockquote>
 <p><strong>Exercise</strong>. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?</p>
+</blockquote>
 <ul class="nav">
 <li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
 <li class="nav"><a class = "nav" href = "../02/Module.html">Next</a></li>

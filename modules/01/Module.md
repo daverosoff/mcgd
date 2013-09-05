@@ -1,5 +1,5 @@
 % Module 01:
-  Geometry of $\mathbf{R}^3$ and 2-variable functions
+  Geometry of 3-dimensional space; 2-variable functions
 % Dr. Dave Rosoff
 % Fall 2013
 
@@ -35,7 +35,7 @@ Where $\mathbf{R}^2$ has 2 coordinate axes, $\mathbf{R}^3$ has 3 *coordinate pla
 
 The other two coordinate planes are defined similarly: the $(x,z)$-plane consists of points $(x, 0, z)$---that is, points whose $y$-coordinates are zero. 
 
-**Exercise**. Name and define the remaining coordinate plane. By "define", we mean to concretely describe the collection of points making up the plane, in terms of coordinates.
+> **Exercise**. Name and define the remaining coordinate plane. By "define", we mean to concretely describe the collection of points making up the plane, in terms of coordinates.
 
 In $\mathbf{R}^3$, two planes that meet must intersect along a line. Any pair of coordinate planes thus have a line's worth of points in common.
 
@@ -43,7 +43,7 @@ For example, we may consider a point that lies on both the $(x,z)$-plane and the
 
 By analogy with the situation in the plane, we define the $z$-axis of $\mathbf{R}^3$ to be the intersection of the $(x,z)$-plane and the $(y,z)$-plane. The example above shows that the $z$-axis is indeed a line, and that it is perpendicular to the remaining coordinate plane, which you defined in a previous Exercise.
 
-**Exercise**. Name and define two more coordinate axes. Characterize the points that live on these axes by describing how their coordinates look.
+> **Exercise**. Name and define two more coordinate axes. Characterize the points that live on these axes by describing how their coordinates look.
 
 As we progress through the semester, most of the action will happen in this space $\mathbf{R}^3$. For now, we will spend a couple of weeks getting better acquainted with it, and learning some mentally convenient ways to talk about its points and its subspaces.
 
@@ -84,10 +84,10 @@ The following slogan is a way to recognize and characterize linear phenomena. Ma
 
 In the previous section, we observed that the printer's bill was not linear with respect to the number of pages. This is because adding a fixed number of pages doesn't always produces the same change in the bill. It depends on the number of copies.
 
-**Exercise**. Decide whether the printer's bill is linear with respect to the number of *copies*. It's OK to mimic the reasoning from the previous part.
+> **Exercise**. Decide whether the printer's bill is linear with respect to the number of *copies*. It's OK to mimic the reasoning from the previous part.
 
 Here is a modeling situation that is linear in both of its inputs. A trip to the clothing store might result in the purchase of $s$ shirts and $t$ pairs of trousers. Let's assume all the shirts have the same price, and all the trousers share a (possibly different) price. Travel to and from the store costs the same no matter what we buy, so that there is a fixed cost in this situation as well. 
 
     cost = trip_cost + s*(shirt_price) + t*(trou_price)
 
-**Exercise**. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?
+> **Exercise**. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?
