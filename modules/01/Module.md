@@ -74,13 +74,13 @@ This may look strange, if you are used to reading math books. A mathematician mi
 
 There's no real reason our functions or variables need to have single-letter names. When we work with the R or Sage mathematical programming systems, we will try to remember this and give our variables descriptive, memorable names. In these modules, I will often use traditional variable names, because they look nicer on the screen.
 
-In the printing example, it's easy to see that adding a page to our document increases the bill by $0.04c$ dollars, where $c$ is the number of copies as before. In other words, changing $p$ (the number of pages) has an effect that depends on the value of $c$. The name of this phenomenon is "nonlinearity". In the expressions given above, the term $pc$ is the term that introduces it. A term is *linear* if it has the form "constant-times-variable", and a function (for us) is *linear* if it is a sum of constant terms and linear terms.
+In the printing example, it's easy to see that adding a page to our document increases the bill by $0.04c$ dollars, where $c$ is the number of copies as before. In other words, changing $p$ (the number of pages) has an effect that depends on the value of $c$. The name of this phenomenon is "nonlinearity". In the expressions given above, the term $pc$ is the term that introduces it. 
 
 ### Modeling with linear functions
 
 The following slogan is a way to recognize and characterize linear phenomena. Mathematicians and math users love linear phenomena, because they are the easiest phenomena to understand. 
 
-**Slogan**. A phenomenon is linear with respect to some input if changing the input always produces the same change in the output.
+**Slogan**. A phenomenon is linear with respect to some input if changing the input always produces the same change in the output---in other words, if the amount of the change doesn't depend on the starting conditions.
 
 In the previous section, we observed that the printer's bill was not linear with respect to the number of pages. This is because adding a fixed number of pages doesn't always produces the same change in the bill. It depends on the number of copies.
 
