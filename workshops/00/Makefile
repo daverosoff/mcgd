@@ -1,8 +1,8 @@
-DUEDATE		= "Monday, September 9"
+DUEDATE		= "Not collected"
 COURSE		= "Math 251"
 TERM		= "Fall 2013"
 template 	= workshop.latex
-baseheaderlevel = 2
+baseheaderlevel = 1
 src 		= Workshop.md
 intermed 	= Workshop.tex
 target 		= Workshop.pdf
