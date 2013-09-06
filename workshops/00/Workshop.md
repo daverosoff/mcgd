@@ -2,7 +2,11 @@
 % Dr. Dave Rosoff
 % September 6, 2013
 
-# Coordinates revisited 
+# Workshop 00
+
+We'll do these a couple of times a week. They are usually collected a few days later. This one won't be collected.
+
+## Coordinates revisited 
 
 The first major topic in this course is the geometry of 3-dimensional
 Euclidean space $\mathbf{R}^3$. Many people struggle with visualizing in this
@@ -10,32 +14,40 @@ space or find it difficult to translate coordinate information into geometric
 information. This workshop will encourage you to rethink coordinates in the
 familiar Euclidean plane in preparation for the later discussion.
 
-# Origin and axes
+\begin{compactitem}
+    \item As you work through the questions, check your answers with either Rainier or Dr.\ Rosoff before going on. 
+    \item Raise a hand if you are really stuck. 
+    \item Talk a lot! Class goes better the more you talk to each other.
+\end{compactitem}
 
-The plane doesn't come to us with a grid of coordinate axes pre-marked on it.
-That is a structure we impose from outside. In particular, there is no rule
-that says coordinate axes must be perpendicular to one another. We choose them
-that way for convenience. 
+## Coordinates
 
-We'll take the meaning of "perpendicular" for granted. The next few sections
-develop the idea of coordinates using it.
+Draw a coordinate plane on your whiteboard, and plot the line $y = 2$.
 
-Picture the plane, blank and unmarked. Its expanse is infinite in all
-directions, motionless and unchanging. Pick a line---any line at all. We'll
-call it *the axis* for now to distinguish it from other lines. The axis can be
-used to divide the plane into a family of parallel lines, each perpendicular
-to the axis. This family of lines fills up the entire plane. That is, every
-point of the plane is on exactly one such line. To see this, we must appeal to
-a bit of Greek geometry. Euclid tells us how to draw a perpendicular to a line
-through a given point in Propositions [11][prop11] and [12][prop12] of 
-[Book I of the Elements][BookI].
+\begin{questions}
 
-Thus, we have a set of lines, each perpendicular to our axis, that fill up the plane. This is *almost* everything we need to *coordinatize* the set of lines. Coordinatizing means assigning a different real number---a *coordinate*---to each line. We don't do it just at random: we do it so that if two lines are chosen, the one to the left has the smaller coordinate. This ensures that the numeric order and the geographic order are the same.
+\question
+What do all the points on the line $y = 2$ have in common? Answer as *clearly* and *succinctly* as you can. (Try to avoid referring to points' coordinates. The idea here is to remember how coordinates are defined in the first place.)
 
-To coordinatize the set of lines perpendicular to the axis, we need to choose which line has coordinate 1. Once this is done, there is a unique choice of coordinate for each line 
+\question
+Give the best definition you can for the idea of "distance between a point and a line".
 
+\question
+What do all the points on the line $x = -3$ have in common? What's the difference between $x = -3$ and $x = 3$?
 
-# Coordinates
+\question 
+How do you plot points? Where's the point $(2, 3)$? What does this point have to do with the lines you have been drawing?
+
+\question
+Now draw yourself a 3-space, like on the board. What are the points $z = -1$? What shape do they make? Try to draw this shape.
+
+\question 
+Draw $y = -2$ in your 3-space. What's the difference between $y = -2$ and $y = 2$? Now Try to draw $x = 4$ in your 3-space. Where does $(4, 2, -1)$ live?
+
+\question 
+Given two points $(x_0, y_0, z_0)$ and $(x_1, y_1, z_1)$, write down a formula for the square of the distance between them. Use the definitions of the coordinates you've figured out. If you are having trouble, try the exercise in just 2 dimensions first.
+
+\end{questions}
 
 [prop11]: http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI11.html
 [prop12]: http://aleph0.clarku.edu/~djoyce/java/elements/bookI/propI12.html
