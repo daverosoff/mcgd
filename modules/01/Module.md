@@ -49,7 +49,7 @@ As we progress through the semester, most of the action will happen in this spac
 
 ### Distances among points, lines, and planes
 
-This is the subject of [Workshop 00], which we will complete Friday in class.
+This is the subject of [Workshop 00][w00], which we will complete Friday in class.
 <!--Workshop 00 needs to introduce distance formula and also things like distance to coordinate planes & axes.-->
 
 ### 2-variable functions
@@ -91,3 +91,7 @@ Here is a modeling situation that is linear in both of its inputs. A trip to the
     cost = trip_cost + s*(shirt_price) + t*(trou_price)
 
 > **Exercise**. How would you use the formula above to check that the cost of the shopping trip really is linear in both inputs?
+
+<!-- document ends; links past here -->
+
+[w00]: ../../workshops/01/Workshop.pdf
