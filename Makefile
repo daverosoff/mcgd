@@ -10,9 +10,14 @@ MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
 
 .PHONY: all $(MODULES) preview clean
 
-all: $(MODULES) $(target)
+all: $(MODULES) $(target) index.html
 
 compile: $(target)
+
+index.html: index.md
+	pandoc -s --template=$(template) --css=$(css) \
+	--mathjax=$(mathjax) \
+	-o index.html -S index.md
 
 $(target): $(src)
 	pandoc -s --template=$(template) --css=$(css) \
