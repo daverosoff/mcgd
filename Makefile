@@ -7,12 +7,14 @@ mathjax			= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config
 css 			= css/master.css
 template 		= dave
 MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
+WORKSHOPS		= $(shell find workshops -mindepth 1 -maxdepth 1 -type d)
+DECKS			= $(shell find decks -mindepth 1 -maxdepth 1 -type d)
 
-.PHONY: all $(MODULES) preview clean
+.PHONY: all $(MODULES) $(WORKSHOPS) $(DECKS) preview clean
 
-all: $(MODULES) $(target) index.html
+compile: all
 
-compile: $(target)
+all: $(MODULES) $(WORKSHOPS) $(DECKS) $(target) index.html
 
 index.html: index.md
 	pandoc -s --template=$(template) --css=$(css) \
@@ -28,6 +30,12 @@ preview: $(target)
 	$(browser) $(browserprefix)$(base)
 
 $(MODULES):
+	$(MAKE) -C $@
+
+$(WORKSHOPS):
+	$(MAKE) -C $@
+
+$(DECKS):
 	$(MAKE) -C $@
 
 clean:
