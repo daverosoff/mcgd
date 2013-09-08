@@ -164,7 +164,7 @@ The most important special case of slicing surfaces is when the knife is a plane
 
 [Module 01]: ../01/Module.html
 [shex]: ../01/Module.html#modeling-with-linear-functions
-[Workshop 00]: ../00/Workshop.html 
+[Workshop 00]: ../../Workshops/00/Workshop.html 
 
 [^degen]: We allow the case $r = 0$, even though the sphere degenerates to a single point. Such degenerate cases are harmless, and often useful.
 
