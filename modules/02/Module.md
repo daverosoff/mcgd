@@ -1,6 +1,6 @@
 % Module 02:
   Contour maps and some common quadric surfaces
-% Dr. Dave Rosoff
+% Math 251 Calculus 3
 % Fall 2013 
 
 

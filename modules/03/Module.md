@@ -1,6 +1,6 @@
 % Module 03:
   Slicing graphs; vectors as displacements
-% Dr. Dave Rosoff
+% Math 251 Calculus 3
 % Fall 2013
 
 
