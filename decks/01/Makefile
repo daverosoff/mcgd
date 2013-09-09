@@ -8,8 +8,6 @@ colortheme	= crane
 fonttheme	= structurebold
 listings	= R
 numbersections	= 
-title		= "Section 2.1: Limits, Rates of Change, and Tangent Lines"
-author		= "Mathematics 151 Calculus 1"
 mathjax		= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 browser		= SumatraPDF
 
