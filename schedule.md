@@ -14,6 +14,8 @@ more specific notes from the days you were unable to attend.
                                  [Workshop 00][w00].
                                                                   
   [02][m02]     Mon 9 Sept       2-variable functions; spheres, cylinders, cones
+                                 <br />
+                                 <!-- [Deck 01][d01] -->
       
   [03][m03]     Tue 10 Sept      Slicing graphs; vectors as displacements
                                  <br />
@@ -125,3 +127,5 @@ more specific notes from the days you were unable to attend.
 [m03]: modules/03/Module.html
 
 [w00]: workshops/00/Workshop.pdf
+
+[d01]: decks/01/Deck.pdf
