@@ -13,11 +13,11 @@ more specific notes from the days you were unable to attend.
                                  <br />
                                  [Workshop 00][w00].
                                                                   
-  [02][m02]     Mon 9 Sept       2-variable functions; spheres, cylinders, cones
+  [02][m02]     Mon 9 Sept       2-variable functions; slicing graphs
                                  <br />
-                                 <!-- [Deck 01][d01] -->
+                                 [Today's slide presentation (PDF).][d01]
       
-  [03][m03]     Tue 10 Sept      Slicing graphs; vectors as displacements
+  [03][m03]     Tue 10 Sept      Spheres, cylinders, cones; vectors as displacements
                                  <br />
                                  Workshop 01<!--add link-->. WeBWorK 01 is due at 10 pm.
                                  
