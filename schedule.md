@@ -10,7 +10,7 @@ module numbering.
 
 -------------------------------------------------------------------------------------
  Module            Date           Topics 
-------------  ---------------     ---------------------------------------------------
+------------   --------------     ---------------------------------------------------
   [01][m01]     Fri 6 Sept        Introduction; 2-variable functions
                                   <br />
                                   [Workshop 00][w00].
@@ -19,12 +19,13 @@ module numbering.
                                   <br />
                                   [Today's slide presentation (PDF).][d01]
        
-  [03][m03]     Tue 10 Sept       Spheres, cylinders, cones
-                                  <br />
+  [02][m02]     Tue 10 Sept       Spheres, cylinders, cones <br />
+                                  Read sections 12.1--12.2 in addition to [Module 03][m03].
                                   WeBWorK 01 is due at 10 pm.
                                   
-  [03][m03]     Wed 11 Sept       Slicing graphs; displacement vectors <br />  
-                                  Workshop 01. <br />               
+  [02][m02]     Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2) <br />  
+  [03][m03]                       Workshop 01. <br />
+                                  [Today's slide presentation (PDF).][d02]               
                                   Quiz 01 on Modules 01--02.            
  
   05            Fri 13 Sept       Vectors in general; the dot product.
@@ -131,3 +132,4 @@ module numbering.
 [w00]: workshops/00/Workshop.pdf
 
 [d01]: decks/01/Deck.pdf
+[d02]: decks/02/Deck.pdf
