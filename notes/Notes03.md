@@ -7,3 +7,11 @@
 * Exercises from m02 about cylinders and cones
 * 20-minute deck 02 about vectors.
 
+-------------------
+
+We didn't get to vectors. Good discussion about conics
+and good board work graphing cones.
+
+Rescheduled, so tomorrow is linear functions and vectors.
+
+Design w01 to slice graphs for tomorrow. Slides are ready to go (d02).
