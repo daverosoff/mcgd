@@ -1,0 +1,119 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+\usepackage{paralist}
+\usepackage{xparse}
+
+\usepackage{subfigure}
+%%% end dwr insert
+\title{Displacement in several directions: vectors}
+\author{Math 251 Calculus 3}
+\date{September 10, 2013 }
+
+\usepackage{siunitx}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Displacements in the plane}
+
+\begin{frame}\frametitle{What is ``change in position''?}
+
+\begin{itemize}[<+->]
+\item
+  If I move from $(2,3)$ to $(-3, 1)$, what is the most natural way to
+  express this change?
+\item
+  In everyday English, we separate it into two changes: a change in the
+  east--west direction, and a change in the north--south direction.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Two changes in one}
+
+``Five blocks south and two blocks west'' is a pretty natural way to
+express the move from $(2,3)$ to $(-3, 1)$.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Notice: it's not a sensible \emph{address} in any city or town. Why
+  not?
+\item
+  It is a \emph{displacement}, not a \emph{location}.
+\item
+  These are different notions!
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Universality of displacement}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  If the town is laid out on a square grid (as opposed to rectangles,
+  some other kind of parallelograms, or worse) \ldots
+\item
+  \ldots~walking from $(2,3)$ to $(-3, 1)$ feels the same as walking
+  from $(2013,2013)$ to $(2008,2010)$.
+\end{itemize}
+
+We call this displacement the \emph{vector} $\langle -5, -2 \rangle$.
+Observe the following na"ive ``equations'':
+
+\[ (2,3) + \langle -5, -2 \rangle$ = (-3, 1) \]
+\[ (2013,2013) + \langle -5, -2 \rangle$ = (2008,2010) \]
+
+\end{frame}
+
+\end{document}
