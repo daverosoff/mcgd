@@ -78,12 +78,6 @@ aware), but it can plot a function the user provides quite readily. See the docu
 **Exercise**. What do you notice about the contours in the contour plot of 
 the shopping function?
 
-### Cross-sectional functions
-
-If you read along a horizontal or vertical line in the plane, you can get an 
-idea of how changes in either of the inputs affect the output. **MORE IS 
-NEEDED**
-
 ### Surfaces and graphs
 
 Returning to the abstract geometry of $\mathbf{R}^3$, it is time to consider 
