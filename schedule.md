@@ -13,7 +13,7 @@ more specific notes from the days you were unable to attend.
                                  <br />
                                  [Workshop 00][w00].
                                                                   
-  [02][m02]     Mon 9 Sept       2-variable functions; slicing graphs
+  [02][m02]     Mon 9 Sept       2-variable functions; contour plots; slicing graphs
                                  <br />
                                  [Today's slide presentation (PDF).][d01]
       
