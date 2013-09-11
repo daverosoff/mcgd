@@ -9,12 +9,13 @@ template 		= dave
 MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
 WORKSHOPS		= $(shell find workshops -mindepth 1 -maxdepth 1 -type d)
 DECKS			= $(shell find decks -mindepth 1 -maxdepth 1 -type d)
+QUIZZES			= $(shell find quizzes -mindepth 1 -maxdepth 1 -type d)
 
-.PHONY: all $(MODULES) $(WORKSHOPS) $(DECKS) preview clean
+.PHONY: all $(MODULES) $(WORKSHOPS) $(DECKS) $(QUIZZES) preview clean
 
 compile: all
 
-all: $(MODULES) $(WORKSHOPS) $(DECKS) $(target) index.html
+all: $(MODULES) $(WORKSHOPS) $(DECKS) $(QUIZZES) $(target) index.html
 
 index.html: index.md
 	pandoc -s --template=$(template) --css=$(css) \
@@ -38,5 +39,8 @@ $(WORKSHOPS):
 $(DECKS):
 	$(MAKE) -C $@
 
+$(QUIZZES):
+	$(MAKE) -C $@
+
 clean:
-	rm $(target)
+	rm $(target) index.html
