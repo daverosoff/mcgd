@@ -5,6 +5,7 @@
 Welcome to the main page for Math 251. There will be more here eventually.
 For now, just a couple of links:
 
+* [Syllabus (PDF)](syllabus.pdf)
 * [Math 251 Main Schedule](schedule.html)
 * [Math 251 WeBWorK](https://webwork.collegeofidaho.edu/webwork2/MAT251_01_F13)
 * [C of I R Studio server](https://rstudio.collegeofidaho.edu/)
