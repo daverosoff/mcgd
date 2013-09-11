@@ -13,7 +13,7 @@ $$ x^2 + y^2 + z^2 = 1. $$
 
 \begin{questions}
 
-\question Give equations of all the planes parallel to the $(y,z)$-plane that miss the unit sphere.
+\question Give equations of all the planes parallel to the $(y,z)$-plane that miss the unit sphere. \emph{Hint.} Use an auxiliary variable.
 
 \question How many planes parallel to the $(y,z)$-plane meet the sphere at one point? Give equations for all of them.
  
@@ -50,12 +50,13 @@ That's what we mean by symmetry, or the mathematical abbreviation WLOG. This sta
 \begin{compactitem}
     \item Get the angles right. Make the parallelogram of your plane parallel to the $x$- and $y$-axes.
     \item Draw a \emph{big} picture. Big pictures have more room for labels.
+    \item The $(x,y)$-plane itself does slice the sphere, but it's very special. Pick a more generic slicing plane.
     \item Don't be afraid to erase.
 \end{compactitem}
 
 \newpage
 
-\question Now, we're still solving two equations. What are they? (Hint: you're intersecting two surfaces.)
+\question Now, we're still solving two equations. What are they? (Hint: one from the sphere and one from the slicing plane.)
 
 \dwrspace{1}
 
@@ -63,7 +64,7 @@ That's what we mean by symmetry, or the mathematical abbreviation WLOG. This sta
 
 \dwrspace{1}
 
-\question Write down two equations that all the points in the intersection of the sphere and the plane satisfy. (Hint: one equation involves $x$ and $y$ only, and the other involves $z$ only.)
+\question Write down two equations that all the points in the intersection of the sphere and the plane satisfy. (Hint: one equation involves $x$ and $y$ only, and the other involves $z$ only.) These aren't the same as the equations above, but they aren't too terribly different either.
 
 \dwrspace{1}
 
