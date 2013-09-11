@@ -49,7 +49,7 @@ That's what we mean by symmetry, or the mathematical abbreviation WLOG. This sta
 \question Draw a big, beautiful picture of the unit sphere sliced by a horizontal plane. Remember the drawing tips:
 \begin{compactitem}
     \item Get the angles right. Make the parallelogram of your plane parallel to the $x$- and $y$-axes.
-    \item Draw a *big* picture. Big pictures have more room for labels.
+    \item Draw a \emph{big} picture. Big pictures have more room for labels.
     \item Don't be afraid to erase.
 \end{compactitem}
 
