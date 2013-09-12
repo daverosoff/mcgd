@@ -4,8 +4,9 @@ base 			= $(abspath $(target))
 browser 		= maxthon
 browserprefix 		= file://
 mathjax			= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+up			= index.html
 css 			= css/master.css
-template 		= dave
+template 		= LecNotes
 MODULES 		= $(shell find modules -mindepth 1 -maxdepth 1 -type d)
 WORKSHOPS		= $(shell find workshops -mindepth 1 -maxdepth 1 -type d)
 DECKS			= $(shell find decks -mindepth 1 -maxdepth 1 -type d)
@@ -24,7 +25,7 @@ index.html: index.md
 
 $(target): $(src)
 	pandoc -s --template=$(template) --css=$(css) \
-	--mathjax=$(mathjax) \
+	--mathjax=$(mathjax) --variable up=$(up) \
 	-o $(target) -S $(src)
 
 preview: $(target)

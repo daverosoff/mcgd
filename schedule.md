@@ -1,4 +1,4 @@
-% Math 251 Schedule of Topics: Fall 2013
+% Math 251 Schedule of Topics: Fall 2013 
 
 Here, you can find a rough guide to what was discussed in class on any
 particular day. If you missed class, you can also find workshop handouts
@@ -20,11 +20,11 @@ module numbering.
   [02][m02]             Tue 10 Sept       Spheres, cylinders, cones <br />
                                           WeBWorK 01 is due at 10 pm.
                                           
-  [03][m03] <br />      Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2) <br />  
-                                          Workshop 01. [PDF slides][d02]. <br />  
+  [03][m03] <br />      Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2 except last section on parametric equations for lines) <br />  
+                                          [Workshop 01][w01]. [PDF slides][d02]. <br />  
                                           Quiz 01 on Modules 01--02.            
          
-  05                    Fri 13 Sept       Vectors in general; introduction to R (bring a computer, if you can). <br />
+                        Fri 13 Sept       Vectors in general; introduction to R (bring a computer, if you can). <br />
                                           WeBWorK 02 is due at 10 pm.
          
   06                    Mon 16 Sept       The dot product; the cross product
@@ -125,6 +125,7 @@ module numbering.
 [m03]: modules/03/Module.html
 
 [w00]: workshops/00/Workshop.pdf
+[w01]: workshops/01/Workshop.pdf
 
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
