@@ -79,3 +79,7 @@ That's what we mean by symmetry, or the mathematical abbreviation WLOG. This sta
 \dwrspace{1}
 
 \end{questions}
+
+<!-- file ends; links follow -->
+
+[m03]: ../../Modules/03/Module.html

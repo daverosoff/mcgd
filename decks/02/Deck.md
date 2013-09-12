@@ -1,6 +1,6 @@
 % Displacement in several directions: vectors
 % Math 251 Calculus 3
-% September 10, 2013 <!-- day 03 -->
+% September 11, 2013 <!-- day 03 -->
 
 # Displacements in the plane
 
@@ -50,13 +50,13 @@ $$ (2013,2013) + \langle -5, -2 \rangle = (2008,2010) $$
 
 It's easy to add and subtract vectors: do it entry by entry.
 
-$$ \langle x_0, y_0 \rangle \pm \langle x_1, y_1 \rangle = \langle x_0 \pm x_1, y_0 + y_1 \rangle. $$
+$$ \langle x_0, y_0 \rangle \pm \langle x_1, y_1 \rangle = \langle x_0 \pm x_1, y_0 \pm y_1 \rangle. $$
 
 Multiply a vector by a number:
 
 $$ c \langle x_0, y_0 \rangle = \langle cx_0, cy_0 \rangle. $$
 
-## Reading for Wednesday, September 11
+## Reading for Friday, September 13
 
 > - Reread Module 3
 > - Read sections 12.1--12.2 in Rogawski
