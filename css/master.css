@@ -293,6 +293,11 @@ ul
     list-style-type: none;
 }
 
+ul.circ
+{
+    list-style-type: circle;
+}
+
 ul.nav 
 {
     text-align: center;
