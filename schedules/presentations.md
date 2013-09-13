@@ -20,7 +20,6 @@ other presentation problems. For example 12.3.92 relies on the result of
 | September 26    | 12.4.54ab                            |                                         |
 | September 26    | 14.1.38                              |                                         |
 | September 26    | 14.1.40--43                          |                                         |
-| September 26    | 14.1.45                              |                                         |
 
 <!-- | 27 September    | 11.1.83                              |  Somebody                               | -->
 <!-- |                 | 11.1.87                              |                                         | -->

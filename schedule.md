@@ -20,19 +20,19 @@ module numbering.
   [02][m02]             Tue 10 Sept       Spheres, cylinders, cones <br />
                                           WeBWorK 01 is due at 10 pm.
                                           
-  [03][m03] <br />      Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2 except last section on parametric equations for lines) <br />  
+  [03][m03]             Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2 except last section on parametric equations for lines) <br />  
                                           [Workshop 01][w01]. [PDF slides][d02]. <br />  
                                           Quiz 01 on Modules 01--02.            
          
-                        Fri 13 Sept       Vectors in general; introduction to R (bring a computer, if you can). <br />
+  [04][m04]             Fri 13 Sept       Introduction to R (bring a computer, if you can). <br />
+                                          [R Studio introduction presentation][d03]. <br />
                                           WeBWorK 02 is due at 10 pm.
          
-  06                    Mon 16 Sept       The dot product; the cross product
-                                          <br />
-                                          Quiz 02 on Modules 03--04.
+  06                    Mon 16 Sept       Continue introduction to R Studio; the dot product. <br />
+                                          Bring your computer if possible. <br />
+                                          Quiz 02 on vectors (WeBWorK 02).
                                                                                 
-  07                    Tue 17 Sept       The cross product; graphing 2-variable functions
-                                          <br />
+  07                    Tue 17 Sept       The cross product; graphing 2-variable functions <br />
                                           WeBWorK 03 is due at 10 pm.
                                                                                 
   08                    Wed 18 Sept       Graphing 2-variable functions; contour plots
@@ -123,9 +123,11 @@ module numbering.
 [m01]: modules/01/Module.html
 [m02]: modules/02/Module.html
 [m03]: modules/03/Module.html
+[m04]: modules/04/Module.html
 
 [w00]: workshops/00/Workshop.pdf
 [w01]: workshops/01/Workshop.pdf
 
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
+[d03]: decks/03/Deck.pdf
