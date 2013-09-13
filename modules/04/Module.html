@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <meta name="date" content="2013-09-13" />
+  <title>Module 04: Introduction to R Studio</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 04: Introduction to R Studio</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — September 13, 2013</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#files-and-directories">Files and directories</a></li>
+<li><a href="#getting-to-the-public-repositories">Getting to the public repositories</a></li>
+<li><a href="#reading-the-script">Reading the script</a></li>
+<li><a href="#loading-the-mosaic-package">Loading the <code>mosaic</code> package</a></li>
+</ul>
+</div>
+<pre><code>## Warning: the condition has length &gt; 1 and only the first element will be
+## used</code></pre>
+<pre><code>## Attaching package: &#39;mosaic&#39;
+## 
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+## binom.test, cor, cov, D, fivenum, IQR, median, prop.test, sd, t.test, var
+## 
+## The following object is masked from &#39;package:base&#39;:
+## 
+## max, mean, min, print, prod, range, sample, sum</code></pre>
+<p>Today we introduced the R Studio mathematical programming environment. Check out the <a href="../decks/03/Deck.pdf">presentation</a> for an overview. If you missed class, you need to find someone to get you up to speed. There was a request for a file containing some of the work we did together in class. Instructions on how to get and use that file follow.</p>
+<h3 id="files-and-directories"><a href="#files-and-directories">Files and directories</a></h3>
+<p>The R Studio server runs on the Linux operating system. Files are organized into directories (the same thing as folders, really). There is a <em>root directory</em> that contains all of the other files and directories on the server. Its name is</p>
+<pre><code>/</code></pre>
+<p>Notice that it is a forward slash and not backward. Your personal work area is under a subdirectory called <code>/home</code>. For example, mine is <code>/home/drosoff</code>. Files in your home directory are private and cannot be read or modified by (most) other users of the system.</p>
+<p>We have an area on the server dedicated to files that should be publicly readable. Linux conventions led me to call it <code>/srv/R</code>. The first part is evocative of “server”.</p>
+<h3 id="getting-to-the-public-repositories"><a href="#getting-to-the-public-repositories">Getting to the public repositories</a></h3>
+<p>In the Files/Plots/Packages/Help pane, select the Files tab. You see a listing of the contents of your home directory.</p>
+<blockquote>
+<p>Tip: the tilde character <code>~</code> is a shortcut to your home directory.</p>
+</blockquote>
+<p>In the upper-right corner, there should be a button labeled with an ellipsis (three dots … ). This is the “Go To Folder” button. Click it and enter</p>
+<pre><code>/srv/R/MAT_251</code></pre>
+<p>in the dialog box that appears. Have a look at what you see. Right now, there is just one script available, a file named <code>FirstRScript.R</code>. If you click the filename, it will open in the source pane on the left part of your screen, above the console.</p>
+<p>The file will be read-only, because it is located in a directory to which you do not have write permission. To modify this file, you need to make your own copy. This is easy to do.</p>
+<ul class="circ">
+<li>
+Make sure the file is open in the Source pane.
+</li> 
+<li>
+Use the File/Save As… command (make sure you are in R Studio’s File menu, not your browser’s).
+</li>
+<li>
+In the dialog box that appears, type <code>~/FirstRScript.R</code>. The <code>~</code> is interpreted by R as the path to your home directory.
+</li> 
+<li>
+Now, back in the Files pane, use the Go To Folder button a second time to return to your home directory <code>~</code>.
+</li>
+<li>
+You should see the copied file in your home directory.
+</li>
+</ul>
+
+<p>Since you have full permissions in your own home directory, you can modify the new file however you like.</p>
+<blockquote>
+<p>WARNING. If you accidentally delete something, it’s gone forever. No one has the power to get it back. Be very careful about file deletion.</p>
+</blockquote>
+<h3 id="reading-the-script"><a href="#reading-the-script">Reading the script</a></h3>
+<p>Read all of the lines in the script. Notice how even the code lines sometimes have comments explaining what they will do when they are executed. It’s a good habit to comment your code as you write it.</p>
+<p>Remember, you can always get a fresh copy of this script. So feel free to play with it and experiment. Use the Help interface to learn more about the available commands and their options. You really can’t hurt anything by playing around, with the exception of deleting your own files and directories.</p>
+<h3 id="loading-the-mosaic-package"><a href="#loading-the-mosaic-package">Loading the <code>mosaic</code> package</a></h3>
+<p>The script we’ve been working with requires an R package called <code>mosaic</code>. The first line of the script (that isn’t a comment) makes sure this package is loaded. Otherwise, the commands <code>makeFun()</code> and <code>plotFun()</code> won’t make sense to R and it will complain.</p>
+<p>To use these commands in later sessions, you will have to make sure the package is loaded. This is accomplished via the Packages tab in the lower right pane. Scroll down until you find <code>mosaic</code> and check its box. This setting should persist across sessions, but if familiar commands begin to throw errors, this may be the culprit.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x *<span class="st"> </span>y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>
+<span class="st">    </span>pi), <span class="dt">nlevel =</span> <span class="dv">20</span>)</code></pre>
+<p><img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" /></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x) ~<span class="st"> </span>x, <span class="dt">groups =</span> <span class="kw">cut</span>(x, <span class="kw">findZeros</span>(<span class="kw">sin</span>(x) ~<span class="st"> </span>x, <span class="dt">within =</span> <span class="dv">10</span>)$x), <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>, 
+    <span class="st">&quot;green&quot;</span>), <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">lwd =</span> <span class="dv">3</span>, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">10</span>, <span class="dv">10</span>))</code></pre>
+<pre><code>## Warning: &#39;x&#39; is NULL so the result will be NULL</code></pre>
+<p><img src="figure/fig02.png" title="plot of chunk fig02" alt="plot of chunk fig02" style="display: block; margin: auto;" /></p>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
