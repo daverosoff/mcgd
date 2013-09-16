@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <meta name="date" content="2013-09-17" />
+  <title>Module 05: Vectors and dot products</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 05: Vectors and dot products</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — September 17, 2013</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#vectors-and-dot-products">Vectors and dot products</a></li>
+<li><a href="#more-general-vectors">More general vectors</a></li>
+<li><a href="#unit-vectors-as-directions">Unit vectors as directions</a></li>
+<li><a href="#directions-and-projections">Directions and projections</a></li>
+</ul>
+</div>
+<!-- This file requires the  -->
+
+
+
+
+<h3 id="vectors-and-dot-products"><a href="#vectors-and-dot-products">Vectors and dot products</a></h3>
+<p>In this module, we introduce operations on vectors that have no one-dimensional counterparts: the dot and cross products. Each of these has great physical and mathematical significance, and each is essential for our understanding of the calculus of functions of several variables.</p>
+<p>To undertake this study, we must have a good command of the flat subspaces of <span class="math">\(\mathbf{R}^3\)</span>—that is, the lines and planes. The first unit of the course ends with the classification of planes, discussed in the next module. The typical approach to the classification of lines is more involved, and is deferred until after our discussion of parametrized curves. We will classify the lines indirectly in the special case of <span class="math">\(\mathbf{R}^3\)</span> (as opposed to higher-dimensional Euclidean spaces) after we complete the classification of planes.</p>
+<h3 id="more-general-vectors"><a href="#more-general-vectors">More general vectors</a></h3>
+<p>Not all vectors represent displacements; physics abounds with examples. The quantities that vectors do represent all have something in common: a simple <em>magnitude</em> is not enough to specify them; a <em>direction</em> is needed as well.</p>
+<p>For the idea of <em>magnitude</em>, we have a workable definition: a nonnegative real number. In a one-dimensional space, we have escaped the need to discuss direction by sneakily calling one “positive” and one “negative”, so that it appears to the untrained eye that magnitudes alone suffice. But the student of vectors knows better, and says that <span class="math">\(+1\)</span> and <span class="math">\(-1\)</span> really are <em>directions</em>, in which we may move along a vector of any desired magnitude.</p>
+<p>How many directions, then, are there in a 2-dimensional space? or 3-dimensional space?</p>
+<h3 id="unit-vectors-as-directions"><a href="#unit-vectors-as-directions">Unit vectors as directions</a></h3>
+<p>Let us proceed with the analogy that the list of “directions” in the line is the set <span class="math">\(\{ \pm 1 \}\)</span>. Multiplying either of these directions by a nonnegative real number generates the totality of vectors in <span class="math">\(\mathbf{R}^1\)</span>—which is to say, real numbers dressed up in angle brackets.</p>
+<p>We may decompose a 1-dimensional vector into a <em>magnitude</em> and a <em>direction</em> as follows.</p>
+<p><span class="math">\[ \langle x \rangle = \lvert x \rvert \left\langle \frac{x}{\lvert x \rvert} \right\rangle \]</span></p>
+<p>The nonnegative number <span class="math">\(\lvert x \rvert\)</span> is the magnitude, while <span class="math">\(\dfrac{x}{\lvert x \rvert}\)</span> is a direction. Observe that, if <span class="math">\(x \ne 0\)</span> the direction is an element of <span class="math">\(\{ \pm 1 \}\)</span>, as advertised. We call this set the <em>unit vectors</em> or <em>directions</em> of <span class="math">\(\mathbf{R}^1\)</span>.</p>
+<p>Guided by these notions, let us now consider a general vector in <span class="math">\(\mathbf{R}^2\)</span>. So far, we only have one way of specifying such a vector. We write it in coordinates, say <span class="math">\[ \vec{v} = \langle v_1, v_2 \rangle. \]</span> If we attempt to break down <span class="math">\(\vec{v}\)</span> as above, we run into a problem right away: we have not defined “absolute value” of a vector. Yet all is not lost: we are in possession of a mapping that, for each vector, returns a nonnegative real number, namely the modulus or magnitude operator. <span class="math">\[ \lVert \vec{v} \rVert = \sqrt{v_1^2 + v_2^2} \]</span></p>
+<blockquote>
+<p>What happens if we break down a vector like this: <span class="math">\(\vec{v} = \lVert \vec{v} \rVert \frac{\vec{v}}{\lVert \vec{v} \rVert}\)</span>?</p>
+</blockquote>
+<p>It is true that dividing a vector by a real number is an operation we have not defined, but once we recall that division should coincide with multiplication by the inverse, all becomes clear. Inside the parentheses, notice that a vector, namely <span class="math">\(\vec{v}\)</span> is being multiplied by a number, namely <span class="math">\(\lVert \vec{v} \rVert^{-1}\)</span>.</p>
+<p><span class="math">\[ \vec{v} = \lVert \vec{v} \rVert \left(\frac{1}{\lVert \vec{v} \rVert} \vec{v} \right) \]</span></p>
+<p>This is evidently a decomposition of an arbitrary vector <span class="math">\(\vec{v}\)</span> into two parts: a nonnegative real number and a <em>direction vector</em>, just as in the 1-dimensional case.</p>
+<blockquote>
+<p>The vector <span class="math">\(\vec{v}/\lVert \vec{v} \rVert\)</span> is called <em>the unit vector in the direction of</em> <span class="math">\(\vec{v}\)</span>, or just <em>the direction vector of</em> <span class="math">\(\vec{v}\)</span>, for short. Our textbook calls this vector <span class="math">\(\mathbf{e}_{\mathbf{v}}\)</span>. While nonstandard, this notation is not terribly unconventional.</p>
+</blockquote>
+<blockquote>
+<p>Exercise. Prove that <span class="math">\[ \left \lVert \frac{\vec{v}}{\lVert \vec{v} \rVert} \right \rVert = 1,\]</span> for every nonzero vector <span class="math">\(\vec{v}\)</span>. <em>Hint.</em> Compute the LHS, for <span class="math">\(\vec{v} = \langle v_1, v_2 \rangle\)</span>.</p>
+</blockquote>
+<p>The result of the above Exercise explains why such vectors are called <em>unit</em> vectors. The upshot is that we now have a complete list of the different “directions” in the plane <span class="math">\(\mathbf{R}^2\)</span>: they are in one-to-one correspondence with the vectors in <span class="math">\(\mathbf{R}^2\)</span> of length 1.</p>
+<blockquote>
+<p>Exercise. Picture the collection of all unit vectors in the plane, all in standard position. What curve do the heads of these vectors lie on?</p>
+</blockquote>
+<blockquote>
+<p>Exercise. Formulate and carry out the analogous decomposition for vectors in <span class="math">\(\mathbf{R}^3\)</span>.</p>
+</blockquote>
+<h3 id="directions-and-projections"><a href="#directions-and-projections">Directions and projections</a></h3>
+<p>We are so used to the Cartesian system of coordinates that we identify without question the vector <span class="math">\(\vec{v}\)</span> with its Cartesian coordinates, <span class="math">\[ \vec{v} = \langle v_1, v_2, v_3 \rangle. \]</span> If we adopt the physicists’ tradition of writing <span class="math">\(\hat{\imath} = \langle 1, 0, 0 \rangle\)</span>, <span class="math">\(\hat{\jmath} = \langle 0, 1, 0 \rangle\)</span>, <span class="math">\(\hat{k} = \langle 0, 0, 1 \rangle\)</span>, we see immediately that we may express <span class="math">\(\vec{v}\)</span> equally well as a <em>sum</em>: <span class="math">\[ \vec{v} = v_1 \hat{\imath} + v_2 \hat{\jmath} + v_3 \hat{k} . \]</span> This expresses the vector <span class="math">\(\vec{v}\)</span> as a sequence of directed distances, in the preferred coordinate directions.</p>
+<p>But what if we wish to express <span class="math">\(\vec{v}\)</span> in terms of directions other than the standard coordinate directions? After all, there are many from which to choose. For example, we might ask to decompose the blue vector below as a sum of directed distances in the red and green directions. One physical situation in which this problem is important is when we are pulling an object with blue force along a ramp with red inclination. We need to find “how much” of the force is pulling against gravity (red) and how much is just pulling against the ramp (green).</p>
+<p><img src="figure/projection.png" title="plot of chunk projection" alt="plot of chunk projection" style="display: block; margin: auto;" /></p>
+<p>If we call the red direction <span class="math">\(\hat{u}_1\)</span> and the green direction <span class="math">\(\hat{u}_2\)</span>, we are then asking for nonnegative real numbers <span class="math">\(a_1\)</span> and <span class="math">\(a_2\)</span> such that</p>
+<p><span class="math">\[ \vec{v} = a_1 \hat{u}_1 + a_2 \hat{u}_2. \]</span></p>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../04/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
