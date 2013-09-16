@@ -47,17 +47,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#loading-the-mosaic-package">Loading the <code>mosaic</code> package</a></li>
 </ul>
 </div>
-<pre><code>## Warning: the condition has length &gt; 1 and only the first element will be
-## used</code></pre>
-<pre><code>## Attaching package: &#39;mosaic&#39;
-## 
-## The following objects are masked from &#39;package:stats&#39;:
-## 
-## binom.test, cor, cov, D, fivenum, IQR, median, prop.test, sd, t.test, var
-## 
-## The following object is masked from &#39;package:base&#39;:
-## 
-## max, mean, min, print, prod, range, sample, sum</code></pre>
 <p>Today we introduced the R Studio mathematical programming environment. Check out the <a href="../decks/03/Deck.pdf">presentation</a> for an overview. If you missed class, you need to find someone to get you up to speed. There was a request for a file containing some of the work we did together in class. Instructions on how to get and use that file follow.</p>
 <h3 id="files-and-directories"><a href="#files-and-directories">Files and directories</a></h3>
 <p>The R Studio server runs on the Linux operating system. Files are organized into directories (the same thing as folders, really). There is a <em>root directory</em> that contains all of the other files and directories on the server. Its name is</p>
@@ -102,7 +91,7 @@ You should see the copied file in your home directory.
 <p>The script we’ve been working with requires an R package called <code>mosaic</code>. The first line of the script (that isn’t a comment) makes sure this package is loaded. Otherwise, the commands <code>makeFun()</code> and <code>plotFun()</code> won’t make sense to R and it will complain.</p>
 <p>To use these commands in later sessions, you will have to make sure the package is loaded. This is accomplished via the Packages tab in the lower right pane. Scroll down until you find <code>mosaic</code> and check its box. This setting should persist across sessions, but if familiar commands begin to throw errors, this may be the culprit.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x *<span class="st"> </span>y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>
-<span class="st">    </span>pi), <span class="dt">nlevel =</span> <span class="dv">20</span>)</code></pre>
+<span class="st">    </span>pi), <span class="dt">npts =</span> <span class="dv">20</span>)</code></pre>
 <p><img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" /></p>
 <ul class="nav">
 <li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>

@@ -3,14 +3,11 @@
 % Math 251 Calculus 3
 % September 13, 2013
 
-```{r echo=FALSE,results="hide",label="options"}
+```{r echo=FALSE,include=FALSE,results="hide",label="options"}
 require(c("knitr", "manipulate"), quietly=TRUE)
-opts_chunk$set(fig.align="center")
-```
-
-```{r echo=FALSE,results="hide"}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
+opts_chunk$set(fig.align="center")
 ```
 
 Today we introduced the R Studio mathematical programming environment. Check out the [presentation][d03] for an overview. If you missed class, you need to find someone to get you up to speed. There was a request for a file containing some of the work we did together in class. Instructions on how to get and use that file follow.
@@ -65,7 +62,7 @@ The script we've been working with requires an R package called ```mosaic```. Th
 To use these commands in later sessions, you will have to make sure the package is loaded. This is accomplished via the Packages tab in the lower right pane. Scroll down until you find ```mosaic``` and check its box. This setting should persist across sessions, but if familiar commands begin to throw errors, this may be the culprit.
 
 ```{r fig01}
-plotFun(sin(x*y)~x&y, xlim=c(-2*pi,2*pi), ylim=c(-2*pi,2*pi), nlevel=20)
+plotFun(sin(x*y)~x&y, xlim=c(-2*pi,2*pi), ylim=c(-2*pi,2*pi), npts=20)
 ```
 
 [d03]: ../decks/03/Deck.pdf

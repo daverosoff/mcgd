@@ -4,24 +4,6 @@
 % September 13, 2013
 
 
-```
-## Warning: the condition has length > 1 and only the first element will be
-## used
-```
-
-
-
-```
-## Attaching package: 'mosaic'
-## 
-## The following objects are masked from 'package:stats':
-## 
-## binom.test, cor, cov, D, fivenum, IQR, median, prop.test, sd, t.test, var
-## 
-## The following object is masked from 'package:base':
-## 
-## max, mean, min, print, prod, range, sample, sum
-```
 
 
 Today we introduced the R Studio mathematical programming environment. Check out the [presentation][d03] for an overview. If you missed class, you need to find someone to get you up to speed. There was a request for a file containing some of the work we did together in class. Instructions on how to get and use that file follow.
@@ -78,7 +60,7 @@ To use these commands in later sessions, you will have to make sure the package 
 
 ```r
 plotFun(sin(x * y) ~ x & y, xlim = c(-2 * pi, 2 * pi), ylim = c(-2 * pi, 2 * 
-    pi), nlevel = 20)
+    pi), npts = 20)
 ```
 
 <img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" />
