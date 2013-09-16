@@ -29,22 +29,23 @@ module numbering.
                                           WeBWorK 02 is due at 10 pm.
          
   [04][m04]             Mon 16 Sept       Continue introduction to R Studio. <br />
+                                          [Second R Studio presentation][d04]. <br />
                                           Bring your computer if possible. <br />
                                           See Dr. Rosoff any time for help with R Studio.
                                                                                 
-  07                    Tue 17 Sept       The dot product and cross product
-                                          WeBWorK 03 is due at 10 pm. <br />
-                                          Quiz 02 on vectors (WeBWorK 02). 
+  05 (WIP) <br />       Tue 17 Sept       The dot product and cross product. <br />
+  12.3--12.4                              Quiz 02 on vectors (WeBWorK 02). 
+                                                                                              
+                        Wed 18 Sept       Cross product and classification of planes
+                                                                                      
+                        Fri 20 Sept       Contour plots; presentations <br />
+                                          WeBWorK 03 is due at 10 pm.
 
-  08                    Wed 18 Sept       Graphing 2-variable functions; contour plots
+                        Mon 23 Sept       Flex time; review for **Exam 1**
                                           
-  09                    Fri 20 Sept       Contour plots; presentations
-                                                                                
-  10                    Mon 23 Sept       Flex time; review for **Exam 1**
+                        Tue 24 Sept       **Exam 1**
                                           
-  11                    Tue 24 Sept       **Exam 1**
-                                          
-  12                    Wed 25 Sept       3-variable functions
+                        Wed 25 Sept       3-variable functions
                                                                                 
   13                    Fri 27 Sept       3-variable functions; idea of partial derivatives
                                                                                 
@@ -132,3 +133,4 @@ module numbering.
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
 [d03]: decks/03/Deck.pdf
+[d04]: decks/04/Deck.pdf
