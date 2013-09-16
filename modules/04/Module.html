@@ -104,10 +104,6 @@ You should see the copied file in your home directory.
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x *<span class="st"> </span>y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>
 <span class="st">    </span>pi), <span class="dt">nlevel =</span> <span class="dv">20</span>)</code></pre>
 <p><img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" /></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x) ~<span class="st"> </span>x, <span class="dt">groups =</span> <span class="kw">cut</span>(x, <span class="kw">findZeros</span>(<span class="kw">sin</span>(x) ~<span class="st"> </span>x, <span class="dt">within =</span> <span class="dv">10</span>)$x), <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>, 
-    <span class="st">&quot;green&quot;</span>), <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">lwd =</span> <span class="dv">3</span>, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">10</span>, <span class="dv">10</span>))</code></pre>
-<pre><code>## Warning: &#39;x&#39; is NULL so the result will be NULL</code></pre>
-<p><img src="figure/fig02.png" title="plot of chunk fig02" alt="plot of chunk fig02" style="display: block; margin: auto;" /></p>
 <ul class="nav">
 <li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>
 <li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>

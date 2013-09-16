@@ -84,18 +84,5 @@ plotFun(sin(x * y) ~ x & y, xlim = c(-2 * pi, 2 * pi), ylim = c(-2 * pi, 2 *
 <img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" />
 
 
-
-```r
-plotFun(sin(x) ~ x, groups = cut(x, findZeros(sin(x) ~ x, within = 10)$x), col = c("blue", 
-    "green"), lty = 2, lwd = 3, xlim = c(-10, 10))
-```
-
-```
-## Warning: 'x' is NULL so the result will be NULL
-```
-
-<img src="figure/fig02.png" title="plot of chunk fig02" alt="plot of chunk fig02" style="display: block; margin: auto;" />
-
-
 [d03]: ../decks/03/Deck.pdf
 
