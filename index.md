@@ -8,7 +8,7 @@ Welcome to the main page for Math 251. You will find these links to be of great 
 * [Math 251 Main Schedule][schedule]
 * [Math 251 WeBWorK][webwork]
 * [Boone Table tutor schedule][tutor_sched]
-<!-- * [Presentation Schedule][pres_schedule] -->
+* [Presentation Schedule][pres_schedule]
 * [C of I R Studio server][rstudio]
 
 Before you can use the R Studio server, you need to initialize your account. Here are the instructions for doing so.
