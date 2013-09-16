@@ -60,7 +60,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </blockquote>
 <p>In the upper-right corner, there should be a button labeled with an ellipsis (three dots … ). This is the “Go To Folder” button. Click it and enter</p>
 <pre><code>/srv/R/MAT_251</code></pre>
-<p>in the dialog box that appears. Have a look at what you see. Right now, there is just one script available, a file named <code>FirstRScript.R</code>. If you click the filename, it will open in the source pane on the left part of your screen, above the console.</p>
+<p>in the dialog box that appears. Have a look at what you see. Several files are available, including a file named <code>FirstRScript.R</code>. If you click the filename, it will open in the source pane on the left part of your screen, above the console.</p>
 <p>The file will be read-only, because it is located in a directory to which you do not have write permission. To modify this file, you need to make your own copy. This is easy to do.</p>
 <ul class="circ">
 <li>
@@ -91,7 +91,7 @@ You should see the copied file in your home directory.
 <p>The script we’ve been working with requires an R package called <code>mosaic</code>. The first line of the script (that isn’t a comment) makes sure this package is loaded. Otherwise, the commands <code>makeFun()</code> and <code>plotFun()</code> won’t make sense to R and it will complain.</p>
 <p>To use these commands in later sessions, you will have to make sure the package is loaded. This is accomplished via the Packages tab in the lower right pane. Scroll down until you find <code>mosaic</code> and check its box. This setting should persist across sessions, but if familiar commands begin to throw errors, this may be the culprit.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">sin</span>(x *<span class="st"> </span>y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>
-<span class="st">    </span>pi), <span class="dt">npts =</span> <span class="dv">20</span>)</code></pre>
+<span class="st">    </span>pi), <span class="dt">npts =</span> <span class="dv">50</span>)</code></pre>
 <p><img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" /></p>
 <ul class="nav">
 <li class="nav"><a class = "nav" href = "../02/Module.html">Back</a></li>

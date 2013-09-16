@@ -28,8 +28,7 @@ In the upper-right corner, there should be a button labeled with an ellipsis (th
 
     /srv/R/MAT_251
 
-in the dialog box that appears. Have a look at what you see. Right now, there
-is just one script available, a file named ```FirstRScript.R```. If you click the filename, it will open in the source pane on the left part of your screen, above the console.
+in the dialog box that appears. Have a look at what you see. Several files are available, including a file named ```FirstRScript.R```. If you click the filename, it will open in the source pane on the left part of your screen, above the console.
 
 The file will be read-only, because it is located in a directory to which you do not have write permission. To modify this file, you need to make your own copy. This is easy to do.
 
@@ -60,7 +59,7 @@ To use these commands in later sessions, you will have to make sure the package 
 
 ```r
 plotFun(sin(x * y) ~ x & y, xlim = c(-2 * pi, 2 * pi), ylim = c(-2 * pi, 2 * 
-    pi), npts = 20)
+    pi), npts = 50)
 ```
 
 <img src="figure/fig01.png" title="plot of chunk fig01" alt="plot of chunk fig01" style="display: block; margin: auto;" />
