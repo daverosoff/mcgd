@@ -28,13 +28,14 @@ module numbering.
                                           [R Studio introduction presentation][d03]. <br />
                                           WeBWorK 02 is due at 10 pm.
          
-  06                    Mon 16 Sept       Continue introduction to R Studio; the dot product. <br />
+  [04][m04]             Mon 16 Sept       Continue introduction to R Studio. <br />
                                           Bring your computer if possible. <br />
-                                          Quiz 02 on vectors (WeBWorK 02).
+                                          See Dr. Rosoff any time for help with R Studio.
                                                                                 
-  07                    Tue 17 Sept       The cross product; graphing 2-variable functions <br />
-                                          WeBWorK 03 is due at 10 pm.
-                                                                                
+  07                    Tue 17 Sept       The dot product and cross product
+                                          WeBWorK 03 is due at 10 pm. <br />
+                                          Quiz 02 on vectors (WeBWorK 02). 
+
   08                    Wed 18 Sept       Graphing 2-variable functions; contour plots
                                           
   09                    Fri 20 Sept       Contour plots; presentations
