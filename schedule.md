@@ -38,7 +38,7 @@ module numbering.
                                                                                               
                         Wed 18 Sept       Cross product and classification of planes
                                                                                       
-                        Fri 20 Sept       Contour plots; presentations <br />
+                        Fri 20 Sept       Presentations <br />
                                           WeBWorK 03 is due at 10 pm.
 
                         Mon 23 Sept       Flex time; review for **Exam 1**
