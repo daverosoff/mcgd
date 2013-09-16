@@ -73,3 +73,5 @@ But what if we wish to express $\vec{v}$ in terms of directions other than the s
 If we call the red direction $\hat{u}_1$ and the green direction $\hat{u}_2$, we are then asking for nonnegative real numbers $a_1$ and $a_2$ such that
 
 $$ \vec{v} = a_1 \hat{u}_1 + a_2 \hat{u}_2. $$
+
+The algebraic mechanism by which we obtain $a_1$ and $a_2$ is the *dot product*. 

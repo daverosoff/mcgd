@@ -83,3 +83,5 @@ arrows(0, 0, 2.8*cos(ang1)+1.6*cos(ang2), 2.8*sin(ang1)+1.6*sin(ang2), angle=30,
 If we call the red direction $\hat{u}_1$ and the green direction $\hat{u}_2$, we are then asking for nonnegative real numbers $a_1$ and $a_2$ such that
 
 $$ \vec{v} = a_1 \hat{u}_1 + a_2 \hat{u}_2. $$
+
+The algebraic mechanism by which we obtain $a_1$ and $a_2$ is the *dot product*. 
