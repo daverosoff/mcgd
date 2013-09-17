@@ -10,4 +10,4 @@
 decks/*/*.nav
 decks/*/*.snm
 decks/*/*.toc
-quizzes/*
+quizzes/*/*.pdf
