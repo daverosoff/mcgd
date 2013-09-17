@@ -3,6 +3,12 @@
 % Math 251 Calculus 3
 % Fall 2013
 
+
+
+
+
+
+
 Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, and spheres, cylinders, and cones. We also introduced surface *slicing*. We conclude that discussion with more on slicing.
 
 ### Slices of curved surfaces

@@ -1,11 +1,11 @@
-DUEDATE		= "Friday, September 20"
 COURSE		= "Math 251"
 TERM		= "Fall 2013"
-template 	= workshop.latex
+TIME		= 10
+template 	= quiz.latex
 baseheaderlevel = 1
-src 		= Workshop.md
-intermed 	= Workshop.tex
-target 		= Workshop.pdf
+src 		= Quiz.md
+intermed 	= Quiz.tex
+target 		= Quiz.pdf
 targetpath	= $(abspath $(target))
 browser		= SumatraPDF
 editor		= sublime_text
@@ -19,14 +19,14 @@ compile: $(target)
 texonly: $(intermed)
 
 $(target): $(src)
-	pandoc -s --variable DUEDATE=$(DUEDATE) \
-	--variable COURSE=$(COURSE) --variable TERM=$(TERM) \
+	pandoc -s --variable COURSE=$(COURSE) \
+	--variable TERM=$(TERM) --variable TIME=$(TIME) \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
 	-S -o $(target) $(src)
 
 $(intermed): $(src)
-	pandoc -s --variable DUEDATE=$(DUEDATE) \
-	--variable COURSE=$(COURSE) --variable TERM=$(TERM) \
+	pandoc -s --variable COURSE=$(COURSE) \
+	--variable TERM=$(TERM) --variable TIME=$(TIME) \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
 	-S -o $(intermed) $(src)
 

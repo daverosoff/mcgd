@@ -11,16 +11,16 @@ numbersections	=
 mathjax		= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 browser		= SumatraPDF
 
-.PHONY: all compile preview
+.PHONY: all compile preview clean
 
-all: intermed compile 
+all: $(intermed) compile 
 
 compile: $(target)
 
 preview: compile
 	$(browser) $(target)
 
-intermed: $(src)
+$(intermed): $(src)
 	pandoc -s -t beamer -i --variable theme=$(theme) \
 	--variable colortheme=$(colortheme) \
 	--variable fonttheme=$(fonttheme) \
@@ -41,3 +41,6 @@ $(target): $(src)
 	--variable include-pkg="\usepackage{siunitx}" \
 	--mathjax=$(mathjax) --template=$(template) \
 	-o $(target) -S $(src)
+
+clean:
+	rm $(target) $(intermed)

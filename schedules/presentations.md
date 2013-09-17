@@ -12,9 +12,9 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
-| September 26    | 12.2.53                              |                                         |
+| September 26    | 12.2.53                              | Sam and John                            |
 | September 26    | 12.3.48                              |                                         |
-| September 26    | 12.3.78                              |                                         |
+| September 26    | 12.3.78                              | Alex, Angelica, and Hannah              |
 | September 26    | 12.3.91*                             |                                         |
 | September 26    | 12.3.92 (after 91)                   |                                         |
 | September 26    | 12.4.54ab                            |                                         |

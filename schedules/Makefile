@@ -1,4 +1,6 @@
-base 			= $(abspath presentations.html)
+src			= presentations.md
+target			= presentations.html
+base 			= $(abspath $(target))
 baseheaderlevel		= 3
 browser 		= maxthon
 browserprefix 		= 
@@ -10,15 +12,15 @@ template 		= LecNotes
 
 all: compile
 
-compile: presentations.html
+compile: $(target)
 
 preview: compile
 	$(browser) $(browserprefix)$(base)
 
-presentations.html: presentations.md
+$(target): $(src)
 	pandoc -s --template=$(template) --css=$(css) \
 	--base-header-level=$(baseheaderlevel) \
-	-o $@ -S presentations.md
+	-o $@ -S $(src)
 
 clean:
-	rm presentations.html
+	rm $(target)

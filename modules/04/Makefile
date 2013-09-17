@@ -33,6 +33,6 @@ preview: compile
 	$(browser) $(browsertarget)
 
 clean:
-	rm $(intermed) $(target);
+	rm $(intermed) $(target)
 	
 
