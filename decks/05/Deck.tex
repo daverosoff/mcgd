@@ -1,0 +1,106 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\include{vectormacros}
+\title{Dot and cross product}
+\author{Math 251 Calculus 3}
+\date{September 18, 2013 }
+
+\usepackage{siunitx}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Dot and cross product}
+
+\begin{frame}\frametitle{Warm-up, I}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Ready?
+\item
+  OK FAST what is the dot product--cosine formula?
+\item
+  $\vec{v} \cdot \vec{w} = \Norm{\vec{v}} \Norm{\vec{w}} \cos{\theta}$
+\item
+  Here, we agree to always choose $0 \leq \theta \leq \pi$.
+\item
+  Suppose $\Norm{\vec{v}} = 3$ and $\Norm{\vec{w}} = 2$. What are the
+  maximal and minimal possible values of $\vec{v} \cdot \vec{w}$?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Warm-up, II}
+
+\begin{itemize}[<+->]
+\item
+  Suppose $\vec{v} \cdot \vec{w} = \Norm{\vec{v}} \Norm{\vec{w}}$. What
+  can you conclude about the orientation of the vectors? It helps to
+  picture them in standard position.
+\item
+  Suppose $\vec{v} \cdots \vec{w} = -\Norm{\vec{v}} \Norm{\vec{w}}$. Now
+  what can you conclude?
+\item
+  Suppose
+\end{itemize}
+
+\end{frame}
+
+\end{document}
