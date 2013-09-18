@@ -27,8 +27,8 @@ $(intermed): $(src)
 	--variable listings=$(listings) \
 	--variable fontsize=$(fontsize) \
 	--variable numbersections=$(numbersections) \
-	--variable include-pkg="\usepackage{siunitx}" \
-	--variable header-includes="\include{vectormacros.tex}" \
+	--variable header-includes="\usepackage{rosoff}" \
+	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--mathjax=$(mathjax) --template=$(template) \
 	-o $(intermed) -S $(src) 
 
@@ -39,7 +39,8 @@ $(target): $(src)
 	--variable listings=$(listings) \
 	--variable fontsize=$(fontsize) \
 	--variable numbersections=$(numbersections) \
-	--variable include-pkg="\usepackage{siunitx}" \
+	--variable header-includes="\usepackage{rosoff}" \
+	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--mathjax=$(mathjax) --template=$(template) \
 	-o $(target) -S $(src)
 
