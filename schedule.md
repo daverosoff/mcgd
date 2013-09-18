@@ -33,21 +33,23 @@ module numbering.
                                           Bring your computer if possible. <br />
                                           See Dr. Rosoff any time for help with R Studio.
                                                                                 
-  05 (WIP) <br />       Tue 17 Sept       The dot product and cross product. <br />
-  12.3--12.4                              Quiz 02 on vectors (WeBWorK 02). 
+  12.3--12.4            Tue 17 Sept       The dot product and cross product. <br />
+                                          [Workshop 02][w02] due Friday.
+                                          Quiz 02 on vectors (WeBWorK 02). 
                                                                                               
-                        Wed 18 Sept       Cross product and classification of planes
+  [05][m05]             Wed 18 Sept       Cross product <br />
+                                          [PDF presentation on cross product][d05].
                                                                                       
-                        Fri 20 Sept       Presentations <br />
+  12.5                  Fri 20 Sept       Classification of planes <br />
                                           WeBWorK 03 is due at 10 pm.
 
-                        Mon 23 Sept       Flex time; review for **Exam 1**
+  Review                Mon 23 Sept       Flex time; review for **Exam 1**
                                           
-                        Tue 24 Sept       **Exam 1**
+  Review                Tue 24 Sept       **Exam 1**
                                           
-                        Wed 25 Sept       3-variable functions
+  Review                Wed 25 Sept       3-variable functions; idea of partial derivatives
                                                                                 
-  13                    Fri 27 Sept       3-variable functions; idea of partial derivatives
+  13                    Fri 27 Sept       Presentations
                                                                                 
   14                    Mon 30 Sept       Partial derivatives
                                                                                                                        
@@ -126,11 +128,50 @@ module numbering.
 [m02]: modules/02/Module.html
 [m03]: modules/03/Module.html
 [m04]: modules/04/Module.html
+[m05]: modules/05/Module.html
+[m06]: modules/06/Module.html
+[m07]: modules/07/Module.html
+[m08]: modules/08/Module.html
+[m09]: modules/09/Module.html
+[m10]: modules/10/Module.html
+[m11]: modules/11/Module.html
+[m12]: modules/12/Module.html
+[m13]: modules/13/Module.html
+[m14]: modules/14/Module.html
+[m15]: modules/15/Module.html
+[m16]: modules/16/Module.html
 
 [w00]: workshops/00/Workshop.pdf
 [w01]: workshops/01/Workshop.pdf
+[w02]: workshops/02/Workshop.pdf
+[w03]: workshops/03/Workshop.pdf
+[w04]: workshops/04/Workshop.pdf
+[w05]: workshops/05/Workshop.pdf
+[w06]: workshops/06/Workshop.pdf
+[w07]: workshops/07/Workshop.pdf
+[w08]: workshops/08/Workshop.pdf
+[w09]: workshops/09/Workshop.pdf
+[w10]: workshops/10/Workshop.pdf
+[w11]: workshops/11/Workshop.pdf
+[w12]: workshops/12/Workshop.pdf
+[w13]: workshops/13/Workshop.pdf
+[w14]: workshops/14/Workshop.pdf
+[w15]: workshops/15/Workshop.pdf
+[w16]: workshops/16/Workshop.pdf
 
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
 [d03]: decks/03/Deck.pdf
 [d04]: decks/04/Deck.pdf
+[d05]: decks/05/Deck.pdf
+[d06]: decks/06/Deck.pdf
+[d07]: decks/07/Deck.pdf
+[d08]: decks/08/Deck.pdf
+[d09]: decks/09/Deck.pdf
+[d10]: decks/10/Deck.pdf
+[d11]: decks/11/Deck.pdf
+[d12]: decks/12/Deck.pdf
+[d13]: decks/13/Deck.pdf
+[d14]: decks/14/Deck.pdf
+[d15]: decks/15/Deck.pdf
+[d16]: decks/16/Deck.pdf
