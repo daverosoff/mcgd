@@ -9,8 +9,8 @@ browserprefix	= file://
 browser 	= maxthon
 browsertarget	= $(browserprefix)$(targetpath)
 up 		= ../../schedule.html
-back		= ../02/Module.html
-next 		= ../04/Module.html
+back		= ../04/Module.html
+next 		= ../06/Module.html
 rscript		= Rscript.exe
 rcommand	= -e 'library("knitr"); knit(\"$(src)\", \"$(intermed)\")';
 
