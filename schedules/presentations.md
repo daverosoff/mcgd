@@ -13,7 +13,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
 | September 27    | 12.2.53                              | Sam, John, and Martin                   |
-| September 27    | 12.3.48                              |                                         |
+| September 27    | 12.3.48                              | Pragna                                  |
 | September 27    | 12.3.78                              | Alex, Angelica, and Hannah              |
 | September 27    | 12.3.91*                             |                                         |
 | September 27    | 12.3.92 (after 91)                   |                                         |
@@ -21,7 +21,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 | September 27    | 14.1.38                              |                                         |
 | September 27    | 14.1.40--43                          |                                         |
 |                 | 12.5.55                              |                                         |
-|                 | 12.5.56*                  |                                         |
+|                 | 12.5.56*                             |                                         |
 |                 | 12.5.60 (after 56)                   |                                         |
 |                 | 12.5.61                              |                                         |
 
