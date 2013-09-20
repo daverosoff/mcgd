@@ -33,26 +33,27 @@ module numbering.
                                           Bring your computer if possible. <br />
                                           See Dr. Rosoff any time for help with R Studio.
                                                                                 
-  12.3--12.4            Tue 17 Sept       The dot product and cross product. <br />
+  Read 12.3--12.4       Tue 17 Sept       The dot product and cross product. <br />
                                           [Workshop 02][w02] due Friday.
                                           Quiz 02 on vectors (WeBWorK 02). 
                                                                                               
   [05][m05]             Wed 18 Sept       Cross product <br />
                                           [PDF presentation on cross product][d05].
                                                                                       
-  12.5                  Fri 20 Sept       Classification of planes <br />
+  Read 12.5             Fri 20 Sept       Classification of planes <br />
+                                          [Short presentation][d06].
                                           [Workshop 03][w03] due Monday. <br />
-                                          WeBWorK 03 is due at 10 pm.
+                                          WeBWorK 03 is due *Saturday* at 10 pm.
 
   Review                Mon 23 Sept       Flex time; review for **Exam 1**
                                           
   Review                Tue 24 Sept       **Exam 1**
                                           
-  Review                Wed 25 Sept       3-variable functions; idea of partial derivatives
+  Read 14.2--3          Wed 25 Sept       3-variable functions; idea of partial derivatives
                                                                                 
-  13                    Fri 27 Sept       Presentations
+  Read 14.3             Fri 27 Sept       Presentations
                                                                                 
-  14                    Mon 30 Sept       Partial derivatives
+  Read 14.3             Mon 30 Sept       Partial derivatives
                                                                                                                        
   15                    Tue 1 Oct         Partial derivatives; "differentials"
                                                                                 
