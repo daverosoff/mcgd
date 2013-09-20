@@ -41,6 +41,7 @@ module numbering.
                                           [PDF presentation on cross product][d05].
                                                                                       
   12.5                  Fri 20 Sept       Classification of planes <br />
+                                          [Workshop 03][w03] due Monday. <br />
                                           WeBWorK 03 is due at 10 pm.
 
   Review                Mon 23 Sept       Flex time; review for **Exam 1**
