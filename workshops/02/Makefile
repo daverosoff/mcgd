@@ -21,12 +21,16 @@ texonly: $(intermed)
 $(target): $(src)
 	pandoc -s --variable DUEDATE=$(DUEDATE) \
 	--variable COURSE=$(COURSE) --variable TERM=$(TERM) \
+	--variable header-includes="\usepackage{rosoff}" \
+	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
 	-S -o $(target) $(src)
 
 $(intermed): $(src)
 	pandoc -s --variable DUEDATE=$(DUEDATE) \
 	--variable COURSE=$(COURSE) --variable TERM=$(TERM) \
+	--variable header-includes="\usepackage{rosoff}" \
+	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
 	-S -o $(intermed) $(src)
 

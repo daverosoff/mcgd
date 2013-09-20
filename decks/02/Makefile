@@ -27,6 +27,8 @@ $(target): $(src)
 	--variable listings=$(listings) \
 	--variable fontsize=$(fontsize) \
 	--variable numbersections=$(numbersections) \
+	--variable header-includes="\usepackage{rosoff}" \
+	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--variable include-pkg="\usepackage{siunitx}" \
 	--mathjax=$(mathjax) --template=$(template) \
 	-o $(target) -S $(src)

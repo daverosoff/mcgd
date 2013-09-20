@@ -8,15 +8,15 @@
 
 - Ready?
 - OK FAST what is the dot product--cosine formula?
-- $\vv \cdot \ww = \Norm{\vv} \Norm{\ww} \cos{\theta}$
+- $\vv \cdot \ww = \norm{\vv} \norm{\ww} \cos{\theta}$
 - Here, we agree to always choose $0 \leq \theta \leq \pi$.
-- Suppose $\Norm{\vv} = 3$ and $\Norm{\ww} = 2$. What are the maximal and minimal possible values of $\vv \cdot \ww$?
+- Suppose $\norm{\vv} = 3$ and $\norm{\ww} = 2$. What are the maximal and minimal possible values of $\vv \cdot \ww$?
 
 ## Warm-up, II
 
-- Suppose $\vv \cdot \ww = \Norm{\vv} \Norm{\ww}$. What can you conclude about the orientation of the vectors? It helps to picture them in standard position.
+- Suppose $\vv \cdot \ww = \norm{\vv} \norm{\ww}$. What can you conclude about the orientation of the vectors? It helps to picture them in standard position.
 
-- Suppose $\vv \cdot \ww = -\Norm{\vv} \Norm{\ww}$. Now what can you conclude?
+- Suppose $\vv \cdot \ww = -\norm{\vv} \norm{\ww}$. Now what can you conclude?
 
 - Suppose $\vv \cdot \ww = 0$. Now what can you conclude?
 
@@ -33,7 +33,7 @@
 - Fundamental geometric properties:
     - *Complementarity*: $\vv \times \ww$ is orthogonal to each of $\vv$ and $\ww$; in other words, $\vv \cdot (\vv \times \ww) = 0 = \ww \cdot (\vv \times \ww)$
     - *Orientation*: The ordered system $\{ \vv, \ww, \vv \times \ww \}$ is right-handed
-    - *Cross product--sine formula*: $\Norm{\vv \times \ww} = \Norm{\vv} \Norm{\ww} \sin{\theta}$.
+    - *Cross product--sine formula*: $\norm{\vv \times \ww} = \norm{\vv} \norm{\ww} \sin{\theta}$.
 
 ## Algebraic properties of cross product
 
@@ -45,7 +45,7 @@ The cross product has the following algebraic properties, as a consequence of it
 - *Bilinearity*: 
     - $(\lambda \vv) \times \ww = \vv \times (\lambda \ww) = \lambda (\vv \times \ww)$
     - $(\vec{u} + \vv) \times \ww = \vec{u} \times \ww + \vv \times \ww$
-    - $\vec{u} \times (\vv + \ww) = \vec{u} \times \vv + u \times \ww$
+    - $\vec{u} \times (\vv + \ww) = \vec{u} \times \vv + \vec{u} \times \ww$
 
 ## Computing cross products
 

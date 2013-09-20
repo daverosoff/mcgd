@@ -6,7 +6,7 @@
 
 ## What is "change in position"?
 
-- If I move from $(2,3)$ to $(-3, 1)$, what is the most natural way to express this change?
+- If I move from $(2, 3)$ to $(-3, 1)$, what is the most natural way to express this change?
 
 - In everyday English, we separate it into two changes: a change in the east--west direction, and a change in the north--south direction.
 
