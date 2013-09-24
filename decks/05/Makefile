@@ -13,7 +13,7 @@ browser		= SumatraPDF
 
 .PHONY: all compile preview clean
 
-all: $(intermed) compile 
+all: compile 
 
 compile: $(target)
 
