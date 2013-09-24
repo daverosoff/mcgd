@@ -40,8 +40,8 @@ module numbering.
   [05][m05]             Wed 18 Sept       Cross product <br />
                                           [PDF presentation on cross product][d05].
                                                                                       
-  Read 12.5             Fri 20 Sept       Classification of planes <br />
-                                          [Short presentation][d06].
+  Read 12.5 <br />      Fri 20 Sept       Classification of planes <br />
+  [06][m06]                               [Short presentation][d06].
                                           [Workshop 03][w03] due Monday. <br />
                                           WeBWorK 03 is due *Saturday* at 10 pm.
 
@@ -53,77 +53,79 @@ module numbering.
                                                                                 
   Read 14.3             Fri 27 Sept       Presentations
                                                                                 
-  Read 14.3             Mon 30 Sept       Partial derivatives
-                                                                                                                       
-  15                    Tue 1 Oct         Partial derivatives; "differentials"
+  Read 14.3             Mon 30 Sept       Partial derivatives <br />
+                                          WeBWorK 04 is due at 10 pm.
+
+                        Tue 1 Oct         "Differentials" and local linearity;<br />
+                                          Hand in portfolios before 3:30 pm.
                                                                                 
-  16                    Wed 2 Oct         "Differentials" and local linearity; gradients in 2 dimensions 
+                        Wed 2 Oct         Gradients in 2 dimensions 
                                                                                 
-  17                    Fri 4 Oct         Gradients of 2- and 3-variable functions
+                        Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations
                                                                                 
-  18                    Mon 7 Oct         Gradients; the chain rule
+                        Mon 7 Oct         Gradients; the chain rule
                                                                                 
-  19                    Tue 8 Oct         The chain rule; second-order partials
+                        Tue 8 Oct         The chain rule; second-order partials
                                                                                 
-  20                    Wed 9 Oct         Second-order partials; multivariable optimization
+                        Wed 9 Oct         Second-order partials; multivariable optimization
                                                                                 
-  21                    Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers
+                        Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers
                                                                                                             
-  22                    Mon 14 Oct        Lagrange multipliers; flex time
+                        Mon 14 Oct        Lagrange multipliers; presentations
                                                                                 
-  23                    Tue 15 Oct        Idea of double integrals; iterated integrals
+                        Tue 15 Oct        Idea of double integrals; iterated integrals
                                                                                                                               
-  24                    Wed 16 Oct        Iterated integrals over polygons; polar coordinates
+                        Wed 16 Oct        Iterated integrals over polygons; polar coordinates
                                                                                 
-  25                    Fri 18 Oct        Polar coordinates; change of variables in integrals
+                        Fri 18 Oct        Polar coordinates; change of variables in integrals
                                                                                                            
-  26                    Mon 28 Oct        Double integrals in polar coordinates; idea of triple integrals
+                        Mon 28 Oct        Double integrals in polar coordinates; idea of triple integrals
                                                                                            
-  27                    Tue 29 Oct        Triple integrals; intro to curved coordinates
+                        Tue 29 Oct        Triple integrals; intro to curved coordinates
                                                                                 
-  28                    Wed 30 Oct        Cylindrical and spherical coordinates; intro to triple integrals in curved coordinates 
+                        Wed 30 Oct        Cylindrical and spherical coordinates; intro to triple integrals in curved coordinates 
                                                                                 
-  29                    Fri 1 Nov         Presentations; Parametrization, families, and curves
+                        Fri 1 Nov         Presentations; Parametrization, families, and curves
                                           
-  30                    Mon 4 Nov         Parametrized curves: lines and arcs
+                        Mon 4 Nov         Parametrized curves: lines and arcs
                                           
-  31                    Tue 5 Nov         Parametrization and vector values
+                        Tue 5 Nov         Parametrization and vector values
                                                                                 
-  32                    Wed 6 Nov         Vector fields; idea of line integrals
+                        Wed 6 Nov         Vector fields; idea of line integrals
                                                                                                                       
-  33                    Fri 8 Nov         Line integrals with parametrization; flex time
+                        Fri 8 Nov         Line integrals with parametrization; flex time
                                                                                 
-  34                    Mon 11 Nov        Flex time; Review for **Exam 2**
+                        Mon 11 Nov        Flex time; Review for **Exam 2**
                                           
-  35                    Tue 12 Nov        **Exam 2**
+                        Tue 12 Nov        **Exam 2**
                                           
-  36                    Wed 13 Nov        More on line integrals; gradient vector fields
+                        Wed 13 Nov        More on line integrals; gradient vector fields
                                                                                 
-  37                    Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
+                        Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
                                                                                 
-  38                    Mon 18 Nov        Green's theorem
+                        Mon 18 Nov        Green's theorem
                                                                                 
-  39                    Tue 19 Nov        Presentations; flex time 
+                        Tue 19 Nov        Presentations; flex time 
                                                                                                                       
-  40                    Wed 20 Nov        Flux for rectangular regions
+                        Wed 20 Nov        Flux for rectangular regions
                                                                                 
                         Fri 22 Nov        No class; Thanksgiving break
                                                                                 
-  41                    Mon 25 Nov        Flux for curved regions
+                        Mon 25 Nov        Flux for curved regions
                                                                                 
-  42                    Tue 26 Nov        More flux; idea of divergence
+                        Tue 26 Nov        More flux; idea of divergence
                                                                                 
-  43                    Wed 27 Nov        Divergence of vector fields
+                        Wed 27 Nov        Divergence of vector fields
                                                                                 
-  44                    Fri 29 Nov        The divergence theorem
+                        Fri 29 Nov        The divergence theorem
                                                                                 
-  45                    Mon 2 Dec         Curl of vector fields; Stokes's theorem
+                        Mon 2 Dec         Curl of vector fields; Stokes's theorem
                                                                                 
-  46                    Tue 3 Dec         Presentations; flex time
+                        Tue 3 Dec         Presentations; flex time
                                                                                                                       
-  47                    Wed 4 Dec         Calculus on curved surfaces, Stokes, and cosmic topology
+                        Wed 4 Dec         Calculus on curved surfaces, Stokes, and cosmic topology
                                                                                 
-  48                    Fri 6 Dec         Review for final exam
+                        Fri 6 Dec         Review for final exam
 ---------------------------------------------------------------------------------------------
 
 [m01]: modules/01/Module.html
