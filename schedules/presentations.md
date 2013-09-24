@@ -18,7 +18,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 | September 27    | 12.3.91*                             |                                         |
 | September 27    | 12.3.92 (after 91)                   |                                         |
 | September 27    | 12.4.54ab                            |                                         |
-| September 27    | 14.1.38                              |                                         |
+| September 27    | 14.1.38                              | Tasha, Chelsea, and Kendra              |
 | September 27    | 14.1.40--43                          |                                         |
 |                 | 12.5.55                              |                                         |
 |                 | 12.5.56*                             |                                         |
