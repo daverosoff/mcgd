@@ -8,22 +8,37 @@ involve much more *explanation* than *calculation*. Some problems depend on
 other presentation problems. For example 12.3.92 relies on the result of
 12.3.91. This is indicated by parenthetical remarks.
 
-## Schedule of problems
+## Schedule of problems 
+
+Upcoming presentation dates: September 27, October 4
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
-| September 27    | 12.2.53                              | Sam, John, and Martin                   |
+| September 25    | 12.2.53                              | Sam, John, and Martin                   |
 | September 27    | 12.3.48                              | Pragna                                  |
 | September 27    | 12.3.78                              | Alex, Angelica, and Hannah              |
-| September 27    | 12.3.91*                             |                                         |
-| September 27    | 12.3.92 (after 91)                   |                                         |
-| September 27    | 12.4.54ab                            |                                         |
+|                 | 12.3.91*                             |                                         |
+|                 | 12.3.92 (after 91)                   |                                         |
+|                 | 12.4.54ab                            |                                         |
 | September 27    | 14.1.38                              | Tasha, Chelsea, and Kendra              |
-| September 27    | 14.1.40--43                          |                                         |
+|                 | 14.1.40--43                          |                                         |
 |                 | 12.5.55                              |                                         |
 |                 | 12.5.56*                             |                                         |
 |                 | 12.5.60 (after 56)                   |                                         |
 |                 | 12.5.61                              |                                         |
+|                 | 14.2.31                              |                                         |
+|                 | 14.2.32                              |                                         |
+|                 | 14.2.33*                             |                                         |
+|                 | 14.2.35                              |                                         |
+|                 | 14.3.53*                             |                                         |
+|                 | 14.3.63                              |                                         |
+|                 | 14.3.64                              |                                         |
+|                 | 14.3.74*                             |                                         |
+|                 | 14.3.79cd, 14.3.80*                  |                                         |
+|                 | 14.3.84*                             |                                         |
+
+
+
 
 <!-- | 27 September    | 11.1.83                              |  Somebody                               | -->
 <!-- |                 | 11.1.87                              |                                         | -->
@@ -32,7 +47,6 @@ other presentation problems. For example 12.3.92 relies on the result of
 <!-- |                 | 11.2.32                              |                                         | -->
 <!-- |                 | 11.3.39                              |                                         | -->
 <!-- |                 | 11.3.49+53*               |                                         | -->
-
 <!-- |                 | 13.2.63*                  |                                         | -->
 <!-- |                 | 13.2.68                              |                                         | -->
 <!-- |                 | 13.3.15ac                            |                                         | -->
@@ -49,16 +63,6 @@ other presentation problems. For example 12.3.92 relies on the result of
 <!-- |                 | 13.5.24                              |                                         | -->
 <!-- |                 | 13.5.52                              |                                         | -->
 <!-- |                 | 13.5.53                              |                                         | -->
-<!-- |                 | 14.2.31                              |                                         | -->
-<!-- |                 | 14.2.32                              |                                         | -->
-<!-- |                 | 14.2.33*                  |                                         | -->
-<!-- |                 | 14.2.35                              |                                         | -->
-<!-- |                 | 14.3.53*                  |                                         | -->
-<!-- |                 | 14.3.63                              |                                         | -->
-<!-- |                 | 14.3.64                              |                                         | -->
-<!-- |                 | 14.3.74*                  |                                         | -->
-<!-- |                 | 14.3.79cd, 14.3.80*       |                                         | -->
-<!-- |                 | 14.3.84*                  |                                         | -->
 <!-- |                 | 14.4.37                              |                                         | -->
 <!-- |                 | 14.4.39                              |                                         | -->
 <!-- |                 | 14.4.45                              |                                         | -->
