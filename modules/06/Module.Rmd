@@ -1,4 +1,5 @@
-% More on cross product; classification of planes
+% Module 06:
+  More on cross product; classification of planes
 % Math 251 Calculus 3
 % September 18, 2013 <!-- day 07 -->
 
