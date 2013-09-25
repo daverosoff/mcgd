@@ -14,18 +14,20 @@ Upcoming presentation dates: September 27, October 4
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
-| September 25    | 12.2.53                              | Sam, John, and Martin                   |
-| September 27    | 12.3.48                              | Pragna                                  |
-| September 27    | 12.3.78                              | Alex, Angelica, and Hannah              |
-|                 | 12.3.91*                             |                                         |
-|                 | 12.3.92 (after 91)                   |                                         |
-|                 | 12.4.54ab                            |                                         |
+|                 |                                      | UNIT 1                                  |
 | September 27    | 14.1.38                              | Tasha, Chelsea, and Kendra              |
 |                 | 14.1.40--43                          |                                         |
-|                 | 12.5.55                              |                                         |
+|                 | 12.2.53 <br /> (after ch. 11)        | Sam, John, and Martin                   |
+| September 27    | 12.3.48                              | Pragna                                  |
+| September 27    | 12.3.78                              | Alex, Angelica, and Hannah              |
+| September 27    | 12.3.91*                             | Ruth, Colton, Conner, Emanuil           |
+|                 | 12.3.92 <br /> (after 91)            |                                         |
+| September 27    | 12.4.54ab                            | Jacob, Will, and Dallas                 |
+| September 27    | 12.5.55                              | Shelby and Josh                         |
 |                 | 12.5.56*                             |                                         |
-|                 | 12.5.60 (after 56)                   |                                         |
+|                 | 12.5.60 <br /> (after 56 & ch. 11)   |                                         |
 |                 | 12.5.61                              |                                         |
+|                 |                                      | UNIT 2                                  |
 |                 | 14.2.31                              |                                         |
 |                 | 14.2.32                              |                                         |
 |                 | 14.2.33*                             |                                         |
@@ -34,7 +36,8 @@ Upcoming presentation dates: September 27, October 4
 |                 | 14.3.63                              |                                         |
 |                 | 14.3.64                              |                                         |
 |                 | 14.3.74*                             |                                         |
-|                 | 14.3.79cd, 14.3.80*                  |                                         |
+|                 | 14.3.79cd                            |                                         |
+|                 | 14.3.80*                             |                                         |
 |                 | 14.3.84*                             |                                         |
 
 
