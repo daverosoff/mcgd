@@ -49,11 +49,12 @@ module numbering.
                                           
   Review                Tue 24 Sept       **Exam 1**
                                           
-  Read 14.2--3          Wed 25 Sept       3-variable functions; idea of partial derivatives
+                        Wed 25 Sept       3-variable functions; idea of partial derivatives
                                                                                 
-  Read 14.3             Fri 27 Sept       Presentations
-                                                                                
-  Read 14.3             Mon 30 Sept       Partial derivatives <br />
+  Read 14.2--3 <br />   Fri 27 Sept       Presentations; partial derivatives
+  [07][m07]
+
+  Read 14.3             Mon 30 Sept       Partial derivatives and "differentials" <br />
                                           WeBWorK 04 is due at 10 pm.
 
                         Tue 1 Oct         "Differentials" and local linearity;<br />
