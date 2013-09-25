@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <title>Module 07: Slicing traces, tangent lines, and partial derivatives</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 07: Slicing traces, tangent lines, and partial derivatives</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../06/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../08/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — September 27, 2013 <!-- day 13 --></h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#ordinary-derivatives">Ordinary derivatives</a></li>
+<li><a href="#slices-by-planes">Slices by planes</a></li>
+<li><a href="#partial-derivatives">Partial derivatives</a></li>
+<li><a href="#computation-of-partial-derivatives">Computation of partial derivatives</a></li>
+<li><a href="#higher-derivatives">Higher derivatives</a></li>
+<li><a href="#a-note-on-dimension">A note on dimension</a></li>
+</ul>
+</div>
+<p><span class="math">\(\newcommand{\R}{\mathbf{R}}\)</span> <span class="math">\(\newcommand{\dee}{\partial}\)</span></p>
+<p>The code below includes the R commands used to initialize this session. Normally, they would be suppressed, but I include them for your inspection as you play with R.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(knitr)
+opts_chunk$<span class="kw">set</span>(<span class="dt">fig.align =</span> <span class="st">&quot;center&quot;</span>, <span class="dt">fig.width =</span> <span class="dv">8</span>, <span class="dt">fig.height =</span> <span class="dv">8</span>)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mosaic)
+<span class="kw">trellis.par.set</span>(<span class="dt">theme =</span> <span class="kw">col.mosaic</span>())</code></pre>
+<p>Read this module alongside sections 14.2 and 14.3 in Rogawski.</p>
+<h3 id="ordinary-derivatives"><a href="#ordinary-derivatives">Ordinary derivatives</a></h3>
+<p>When we interpret an ordinary derivative geometrically, we usually have a picture in mind like this.</p>
+<pre class="sourceCode r"><code class="sourceCode r">f1 &lt;-<span class="st"> </span><span class="kw">makeFun</span>(x^<span class="dv">3</span> +<span class="st"> </span>x -<span class="st"> </span><span class="dv">1</span> ~<span class="st"> </span>x)
+<span class="kw">plotFun</span>(<span class="kw">f1</span>(<span class="dt">x =</span> x) ~<span class="st"> </span>x, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span>, <span class="dv">1</span>/<span class="dv">2</span>), <span class="dt">asp =</span> <span class="dv">1</span>)
+f1prime &lt;-<span class="st"> </span><span class="kw">D</span>(<span class="kw">f1</span>(x) ~<span class="st"> </span>x)
+tangentline &lt;-<span class="st"> </span><span class="kw">makeFun</span>(slope *<span class="st"> </span>(x -<span class="st"> </span>x0) +<span class="st"> </span><span class="kw">f1</span>(x0) ~<span class="st"> </span>x, <span class="dt">slope =</span> <span class="kw">f1prime</span>(<span class="dt">x =</span> <span class="dv">0</span>), 
+    <span class="dt">x0 =</span> <span class="dv">0</span>)
+<span class="kw">plotFun</span>(<span class="kw">tangentline</span>(<span class="dt">x =</span> x, <span class="dt">x0 =</span> -<span class="dv">1</span>, <span class="dt">slope =</span> <span class="kw">f1prime</span>(<span class="dt">x =</span> -<span class="dv">1</span>)) ~<span class="st"> </span>x, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span>, 
+    <span class="dv">3</span>/<span class="dv">2</span>), <span class="dt">add =</span> <span class="ot">TRUE</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</code></pre>
+<p><img src="figure/ordinary_deriv.png" title="plot of chunk ordinary_deriv" alt="plot of chunk ordinary_deriv" style="display: block; margin: auto;" /></p>
+<p>If we depart from the point <span class="math">\((-1,-3)\)</span> along the <em>tangent line</em> with horizontal displacement <span class="math">\(\Delta x\)</span>, the corresponding vertical displacement is <span class="math">\[
+    \Delta y = f_1&#39;(-1)\Delta x = 4 \Delta x.
+\]</span> This is nothing more than a paraphrase of the statement that the slope of the tangent line at the point <span class="math">\((-1, -3)\)</span> is <span class="math">\(4\)</span>.</p>
+<p>Because there is essentially only one “direction” in which to depart from <span class="math">\(x = -1\)</span>, there is only one tangent line and only one associated slope or rate of change. This is not the case in dealing with functions of several variables.</p>
+<h3 id="slices-by-planes"><a href="#slices-by-planes">Slices by planes</a></h3>
+<pre class="sourceCode r"><code class="sourceCode r">f2 &lt;-<span class="st"> </span><span class="kw">makeFun</span>(<span class="kw">cos</span>(x) *<span class="st"> </span><span class="kw">cos</span>(y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
+<span class="kw">plotFun</span>(<span class="kw">f2</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, 
+    <span class="dv">2</span> *<span class="st"> </span>pi), <span class="dt">npts =</span> <span class="dv">100</span>)
+<span class="kw">plotFun</span>(pi ~<span class="st"> </span>x, <span class="dt">add =</span> <span class="ot">TRUE</span>)</code></pre>
+<p><img src="figure/partial_deriv_setup.png" title="plot of chunk partial_deriv_setup" alt="plot of chunk partial_deriv_setup" style="display: block; margin: auto;" /></p>
+<p>In this contour plot of the function <span class="math">\(f(x,y) = \cos{(x)} \cos{(y)}\)</span>, observe that the line <span class="math">\(y = \pi\)</span> is also plotted. Of course, <span class="math">\(y = \pi\)</span> describes a plane in <span class="math">\(\R^3\)</span>: a plane parallel to the <span class="math">\((x,z)\)</span>-plane. By reading the contour plot from left to right along <span class="math">\(y = \pi\)</span>, we can deduce information about the restricted (slice) function <span class="math">\(f(x, \pi) = -\cos{(x)}\)</span>.</p>
+<p>For example, <span class="math">\(f(x, \pi)\)</span> has local maxima near <span class="math">\(x = \pm 3\)</span>. Let us plot the slice <span class="math">\(y = \pi\)</span>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotFun</span>(<span class="kw">f2</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> <span class="dv">3</span>) ~<span class="st"> </span>x, <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="dv">2</span> *<span class="st"> </span>pi, <span class="dv">2</span> *<span class="st"> </span>pi))</code></pre>
+<p><img src="figure/slice.png" title="plot of chunk slice" alt="plot of chunk slice" style="display: block; margin: auto;" /></p>
+<p>As we discussed in class, this curve should be pictured as living in the plane <span class="math">\(y = \pi\)</span>. It is the intersection of that plane with the graph of <span class="math">\(f(x,y)\)</span>.</p>
+<h3 id="partial-derivatives"><a href="#partial-derivatives">Partial derivatives</a></h3>
+<p>Each point <span class="math">\((x_0, y_0)\)</span> in the domain of <span class="math">\(f(x,y)\)</span> corresponds to a point on the graph: the point <span class="math">\((x_0, y_0, f(x_0, y_0))\)</span>. There are two coordinate slicing planes associated with this point: the planes <span class="math">\(x = x_0\)</span> and <span class="math">\(y = y_0\)</span>.</p>
+<p>Each of those slicing planes intersects the graph of <span class="math">\(f\)</span> in a curve. The curve determined by the slice <span class="math">\(x = x_0\)</span> is the graph of the function <span class="math">\(f(x_0,y)\)</span>, while that determined by the slice <span class="math">\(y = y_0\)</span> is evidently the graph of <span class="math">\(f(x, y_0)\)</span>.</p>
+<p>Let us assume for now that both of these slice curves possess tangent lines. Unsurprisingly, not all functions have this property.</p>
+<p>With this assumption in place, we define the partial derivatives of <span class="math">\(f(x,y)\)</span> by decreeing that <span class="math">\[ \frac{\dee f}{\dee x}(x_0, y_0) \]</span> denotes the slope of the line tangent to the graph of <span class="math">\(f(x, y_0)\)</span> at <span class="math">\((x_0, y_0)\)</span>, and vice versa for the other partial derivative.</p>
+<p>If you picture yourself standing on the graph at the point <span class="math">\((x_0, y_0, f(x_0, y_0))\)</span>, the landscape is steeper or shallower depending on which direction you face. Most likely, as you turn in place, you will be able to say in which direction the ascent is steepest (in both the positive and negative senses). The partial derivatives measure this steepness in the two special directions—the coordinate directions.</p>
+<h3 id="computation-of-partial-derivatives"><a href="#computation-of-partial-derivatives">Computation of partial derivatives</a></h3>
+<p>Partials are calculated by “fixing all but one variable” and differentiating as usual. I refer you to the text of 14.3 and the exercises for details. It is simple to calculate partial derivatives in R. For example:</p>
+<pre class="sourceCode r"><code class="sourceCode r">f2  <span class="co"># Text after the pound # is ignored by R; this line asks to print the definition of f2</span></code></pre>
+<pre><code>## function (x, y) 
+## cos(x) * cos(y)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">f2</span>(<span class="dt">x =</span> <span class="dv">1</span>, <span class="dt">y =</span> <span class="dv">1</span>)  <span class="co"># Evaluate f2 at (1,1)</span></code></pre>
+<pre><code>## [1] 0.2919</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(<span class="kw">f2</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x)  <span class="co"># partial of f2 w.r.t. x</span></code></pre>
+<pre><code>## Warning: Implicit variables without default values (dangerous!): y</code></pre>
+<pre><code>## function (x, y) 
+## -(sin((x)) * cos((y)))</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(f2 ~<span class="st"> </span>y)  <span class="co"># partial of f2 w.r.t. y</span></code></pre>
+<pre><code>## Warning: Implicit variables without default values (dangerous!): f2</code></pre>
+<pre><code>## function (y, f2) 
+## 0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(f2 ~<span class="st"> </span>y)(<span class="dt">x =</span> <span class="dv">1</span>, <span class="dt">y =</span> <span class="dv">1</span>)  <span class="co"># Evaluate the partial at (1,1)</span></code></pre>
+<pre><code>## Warning: Implicit variables without default values (dangerous!): f2</code></pre>
+<pre><code>## Error: unused argument (x = 1)</code></pre>
+<p>R warns us on occasion that not all values are specified; this doesn’t affect the validity of the displayed formulas for the indicated partial derivatives.</p>
+<h3 id="higher-derivatives"><a href="#higher-derivatives">Higher derivatives</a></h3>
+<p>It’s probably no surprise that, just as in ordinary calculus, we can continue (or at least attempt to continue) to take partial derivatives. The second derivatives <span class="math">\[ \frac{\dee^2 f}{\dee x^2}, \quad \frac{\dee^2 f}{\dee y^2} \]</span> give the expected information about concavity/acceleration in slice curves.</p>
+<p>There is more, however: the <em>mixed</em> partial derivatives <span class="math">\[ \frac{\dee^2 f}{\dee x \dee y}, \quad \frac{\dee^2 f}{\dee y \dee x}. \]</span> (Note that such expressions are always read right-to-left: the former is obtained by differentiating first with respect to <span class="math">\(y\)</span> and then <span class="math">\(x\)</span>.)</p>
+<p>Higher derivatives are also simple to calculate in R, as illustrated below</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(y^<span class="dv">2</span> *<span class="st"> </span><span class="kw">exp</span>(x^<span class="dv">2</span>) ~<span class="st"> </span>x &amp;<span class="st"> </span>x)  <span class="co"># partial w.r.t. x, twice</span></code></pre>
+<pre><code>## Warning: Implicit variables without default values (dangerous!): y</code></pre>
+<pre><code>## function (x, y) 
+## y^2 * (exp(x^2) * (2 * x) * (2 * x) + exp(x^2) * 2)</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(y^<span class="dv">2</span> *<span class="st"> </span><span class="kw">exp</span>(x^<span class="dv">2</span>) ~<span class="st"> </span>y &amp;<span class="st"> </span>x)  <span class="co"># partial w.r.t. y first, then x</span></code></pre>
+<pre><code>## function (y, x) 
+## 2 * y * (exp(x^2) * (2 * x))</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">D</span>(y^<span class="dv">2</span> *<span class="st"> </span><span class="kw">exp</span>(x^<span class="dv">2</span>) ~<span class="st"> </span>y &amp;<span class="st"> </span>y)(<span class="dt">x =</span> <span class="dv">1</span>, <span class="dt">y =</span> <span class="dv">1</span>)  <span class="co"># Evaluate the partial at (1,1)</span></code></pre>
+<pre><code>## Warning: Implicit variables without default values (dangerous!): x</code></pre>
+<pre><code>## [1] 5.437</code></pre>
+<h3 id="a-note-on-dimension"><a href="#a-note-on-dimension">A note on dimension</a></h3>
+<p>Many more interesting applications of calculus are possible in higher dimensions, because most natural phenomena are not inherently <span class="math">\(1\)</span>-dimensional. Usually there are several parameters of interest. For example, a 1-dimensional problem about temperature is of limited use, because there are no 1-dimensional objects in physical reality. A very thin wire is approximated by a 1-dimensional mathematical ideal, but we can do better by allowing it the dimensions it occupies.</p>
+<p>Alternatively, we might make use of additional dimensions to study a system <em>dynamically</em>, that is, as it evolves through time. The temperature in a very thin cylindrical metal rod might be described by a function <span class="math">\(f(x,t)\)</span>, where <span class="math">\(x\)</span> gives a position along the rod and <span class="math">\(t\)</span> a time. This line of inquiry leads to the very important field of <em>partial differential equations</em>. The partial derivative <span class="math">\(f_x\)</span> tells how the temperature at a fixed time varies along the rod, while <span class="math">\(f_t\)</span> tells how the temperature at a fixed point changes as time passes. For ideal rods, these partials are related by the famous <em>heat equation</em>:</p>
+<p><span class="math">\[ \frac{\dee u}{\dee t} = \alpha \frac{\dee^2 u}{\dee x^2}. \]</span></p>
+<p>The meaning of higher derivatives is most easily grasped through the consideration of such examples, in which the two “coordinate dimensions” (here, <span class="math">\(x\)</span> and <span class="math">\(t\)</span>) are not really the same <em>dimension</em>: here, one is space and another, time.</p>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../06/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../08/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
