@@ -57,13 +57,13 @@ module numbering.
   Read 14.3             Mon 30 Sept       Partial derivatives and "differentials" <br />
                                           WeBWorK 04 is due at 10 pm.
 
-                        Tue 1 Oct         "Differentials" and local linearity;<br />
-                                          Hand in portfolios before 3:30 pm.
-                                                                                
+  Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br />
+                                                                                                                          
                         Wed 2 Oct         Gradients in 2 dimensions 
                                                                                 
-                        Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations
-                                                                                
+                        Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
+                                          10/01/2013 at 10:00pm MDT 
+                                                                               
                         Mon 7 Oct         Gradients; the chain rule
                                                                                 
                         Tue 8 Oct         The chain rule; second-order partials
