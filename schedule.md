@@ -9,26 +9,26 @@ All of this scheduling data is tentative and subject to change, especially
 module numbering.
 
 -------------------------------------------------------------------------------------------
- Module                   Date           Topics 
-------------------   --------------     ---------------------------------------------------
-  [01][m01]             Fri 6 Sept        Introduction; 2-variable functions <br />
+Reading                    Date           Topics 
+------------------     --------------     ---------------------------------------------------
+  [Module 01][m01]      Fri 6 Sept        Introduction; 2-variable functions <br />
                                           [Workshop 00][w00].
                                                                            
-  [02][m02]             Mon 9 Sept        2-variable functions; contour plots; slicing graphs <br />
+  [Module 02][m02]      Mon 9 Sept        2-variable functions; contour plots; slicing graphs <br />
                                           [PDF slides][d01].
                
-  [02][m02]             Tue 10 Sept       Spheres, cylinders, cones <br />
+  [Module 02][m02]      Tue 10 Sept       Spheres, cylinders, cones <br />
                                           WeBWorK 01 is due at 10 pm.
                                           
-  [03][m03]             Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2 except last section on parametric equations for lines) <br />  
+  [Module 03][m03]      Wed 11 Sept       Slicing graphs; displacement vectors (read 12.1--12.2 except last section on parametric equations for lines) <br />  
                                           [Workshop 01][w01]. [PDF slides][d02]. <br />  
                                           Quiz 01 on Modules 01--02.            
          
-  [04][m04]             Fri 13 Sept       Introduction to R (bring a computer, if you can). <br />
+  [Module 04][m04]      Fri 13 Sept       Introduction to R (bring a computer, if you can). <br />
                                           [R Studio introduction presentation][d03]. <br />
                                           WeBWorK 02 is due at 10 pm.
          
-  [04][m04]             Mon 16 Sept       Continue introduction to R Studio. <br />
+  [Module 04][m04]      Mon 16 Sept       Continue introduction to R Studio. <br />
                                           [Second R Studio presentation][d04]. <br />
                                           Bring your computer if possible. <br />
                                           See Dr. Rosoff any time for help with R Studio.
@@ -37,11 +37,11 @@ module numbering.
                                           [Workshop 02][w02] due Friday.
                                           Quiz 02 on vectors (WeBWorK 02). 
                                                                                               
-  [05][m05]             Wed 18 Sept       Cross product <br />
+  [Module 05][m05]      Wed 18 Sept       Cross product <br />
                                           [PDF presentation on cross product][d05].
                                                                                       
   Read 12.5 <br />      Fri 20 Sept       Classification of planes <br />
-  [06][m06]                               [Short presentation][d06].
+  [Module 06][m06]                        [Short presentation][d06].
                                           [Workshop 03][w03] due Monday. <br />
                                           WeBWorK 03 is due *Saturday* at 10 pm.
 
@@ -49,21 +49,22 @@ module numbering.
                                           
   Review                Tue 24 Sept       **Exam 1**
                                           
-                        Wed 25 Sept       3-variable functions; idea of partial derivatives
+                        Wed 25 Sept       Idea of partial derivatives
                                                                                 
   Read 14.2--3 <br />   Fri 27 Sept       Presentations; partial derivatives
-  [07][m07]
-
-  Read 14.3             Mon 30 Sept       Partial derivatives and "differentials" <br />
+  [Module 07][m07]                                                                                
+                                                                                
+  Read 14.3             Mon 30 Sept       Limits by slicing and definitions of partial derivatives<br />
+                                          [Workshop 04][w04] is due on Wednesday, October 2 by 3:30pm.
                                           WeBWorK 04 is due at 10 pm.
 
   Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br />
                                                                                                                           
-                        Wed 2 Oct         Gradients in 2 dimensions 
+  Read 14.5             Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients
                                                                                 
                         Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
                                           10/01/2013 at 10:00pm MDT 
-                                                                               
+
                         Mon 7 Oct         Gradients; the chain rule
                                                                                 
                         Tue 8 Oct         The chain rule; second-order partials
