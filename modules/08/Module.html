@@ -84,7 +84,11 @@
 </ul>
 <h3 id="introducing-differentials"><a href="#introducing-differentials">Introducing: differentials</a></h3>
 <p>Then</p>
-
+<p><span class="math">\[
+\Delta f = f(x,y) - f(a,b) 
+          \approx L(x,y) - L(a, b)
+          \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y, 
+\]</span></p>
 <p>at least when <span class="math">\(\Delta x\)</span> and <span class="math">\(\Delta y\)</span> are small.</p>
 <h3 id="differentials-and-linearization"><a href="#differentials-and-linearization">Differentials and linearization</a></h3>
 <p>The approximation: <span class="math">\(\Delta f \approx f_x(a,b) \Delta x + f_y(a,b) \Delta y\)</span>.</p>
@@ -105,7 +109,7 @@
 <h3 id="abstract-nonsense-concerning-derivatives"><a href="#abstract-nonsense-concerning-derivatives">Abstract nonsense concerning derivatives</a></h3>
 <p>We’ve talked a lot by now about the <em>partial</em> derivatives of <span class="math">\(f(x,y)\)</span>. So what about its actual <em>derivative</em>? The best answer, for now, is that the derivative of <span class="math">\(f(x,y)\)</span> is the differential <span class="math">\(df\)</span>. This is a little peculiar, at first. We won’t have much occasion to use this particular notion.</p>
 <h3 id="nonsense-ii"><a href="#nonsense-ii">Nonsense, II</a></h3>
-<p>Another answer might be that the derivative is the vector <span class="math">\(\langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} dy \rangle\)</span>. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a “tangent slope”. This vector is the <em>gradient vector</em> of the function <span class="math">\(f\)</span> and we’ll see a lot more of it.</p>
+<p>Another answer might be that the derivative is the vector <span class="math">\(\langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} \rangle\)</span>. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a “tangent slope”. This vector is the <em>gradient vector</em> of the function <span class="math">\(f\)</span> and we’ll see a lot more of it.</p>
 <h3 id="summary"><a href="#summary">Summary</a></h3>
 <ul>
 <li>If the partial derivatives <span class="math">\(f_x(a,b)\)</span> and <span class="math">\(f_y(a,b)\)</span> exist, we can write <span class="math">\(L(x,y)\)</span></li>

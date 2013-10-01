@@ -75,11 +75,11 @@ Let us write
 
 Then 
 
-\begin{align*}
-\Delta f &= f(x,y) - f(a,b) \\
-         & \approx L(x,y) - L(a, b) \\
-         & \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y, 
-\end{align*}
+$$
+\Delta f = f(x,y) - f(a,b) 
+          \approx L(x,y) - L(a, b)
+          \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y, 
+$$
 
 at least when $\Delta x$ and $\Delta y$ are small.
 
@@ -111,7 +111,7 @@ We've talked a lot by now about the *partial* derivatives of $f(x,y)$. So what a
 
 ### Nonsense, II
 
-Another answer might be that the derivative is the vector $\angl{\frac{\partial f}{\partial x},\frac{\partial f}{\partial y} dy}$. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a "tangent slope". This vector is the *gradient vector* of the function $f$ and we'll see a lot more of it.
+Another answer might be that the derivative is the vector $\angl{\frac{\partial f}{\partial x},\frac{\partial f}{\partial y}}$. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a "tangent slope". This vector is the *gradient vector* of the function $f$ and we'll see a lot more of it.
 
 ### Summary
 
