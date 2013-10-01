@@ -120,4 +120,4 @@ Another answer might be that the derivative is the vector $\angl{\frac{\partial 
 - The graph of $L$ is a plane passing through $(a,b,f(a,b))$
 - If $f$ is locally linear, then the graph of $L$ is tangent to the graph of $f$.
 
-[d07]: ../decks/07/Deck.pdf
+[d07]: ../../decks/07/Deck.pdf
