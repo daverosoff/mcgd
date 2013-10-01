@@ -50,6 +50,8 @@ All of the following are equivalent:
 
 If *any* plane is tangent to the graph of $f$ at $(a,b)$, it must be the graph of $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b)$. That's the only plane that contains the tangent lines.
 
+> Observe that $L(a, b) = f(a, b)$.
+
 How do we know the tangent plane exists?
 
 > If $f_x$ and $f_y$ exist and are continuous at $(a,b)$, then the three equivalent conditions given above are all true.
@@ -58,6 +60,24 @@ How do we know the tangent plane exists?
 
 If $(x,y)$ is near $(a,b)$ (in other words, if the magnitude $\norm{\angl{x,y} - \angl{a,b}}$ is small), then $L(x,y) \approx f(x,y)$. Let us write $\Delta x = x - a$, $\Delta y = y - b$, and $\Delta f = f(x,y) - f(a,b)$. 
 
-Then $\Delta f \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y$.
+Then $\Delta f = f(x,y) - f(a,b) \approx L(x,y) - L(a, b) \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y$, at least when $dx$ and $dy$ are small.
 
- 
+It is common to write $dx = \Delta x$, $dy = \Delta y$, $df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$. Thus we have $\Delta f \approx df$, a compact representation of the idea of the linearization. 
+
+## What are differentials?
+
+It is common to write $dx = \Delta x$, $dy = \Delta y$, $df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$.
+
+For now, it's best to think of them as convenient abbreviations. The convenience lies in that while $dx = x-a$, the $a$ is suppressed from the notation. So we can abbreviate even further
+
+$$ df = f_x dx + f_y dy. $$
+
+Of course, one has to remember to evaluate the partials at the appropriate point, but that detail aside, this is quite a compact form for the equation of the tangent plane (supposing it exists).
+
+## Summary
+
+- If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can write $L(x,y)$
+- $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is the linearization of $f$ at $(a,b)$
+- The graph of $L$ is a plane passing through $(a,b,f(a,b))$
+- If $f$ is locally linear, then the graph of $L$ is tangent to the graph of $f$.
+

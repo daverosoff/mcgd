@@ -1,0 +1,220 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage{rosoff}
+\title{Tangent planes and differentials}
+\author{Math 251 Calculus 3}
+\date{October 1, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Tangent planes and differentials}
+
+\begin{frame}\frametitle{Recap: slices, partial derivatives, and tangent
+lines}
+
+We saw previously that if $f(x,y)$ is a function of two variables, each
+of its partial derivatives $f_x(x,y)$ and $f_y(x,y)$ gives the slopes of
+tangent lines to slice curves.
+
+If $(a, b)$ is a point in the plane, the slice curves through $(a,b)$
+are the graphs of $z = f(a, y)$ (in the plane $x = a$) and $z = f(x, b)$
+(in the plane $y = b$).
+
+\end{frame}
+
+\begin{frame}\frametitle{Partial derivatives}
+
+If the slice functions $f(a, y)$ and $f(x,b)$ are differentiable (in the
+one-variable sense), their derivatives are $f_y(a,y)$ and $f_x(x,b)$.
+These functions are ordinary derivatives, so they compute tangent slopes
+in the usual way.
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  The tangent line equations:
+\item
+  $z = f(a, b) + f_x(a,b)(x - a)$
+\item
+  $z = f(a, b) + f_y(a,b)(y - b)$
+\end{itemize}
+
+This is the old tangent line approximation formula, just twice in
+different directions.
+
+\end{frame}
+
+\begin{frame}\frametitle{A candidate for the tangent plane}
+
+The tangent lines in the $(x,y)$-direction determine a unique plane. Its
+equation is \[ z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b). \]
+
+Rearranging this a bit, we can confirm it's a plane:
+\[ \angl{f_x(a,b), f_y(a,b), 1} \cdot \angl{x - a, y - b, z - f(a,b)}. \]
+
+By 12.5, this is the equation of a plane passing through the point
+$(a, b, f(a, b))$ normal to the vector $\angl{f_x(a,b), f_y(a,b), 1}$.
+
+We call the RHS $L(x,y)$ the \emph{linearization} of $f$ at the point
+$(a,b)$.
+
+\end{frame}
+
+\begin{frame}\frametitle{Local linearity}
+
+Having a tangent plane means the graph of the surface is \emph{locally
+linear}. If we zoom way in, the surface looks flat. The algebraic
+criterion for this turns out to be
+\[ \lim_{(x, y) \to (a, b)} \frac{f(x, y) - L(x,y)}{\norm{\angl{x,y} - \angl{a,b}}} = 0\]
+and so we adopt this as the definition of \emph{differentiability}.
+
+\end{frame}
+
+\begin{frame}\frametitle{Three ways to say it}
+
+All of the following are equivalent:
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  $f(x,y)$ is differentiable at $(a,b)$
+\item
+  $f(x,y)$ is locally linear at $(a,b)$
+\item
+  the graph of $L(x,y)$ is tangent to the graph of $f$ at $(a,b)$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Criteria for differentiability}
+
+If \emph{any} plane is tangent to the graph of $f$ at $(a,b)$, it must
+be the graph of $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b)$.
+That's the only plane that contains the tangent lines.
+
+\begin{quote}
+Observe that $L(a, b) = f(a, b)$.
+\end{quote}
+
+How do we know the tangent plane exists?
+
+\begin{quote}
+If $f_x$ and $f_y$ exist and are continuous at $(a,b)$, then the three
+equivalent conditions given above are all true.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}\frametitle{Differentials and the linearization}
+
+If $(x,y)$ is near $(a,b)$ (in other words, if the magnitude
+$\norm{\angl{x,y} - \angl{a,b}}$ is small), then
+$L(x,y) \approx f(x,y)$. Let us write $\Delta x = x - a$,
+$\Delta y = y - b$, and $\Delta f = f(x,y) - f(a,b)$.
+
+Then
+$\Delta f = f(x,y) - f(a,b) \approx L(x,y) - L(a, b) \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y$,
+at least when $dx$ and $dy$ are small.
+
+It is common to write $dx = \Delta x$, $dy = \Delta y$,
+$df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$. Thus we have
+$\Delta f \approx df$, a compact representation of the idea of the
+linearization.
+
+\end{frame}
+
+\begin{frame}\frametitle{What are differentials?}
+
+It is common to write $dx = \Delta x$, $dy = \Delta y$,
+$df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$.
+
+For now, it's best to think of them as convenient abbreviations. The
+convenience lies in that while $dx = x-a$, the $a$ is suppressed from
+the notation. So we can abbreviate even further
+
+\[ df = f_x dx + f_y dy. \]
+
+Of course, one has to remember to evaluate the partials at the
+appropriate point, but that detail aside, this is quite a compact form
+for the equation of the tangent plane (supposing it exists).
+
+\end{frame}
+
+\begin{frame}\frametitle{Summary}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can
+  write $L(x,y)$
+\item
+  $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is the linearization
+  of $f$ at $(a,b)$
+\item
+  The graph of $L$ is a plane passing through $(a,b,f(a,b))$
+\item
+  If $f$ is locally linear, then the graph of $L$ is tangent to the
+  graph of $f$.
+\end{itemize}
+
+\end{frame}
+
+\end{document}
