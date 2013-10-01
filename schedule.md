@@ -59,7 +59,8 @@ Reading                    Date           Topics
                                           WeBWorK 04 is due at 10 pm.
 
   Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br />
-                                                                                                                          
+                                          [PDF presentation][d07] (we didn't get to it in class).
+
   Read 14.5             Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients
                                                                                 
                         Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
