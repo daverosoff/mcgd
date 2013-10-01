@@ -65,6 +65,7 @@ Reading                    Date           Topics
   Read 14.5             Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients
                                                                                 
                         Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
+                                          Quiz 04 over WeBWorK 04.
 
                         Mon 7 Oct         Gradients; the chain rule
                                                                                 
