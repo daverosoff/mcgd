@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <title>Tangent planes and differentials</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Tangent planes and differentials</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../07/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../09/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — October 1, 2013</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#tangent-planes-and-differentials">Tangent planes and differentials</a></li>
+<li><a href="#recap-slices-partial-derivatives-and-tangent-lines">Recap: slices, partial derivatives, and tangent lines</a></li>
+<li><a href="#partial-derivatives">Partial derivatives</a></li>
+<li><a href="#a-candidate-for-the-tangent-plane">A candidate for the tangent plane</a></li>
+<li><a href="#local-linearity">Local linearity</a></li>
+<li><a href="#three-ways-to-say-it">Three ways to say it</a></li>
+<li><a href="#criteria-for-differentiability">Criteria for differentiability</a></li>
+<li><a href="#the-linearization-approximates-f">The linearization approximates <span class="math">\(f\)</span></a></li>
+<li><a href="#introducing-differentials">Introducing: differentials</a></li>
+<li><a href="#differentials-and-linearization">Differentials and linearization</a></li>
+<li><a href="#what-are-differentials">What are differentials?</a></li>
+<li><a href="#abstract-nonsense-concerning-derivatives">Abstract nonsense concerning derivatives</a></li>
+<li><a href="#nonsense-ii">Nonsense, II</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</div>
+<h3 id="tangent-planes-and-differentials"><a href="#tangent-planes-and-differentials">Tangent planes and differentials</a></h3>
+<p>This module was initially intended as a presentation for in-class, and is <a href="../decks/07/Deck.pdf">available in that form</a>. I thought it would be easier to read on-screen in this format.</p>
+<h3 id="recap-slices-partial-derivatives-and-tangent-lines"><a href="#recap-slices-partial-derivatives-and-tangent-lines">Recap: slices, partial derivatives, and tangent lines</a></h3>
+<p>We saw previously that if <span class="math">\(f(x,y)\)</span> is a function of two variables, each of its partial derivatives <span class="math">\(f_x(x,y)\)</span> and <span class="math">\(f_y(x,y)\)</span> gives the slopes of tangent lines to slice curves.</p>
+<p>If <span class="math">\((a, b)\)</span> is a point in the plane, the slice curves through <span class="math">\((a,b)\)</span> are the graphs of <span class="math">\(z = f(a, y)\)</span> (in the plane <span class="math">\(x = a\)</span>) and <span class="math">\(z = f(x, b)\)</span> (in the plane <span class="math">\(y = b\)</span>).</p>
+<h3 id="partial-derivatives"><a href="#partial-derivatives">Partial derivatives</a></h3>
+<p>If the slice functions <span class="math">\(f(a, y)\)</span> and <span class="math">\(f(x,b)\)</span> are differentiable (in the one-variable sense), their derivatives are <span class="math">\(f_y(a,y)\)</span> and <span class="math">\(f_x(x,b)\)</span>. These functions are ordinary derivatives, so they compute tangent slopes in the usual way.</p>
+<ul>
+<li>The tangent line equations:</li>
+<li><span class="math">\(z = f(a, b) + f_x(a,b)(x - a)\)</span></li>
+<li><span class="math">\(z = f(a, b) + f_y(a,b)(y - b)\)</span></li>
+</ul>
+<p>This is the old tangent line approximation formula, just twice in different directions.</p>
+<h3 id="a-candidate-for-the-tangent-plane"><a href="#a-candidate-for-the-tangent-plane">A candidate for the tangent plane</a></h3>
+<p>The tangent lines in the <span class="math">\((x,y)\)</span>-direction determine a unique plane. Its equation is <span class="math">\[ z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b). \]</span></p>
+<p>Rearranging this a bit, we can confirm it’s a plane: <span class="math">\[ \langle f_x(a,b), f_y(a,b), 1 \rangle \cdot \langle x - a, y - b, z - f(a,b) \rangle = 0. \]</span></p>
+<p>By 12.5, this is the equation of a plane passing through the point <span class="math">\((a, b, f(a, b))\)</span> normal to the vector <span class="math">\(\langle f_x(a,b), f_y(a,b), 1 \rangle\)</span>.</p>
+<p>We call the RHS <span class="math">\(L(x,y)\)</span> the <em>linearization</em> of <span class="math">\(f\)</span> at the point <span class="math">\((a,b)\)</span>.</p>
+<h3 id="local-linearity"><a href="#local-linearity">Local linearity</a></h3>
+<p>Having a tangent plane means the graph of the surface is <em>locally linear</em>. If we zoom way in, the surface looks flat. The algebraic criterion for this turns out to be <span class="math">\[ \lim_{(x, y) \to (a, b)} \frac{f(x, y) - L(x,y)}{\lVert \langle x,y \rangle - \langle a,b \rangle \rVert} = 0\]</span> and so we adopt this as the definition of <em>differentiability</em>.</p>
+<h3 id="three-ways-to-say-it"><a href="#three-ways-to-say-it">Three ways to say it</a></h3>
+<p>All of the following are equivalent:</p>
+<ul>
+<li><span class="math">\(f(x,y)\)</span> is differentiable at <span class="math">\((a,b)\)</span></li>
+<li><span class="math">\(f(x,y)\)</span> is locally linear at <span class="math">\((a,b)\)</span></li>
+<li>the graph of <span class="math">\(L(x,y)\)</span> is tangent to the graph of <span class="math">\(f\)</span> at <span class="math">\((a,b)\)</span></li>
+</ul>
+<h3 id="criteria-for-differentiability"><a href="#criteria-for-differentiability">Criteria for differentiability</a></h3>
+<p>If <em>any</em> plane is tangent to the graph of <span class="math">\(f\)</span> at <span class="math">\((a,b)\)</span>, it must be the graph of <span class="math">\(L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b)\)</span>. That’s the only plane that contains the tangent lines.</p>
+<blockquote>
+<p>Observe that <span class="math">\(L(a, b) = f(a, b)\)</span> and that the <span class="math">\(x = a\)</span> (resp. <span class="math">\(y = b\)</span>) slice of <span class="math">\(L(x,y)\)</span> is the tangent line to the slice curve in the plane <span class="math">\(x = a\)</span> (resp. <span class="math">\(y = b\)</span>).</p>
+</blockquote>
+<p>How do we know the tangent plane exists?</p>
+<blockquote>
+<p>If <span class="math">\(f_x\)</span> and <span class="math">\(f_y\)</span> exist and are continuous at <span class="math">\((a,b)\)</span>, then the three equivalent conditions given above are all true.</p>
+</blockquote>
+<h3 id="the-linearization-approximates-f"><a href="#the-linearization-approximates-f">The linearization approximates <span class="math">\(f\)</span></a></h3>
+<p>If <span class="math">\((x,y)\)</span> is near <span class="math">\((a,b)\)</span> (in other words, if the magnitude <span class="math">\(\lVert \langle x,y \rangle - \langle a,b \rangle \rVert\)</span> is small), then <span class="math">\(L(x,y) \approx f(x,y)\)</span>, because <span class="math">\(f\)</span> is locally linear.</p>
+<p>Let us write</p>
+<ul>
+<li><span class="math">\(\Delta x = x - a\)</span>,</li>
+<li><span class="math">\(\Delta y = y - b\)</span>, and</li>
+<li><span class="math">\(\Delta f = f(x,y) - f(a,b)\)</span>.</li>
+</ul>
+<h3 id="introducing-differentials"><a href="#introducing-differentials">Introducing: differentials</a></h3>
+<p>Then</p>
+
+<p>at least when <span class="math">\(\Delta x\)</span> and <span class="math">\(\Delta y\)</span> are small.</p>
+<h3 id="differentials-and-linearization"><a href="#differentials-and-linearization">Differentials and linearization</a></h3>
+<p>The approximation: <span class="math">\(\Delta f \approx f_x(a,b) \Delta x + f_y(a,b) \Delta y\)</span>.</p>
+<p>It is common to write</p>
+<blockquote>
+<ul>
+<li><span class="math">\(dx = \Delta x\)</span></li>
+<li><span class="math">\(dy = \Delta y\)</span></li>
+<li><span class="math">\(df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy\)</span>.</li>
+</ul>
+</blockquote>
+<p>Putting it all together, we have <span class="math">\(\Delta f \approx df\)</span>, a compact representation of the idea of the linearization. The symbols <span class="math">\(dx\)</span>, <span class="math">\(dy\)</span>, <span class="math">\(df\)</span> are often called “differentials”.</p>
+<h3 id="what-are-differentials"><a href="#what-are-differentials">What are differentials?</a></h3>
+<p>It is common to write <span class="math">\(dx = \Delta x\)</span>, <span class="math">\(dy = \Delta y\)</span>, <span class="math">\(df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy\)</span>.</p>
+<p>For now, it’s best to think of them as convenient abbreviations. The convenience lies in that while <span class="math">\(dx = x-a\)</span>, the <span class="math">\(a\)</span> is suppressed from the notation. So we can abbreviate even further</p>
+<p><span class="math">\[ df = f_x dx + f_y dy = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy. \]</span></p>
+<p>Of course, one has to remember to evaluate the partials at the appropriate point, but that detail aside, this is quite a compact form for the equation of the tangent plane (supposing it exists).</p>
+<h3 id="abstract-nonsense-concerning-derivatives"><a href="#abstract-nonsense-concerning-derivatives">Abstract nonsense concerning derivatives</a></h3>
+<p>We’ve talked a lot by now about the <em>partial</em> derivatives of <span class="math">\(f(x,y)\)</span>. So what about its actual <em>derivative</em>? The best answer, for now, is that the derivative of <span class="math">\(f(x,y)\)</span> is the differential <span class="math">\(df\)</span>. This is a little peculiar, at first. We won’t have much occasion to use this particular notion.</p>
+<h3 id="nonsense-ii"><a href="#nonsense-ii">Nonsense, II</a></h3>
+<p>Another answer might be that the derivative is the vector <span class="math">\(\langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} dy \rangle\)</span>. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a “tangent slope”. This vector is the <em>gradient vector</em> of the function <span class="math">\(f\)</span> and we’ll see a lot more of it.</p>
+<h3 id="summary"><a href="#summary">Summary</a></h3>
+<ul>
+<li>If the partial derivatives <span class="math">\(f_x(a,b)\)</span> and <span class="math">\(f_y(a,b)\)</span> exist, we can write <span class="math">\(L(x,y)\)</span></li>
+<li><span class="math">\(L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)\)</span> is the linearization of <span class="math">\(f\)</span> at <span class="math">\((a,b)\)</span></li>
+<li>The graph of <span class="math">\(L\)</span> is a plane passing through <span class="math">\((a,b,f(a,b))\)</span></li>
+<li>If <span class="math">\(f\)</span> is locally linear, then the graph of <span class="math">\(L\)</span> is tangent to the graph of <span class="math">\(f\)</span>.</li>
+</ul>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../07/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../09/Module.html">Next</a></li>
+</ul>
+</body>
+</html>

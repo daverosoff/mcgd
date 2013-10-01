@@ -1,0 +1,123 @@
+% Tangent planes and differentials
+% Math 251 Calculus 3
+% October 1, 2013
+
+\newcommand{\angl}[1]{\langle #1 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+
+### Tangent planes and differentials
+
+This module was initially intended as a presentation for in-class, and is [available in that form][d07]. I thought it would be easier to read on-screen in this format.
+
+### Recap: slices, partial derivatives, and tangent lines
+
+We saw previously that if $f(x,y)$ is a function of two variables, each of its partial derivatives $f_x(x,y)$ and $f_y(x,y)$ gives the slopes of tangent lines to slice curves.
+
+If $(a, b)$ is a point in the plane, the slice curves through $(a,b)$ are the graphs of $z = f(a, y)$ (in the plane $x = a$) and $z = f(x, b)$ (in the plane $y = b$).
+
+### Partial derivatives
+
+If the slice functions $f(a, y)$ and $f(x,b)$ are differentiable (in the one-variable sense), their derivatives are $f_y(a,y)$ and $f_x(x,b)$. These functions are ordinary derivatives, so they compute tangent slopes in the usual way.
+
+- The tangent line equations: 
+- $z = f(a, b) + f_x(a,b)(x - a)$
+- $z = f(a, b) + f_y(a,b)(y - b)$
+
+This is the old tangent line approximation formula, just twice in different directions.
+
+### A candidate for the tangent plane
+
+The tangent lines in the $(x,y)$-direction determine a unique plane. Its equation is
+$$ z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b). $$
+
+Rearranging this a bit, we can confirm it's a plane:
+$$ \angl{f_x(a,b), f_y(a,b), 1} \cdot \angl{x - a, y - b, z - f(a,b)} = 0. $$
+
+By 12.5, this is the equation of a plane passing through the point $(a, b, f(a, b))$ normal to the vector $\angl{f_x(a,b), f_y(a,b), 1}$.
+
+We call the RHS $L(x,y)$ the *linearization* of $f$ at the point $(a,b)$.
+
+### Local linearity 
+
+Having a tangent plane means the graph of the surface is *locally linear*. If we zoom way in, the surface looks flat. The algebraic criterion for this turns out to be
+$$ \lim_{(x, y) \to (a, b)} \frac{f(x, y) - L(x,y)}{\norm{\angl{x,y} - \angl{a,b}}} = 0$$
+and so we adopt this as the definition of *differentiability*.
+
+### Three ways to say it
+
+All of the following are equivalent:
+
+- $f(x,y)$ is differentiable at $(a,b)$
+- $f(x,y)$ is locally linear at $(a,b)$
+- the graph of $L(x,y)$ is tangent to the graph of $f$ at $(a,b)$
+
+### Criteria for differentiability
+
+If *any* plane is tangent to the graph of $f$ at $(a,b)$, it must be the graph of $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b)$. That's the only plane that contains the tangent lines.
+
+> Observe that $L(a, b) = f(a, b)$ and that the $x = a$ (resp. $y = b$) slice of $L(x,y)$ is the tangent line to the slice curve in the plane $x = a$ (resp. $y = b$).
+
+How do we know the tangent plane exists?
+
+> If $f_x$ and $f_y$ exist and are continuous at $(a,b)$, then the three equivalent conditions given above are all true.
+
+### The linearization approximates $f$
+
+If $(x,y)$ is near $(a,b)$ (in other words, if the magnitude $\norm{\angl{x,y} - \angl{a,b}}$ is small), then $L(x,y) \approx f(x,y)$, because $f$ is locally linear.
+
+Let us write 
+
+- $\Delta x = x - a$, 
+- $\Delta y = y - b$, and 
+- $\Delta f = f(x,y) - f(a,b)$. 
+
+### Introducing: differentials
+
+Then 
+
+\begin{align*}
+\Delta f &= f(x,y) - f(a,b) \\
+         & \approx L(x,y) - L(a, b) \\
+         & \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y, 
+\end{align*}
+
+at least when $\Delta x$ and $\Delta y$ are small.
+
+### Differentials and linearization
+
+The approximation: $\Delta f \approx f_x(a,b) \Delta x + f_y(a,b) \Delta y$.
+
+It is common to write 
+
+> - $dx = \Delta x$ 
+> - $dy = \Delta y$ 
+> - $df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$. 
+
+Putting it all together, we have $\Delta f \approx df$, a compact representation of the idea of the linearization. The symbols $dx$, $dy$, $df$ are often called "differentials".
+
+### What are differentials?
+
+It is common to write $dx = \Delta x$, $dy = \Delta y$, $df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$.
+
+For now, it's best to think of them as convenient abbreviations. The convenience lies in that while $dx = x-a$, the $a$ is suppressed from the notation. So we can abbreviate even further
+
+$$ df = f_x dx + f_y dy = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy. $$
+
+Of course, one has to remember to evaluate the partials at the appropriate point, but that detail aside, this is quite a compact form for the equation of the tangent plane (supposing it exists).
+
+### Abstract nonsense concerning derivatives
+
+We've talked a lot by now about the *partial* derivatives of $f(x,y)$. So what about its actual *derivative*? The best answer, for now, is that the derivative of $f(x,y)$ is the differential $df$. This is a little peculiar, at first. We won't have much occasion to use this particular notion.
+
+### Nonsense, II
+
+Another answer might be that the derivative is the vector $\angl{\frac{\partial f}{\partial x},\frac{\partial f}{\partial y} dy}$. This is satisfying, because this vector seems related to the normal to the tangent plane, something like a "tangent slope". This vector is the *gradient vector* of the function $f$ and we'll see a lot more of it.
+
+### Summary
+
+- If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can write $L(x,y)$
+- $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is the linearization of $f$ at $(a,b)$
+- The graph of $L$ is a plane passing through $(a,b,f(a,b))$
+- If $f$ is locally linear, then the graph of $L$ is tangent to the graph of $f$.
+
+[d07]: ../decks/07/Deck.pdf
