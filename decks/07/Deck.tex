@@ -108,7 +108,7 @@ The tangent lines in the $(x,y)$-direction determine a unique plane. Its
 equation is \[ z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b). \]
 
 Rearranging this a bit, we can confirm it's a plane:
-\[ \angl{f_x(a,b), f_y(a,b), 1} \cdot \angl{x - a, y - b, z - f(a,b)}. \]
+\[ \angl{f_x(a,b), f_y(a,b), 1} \cdot \angl{x - a, y - b, z - f(a,b)} = 0. \]
 
 By 12.5, this is the equation of a plane passing through the point
 $(a, b, f(a, b))$ normal to the vector $\angl{f_x(a,b), f_y(a,b), 1}$.
@@ -151,7 +151,9 @@ be the graph of $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b)$.
 That's the only plane that contains the tangent lines.
 
 \begin{quote}
-Observe that $L(a, b) = f(a, b)$.
+Observe that $L(a, b) = f(a, b)$ and that the $x = a$ (resp. $y = b$)
+slice of $L(x,y)$ is the tangent line to the slice curve in the plane
+$x = a$ (resp. $y = b$).
 \end{quote}
 
 How do we know the tangent plane exists?
@@ -163,21 +165,60 @@ equivalent conditions given above are all true.
 
 \end{frame}
 
-\begin{frame}\frametitle{Differentials and the linearization}
+\begin{frame}\frametitle{The linearization approximates $f$}
 
 If $(x,y)$ is near $(a,b)$ (in other words, if the magnitude
 $\norm{\angl{x,y} - \angl{a,b}}$ is small), then
-$L(x,y) \approx f(x,y)$. Let us write $\Delta x = x - a$,
-$\Delta y = y - b$, and $\Delta f = f(x,y) - f(a,b)$.
+$L(x,y) \approx f(x,y)$, because $f$ is locally linear.
+
+Let us write
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  $\Delta x = x - a$,
+\item
+  $\Delta y = y - b$, and
+\item
+  $\Delta f = f(x,y) - f(a,b)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Introducing: differentials}
 
 Then
-$\Delta f = f(x,y) - f(a,b) \approx L(x,y) - L(a, b) \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y$,
-at least when $dx$ and $dy$ are small.
 
-It is common to write $dx = \Delta x$, $dy = \Delta y$,
-$df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$. Thus we have
-$\Delta f \approx df$, a compact representation of the idea of the
-linearization.
+\begin{align*}
+\Delta f &= f(x,y) - f(a,b) \\
+         & \approx L(x,y) - L(a, b) \\
+         & \approx f_x(a,b)\Delta x + f_y(a,b) \Delta y, 
+\end{align*}
+
+at least when $\Delta x$ and $\Delta y$ are small.
+
+\end{frame}
+
+\begin{frame}\frametitle{Differentials and linearization}
+
+The approximation:
+$\Delta f \approx f_x(a,b) \Delta x + f_y(a,b) \Delta y$.
+
+It is common to write
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  $dx = \Delta x$
+\item
+  $dy = \Delta y$
+\item
+  $df = L(x,y) - L(a,b) = f_x(a,b) dx + f_y(a,b) dy$.
+\end{itemize}
+
+Putting it all together, we have $\Delta f \approx df$, a compact
+representation of the idea of the linearization. The symbols $dx$, $dy$,
+$df$ are often called ``differentials''.
 
 \end{frame}
 
@@ -190,11 +231,32 @@ For now, it's best to think of them as convenient abbreviations. The
 convenience lies in that while $dx = x-a$, the $a$ is suppressed from
 the notation. So we can abbreviate even further
 
-\[ df = f_x dx + f_y dy. \]
+\[ df = f_x dx + f_y dy = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy. \]
 
 Of course, one has to remember to evaluate the partials at the
 appropriate point, but that detail aside, this is quite a compact form
 for the equation of the tangent plane (supposing it exists).
+
+\end{frame}
+
+\begin{frame}\frametitle{Abstract nonsense concerning derivatives}
+
+We've talked a lot by now about the \emph{partial} derivatives of
+$f(x,y)$. So what about its actual \emph{derivative}? The best answer,
+for now, is that the derivative of $f(x,y)$ is the differential $df$.
+This is a little peculiar, at first. We won't have much occasion to use
+this particular notion.
+
+\end{frame}
+
+\begin{frame}\frametitle{Nonsense, II}
+
+Another answer might be that the derivative is the vector
+$\angl{\frac{\partial f}{\partial x},\frac{\partial f}{\partial y} dy}$.
+This is satisfying, because this vector seems related to the normal to
+the tangent plane, something like a ``tangent slope''. This vector is
+the \emph{gradient vector} of the function $f$ and we'll see a lot more
+of it.
 
 \end{frame}
 
