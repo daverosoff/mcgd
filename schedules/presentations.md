@@ -10,7 +10,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: September 27, October 4
+Upcoming presentation dates: October 4, October 14
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
@@ -28,7 +28,7 @@ Upcoming presentation dates: September 27, October 4
 |                 | 12.5.60 <br /> (after 56 & ch. 11)   |                                         |
 |                 | 12.5.61                              |                                         |
 |                 |                                      | UNIT 2                                  |
-|                 | 14.2.31                              |                                         |
+| October 4       | 14.2.31                              | Thomas, Emily, Emilee, Jordan           |
 |                 | 14.2.32                              |                                         |
 |                 | 14.2.33*                             |                                         |
 |                 | 14.2.35                              |                                         |
