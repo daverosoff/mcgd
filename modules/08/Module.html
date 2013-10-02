@@ -53,8 +53,8 @@
 <p>This is the old tangent line approximation formula, just twice in different directions.</p>
 <h3 id="a-candidate-for-the-tangent-plane"><a href="#a-candidate-for-the-tangent-plane">A candidate for the tangent plane</a></h3>
 <p>The tangent lines in the <span class="math">\((x,y)\)</span>-direction determine a unique plane. Its equation is <span class="math">\[ z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y - b). \]</span></p>
-<p>Rearranging this a bit, we can confirm it’s a plane: <span class="math">\[ \langle f_x(a,b), f_y(a,b), 1 \rangle \cdot \langle x - a, y - b, z - f(a,b) \rangle = 0. \]</span></p>
-<p>By 12.5, this is the equation of a plane passing through the point <span class="math">\((a, b, f(a, b))\)</span> normal to the vector <span class="math">\(\langle f_x(a,b), f_y(a,b), 1 \rangle\)</span>.</p>
+<p>Rearranging this a bit, we can confirm it’s a plane: <span class="math">\[ \langle f_x(a,b), f_y(a,b), -1 \rangle \cdot \langle x - a, y - b, z - f(a,b) \rangle = 0. \]</span></p>
+<p>By 12.5, this is the equation of a plane passing through the point <span class="math">\((a, b, f(a, b))\)</span> normal to the vector <span class="math">\(\langle f_x(a,b), f_y(a,b), -1 \rangle\)</span>.</p>
 <p>We call the RHS <span class="math">\(L(x,y)\)</span> the <em>linearization</em> of <span class="math">\(f\)</span> at the point <span class="math">\((a,b)\)</span>.</p>
 <h3 id="local-linearity"><a href="#local-linearity">Local linearity</a></h3>
 <p>Having a tangent plane means the graph of the surface is <em>locally linear</em>. If we zoom way in, the surface looks flat. The algebraic criterion for this turns out to be <span class="math">\[ \lim_{(x, y) \to (a, b)} \frac{f(x, y) - L(x,y)}{\lVert \langle x,y \rangle - \langle a,b \rangle \rVert} = 0\]</span> and so we adopt this as the definition of <em>differentiability</em>.</p>
