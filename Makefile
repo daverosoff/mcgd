@@ -14,7 +14,9 @@ QUIZZES			= $(shell find quizzes -mindepth 1 -maxdepth 1 -type d)
 
 .PHONY: all $(MODULES) $(WORKSHOPS) $(DECKS) $(QUIZZES) preview clean
 
-compile: all
+.SUBLIME_TARGETS: all compile preview clean schedule.html
+
+compile: $(target) index.html
 
 all: $(MODULES) $(WORKSHOPS) $(DECKS) $(QUIZZES) $(target) index.html
 
