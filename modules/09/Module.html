@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <title>Module 09: Level curves and surfaces</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 09: Level curves and surfaces</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../08/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../10/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — October 7, 2013</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#what-is-a-curve">What is a curve?</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#promoting-the-graph-of-a-single-variable-function">Promoting the graph of a single-variable function</a></li>
+<li><a href="#graphs-of-two-variable-functions-as-level-surfaces">Graphs of two-variable functions as level surfaces</a></li>
+<li><a href="#functions-of-three-variables">Functions of three variables</a></li>
+</ul>
+</div>
+<h3 id="what-is-a-curve"><a href="#what-is-a-curve">What is a curve?</a></h3>
+<blockquote>
+<p>What do we mean when we use the word “curve”?</p>
+</blockquote>
+<p>If you pay attention, you’ll notice we very often refer to an algebraic equation using the word “curve”. The identification can be very specific. Many people readily identify <span class="math">\(x^2\)</span> as “a parabola”. Is it? What is it, if not? Well, it is an algebraic expression—in particular, a polynomial. Even the functional form <span class="math">\(f(x) = x^2\)</span> is still perhaps not a parabola. It is an equation, associated via certain long-standing conventions with a member of the curve-family “parabolas”.</p>
+<p>The identification can also be very general. I am sure I have referred to a general equation such as <span class="math">\(y = f(x)\)</span> as a “curve” hundreds, if not thousands, of times.</p>
+<p>Is that really what curves are? I think most people would agree that a curve is a shape in the plane. When we engage in metonymy, using the word “curve” to refer to functions themselves rather than to their graphs, it is easy to forget how the graphs arise.</p>
+<h3 id="solutions"><a href="#solutions">Solutions</a></h3>
+<p>When technical people talk about “solutions of an equation”, they usually mean it in something other than the grade-school sense. To most people, “solving an equation” means something related to “isolating one variable”. I would call this “solving <em>for</em>”, and distinguish it from “solving”. To <em>solve</em> an equation means to find all of its <em>solutions</em>, as explained below.</p>
+<p>If we say “<span class="math">\((2,3)\)</span> is a solution of the equation <span class="math">\(y = f(x)\)</span>”, what is meant is that <span class="math">\(3 = f(2)\)</span>, and nothing more. In terms of curves, it means the point whose coordinates are <span class="math">\((2,3)\)</span> is on the curve. Of course this is true: it is the definition of the graph of <span class="math">\(f(x)\)</span>. When we have this kind of solution in mind, “solving the equation <span class="math">\(f(x,y) = 0\)</span>” means finding some or all of the pairs <span class="math">\((x,y)\)</span> that make the equation true. It doesn’t typically mean “getting <span class="math">\(y\)</span> on one side”, say.</p>
+<p>These ideas are associated for a good reason: “solving for <span class="math">\(y\)</span>” is a great way of “solving an equation”, because once it is done, you can <em>generate</em> many solutions very quickly, just by plugging in a ton of different <span class="math">\(x\)</span>s and writing down the corresponding <span class="math">\(y\)</span>s. If this cannot be done, finding solutions may be very difficult.</p>
+<p>It’s important to remember that an equation like <span class="math">\[ y = (x-1)^2 + \frac{1}{4} \]</span> is neither true nor false without context. It lacks a truth value entirely. Only when an specific ordered pair of numbers <span class="math">\((x_0, y_0)\)</span> is chosen to substitute in does the equation acquire truth or falsehood, and the pair is a solution of the equation, or not, accordingly.</p>
+<p>Now we can begin the main discussion of this module: regarding graphs of functions as level curves or level surfaces.</p>
+<h3 id="promoting-the-graph-of-a-single-variable-function"><a href="#promoting-the-graph-of-a-single-variable-function">Promoting the graph of a single-variable function</a></h3>
+<p>Consider the graph of a (one-variable) function <span class="math">\(f\)</span>: it is the collection of points whose coordinates satisfy the equation <span class="math">\(y = f(x)\)</span>. Let us define a new, two-variable function <span class="math">\(F\)</span> by the variable <span class="math">\(F(x,y) = f(x) - y\)</span>. Then, it is clear that the two equations <span class="math">\(y = f(x)\)</span> and <span class="math">\(F(x,y) = 0\)</span> are <em>equivalent</em>, meaning they have the same solutions:</p>
+<blockquote>
+<p><span class="math">\((x,y)\)</span> satisfies <span class="math">\(y = f(x)\)</span> iff it satisfies <span class="math">\(f(x) - y = 0\)</span> iff it satisfies <span class="math">\(F(x,y) = 0\)</span>.</p>
+</blockquote>
+<p>Thus the graph of any function <span class="math">\(f\)</span> may also be thought of as a level curve. In the context of this module, it is hewlpful to use the capital and minuscule letters <span class="math">\(F\)</span> and <span class="math">\(f\)</span> to imply that the two functions are related in this way.</p>
+<p>Observe that the gradient of <span class="math">\(F\)</span> is the vector <span class="math">\(\langle f&#39;(x), -1 \rangle\)</span>. You showed in <a href="../../workshops/05/Workshop.pdf">Workshop 05</a> that this vector is orthogonal to the line tangent to the graph of <span class="math">\(f\)</span> at <span class="math">\(x\)</span>.</p>
+<pre class="sourceCode r"><code class="sourceCode r">f &lt;-<span class="st"> </span>function(x) {
+    x^<span class="dv">3</span> +<span class="st"> </span>x -<span class="st"> </span><span class="dv">1</span>
+}
+fp &lt;-<span class="st"> </span>function(x) {
+    <span class="dv">3</span> *<span class="st"> </span>x^<span class="dv">2</span> +<span class="st"> </span><span class="dv">1</span>
+}
+<span class="kw">curve</span>(<span class="kw">f</span>(x), <span class="dt">xlim =</span> <span class="kw">c</span>(-<span class="fl">0.5</span>, <span class="fl">2.5</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(-<span class="dv">2</span>, <span class="dv">1</span>), <span class="dt">asp =</span> <span class="dv">1</span>)
+<span class="kw">curve</span>(<span class="kw">f</span>(<span class="dt">x =</span> <span class="fl">0.5</span>) +<span class="st"> </span><span class="kw">fp</span>(<span class="fl">0.5</span>) *<span class="st"> </span>(x -<span class="st"> </span><span class="fl">0.5</span>), <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">add =</span> <span class="ot">TRUE</span>)
+<span class="kw">arrows</span>(<span class="fl">0.5</span>, <span class="kw">f</span>(<span class="dt">x =</span> <span class="fl">0.5</span>), <span class="kw">fp</span>(<span class="fl">0.5</span>) +<span class="st"> </span><span class="fl">0.5</span>, -<span class="dv">1</span> +<span class="st"> </span><span class="kw">f</span>(<span class="dt">x =</span> <span class="fl">0.5</span>), <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</code></pre>
+<p><img src="figure/tangent_gradient.png" title="plot of chunk tangent_gradient" alt="plot of chunk tangent_gradient" style="display: block; margin: auto;" /></p>
+<p>In this R code I use the option <code>asp = 1</code> when building the first plot to ensure that the scales on the two axes are the same, so that the blue gradient vector looks as orthogonal to the red tangent line as it really is. Again, you showed in Workshop 05 that the vector <span class="math">\(\langle f&#39;(x), -1 \rangle\)</span> is always perpendicular to the tangent lines to the graph of <span class="math">\(f\)</span>. Rephrased in terms of <span class="math">\(F\)</span>, we would say that</p>
+<blockquote>
+<p><span class="math">\(\nabla F = \left\langle \frac{\partial F}{\partial x}, \frac{\partial F}{\partial y} \right\rangle\)</span> is orthogonal to the curve <span class="math">\(F(x,y) = 0\)</span>.</p>
+</blockquote>
+<p>Interestingly, more is true: <span class="math">\(\nabla F\)</span> is orthogonal to all the level curves of <span class="math">\(F(x,y)\)</span>. It is not a coincidence that the gradient vectors are perpendicular to the level curves: it is the general state of affairs, for <em>differentiable</em> functions. (Remember from 14.4 that merely having partial derivatives does not suffice to qualify a function as differentiable.)</p>
+<p>The orthogonality of gradients with level curves is proved in section 14.5, but the proof relies on the notion of <em>parametrizing</em> a curve from chapters 11 and 13, which we have not yet discussed. In the next section, we move up a dimension.</p>
+<h3 id="graphs-of-two-variable-functions-as-level-surfaces"><a href="#graphs-of-two-variable-functions-as-level-surfaces">Graphs of two-variable functions as level surfaces</a></h3>
+<p>Now let us consider a function <span class="math">\(f(x,y)\)</span>. It gives rise to a surface by considering its graph to be the set of points <span class="math">\(x,y,f(x,y)\)</span>, or what is the same thing, the set of solutions of the equation <span class="math">\[ z = f(x,y). \]</span> Now introduce the three-variable function <span class="math">\(F(x,y,z) = f(x,y) - z\)</span>, and regard the graph of <span class="math">\(f\)</span> as the solutions of the equation <span class="math">\(F(x,y,z) = 0\)</span>.</p>
+<p>There is a little bit of mental gymnastics involved in keeping <span class="math">\(f\)</span> and <span class="math">\(F\)</span> distinct, because they are both of great geometric utility in thinking about the surface they have in common: the graph of <span class="math">\(f\)</span>, which is the same thing as the zero level surface of the function <span class="math">\(F\)</span>.</p>
+<p>On the one hand, we may consider the gradient of <span class="math">\(f\)</span>, which is the vector <span class="math">\[ \nabla f = \left\langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} \right\rangle.\]</span> This vector is helpful in visualizing the contour map of <span class="math">\(f\)</span>, because it is everywhere perpendicular to the contours and points in the direction of quickest increase.</p>
+<blockquote>
+<p><span class="math">\(\nabla f\)</span> is perpendicular to the contours of <span class="math">\(f\)</span>, because those contours are exactly the level curves of <span class="math">\(f\)</span>.</p>
+</blockquote>
+<p>On the other, we might consider the gradient of <span class="math">\(F\)</span>, the vector <span class="math">\[ \nabla F = \left\langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y}, -1 \right\rangle.\]</span> We saw last week that this vector is a normal vector for the tangent planes to the graph of <span class="math">\(f\)</span>. Indeed, such a plane (at, say, <span class="math">\((a, b, f(a,b))\)</span>) has an equation of the form <span class="math">\[ 0 = f(a,b) + f_x(a,b)(x - a) + f_y(a,b)(y - b) + (-1)(z - f(a,b))\]</span>. Evidently, the normal vector coincides with <span class="math">\(\nabla F\)</span>.</p>
+<h3 id="functions-of-three-variables"><a href="#functions-of-three-variables">Functions of three variables</a></h3>
+<p>If we begin with a function of three variables <span class="math">\(f(x,y,z)\)</span>, our only chance is to visualize this function’s level surfaces, assisted by its gradient <span class="math">\[ \nabla f = \left\langle \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right\rangle. \]</span></p>
+<p>Abstractly, the notion of an associated function <span class="math">\(F(x,y,z,w) = f(x,y,z) - w\)</span> is perfectly legitimate. Its zero level surface is the graph of <span class="math">\(f\)</span>, just as above. Of course we can picture neither of these 3-dimensional hypersurfaces in 4-dimensional space. But if we could picture it, we would see that its tangent space (again, 3-dimensional) would be orthogonal to the 4-dimensional gradient vector <span class="math">\(\nabla F = \langle \partial f/\partial x, \partial f/\partial y, \partial f/\partial z, -1 \rangle\)</span>.</p>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../08/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../10/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
