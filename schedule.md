@@ -71,7 +71,7 @@ Read 14.5 <br />      Fri 4 Oct         Gradients of 2- and 3-variable functions
   for paths)
 
 Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule
-  Module 09
+  [Module 09][m09]
 
 Read 14.6 <br />      Tue 8 Oct         The chain rule; second-order partials
   Module 10                               WeBWorK 05 is due at 10pm.
