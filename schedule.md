@@ -49,7 +49,7 @@ Review                Mon 23 Sept       Flex time; review for **Exam 1**
                                           
 Review                Tue 24 Sept       **Exam 1**
                                           
-                      Wed 25 Sept       Idea of partial derivatives
+No new reading        Wed 25 Sept       Idea of partial derivatives
                                                                                 
 Read 14.2--3 <br />   Fri 27 Sept       Presentations; partial derivatives
   [Module 07][m07]                                                                                
@@ -63,18 +63,18 @@ Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br 
                                           Also available as [Module 08][m08].
 
 Read 14.5 <br />      Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients
-  (skip chain rule
+  (skip chain rule                        [PDF presentation][d08].
   for paths)
 
 Read 14.5 <br />      Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
   (skip chain rule                        Quiz 04 over WeBWorK 04.
   for paths)
 
-Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule
-  [Module 09][m09]
+Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule <br />
+  [Module 09][m09]                        [Workshop 06][w06] is due Wednesday, October 9 by 3:30 pm.
 
-Read 14.6 <br />      Tue 8 Oct         The chain rule; second-order partials
-  Module 10                               WeBWorK 05 is due at 10pm.
+Read 14.6 <br />      Tue 8 Oct         The chain rule; second-order partials <br />
+                                          WeBWorK 05 is due at 10pm.
                                                                                 
                         Wed 9 Oct         Second-order partials; multivariable optimization
                                                                                 
