@@ -56,7 +56,7 @@ Complications arise, because functions of different \emph{valence} may be compos
 
 \begin{figure}[ht]
 \begin{minipage}[t]{0.7\linewidth}
-\question Suppose $x = r \cos{\theta}$ and $y = r \sin{\theta}$. (This is the so-called \emph{polar coordinate transformation}, which we will meet again when we discuss integration.) Let $f(x,y)$ be a function. Give formulas for $\partial f / \partial r$ and $\partial f / \partial \theta$ in terms of the other derivatives.
+\question \label{polar} Suppose $x = r \cos{\theta}$ and $y = r \sin{\theta}$. (This is the so-called \emph{polar coordinate transformation}, which we will meet again when we discuss integration.) Let $f(x,y)$ be a function. Give formulas for $\partial f / \partial r$ and $\partial f / \partial \theta$ in terms of the other derivatives.
 \end{minipage} \hspace*{1cm}
 \begin{minipage}[t]{0.25\linewidth}
 \hfill
@@ -65,7 +65,7 @@ Complications arise, because functions of different \emph{valence} may be compos
 
 \dwrspace{1}
 
-\question Apply the result from the previous problem to the function $f(x, y) = x^2 y$.
+\question Apply the result from the previous problem to the function $f(x, y) = x^2 y$. (The coordinates $(x,y)$ are related to $(r,\theta)$ in the same way as in question~\ref{polar}).
 
 \dwrspace{1}
 
