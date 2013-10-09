@@ -62,7 +62,7 @@ Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br 
                                           [PDF presentation][d07] (we didn't get to it in class). <br />
                                           Also available as [Module 08][m08].
 
-Read 14.5 <br />      Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients
+Read 14.5 <br />      Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients <br />
   (skip chain rule                        [PDF presentation][d08].
   for paths)
 
@@ -73,14 +73,15 @@ Read 14.5 <br />      Fri 4 Oct         Gradients of 2- and 3-variable functions
 Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule <br />
   [Module 09][m09]                        [Workshop 06][w06] is due Wednesday, October 9 by 3:30 pm.
 
-Read 14.6 <br />      Tue 8 Oct         The chain rule; second-order partials <br />
+Read 14.6 <br />      Tue 8 Oct         The chain rule <br />
                                           WeBWorK 05 is due at 10pm.
                                                                                 
-                        Wed 9 Oct         Second-order partials; multivariable optimization
-                                                                                
-                        Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers
-                                                                                                            
-                        Mon 14 Oct        Lagrange multipliers; presentations
+No reading            Wed 9 Oct         Second-order partials; multivariable optimization
+
+Read 14.7             Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers <br />
+                                          Quiz 05 over WeBWorK 05.
+
+Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                                                                 
                         Tue 15 Oct        Idea of double integrals; iterated integrals
                                                                                                                               
@@ -101,7 +102,7 @@ Read 14.6 <br />      Tue 8 Oct         The chain rule; second-order partials <b
                         Tue 5 Nov         Parametrization and vector values
                                                                                 
                         Wed 6 Nov         Vector fields; idea of line integrals
-                                                                                                                      
+                                                                                                            
                         Fri 8 Nov         Line integrals with parametrization; flex time
                                                                                 
                         Mon 11 Nov        Flex time; Review for **Exam 2**
