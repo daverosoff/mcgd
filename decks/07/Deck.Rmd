@@ -110,8 +110,8 @@ Another answer might be that the derivative is the vector $\angl{\frac{\partial 
 
 ## Summary
 
-- If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can write $L(x,y)$
+- If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can discuss the linearization $L(x,y)$
 - $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is the linearization of $f$ at $(a,b)$
 - The graph of $L$ is a plane passing through $(a,b,f(a,b))$
-- If $f$ is locally linear, then the graph of $L$ is tangent to the graph of $f$.
+- If $f$ is locally linear (=differentiable), then the graph of $L$ is tangent to the graph of $f$
 
