@@ -63,11 +63,11 @@ Read 14.4             Tue 1 Oct         "Differentials" and local linearity;<br 
                                           Also available as [Module 08][m08].
 
 Read 14.5 <br />      Wed 2 Oct         Local linearity; 3-variable functions; idea of gradients <br />
-  (skip chain rule                        [PDF presentation][d08].
+  (skip chain rule                        PDF presentation---see previous day.
   for paths)
 
 Read 14.5 <br />      Fri 4 Oct         Gradients of 2- and 3-variable functions; presentations <br />
-  (skip chain rule                        Quiz 04 over WeBWorK 04.
+  (skip chain rule                        Quiz 03 over WeBWorK 04.
   for paths)
 
 Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule <br />
@@ -76,7 +76,8 @@ Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule <br />
 Read 14.6 <br />      Tue 8 Oct         The chain rule <br />
                                           WeBWorK 05 is due at 10pm.
                                                                                 
-No reading            Wed 9 Oct         Second-order partials; multivariable optimization
+No reading            Wed 9 Oct         Second-order partials; mathematical modeling
+                                          [Workshop 07][w07] is due Friday, October 11.
 
 Read 14.7             Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers <br />
                                           Quiz 05 over WeBWorK 05.
