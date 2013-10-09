@@ -10,7 +10,7 @@ target 		= Workshop.pdf
 targetpath	= $(abspath $(target))
 browser		= SumatraPDF
 editor		= sublime_text
-rscript = 	Rscript.exe
+rscript 	= Rscript.exe
 rcommand	= -e 'library(knitr); knit(\"$(src)\", \"$(knitted)\")'
 
 .PHONY: all clean compile texonly preview preview_tex

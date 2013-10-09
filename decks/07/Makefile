@@ -1,6 +1,6 @@
 target		= Deck.pdf
 intermed	= Deck.tex
-src		= Deck.Rmd
+src		= Deck.md
 template	= beamer.latex
 fontsize	= 11pt
 theme		= Szeged
@@ -13,7 +13,7 @@ browser		= SumatraPDF
 
 .PHONY: all compile preview clean
 
-all: $(intermed) compile 
+all: compile 
 
 compile: $(target)
 

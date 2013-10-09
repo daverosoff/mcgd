@@ -41,7 +41,7 @@ Read 12.3--12.4       Tue 17 Sept       The dot product and cross product. <br /
                                           [PDF presentation on cross product][d05].
                                                                                       
 Read 12.5 <br />      Fri 20 Sept       Classification of planes <br />
-  [Module 06][m06]                        [Short presentation][d06].
+  [Module 06][m06]                        [Short presentation on classifying planes][d06].
                                           [Workshop 03][w03] due Monday. <br />
                                           WeBWorK 03 is due *Saturday* at 10 pm.
 
@@ -76,8 +76,8 @@ Skim 14.6 <br />      Mon 7 Oct         Gradients; the chain rule <br />
 Read 14.6 <br />      Tue 8 Oct         The chain rule <br />
                                           WeBWorK 05 is due at 10pm.
                                                                                 
-No reading            Wed 9 Oct         Second-order partials; mathematical modeling
-                                          [Workshop 07][w07] is due Friday, October 11.
+No reading            Wed 9 Oct         Second-order partials; mathematical modeling <br />
+                                          [Workshop 07][w07] is due Friday, October 11. It was introduced by a [short presentation][d08].
 
 Read 14.7             Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers <br />
                                           Quiz 05 over WeBWorK 05.

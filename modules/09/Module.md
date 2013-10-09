@@ -72,7 +72,7 @@ meaning they have the same solutions:
 > iff it satisfies $F(x,y) = 0$.
 
 Thus the graph of any function $f$ may also be thought of as a level curve. In
-the context of this module, it is hewlpful to use the capital and minuscule
+the context of this module, it is helpful to use the capital and minuscule
 letters $F$ and $f$ to imply that the two functions are related in this way.
 
 Observe that the gradient of $F$ is the vector $\angl{f'(x), -1}$. You showed
@@ -149,7 +149,7 @@ $$ \nabla F = \Angl{\frac{\partial f}{\partial x},\frac{\partial f}{\partial y},
 We saw last week that this vector is a normal vector for the tangent planes to
 the graph of $f$. Indeed, such a plane (at, say, $(a, b, f(a,b))$) has an
 equation of the form 
-$$ 0 = f(a,b) + f_x(a,b)(x - a) + f_y(a,b)(y - b) + (-1)(z - f(a,b)).$$ 
+$$ 0 = f_x(a,b)(x - a) + f_y(a,b)(y - b) + (-1)(z - f(a,b)).$$ 
 Evidently, the normal vector coincides with $\nabla F$.
 
 ### Functions of three variables

@@ -1,0 +1,170 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage{rosoff}
+\title{Higher derivatives and modeling}
+\author{Math 251 Calculus 3}
+\date{October 9, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Higher derivatives and modeling}
+
+\begin{frame}\frametitle{Recap: slices, partial derivatives, and tangent
+lines}
+
+We saw previously that if $f(x,y)$ is a function of two variables, each
+of its partial derivatives $f_x(x,y)$ and $f_y(x,y)$ gives the slopes of
+tangent lines to slice curves.
+
+If $(a, b)$ is a point in the plane, the slice curves through $(a,b)$
+are the graphs of $z = f(a, y)$ (in the plane $x = a$) and $z = f(x, b)$
+(in the plane $y = b$).
+
+\end{frame}
+
+\begin{frame}\frametitle{Partial derivatives}
+
+If the slice functions $f(a, y)$ and $f(x,b)$ are differentiable (in the
+one-variable sense), their derivatives are $f_y(a,y)$ and $f_x(x,b)$.
+These functions are ordinary derivatives, so they compute tangent slopes
+in the usual way.
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  The tangent line equations:
+\item
+  $z = f(a, b) + f_x(a,b)(x - a)$
+\item
+  $z = f(a, b) + f_y(a,b)(y - b)$
+\end{itemize}
+
+This is the old tangent line approximation formula, just twice in
+different directions.
+
+\end{frame}
+
+\begin{frame}\frametitle{Higher derivatives}
+
+The pure partials $f_{xx}$ and $f_{yy}$ are easy to understand in terms
+of the slices. They tell us about concavity, just like ordinary second
+derivatives. Namely,
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  $f_{xx}(x,b)$ is positive (negative) if $f(x,b)$ is concave up
+  (concave down)
+\item
+  $f_{yy}(a,y)$ is positive (negative) if $f(a,y)$ is concave up
+  (concave down)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{The mixed partial}
+
+Recall that a smooth function has just one mixed partial, because
+$f_{xy} = f_{yx}$ by Clairaut's theorem.
+
+This partial is harder to visualize in terms of graphs. The activity
+(\href{../../workshops/07/Workshop.pdf}{Workshop 07}) should illuminate
+its meaning.
+
+\end{frame}
+
+\begin{frame}\frametitle{Curve shapes via derivatives}
+
+Recall how graph-sketching works in ordinary calculus: one identifies
+the locations where the first derivative changes sign (these are the
+local maxima and minima) and where the second derivative changes sign
+(these are the points of inflection). There are four possible ``curve
+shapes'':
+
+\begin{enumerate}[<+->]
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Increasing, concave up
+\item
+  Increasing, concave down
+\item
+  Decreasing, concave up
+\item
+  Decreasing, concave down
+\end{enumerate}
+
+Once you know which shape occurs on which interval, just paste them
+together.
+
+\end{frame}
+
+\begin{frame}\frametitle{Universality of quadratic curves}
+
+Smooth functions are very well approximated \emph{locally} by their
+quadratic approximations (second-order Taylor series). We'll use ideas
+about quadric surfaces (corresponding to degree 2 polynomials in 2
+variables) to do some modeling of more interesting multidimensional
+phenomena.
+
+\end{frame}
+
+\end{document}
