@@ -1,0 +1,70 @@
+% Optimization and the second derivative test
+% Math 251 Calculus 3
+% October 11, 2013
+
+# Optimization and the second derivative test
+
+## Local optima
+
+If $f(x,y)$ is a function of two variables, it probably has maxima and minima.
+
+- $f$ has a local maximum at $(x_0,y_0)$ if $f(x_0,y_0) \geq f(x,y)$ for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+- $f$ has a local minimum at $(x_0,y_0)$ if $f(x_0,y_0) \leq f(x,y)$ for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+- $f$ has a local optimum (or extremum) at $(x_0,y_0)$ if $f(x_0,y_0)$ has either a local max or a local min at $(x_0, y_0)$.
+
+## Global extrema
+
+Change the phrase "in some small disk containing $(x_0, y_0)$" to "in the domain of $f$".
+
+> - $f$ has a global maximum at $(x_0,y_0)$ if $f(x_0,y_0) \geq f(x,y)$ for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+> - $f$ has a global minimum at $(x_0,y_0)$ if $f(x_0,y_0) \leq f(x,y)$ for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+> - $f$ has a global optimum (or extremum) at $(x_0,y_0)$ if $f(x_0,y_0)$ has either a global max or a global min at $(x_0, y_0)$.
+
+## Stationary points and critical points
+
+If we draw a couple of local optima, we notice something about the tangent planes. They are horizontal, when they exist. This motivates some more definitions.
+
+> - When a function has a horizontal tangent plane at a point $P$, its gradient at $P$ is zero. This is because $\nabla f(P) = \angl{f_x(P), f_y(P)}$. We say that $P$ is a *stationary point*.
+> - When a function is not differentiable at a point, its gradient is typically undefined, although it's possible that the gradient is 0.
+> - Points at which either of these occur are called *critical points*.
+
+Note that the gradient should be considered to be undefined if *either* of its entries is undefined.
+
+## Local optima occur at critical points
+
+If $f(x,y)$ has a local optimum at $(x_0, y_0)$, then $(x_0, y_0)$ is a critical point of $f$.
+
+> Take special note of the logical asymmetry of this statement. Its converse is not true! 
+
+A stationary point that is not a local optimum is called a saddle point. 
+
+## The discriminant
+
+It is impractical to test critical points of $f(x,y)$ for being local optima using the first derivative. But there is a convenient analog of the second derivative test, at least if $f(x,y)$ is smooth enough. Interestingly, all three second derivatives are involved.
+
+- Let $f(x,y)$ be a function with continuous second-order partials. The *Hessian discriminant* of $f$ at $(a,b)$ is defined to be $D(a,b) = f_{xx}(a,b) f_{yy}(a,b) - f^2_{xy}(a,b)$.
+
+## Second derivative test
+
+> - If $D(a,b) > 0$ and $f_{xx}(a,b) > 0$, then $f$ has a local minimum at $(a,b)$.
+> - If $D(a,b) > 0$ and $f_{xx}(a,b) < 0$, then $f$ has a local maximum at $(a,b)$.
+> - If $D(a,b) < 0$, then $f$ has a saddle point at $(a,b)$.
+> - If $D = 0$, the test is inconclusive.
+
+## Inconclusive
+
+Remember, $D = 0$ doesn't mean "saddle point". It means "test fails"!
+
+## Global extrema
+
+If $f$ is everywhere smooth (everywhere means, on all of $\R^2$) then its global optima will also be local optima. Of course it may not have global optima.
+
+But, if $f$ has a domain that is a proper subset of $\R^2$, it may have global optima that are not local optima. If the domain is *closed and bounded*, this is guaranteed to be the case.
+
+We have to check the boundary, just like in the one-variable case.
+
+## Work together:
+
+- Problem 28 from 14.7
+- Example 5 from 14.7 
+- Problem 35 from 14.7 (in groups, with whiteboards)
