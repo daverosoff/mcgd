@@ -61,7 +61,47 @@ If $f$ is everywhere smooth (everywhere means, on all of $\R^2$) then its global
 
 But, if $f$ has a domain that is a proper subset of $\R^2$, it may have global optima that are not local optima. If the domain is *closed and bounded*, this is guaranteed to be the case.
 
-We have to check the boundary, just like in the one-variable case.
+## A little topology
+
+Let $S$ be a subset of the plane. It's OK to assume that $S$ has a reasonable shape: that it's possible to draw it, that its edges (if it has any) are smooth, and so on.
+
+Usually $S$ is defined by algebraic conditions on its coordinates. A point qualifies for membership in $S$ if---and only if---its coordinates meet the conditions.
+
+## Set-builder notation
+
+We describe such sets first via their conditions. You are familiar with doing this. If $f$ is some one-variable function, then
+
+$$ \{ (x,y) \in \R^2 : y = f(x) \} $$
+
+is the graph of the function $f$. It is pronounced "the set of $(x,y)$ in $\R^2$ such that $y = f(x)". 
+
+If we want to discuss 2-variable functions whose domain is smaller than the plane, we describe their domains this way.
+
+## Closed and bounded
+
+A subset $S$ of the plane is called *closed* if it contains all of its edge points: that is, if all of the edge points meet the membership conditions.
+
+We say $S$ is *bounded* if it is contained in a large enough disk; equivalently, if it is contained in a disk centered at $(0,0)$; equivalently, if it is possible to draw the set on a finite piece of paper.
+
+> Note: the textbook calls edge points "boundary points". I prefer to avoid this terminology because the presence of "boundary points" has nothing to do with "boundedness."
+
+## Existence of global extrema
+
+The symbol $\subset$ denotes set containment.
+
+> **Theorem**. Let $S \subset \R^2$ be closed and bounded, and let $f \colon S \to \R^2$ be continuous. Then $f$ has a global maximum and a global minimum on $S$.
+
+This is like the "closed interval method" from one-variable calculus. The closed and bounded subset in that case is a finite closed interval. 
+
+The theorem guarantees the existence of global optima, but tells us nothing about how to find them.
+
+## Interior and edge are separate
+
+We can look for critical points in the interior of the set (interior just means the non-edge parts of the set) and make a table of values. There will only be finitely many such points.
+
+But ... we have to check the edge points, just like in the one-variable case.
+
+And there are more than just 2 endpoints, usually.
 
 ## Work together:
 
