@@ -80,7 +80,7 @@ No reading            Wed 9 Oct         Second-order partials; mathematical mode
                                           [Workshop 07][w07] is due Friday, October 11. It was introduced by a [short presentation][d08].
 
 Read 14.7             Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers <br />
-                                          Quiz 05 over WeBWorK 05.
+                                          Quiz 04 over WeBWorK 05.
 
 Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                                                                 
@@ -88,19 +88,19 @@ Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                                                                                                               
                         Wed 16 Oct        Iterated integrals over polygons; polar coordinates
                                                                                 
-                        Fri 18 Oct        Polar coordinates; change of variables in integrals
+                        Fri 18 Oct        Polar coordinates; presentations
                                                                                                            
                         Mon 28 Oct        Double integrals in polar coordinates; idea of triple integrals
                                                                                            
-                        Tue 29 Oct        Triple integrals; intro to curved coordinates
+                        Tue 29 Oct        Triple integrals; intro to curved coordinates in $\mathbf{R}^3$
                                                                                 
-                        Wed 30 Oct        Cylindrical and spherical coordinates; intro to triple integrals in curved coordinates 
+                        Wed 30 Oct        Cylindrical and spherical coordinates; presentations
                                                                                 
-                        Fri 1 Nov         Presentations; Parametrization, families, and curves
+                        Fri 1 Nov         Intro to triple integrals in curved coordinates; parametrization, families, and curves
                                           
                         Mon 4 Nov         Parametrized curves: lines and arcs
                                           
-                        Tue 5 Nov         Parametrization and vector values
+                        Tue 5 Nov         Parametrization and vector values; presentations
                                                                                 
                         Wed 6 Nov         Vector fields; idea of line integrals
                                                                                                             
@@ -110,7 +110,7 @@ Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                           
                         Tue 12 Nov        **Exam 2**
                                           
-                        Wed 13 Nov        More on line integrals; gradient vector fields
+                        Wed 13 Nov        More on line integrals; gradient vector fields; presentations
                                                                                 
                         Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
                                                                                 
@@ -122,7 +122,7 @@ Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                                                                 
                         Fri 22 Nov        No class; Thanksgiving break
                                                                                 
-                        Mon 25 Nov        Flux for curved regions
+                        Mon 25 Nov        Flux for curved regions; presentations
                                                                                 
                         Tue 26 Nov        More flux; idea of divergence
                                                                                 

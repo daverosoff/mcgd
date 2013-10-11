@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated October 4, 2013
+% Math 251 Calculus 3 -- last updated 2013-10-10
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,7 +10,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: October 4, October 14
+Upcoming presentation dates: October 14
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
@@ -19,7 +19,7 @@ Upcoming presentation dates: October 4, October 14
 |                 | 14.1.40--43                          |                                         |
 |                 | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
 | September 27    | 12.3.48                              | Pragna                                  |
-| September 27    | 12.3.78                              | Alex, Angelica, and Hannah              |
+| September 27    | 12.3.78 <!-- omit next year -->      | Alex, Angelica, and Hannah              |
 | September 27    | 12.3.91*                             | Ruth, Colton, Conner, and Emanuil       |
 | October 4       | 12.3.92 <br /> (after 91)            | Matt, Danny, and Mike                   |
 | September 27    | 12.4.54ab                            | Jacob, Will, and Dallas                 |
@@ -48,6 +48,8 @@ Upcoming presentation dates: October 4, October 14
 |                 | 14.5.67*                             |                                         |
 |                 | 14.5.68*                             |                                         |
 |                 | 14.5.72*                             |                                         |
+|                 | 14.6.39                              |                                         |
+|                 | 14.6.44                              |                                         |
 
 
 <!-- |                 | 14.7.24                              |                                         | -->
