@@ -79,12 +79,15 @@ Read 14.6 <br />      Tue 8 Oct         The chain rule <br />
 No reading            Wed 9 Oct         Second-order partials; mathematical modeling <br />
                                           [Workshop 07][w07] is due Friday, October 11. It was introduced by a [short presentation][d08].
 
-Read 14.7             Fri 11 Oct        Multivariable optimization; idea of Lagrange multipliers <br />
+Read 14.7             Fri 11 Oct        Multivariable optimization; idea of global optima<br />
+                                          [PDF presentation][d09] <br />
                                           Quiz 04 over WeBWorK 05.
 
-Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
-                                                                                
-                        Tue 15 Oct        Idea of double integrals; iterated integrals
+Read 14.7 <br />      Mon 14 Oct        Global optima and idea of Lagrange multipliers; presentations
+Module 10             
+
+Read 14.8 <br />      Tue 15 Oct        Lagrange multipliers; Idea of double integrals <br />
+Module 11?                                WeBWorK 06 is due at 10pm.                    
                                                                                                                               
                         Wed 16 Oct        Iterated integrals over polygons; polar coordinates
                                                                                 
@@ -96,7 +99,7 @@ Read 14.8             Mon 14 Oct        Lagrange multipliers; presentations
                                                                                 
                         Wed 30 Oct        Cylindrical and spherical coordinates; presentations
                                                                                 
-                        Fri 1 Nov         Intro to triple integrals in curved coordinates; parametrization, families, and curves
+                        Fri 1 Nov         Triple integrals in curved coordinates; parametrization, families, and curves
                                           
                         Mon 4 Nov         Parametrized curves: lines and arcs
                                           
