@@ -42,7 +42,7 @@ Upcoming presentation dates: October 14
 |                 | 14.4.37                              |                                         |
 |                 | 14.4.39                              |                                         |
 |                 | 14.4.45                              |                                         |
-|                 | 14.5.50,52,53                        |                                         |
+| October 14      | 14.5.50,52,53                        | Ruth, Emanuil, Colton, and Conner       |
 |                 | 14.5.54,55                           |                                         |
 |                 | 14.5.60*                             |                                         |
 |                 | 14.5.67*                             |                                         |
