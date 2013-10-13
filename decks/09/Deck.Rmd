@@ -24,7 +24,7 @@ Change the phrase "in some small disk containing $(x_0, y_0)$" to "in the domain
 
 If we draw a couple of local optima, we notice something about the tangent planes. They are horizontal, when they exist. This motivates some more definitions.
 
-> - When a function has a horizontal tangent plane at a point $P$, its gradient at $P$ is zero. This is because $\nabla f(P) = \angl{f_x(P), f_y(P)}$. We say that $P$ is a *stationary point*.
+> - When a function has a horizontal tangent plane at a point $P$, its gradient at $P$ is zero. This is because $\nabla f_{P} = \angl{f_x(P), f_y(P)}$. We say that $P$ is a *stationary point*.
 > - When a function is not differentiable at a point, its gradient is typically undefined, although it's possible that the gradient is 0.
 > - Points at which either of these occur are called *critical points*.
 
@@ -59,7 +59,7 @@ Remember, $D = 0$ doesn't mean "saddle point". It means "test fails"!
 
 If $f$ is everywhere smooth (everywhere means, on all of $\R^2$) then its global optima will also be local optima. Of course it may not have global optima.
 
-But, if $f$ has a domain that is a proper subset of $\R^2$, it may have global optima that are not local optima. If the domain is *closed and bounded*, this is guaranteed to be the case.
+But, if $f$ has a domain that is a proper subset of $\R^2$, it may have global optima that are not local optima. If the domain is *closed and bounded*, global optima are guaranteed to exist.
 
 ## A little topology
 
@@ -105,6 +105,9 @@ And there are more than just 2 endpoints, usually.
 
 ## Work together:
 
-- Problem 28 from 14.7
-- Example 5 from 14.7 
-- Problem 35 from 14.7 (in groups, with whiteboards)
+From section 14.7:
+
+> - Problem 28
+> - Example 5 
+> - Problem 35 (in groups, with whiteboards)
+> - Problem 36 if time permits
