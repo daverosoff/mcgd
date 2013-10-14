@@ -3,6 +3,7 @@ TERM		= "Fall 2013"
 TIME		= 10
 template 	= handout.latex
 baseheaderlevel = 1
+font-size	= 12pt
 src 		= 12.3.48-solution-coordinate-free.md
 intermed 	= 12.3.48-solution-coordinate-free.tex
 target 		= 12.3.48-solution-coordinate-free.pdf
@@ -20,6 +21,8 @@ texonly: $(intermed)
 
 $(target): $(src)
 	pandoc -s \
+	--variable include-pkg="xparse" \
+	--variable font-size=$(font-size) \
 	--variable header-includes="\usepackage{rosoff}" \
 	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
@@ -27,6 +30,8 @@ $(target): $(src)
 
 $(intermed): $(src)
 	pandoc -s \
+	--variable include-pkg="xparse" \
+	--variable font-size=$(font-size) \
 	--variable header-includes="\usepackage{rosoff}" \
 	--variable header-includes="\usepackage{rosoff-vector-macros}" \
 	--template=$(template) --base-header-level=$(baseheaderlevel) \
