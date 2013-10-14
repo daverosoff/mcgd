@@ -33,7 +33,7 @@ Upcoming presentation dates: October 14
 |                 | 14.2.33*                             |                                         |
 |                 | 14.2.35                              |                                         |
 | October 14      | 14.3.53*                             | Alex and Angelica                       |
-|                 | 14.3.63                              |                                         |
+|                 | 14.3.63                              | Chelsea, Tasha, and Kendra              |
 |                 | 14.3.64                              |                                         |
 |                 | 14.3.74*                             |                                         |
 |                 | 14.3.79cd                            |                                         |
