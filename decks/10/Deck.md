@@ -1,8 +1,12 @@
-% Optimization on a closed and bounded domain
+% Optimization of functions with closed and bounded domains
 % Math 251 Calculus 3
 % October 14, 2013
 
-# Optimization on a closed and bounded domain
+# Optimization of functions with closed and bounded domains
+
+## Warm-up
+
+lkl;k;lk;lkj
 
 ## Setup
 
@@ -51,10 +55,10 @@ Note: this does *not* tell us whether $(1/3, 1/3)$ is a local optimum. We are ju
 
 We must test the edge separately. In this case, the edge is actually four edges: the segments that make up the edge of the square.
 
-> - $\{ (x,y) \in \R^2 : x = 0, 0 \leq y \leq 2 \}$ (the bottom)
-> - $\{ (x,y) \in \R^2 : y = 0, 0 \leq x \leq 2 \}$ (the left)
-> - $\{ (x,y) \in \R^2 : x = 2, 0 \leq y \leq 2 \}$ (the top)
-> - $\{ (x,y) \in \R^2 : y = 2, 0 \leq x \leq 2 \}$ (the right)
+> - $\{ (x,y) \in \R^2 : x = 0, 0 \leq y \leq 2 \}$ (the left)
+> - $\{ (x,y) \in \R^2 : y = 0, 0 \leq x \leq 2 \}$ (the bottom)
+> - $\{ (x,y) \in \R^2 : x = 2, 0 \leq y \leq 2 \}$ (the right)
+> - $\{ (x,y) \in \R^2 : y = 2, 0 \leq x \leq 2 \}$ (the top)
 
 Testing the edges is a routine exercise in slice curves and one-variable calculus.
 
@@ -78,7 +82,7 @@ On the bottom, our slice curve is $f(x, 0) = x - x^2$. Its domain is the interva
 
 ## The top
 
-On the top, our slice curve is $f(x, 2) = -x^2 - x - 2$, with domain $0 \leq y \leq 2$. 
+On the top, our slice curve is $f(x, 2) = -x^2 - x - 2$, with domain $0 \leq x \leq 2$. 
 
 - In your groups, find the global max and min of this slice curve.
 - We have $f'(x,2) = -2x - 1$, so there is a stationary point at $x = -1/2$, not in the domain.
@@ -90,9 +94,9 @@ A similar symmetry argument disposes of the right edge of the square. Evidently,
 
 ## Putting it all together
 
-Considering all the edge pieces together, the minimum edge value is $-8$ and the maximum edge value is $1/4$, attained at $(0, 1/2)$ and $(1/2, 0)$, while the minimum edge value is $-8$, attained at $(2,2)$.
+Considering all the edge pieces together, the maximum edge value is $1/4$, attained at $(0, 1/2)$ and $(1/2, 0)$, while the minimum edge value is $-8$, attained at $(2,2)$.
 
-The only interior critical point was $(1/3, 1/3)$, with value $1/3 > 1/4$.
+The only interior critical point was $(1/3, 1/3)$, with value $1/3$.
 
 This shows that the global maximum of $f$ occurs at $(1/3, 1/3)$, while the global min occurs at $(2,2)$.
 
