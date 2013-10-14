@@ -4,10 +4,6 @@
 
 # Optimization of functions with closed and bounded domains
 
-## Warm-up
-
-lkl;k;lk;lkj
-
 ## Setup
 
 An analog of the intermediate value theorem tells us: if $f$ is a continuous real-valued function whose domain is closed and bounded, then
@@ -64,7 +60,7 @@ Testing the edges is a routine exercise in slice curves and one-variable calculu
 
 ## The left
 
-On the left, our slice curve is $f(0, y) = y - y^2$. Its domain is the interval $0 \leq x \leq 2$. Since the slice curve is continuous on this closed interval, it possesses global optima.
+On the left, our slice curve is $f(0, y) = y - y^2$. Its domain is the interval $0 \leq y \leq 2$. Since the slice curve is continuous on this closed interval, it possesses global optima.
 
 - In your groups, find the global optima of the slice curve. (Remember to check the endpoints of the domain!)
 - $f'(0,y) = 1 - 2y$
@@ -75,9 +71,9 @@ On the left, our slice curve is $f(0, y) = y - y^2$. Its domain is the interval 
 
 ## The bottom
 
-On the bottom, our slice curve is $f(x, 0) = x - x^2$. Its domain is the interval $0 \leq y \leq 2$. Since the slice curve is continuous on this closed interval, it possesses global optima.
+On the bottom, our slice curve is $f(x, 0) = x - x^2$. Its domain is the interval $0 \leq x \leq 2$. Since the slice curve is continuous on this closed interval, it possesses global optima.
 
-- In your groups, find the global max and min of this slice curve on the domain $0 \leq y \leq 2$.
+- In your groups, find the global max and min of this slice curve on the domain $0 \leq x \leq 2$.
 - The function $f$ is symmetric is $x$ and $y$, so this was really easy. Usually, there will be a separate check for each curve segment of the edge.
 
 ## The top
