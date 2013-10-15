@@ -83,7 +83,8 @@ Read 14.7             Fri 11 Oct        Multivariable optimization; idea of glob
                                           [PDF presentation][d09] <br />
                                           Quiz 04 over WeBWorK 05.
 
-Read 14.7 <br />      Mon 14 Oct        Global optima and idea of Lagrange multipliers; presentations
+Read 14.7 <br />      Mon 14 Oct        Global optima; presentations <br />
+                                          [PDF presentation][d10]
              
 
 Read 14.8 <br />      Tue 15 Oct        Lagrange multipliers; Idea of double integrals <br />
@@ -92,7 +93,8 @@ Module 10?                                WeBWorK 06 is due at 10pm.
                         Wed 16 Oct        Iterated integrals over polygons; polar coordinates
                                                                                 
                         Fri 18 Oct        Polar coordinates; presentations <br />
-                                            Second portfolio submission: 3:30pm.
+                                            Second portfolio submission: 3:30pm. <br />
+                                            Quiz 05 over WeBWorK 06.
 
                                                                                                            
                         Mon 28 Oct        Double integrals in polar coordinates; idea of triple integrals
