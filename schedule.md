@@ -87,10 +87,13 @@ Read 14.7 <br />      Mon 14 Oct        Global optima; presentations <br />
                                           [PDF presentation][d10]
              
 
-Read 14.8 <br />      Tue 15 Oct        Lagrange multipliers; Idea of double integrals <br />
-Module 10?                                WeBWorK 06 is due at 10pm.                    
+Read 14.8 <br />      Tue 15 Oct        Optimization and Lagrange multipliers <br />
+                                          [PDF presentation (short)][d11] <br />
+                                          WeBWorK 06 is due at 10pm.                    
                                                                                                                               
-                        Wed 16 Oct        Iterated integrals over polygons; polar coordinates
+Read 15.1 <br />      Wed 16 Oct        Wrap-up Lagrange<br />
+                                          [PDF presentation][d12]
+
                                                                                 
                         Fri 18 Oct        Polar coordinates; presentations <br />
                                             Second portfolio submission: 3:30pm. <br />
