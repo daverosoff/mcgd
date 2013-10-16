@@ -31,6 +31,14 @@ along with the original constraint equation $xyz = 12$.
 
 The parameter $\lambda$ is the Lagrange multiplier. Without trying to interpret it too directly, observe that it evidently carries units: its dimension is the inverse of length, so $\lambda$ is measured in $\si{m^{-1}}$.
 
+## Clarification from class
+
+I got a little confused about the units when discussing $\lambda$. The coefficients in the LHS of the Lagrangian equations are all in units of dollars per square meter. Each of $x$, $y$, and $z$ is a length, so the unit of, e.g., $10y + 10z$ is dollars per meter.
+
+On the other hand, the unit of $xz$ is $\si{m^2}$. Hence, $\lambda$ must carry units of dollars per cubic meter.
+
+Observe that this is the same as we would expect were we to calculate the derivative of the cost function with respect to volume. This matter will be explored in a future module.
+
 ## One good technique
 
 Solving nonlinear equations is difficult and there are no general techniques. One technique particular to this situation is to solve each of the Lagrange equations for $\lambda$. We obtain
