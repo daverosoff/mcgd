@@ -95,52 +95,63 @@ Read 15.1 <br />      Wed 16 Oct        Wrap-up Lagrange<br />
                                           [PDF presentation][d12]
 
                                                                                 
-                        Fri 18 Oct        Polar coordinates; presentations <br />
-                                            Second portfolio submission: 3:30pm. <br />
-                                            Quiz 05 over WeBWorK 06.
+Read 15.1 <br />      Fri 18 Oct        Idea of double integrals; presentations <br />
+Skim 15.2                                 Second portfolio submission: 3:30pm. <br />
+                                          Quiz 05 over WeBWorK 06.
 
                                                                                                            
-                        Mon 28 Oct        Double integrals in polar coordinates; idea of triple integrals
-                                                                                           
-                        Tue 29 Oct        Triple integrals; intro to curved coordinates in $\mathbf{R}^3$
-                                                                                
-                        Wed 30 Oct        Cylindrical and spherical coordinates; presentations
-                                                                                
-                        Fri 1 Nov         Triple integrals in curved coordinates; parametrization, families, and curves
+Read 11.3 and the       Mon 28 Oct        Double integrals as iterated integrals; polar coordinates
+first part of 11.4
+(to "we close this
+section")
+
+Read 15.2 <br />        Tue 29 Oct        Double integrals over general regions; idea of triple integrals
+Skim 15.3                                                                             
+
+Read 15.3 <br />        Wed 30 Oct        Triple integrals; presentations
+Skim 15.4
+
+Read 15.4 <br />        Fri 1 Nov         Intro to curved coordinates in $\mathbf{R}^3$; cylindrical and spherical coordinates 
+Skim 15.5, 15.6                                                                 
+
+Read 15.6 <br />        Mon 4 Nov         Integrals in curved coordinates; parametrization, families, and curves
+Skim 13.1 <br />
+
+Read 13.1--13.2, 11.1   Tue 5 Nov         Parametrized curves: lines and arcs
                                           
-                        Mon 4 Nov         Parametrized curves: lines and arcs
+Read 13.3               Wed 6 Nov         Parametrization and vector values; presentations
+                                                                                                                                                  
+Read 16.1 <br />        Fri 8 Nov         Vector fields; idea of line integrals
+Skim 16.2
+
+Read 16.2 <br />        Mon 11 Nov        Line integrals with parametrization; Review for **Exam 2**
                                           
-                        Tue 5 Nov         Parametrization and vector values; presentations
-                                                                                
-                        Wed 6 Nov         Vector fields; idea of line integrals
-                                                                                                            
-                        Fri 8 Nov         Line integrals with parametrization; flex time
-                                                                                
-                        Mon 11 Nov        Flex time; Review for **Exam 2**
+Review                  Tue 12 Nov        **Exam 2**
                                           
-                        Tue 12 Nov        **Exam 2**
-                                          
-                        Wed 13 Nov        More on line integrals; gradient vector fields; presentations
+Skim 16.3               Wed 13 Nov        More on line integrals; gradient vector fields; presentations
                                                                                 
-                        Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
+Read 16.3 <br />        Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
+Skim 17.1
+
+Read 17.1 <br />        Mon 18 Nov        Green's theorem
                                                                                 
-                        Mon 18 Nov        Green's theorem
-                                                                                
-                        Tue 19 Nov        Presentations; flex time 
+No reading              Tue 19 Nov        Presentations; flex time 
                                                                                                                       
-                        Wed 20 Nov        Flux for rectangular regions
+Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions
                                                                                 
                         Fri 22 Nov        No class; Thanksgiving break
                                                                                 
-                        Mon 25 Nov        Flux for curved regions; presentations
+Read 16.4--16.5         Mon 25 Nov        Flux for curved regions; presentations
                                                                                 
-                        Tue 26 Nov        More flux; idea of divergence
+Skim 17.3               Tue 26 Nov        More flux; idea of divergence
                                                                                 
-                        Wed 27 Nov        Divergence of vector fields
-                                                                                
-                        Fri 29 Nov        The divergence theorem
-                                                                                
-                        Mon 2 Dec         Curl of vector fields; Stokes's theorem
+Read 17.3 <br />        Wed 27 Nov        Divergence of vector fields
+Skim 17.2
+
+Read 17.2 <br />        Fri 29 Nov        The divergence theorem
+Skim 17.1
+
+Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theorem
                                                                                 
                         Tue 3 Dec         Presentations; flex time
                                                                                                                       
