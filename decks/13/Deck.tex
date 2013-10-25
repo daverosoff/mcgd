@@ -1,0 +1,160 @@
+\documentclass[11pt,ignorenonframetext,]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage{rosoff}
+\usepackage{siunitx}
+\title{Double integrals}
+\author{Math 251 Calculus 3}
+\date{October 28, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Double integrals over nonrectangular regions}
+
+\begin{frame}\frametitle{Review and setup}
+
+Let $f(x,y)$ be continuous on the rectangle $R = (a,b) \times (c,d)$.
+Then the limit
+
+\[ \lim_{n \to \infty} \sum_{i=1}^n f(x_i, y_i) \Delta A_i, \]
+
+representing $n$ box-volumes with bases $\Delta A_i$ and heights
+$f(x_i,y_i)$, exists regardless of how the rectangle is subdivided. The
+value of this limit is, by definition,
+
+\[ \iint_R f(x,y) \; dA. \]
+
+\end{frame}
+
+\begin{frame}\frametitle{Computing via iterated integrals}
+
+We find the value of the double integral $\iint_R f(x,y) \; dA$ using
+Fubini's theorem.
+
+\[ \iint_R f(x,y) \; dA = \int_c^d \int_a^b f(x,y) \; dx \; dy = \int_a^b \int_c^d f(x,y) \; dy \; dx \]
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Observe that the order of integration is different: $dx \; dy$ is not
+  the same as $dy \; dx$. The limits change accordingly.
+\end{itemize}
+
+Depending on the function, one or the other order of integration might
+be easier to compute, but that is the only novelty.
+
+\end{frame}
+
+\begin{frame}\frametitle{The secret to thinking about integrals}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Do you picture the graph of every 1-variable function you integrate?
+\item
+  Only enough to check that it is continuous on the domain of
+  integration. Algebra suffices for this.
+\item
+  It's the same for several variables. What we need to be careful about
+  picturing is the domain of integration itself.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Decoding the iterated integral}
+
+In the order $dy \; dx$, we integrate first in the $y$-direction---that
+is, along a vertical segment in the $(x,y)$-plane. The partial integral
+
+\[ A(x) = \int_{y = c}^d f(x,y) \; dy \]
+
+is still a function of $x$, hence the notation. What is the significance
+of some value $A(x_0)$? It measures the ``contribution'' of the vertical
+segment $x=x_0$ to the integral.
+
+Thus, integrating once more over $x$, $\int_{x=a}^b A(x) \; dx$ gives
+the total ``contribution'' of all the vertical segments between $x=a$
+and $x=b$.
+
+\end{frame}
+
+\begin{frame}\frametitle{Two orders}
+
+Thus,
+$\\int_R f(x,y) \; dA = \int_{x=a}^b A(x) \; dx = \int_{x=a}^b \int_{y=c}^d f(x,y) \; dy \; dx$.
+
+Writing the ``area element'' $dA$ as $dy \; dx$ this way corresponds to
+this choice of ``slicing'' the domain: first, find the contribution of a
+vertical segment, then integrate up the contributions of such segments.
+
+If we write $dA = dx \; dy$ instead, we are integrating first over
+$x$---to find the contribution of a horizontal segment---and then over
+$y$, to total up the contributions of such segments.
+
+\end{frame}
+
+\begin{frame}\frametitle{Integrating over a triangle}
+
+Let $R$ now be the triangular region in the plane bounded by the
+coordinate axes and the line $x + 2y = 2$.
+
+\end{frame}
+
+\end{document}
