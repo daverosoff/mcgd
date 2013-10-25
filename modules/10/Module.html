@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Math 251 Calculus 3" />
+  <meta name="date" content="2013-10-29" />
+  <title>Module 10: Polar coordinates</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h2 class="title">Module 10: Polar coordinates</h2>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../09/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../11/Module.html">Next</a></li>
+</ul>
+<h3 class="author">Math 251 Calculus 3 — October 29, 2013</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#what-are-coordinates">What are coordinates?</a></li>
+<li><a href="#the-idea-of-polar-coordinates">The idea of polar coordinates</a><ul>
+<li><a href="#indeterminacy-of-angle">Indeterminacy of angle</a></li>
+<li><a href="#the-polar-phase-space">The polar phase space</a></li>
+</ul></li>
+<li><a href="#interlude-polar-coordinates-and-double-integrals">Interlude: polar coordinates and double integrals</a></li>
+</ul>
+</div>
+<h3 id="what-are-coordinates"><a href="#what-are-coordinates">What are coordinates?</a></h3>
+<p>Many students are surprised to learn that coordinates are a relatively recent mathematical innovation, even though we associate them with the name of Descartes (1596–1650 CE). Their use was unknown, for example, to Archimedes (287–212 BCE), though he was able to establish the familiar formula <span class="math">\(V = 4\pi r^3/3\)</span> for the volume of a sphere in terms of its radius using techniques that prefigure calculus but anticipate it by more than 18 centuries.</p>
+<p>We moderns, however, are so thoroughly trained in the use of cartesian<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> coordinates that it is difficult to imagine a plane without imagining it being pocked with an origin, ruled with axes and gridlines. But there is nothing <em>canonical</em>, nothing <em>god-given</em>, about this way of using numbers to locate or index points in the geometric plane. We can use the familiar cartesian system to construct new coordinate systems, on oblong or curved “grids”.</p>
+<p>You will have noticed that I postponed our discussion of this topic to after half the semester has passed, when if we followed Rogawski’s Table of Contents we would have discussed polar coordinates in Week 2. This is because I think they are very well motivated by questions that arise in the study of double integrals.</p>
+<p>Do we really have to limit ourselves to slicing parallel to the <span class="math">\(x\)</span>- and <span class="math">\(y\)</span>-axes? It’s very unnatural for circular regions, say. The expressions you found for the limits are unpleasant.</p>
+<p>What if we could slice in a circular way, and then total up all the circular contributions?</p>
+<h3 id="the-idea-of-polar-coordinates"><a href="#the-idea-of-polar-coordinates">The idea of polar coordinates</a></h3>
+<p>In ordinary cartesian coordinates, we label points with a pair of signed distances: the signed distances to the <span class="math">\(y\)</span>- and <span class="math">\(x\)</span>-axes become the <span class="math">\(x\)</span>- and <span class="math">\(y\)</span>-coordinates (respectively; make sure you have read this sentence carefully). The curves <span class="math">\(x = a\)</span> and <span class="math">\(y = b\)</span> for various <span class="math">\(a\)</span> and <span class="math">\(b\)</span> form the cartesian grid. Polar coordinates are easier to understand if you make an analogy between them and the familiar setup.</p>
+<p>We begin with a plane that includes the origin, the unit circle, and the positive <span class="math">\(x\)</span>-axis. Instead of labeling a point <span class="math">\(P\)</span> relative to the <span class="math">\(x\)</span>- and <span class="math">\(y\)</span>-axes, we label it by its <em>radial coordinate</em> or <em>radius</em> <span class="math">\(r\)</span>. This is the (unsigned) distance from <span class="math">\(P\)</span> to the origin. Already we have some analogous coordinate curves: for <span class="math">\(a \geq 0\)</span>, the curve <span class="math">\(r = a\)</span> is a circle centered at the origin of radius <span class="math">\(a\)</span>. Each point in the plane lies on exactly one such circle.</p>
+<p>The second coordinate is not a distance, but an angle: the <em>angular coordinate</em> or <em>azimuth</em> <span class="math">\(\theta\)</span>. It is defined in the following way: draw the ray from the origin to <span class="math">\(P\)</span>, and the positive <span class="math">\(x\)</span>-axis. The azimuth of <span class="math">\(P\)</span> is the angle formed by these rays in the counterclockwise direction. Thus we may always choose <span class="math">\(\theta\)</span> to lie in the interval <span class="math">\([0, 2\pi)\)</span>. If we do so, then points in the upper half-plane have <span class="math">\(0 &lt; \theta &lt; \pi\)</span>, while points in the lower half-plane have <span class="math">\(\pi &lt; \theta &lt; 2\pi\)</span>.</p>
+<p>The coordinate curves <span class="math">\(\theta = \theta_0\)</span> are <em>rays</em> emanating from the origin: <span class="math">\(\theta = 0\)</span> is the positive <span class="math">\(x\)</span>-axis, <span class="math">\(\theta = \pi/4\)</span> is the part of the line <span class="math">\(y = x\)</span> lying in the first quadrant, and so on.</p>
+<h4 id="indeterminacy-of-angle"><a href="#indeterminacy-of-angle">Indeterminacy of angle</a></h4>
+<p>Of course, the radian measure of an angle is not unique. We may add any integer multiple of <span class="math">\(2\pi\)</span> without changing the angle. This has a perhaps unfortunate consequence: points in the polar coordinate system have more than one coordinate address.</p>
+<p><span class="math">\[ \cdots = (2, -11\pi/3) = (2, -5\pi/3) = (2, \pi/3) = (2, 7\pi/3) = (2, 13\pi/3) =  \cdots \]</span></p>
+<p>We are so accustomed to this <em>indeterminacy</em> that it seems OK to let it into our new coordinate world. Thus each point of the plane, with one exception, has infinitely many coordinate representations, one for each multiple of <span class="math">\(2\pi\)</span>.</p>
+<p>The exception is the origin, for which <span class="math">\(r = 0\)</span>. Any angle at all will do for a polar representation of this point, which causes some difficulty later.</p>
+<h4 id="the-polar-phase-space"><a href="#the-polar-phase-space">The polar phase space</a></h4>
+<p>If we draw a new <em>cartesian</em> plane, with axes labeled <span class="math">\(r\)</span> for the horizontal and <span class="math">\(\theta\)</span> for the vertical, we may plot the region <span class="math">\(\{ (r, \theta) : r \geq 0, 0 \leq \theta &lt; 2 \pi \}\)</span>. It is a strip of height <span class="math">\(2\pi\)</span>, extending infinitely to the right, whose upper edge is deleted. This strip is called a fundamental region for the polar coordinate system; I also call it a phase space. You might think of the polar coordinate system as a mapping or transformation between this region and the whole plane.</p>
+<p>The mapping referred to above takes the vertical segments in phase space (the segments <span class="math">\(r = r_0\)</span>) to the coordinate circles <span class="math">\(r = r_0\)</span> in polar coordinates. It takes the horizontal rays <span class="math">\(\theta = \theta_0\)</span> in phase space to the coordinate rays <span class="math">\(\theta = \theta_0\)</span> in polar coordinates.</p>
+<p>We’ll have more to say about this later.</p>
+<h3 id="interlude-polar-coordinates-and-double-integrals"><a href="#interlude-polar-coordinates-and-double-integrals">Interlude: polar coordinates and double integrals</a></h3>
+<p>You can already see the utility of these ideas. What we would like to be able to do is transform the whole idea of the double integral into these new coordinates, so that instead of integrating over an area element <span class="math">\(dA = dx \; dy\)</span> or <span class="math">\(dy \; dx\)</span>, we can use one related<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup> to <span class="math">\(dr \; d\theta\)</span>. Then suitable limits of integration for the unit disk might be <span class="math">\(r = 0\)</span> to <span class="math">\(r = 1\)</span> (the contribution of a typical ray from the origin to the edge of the disk) and <span class="math">\(\theta = 0\)</span> to <span class="math">\(\theta = 2\pi\)</span> (totaling up the contributions of all such rays).</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Some say the Fields Medal and the Abel Prize are the highest honors awarded by mathematicians, but the true immortals are those whose names have become <em>uncapitalized</em> adjectives (there are a handful of other examples: e.g., noetherian rings, gaussian curves, abelian varieties, euclidean domains, archimedean fields). I suppose highest of all comes having only part of one’s name made an uncapitalized adjective.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>It’s not exactly <span class="math">\(dr \; d\theta\)</span>; we’ll see why very soon. In brief, it is because the length of the circular arc subtended by a fixed angle <span class="math">\(\theta\)</span> depends linearly (and is not constant) on the radius of the circle.<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+<ul class="nav">
+<li class="nav"><a class = "nav" href = "../09/Module.html">Back</a></li>
+<li class="nav"><a class = "nav" href = "../../schedule.html">Up</a></li>
+<li class="nav"><a class = "nav" href = "../11/Module.html">Next</a></li>
+</ul>
+</body>
+</html>
