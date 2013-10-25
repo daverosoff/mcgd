@@ -100,13 +100,14 @@ Skim 15.2                                 Second portfolio submission: 3:30pm. <
                                           Quiz 05 over WeBWorK 06.
 
                                                                                                            
-Read 11.3 and the       Mon 28 Oct        Double integrals as iterated integrals; polar coordinates
+Read 15.2 <br />      Mon 28 Oct        Double integrals over general regions; 
+Skim 11.3 and the
 first part of 11.4
 (to "we close this
 section")
 
-Read 15.2 <br />        Tue 29 Oct        Double integrals over general regions; idea of triple integrals
-Skim 15.3                                                                             
+[Module 10][m10]        Tue 29 Oct       Polar coordinates; idea of triple integrals
+ <br />Skim 15.3                                                                             
 
 Read 15.3 <br />        Wed 30 Oct        Triple integrals; presentations
 Skim 15.4
