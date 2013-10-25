@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-10-10
+% Math 251 Calculus 3 -- last updated 2013-10-25
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,7 +10,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: October 14
+Upcoming presentation dates: October 30, November 6
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
@@ -34,13 +34,13 @@ Upcoming presentation dates: October 14
 |                 | 14.2.35                              |                                         |
 | October 14      | 14.3.53*                             | Alex and Angelica                       |
 |                 | 14.3.63                              | Chelsea, Tasha, and Kendra              |
-|                 | 14.3.64                              |                                         |
-|                 | 14.3.74*                             |                                         |
-|                 | 14.3.79cd                            |                                         |
+| October 30      | 14.3.64                              | John and Pragna                         |
+| November 6      | 14.3.74*                             | John and Pragna                         |
+| November 6      | 14.3.79cd                            | John and Pragna                         |
 | October 4       | 14.3.80*                             | Gabe                                    |
 |                 | 14.3.84*                             |                                         |
-|                 | 14.4.37                              |                                         |
-|                 | 14.4.39                              |                                         |
+|                 | 14.4.37                              | John and Pragna                         |
+| October 18      | 14.4.39                              | Mike and Matt                           |
 |                 | 14.4.45                              |                                         |
 | October 14      | 14.5.50,52,53                        | Ruth, Emanuil, Colton, and Conner       |
 |                 | 14.5.54,55                           |                                         |
@@ -48,27 +48,26 @@ Upcoming presentation dates: October 14
 |                 | 14.5.67*                             |                                         |
 |                 | 14.5.68*                             |                                         |
 |                 | 14.5.72*                             |                                         |
-|                 | 14.6.39                              |                                         |
+|                 | 14.6.39                              | Colton, Emanuil, and Conner             |
 |                 | 14.6.44                              |                                         |
+|                 | 14.7.24                              |                                         |
+|                 | 14.7.28                              |                                         |
+|                 | 14.7.33                              |                                         |
+|                 | 14.7.37                              |                                         |
+|                 | 14.7.49                              |                                         |
+|                 | 14.8.17                              |                                         |
+|                 | 14.8.19                              |                                         |
+|                 | 14.8.2                               |                                         |
+|                 | 14.8.28                              |                                         |
+|                 | 14.8.36                              |                                         |
+|                 | 14.8.37                              |                                         |
+|                 | 15.1.12                              |                                         |
+|                 | 15.1.44                              |                                         |
+|                 | 15.1.45                              |                                         |
+|                 | 15.1.46                              |                                         |
+|                 | 15.1.47                              |                                         |
+|                 | 15.1.48                              |                                         |
 
-
-<!-- |                 | 14.7.24                              |                                         | -->
-<!-- |                 | 14.7.28                              |                                         | -->
-<!-- |                 | 14.7.33                              |                                         | -->
-<!-- |                 | 14.7.37                              |                                         | -->
-<!-- |                 | 14.7.49                              |                                         | -->
-<!-- |                 | 14.8.17                              |                                         | -->
-<!-- |                 | 14.8.19                              |                                         | -->
-<!-- |                 | 14.8.2                               |                                         | -->
-<!-- |                 | 14.8.28                              |                                         | -->
-<!-- |                 | 14.8.36                              |                                         | -->
-<!-- |                 | 14.8.37                              |                                         | -->
-<!-- |                 | 15.1.12                              |                                         | -->
-<!-- |                 | 15.1.44                              |                                         | -->
-<!-- |                 | 15.1.45                              |                                         | -->
-<!-- |                 | 15.1.46                              |                                         | -->
-<!-- |                 | 15.1.47                              |                                         | -->
-<!-- |                 | 15.1.48                              |                                         | -->
 <!-- |                 | 15.2.26                              |                                         | -->
 <!-- |                 | 15.2.28                              |                                         | -->
 <!-- |                 | 15.2.59                              |                                         | -->
