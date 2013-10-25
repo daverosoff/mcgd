@@ -39,7 +39,7 @@ Upcoming presentation dates: October 30, November 6
 | November 6      | 14.3.79cd                            | John and Pragna                         |
 | October 4       | 14.3.80*                             | Gabe                                    |
 |                 | 14.3.84*                             |                                         |
-|                 | 14.4.37                              | John and Pragna                         |
+| October 30      | 14.4.37                              | John and Pragna                         |
 | October 18      | 14.4.39                              | Mike and Matt                           |
 |                 | 14.4.45                              |                                         |
 | October 14      | 14.5.50,52,53                        | Ruth, Emanuil, Colton, and Conner       |
