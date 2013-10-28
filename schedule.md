@@ -97,12 +97,13 @@ Read 15.1 <br />      Wed 16 Oct        Wrap-up Lagrange<br />
                                                                                 
 Read 15.1 <br />      Fri 18 Oct        Idea of double integrals; presentations <br />
 Skim 15.2                                 Second portfolio submission: 3:30pm. <br />
-                                          Quiz 05 over WeBWorK 06.
+                                          Quiz 05 over WeBWorK 06. <br />
+                                          [Workshop 08][w08] is not collected.
 
                                                                                                            
-Read 15.2 <br />      Mon 28 Oct        Double integrals over general regions; 
-Skim 11.3 and the
-first part of 11.4
+Read 15.2 <br />      Mon 28 Oct        Double integrals over general regions <br />
+Skim 11.3 and the                         [PDF presentation][d13] <br />
+first part of 11.4                        [Workshop 09][w09] is due Wednesday, October 30, at 5pm.
 (to "we close this
 section")
 
