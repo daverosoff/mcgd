@@ -45,7 +45,7 @@ Thus, integrating once more over $x$, $\int_{x=a}^b A(x) \; dx$ gives the total 
 
 ## Two orders
 
-Thus, $\int_R f(x,y) \; dA = \int_{x=a}^b A(x) \; dx = \int_{x=a}^b \int_{y=c}^d f(x,y) \; dy \; dx$.
+Thus, $\iint_R f(x,y) \; dA = \int_{x=a}^b A(x) \; dx = \int_{x=a}^b \int_{y=c}^d f(x,y) \; dy \; dx$.
 
 Writing the "area element" $dA$ as $dy \; dx$ this way corresponds to this choice of "slicing" the domain: first, find the contribution of a vertical segment, then integrate up the contributions of such segments.
 
