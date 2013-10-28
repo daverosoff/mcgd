@@ -4,7 +4,7 @@
 
 # Workshop 09: Integration over planar regions
 
-You saw in [the presentation][d13] how to decompose double integrals over a triangle into iterated integrals. The same technique works for regions whose boundaries have nice algebraic expressions. We will only concern ourselves with regions whose boundaries are made up of line segments, arcs of circles, and pieces of the graphs of functions. Our regions will also all be "connected"---that is, they are all one piece.
+You saw in [the presentation][d13] how to decompose double integrals over a triangle into iterated integrals. The same technique works for regions whose boundaries have nice algebraic expressions. We will only concern ourselves with regions whose boundaries are made up of line segments, arcs of circles, and pieces of the graphs of functions. Our regions will also all be "connected". This means, roughly speaking, that they are all one piece.
 
 ## More triangles
 
@@ -36,13 +36,13 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
 \question Let $R$ be the region whose boundary is the lines $y = 0$ and $x = 2$ and the parabola $x = y^2$. Find limits for iterated integrals over $R$ in both orders.
 
-\dwrspace{1}
-
-\newpage
+\dwrspace{2}
 
 \question Let $U$ and $L$ be the parts of the unit disk that fall in the upper and lower half-planes, respectively. Find limits for iterated integrals over $U$ and $L$, in both orders.
 
 \dwrspace{1}
+
+\newpage
 
 \question Let $\mathbf{D}$ be the unit disk. Find limits for iterated integrals over $\mathbf{D}$ in both orders.
 
@@ -50,7 +50,7 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
 \subsection{When order matters}
 
-\question Let $C$ be the circular cap consisting of those points of $\mathbf{D}$ whose $x$-coordinates are at least $-1/2$. Draw $C$, and try to find limits for an iterated integral over it in one or the other order. Are  they equivalent?
+\question Let $C$ be the circular cap consisting of those points of $\mathbf{D}$ whose $x$-coordinates are at least $-1/2$. Draw $C$, and try to find limits for an iterated integral over it in one or the other order. Does it make a difference which order you choose?
 
 \dwrspace{2}
 
