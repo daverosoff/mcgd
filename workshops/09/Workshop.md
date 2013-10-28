@@ -44,7 +44,7 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
 \newpage
 
-\question Let $\mathbf{D}$ be the unit disk. Find limits for iterated integrals over $\mathbf{D}$ in both orders.
+\question Let $\mathbf{D}$ be the unit disk. Find limits for iterated integrals over $\mathbf{D}$ in both orders. (Use your answers to the previous part.)
 
 \dwrspace{1}
 
