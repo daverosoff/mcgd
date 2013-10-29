@@ -16,43 +16,43 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
 \begin{parts}
 
-    \part The triangle with vertices $(-1,2)$, $(2, 2)$, and $(-1, -2)$.
-    \begin{solution}
-        The edges of the triangle are segments lying in the lines $x = -1$, $y = 2$, and (by a quick calculation) $y - 2 = (4/3)(x - 2)$, or $3y - 6 = 4x - 8$, or $4x - 3y = 2$. If we integrate $dy \; dx$, we are using vertical segments. Evidently, these segments range from $x = -1$ to $x = 2$. The segment at $x$ has least height $4x/3 - 2/3$ and greatest height $2$. Thus, our integral would have the form
-        \begin{equation*}
-            \int_{-1}^2 \int_{4x/3-2/3}^{2} f(x,y) dy \; dx.
-        \end{equation*}
-        On the other hand, if we integrate using horizontal segments, the order of integration is $dx \; dy$. The segments lie between $y = -2$ and $y = 2$, and the segment at height $y$ has left endpoint $-1$ and right endpoint $(2-3y)/4 = 1/2 - 3y/4$. Thus, the integral should be
-        \begin{equation*}
-            \int_{-2}^2 \int_{-1}^{1/2-3y/4} f(x,y) dx \; dy.
-        \end{equation*}
-    \end{solution}
+\part The triangle with vertices $(-1,2)$, $(2, 2)$, and $(-1, -2)$.
+\begin{solution}
+    The edges of the triangle are segments lying in the lines $x = -1$, $y = 2$, and (by a quick calculation) $y - 2 = (4/3)(x - 2)$, or $3y - 6 = 4x - 8$, or $4x - 3y = 2$. If we integrate $dy \; dx$, we are using vertical segments. Evidently, these segments range from $x = -1$ to $x = 2$. The segment at $x$ has least height $4x/3 - 2/3$ and greatest height $2$. Thus, our integral would have the form
+    \begin{equation*}
+        \int_{-1}^2 \int_{4x/3-2/3}^{2} f(x,y) \; dy \; dx.
+    \end{equation*}
+    On the other hand, if we integrate using horizontal segments, the order of integration is $dx \; dy$. The segments lie between $y = -2$ and $y = 2$, and the segment at height $y$ has left endpoint $-1$ and right endpoint $(2-3y)/4 = 1/2 - 3y/4$. Thus, the integral should be
+    \begin{equation*}
+        \int_{-2}^2 \int_{-1}^{1/2-3y/4} f(x,y) \; dx \; dy.
+    \end{equation*}
+\end{solution}
 
-    \part The triangle with vertices $(-1, 2)$, $(-1, -1)$, and $(1,1)$.
-    \begin{solution}
-        In this problem, each order of integration presents a different challenge. Let us first identify the bounding curves. These are $x = -1$, $y = x$, and $y - 1 = (-1/2)(x-1)$. This last is equivalent to the more convenient $x + 2y = 3$.
+\part The triangle with vertices $(-1, 2)$, $(-1, -1)$, and $(1,1)$.
+\begin{solution}
+    In this problem, each order of integration presents a different challenge. Let us first identify the bounding curves. These are $x = -1$, $y = x$, and $y - 1 = (-1/2)(x-1)$. This last is equivalent to the more convenient $x + 2y = 3$.
 
-        If we use vertical segments, it is clear from a picture that the segments lie between $x = -1$ and $x = 1$. The bottom endpoint of the segment at $x$ is thus $x$, while he top endpoint is $3/2 - x/2$. Putting this together, we write
-        \begin{equation*}
-            \int_{-1}^{1} \int_{x}^{3/2-x/2} f(x,y) dy \; dx.
-        \end{equation*}
-        For the other order of integration, we have horizontal segments living between $y = -1$ and $y = 2$. The segment at height $y$ evidently has its left endpoint at $x = -1$, but the right endpoint is troublesome. We will need to use two integrals, because if $y > 1$, the right endpoint lies on the line $x + 2y = 3$, while if $y < 1$, the right endpoint lies on the line $y = x$. We obtain
-        \begin{equation*}
-            \int_{-1}^1 \int_{-1}^{x} f(x,y) dx \; dy + \int_{1}^2 \int_{-1}^{3-2y} f(x,y) dx \; dy. 
-        \end{equation*}
-        It is not unusual for one order of integration to be easier. Here, the shape of the boundary gives us a natural preference for the $dy \; dx$ order, because it allows us to use a single iterated integral.
-    \end{solution}
-    \part The triangle with verticles $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
-    \begin{solution}
-        This is similar to the previous problem. The bounding curves are $y = -1$, $3x - y = -2$, and $x+y = 2$. With horizontal segments we obtain
-        \begin{equation*}
-            \int_{-1}^{2}\int_{y/3-2/3}^{2-y} f(x,y) dx \; dy,
-        \end{equation*}
-        and with vertical ones we get
-        \begin{equation*}
-            \int_{-1}^{0} \int_{-1}^{3x+2} f(x,y) dy \; dx + \int_{0}^{3} \int_{-1}^{2-x} f(x,y) dy \; dx.
-        \end{equation*}
-    \end{solution}
+    If we use vertical segments, it is clear from a picture that the segments lie between $x = -1$ and $x = 1$. The bottom endpoint of the segment at $x$ is thus $x$, while he top endpoint is $3/2 - x/2$. Putting this together, we write
+    \begin{equation*}
+        \int_{-1}^{1} \int_{x}^{3/2-x/2} f(x,y) \; dy \; dx.
+    \end{equation*}
+    For the other order of integration, we have horizontal segments living between $y = -1$ and $y = 2$. The segment at height $y$ evidently has its left endpoint at $x = -1$, but the right endpoint is troublesome. We will need to use two integrals, because if $y > 1$, the right endpoint lies on the line $x + 2y = 3$, while if $y < 1$, the right endpoint lies on the line $y = x$. We obtain
+    \begin{equation*}
+        \int_{-1}^1 \int_{-1}^{x} f(x,y) \; dx \; dy + \int_{1}^2 \int_{-1}^{3-2y} f(x,y) \; dx \; dy. 
+    \end{equation*}
+    It is not unusual for one order of integration to be easier. Here, the shape of the boundary gives us a natural preference for the $dy \; dx$ order, because it allows us to use a single iterated integral.
+\end{solution}
+\part The triangle with verticles $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
+\begin{solution}
+    This is similar to the previous problem. The bounding curves are $y = -1$, $3x - y = -2$, and $x+y = 2$. With horizontal segments we obtain
+    \begin{equation*}
+        \int_{-1}^{2}\int_{y/3-2/3}^{2-y} f(x,y) \; dx \; dy,
+    \end{equation*}
+    and with vertical ones we get
+    \begin{equation*}
+        \int_{-1}^{0} \int_{-1}^{3x+2} f(x,y) \; dy \; dx + \int_{0}^{3} \int_{-1}^{2-x} f(x,y) \; dy \; dx.
+    \end{equation*}
+\end{solution}
 \end{parts}
 
 \subsection{Regions with curved boundaries}
@@ -61,31 +61,50 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 \begin{solution}
     This is not very different from the triangle examples. Using vertical segments, we get
     \begin{equation*}
-        \int_{0}^{2} \int_{0}^{\sqrt{x}} f(x,y) dy \; dx,
+        \int_{0}^{2} \int_{0}^{\sqrt{x}} f(x,y) \; dy \; dx,
     \end{equation*}
     while horizontal segments yield
     \begin{equation*}
-        \int_{0}^{\sqrt{2}} \int_{y^2}^{2} f(x,y) dx \; dy.
+        \int_{0}^{\sqrt{2}} \int_{y^2}^{2} f(x,y) \; dx \; dy.
     \end{equation*}
 \end{solution}
 
 \question Let $U$ and $L$ be the parts of the unit disk that fall in the upper and lower half-planes, respectively. Find limits for iterated integrals over $U$ and $L$, in both orders.
 
-\dwrspace{1}
-
-\newpage
+\begin{solution}
+    In each case the better order is $dy \; dx$. For $U$ we find
+    \begin{align*}
+        \int_{-1}^{1} \int_{0}^{\sqrt{1-x^2}} f(x,y) \; dy &\; dx, \quad \text{or equivalently} \\
+        \int_{0}^{1} \int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}} f(x,y) \; dx &\; dy.
+    \end{align*}
+    Similarly, for $L$ we find 
+    \begin{align*}
+        \int_{-1}^{1} \int_{-\sqrt{1-x^2}}^{0} f(x,y) \; dy &\; dx, \quad \text{or equivalently} \\
+        \int_{-1}^{0} \int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}} f(x,y) \; dx &\; dy.
+    \end{align*}
+\end{solution}
 
 \question Let $\mathbf{D}$ be the unit disk. Find limits for iterated integrals over $\mathbf{D}$ in both orders. (Use your answers to the previous part.)
 
-\dwrspace{1}
+\begin{solution}
+    Here, both orders are equally inconvenient, and not much different. We have
+    \begin{align*}
+        \int_{-1}^{1} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} f(x,y) \; dy &\; dx, \\
+        \int_{-1}^{1} \int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}} f(x,y) \; dx &\; dy.
+    \end{align*}
+\end{solution}
 
 \subsection{When order matters}
 
 \question Let $C$ be the circular cap consisting of those points of $\mathbf{D}$ whose $x$-coordinates are at least $-1/2$. Draw $C$, and try to find limits for an iterated integral over it in one or the other order. Does it make a difference which order you choose?
 
-\dwrspace{2}
-
-\newpage
+\begin{solution}
+    Here, the $dy \; dx$ order seems easier, because there is only one type of segment. We modify the integral from the previous part:
+    \begin{equation*}
+        \int_{-1/2}^{1} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} f(x,y) \; dy \; dx    
+    \end{equation*}
+    In the $dx \; dy$ order, this is much more difficult, because there are three kinds of segments.
+\end{solution}
 
 \question Let $S$ be the parabolic sector whose boundary is the parabola $y = x^2$ and the line $y = x + 2$. 
 
@@ -93,12 +112,25 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
     \part Find limits for an iterated integral over $S$ in the order $dy \; dx$.
 
-    \dwrspace{1}
+    \begin{solution}
+        All the segments begin on the parabola and end on the line, so we have
+        \begin{equation*}
+        \int_{-1}^{2} \int_{x^2}^{x+2} f(x,y) \; dy \; dx.
+        \end{equation*}
+    \end{solution}
 
     \part Find limits for an iterated integral over $S$ in the order $dx \; dy$.
 
-    \dwrspace{1}
-
+    \begin{solution}
+        Here, there are two kinds of segments. Segments with $y > 1$ begin on the line and end on the parabola:
+        \begin{equation*}
+            \int_{1}^{4} \int_{y-2}^{\sqrt{y}} f(x,y) \; dx \; dy
+        \end{equation*}
+        On the other hand, segments with $y < 1$ both begin and end on the parabola.
+        \begin{equation*}
+            \int_{0}^{1} \int_{-\sqrt{y}}^{\sqrt{y}} f(x,y) dx \; dy
+        \end{equation*}
+    \end{solution}
 \end{parts}
 
 \end{questions}
