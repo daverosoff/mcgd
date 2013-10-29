@@ -58,11 +58,13 @@ We are so accustomed to this *indeterminacy* that it seems OK to let it into our
 
 The exception is the origin, for which $r = 0$. Any angle at all will do for a polar representation of this point, which causes some difficulty later.
 
-> Note that this means the definition of *equality* is different from before. In the cartesian world, two points $P = (x_0,y_0)$ and $Q = (x_1,y_1)$ are equal exactly when their coordinates are equal: when $x_0 = x_1$ and $y_0 = y_1$. But because of the indeterminacy of azimuth, we can have $r_0 \ne r_1$ and $\theta_0 \ne \theta_1$, yet $(r_0, \theta_0)$ and $(r, \theta)$ are the same point.
+> Note that this means the definition of *equality* is different from before. In the cartesian world, two points $P = (x_0,y_0)$ and $Q = (x_1,y_1)$ are equal exactly when their coordinates are equal: when $x_0 = x_1$ and $y_0 = y_1$. But because of the indeterminacy of azimuth, we can have $\theta_0 \ne \theta_1$, yet $(r_0, \theta_0)$ and $(r_0, \theta_1)$ are the same point.
 
 #### Negative radial coordinate
 
 Since we are unable to avoid indeterminacy of azimuth, we may as well not restrict the radius to be nonnegative either. We can make coherent sense of negative radial coordinates in a very "vectorish" way, by declaring $(-r_0, \theta_0) = (r_0, \theta_0 + \tau/2)$: go the same distance $\abs{r_0}$ along the opposite ray $\theta = \theta_0 + \tau/2$.
+
+Note that with this convention it is possible that $r_0 \ne r_1$ and $\theta_0 \ne \theta_1$, yet $(r_0, \theta_0)$ and $(r_1, \theta_1)$ are the same point.
 
 #### The polar phase space
 
@@ -78,7 +80,7 @@ You can already see the utility of these ideas. What we would like to be able to
 
 No variables in the limits? This is a real improvement over the technology of [Worksheet 09][w09].
 
-[^jacobian]: It's not exactly $dr \; d\theta$; we'll see why very soon. In brief, this happens because the length of the circular arc subtended by a fixed angle $\theta$ depends linearly (and is not constant) on the radius of the circle.
+[^jacobian]: It's not exactly $dr \; d\theta$; we'll see why very soon. In brief, this happens because the length of the circular arc subtended by a fixed angle $\theta$ depends linearly on the radius of the circle, and therefore is not constant.
 
 ### The polar coordinate transformation
 
@@ -98,10 +100,12 @@ The angle formula is written $\tan{\theta} = y/x$. **Resist the urge to rewrite 
 
 Most of the time, it makes more sense to think of $\theta$ as the independent variable and write $r = f(\theta)$. We have seen that constant functions are circles centered at the origin.
 
-> *Example.* A circle of radius $r_0$ centered at $(h,0)$ has cartesian equation $(x - h)^2 + y^2 = r_0^2$. Let us use the polar coordinate transformation, obtaining 
-> $$ (r \cos \theta - h)^2 + r^2 \sin^2 \theta = r_0^2.$$ 
-> Simplifying a bit, we get 
-> $$r^2 (\cos^2 \theta + \sin^2 \theta) - 2rh \cos \theta + h^2 = r_0^2,\, \text{or}$$
-> $$r^2 - 2rh \cos\theta + h^2 = r_0^2.$$
+> *Example.* What is the shape of the function $r = a \cos\theta$? If we have the bright idea to multiply both sides by $r$, we find
+> $$ r^2 = a r \cos\theta, $$
+> which according to the polar coordinate transformation has the cartesian representation $x^2 + y^2 = ax$. Completing the square in $x$ then yields $x^2 - ax + (a^2/4) + y^2 = a^2/4$, or equivalently
+> $$ (x - a/2)^2 + y^2 = (a/2)^2. $$ 
+> Evidently, $r = a \cos\theta$ is a circle of radius $a/2$ centered at $(a/2, 0)$.
+
+In general most polar functions are not recognizable, and those that are require clever tricks like in the example. I encourage you to play with the graphing calculator utility [Desmos](http://www.desmos.com/calculator), which understands that equations involving $r$ and $\theta$ are to be plotted in the polar sense. 
 
 [w09]: ../../workshops/09/Workshop.pdf
