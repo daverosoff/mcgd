@@ -107,8 +107,9 @@ first part of 11.4                        [Workshop 09][w09] is due Wednesday, O
 (to "we close this
 section")
 
-[Module 10][m10]        Tue 29 Oct       Polar coordinates; idea of triple integrals
- <br />Skim 15.3                                                                             
+[Module 10][m10]        Tue 29 Oct      Polar coordinates; more double integrals <br />
+ <br />Skim 15.3                          [Desmos online graphing calculator](http://www.desmos.com/calculator) <br />
+                                          [Polar graphing applet (GeoGebra)](http://geogebratube.org/student/m31480)
 
 Read 15.3 <br />        Wed 30 Oct        Triple integrals; presentations
 Skim 15.4
