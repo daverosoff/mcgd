@@ -17,6 +17,6 @@ A pile of earth standing on flat ground has height $36$ meters. The ground is th
 > - What is the area of the base of the pile?
 > - What equation gives the cross-section of the pile with the plane $z = 6$?
 > - What is the area of the cross-section $z = 6$?
-> - What is $A(z)$, the area of a horiztonal cross-section at height $z$?
+> - What is $A(z)$, the area of a horizontal cross-section at height $z$?
 > - What is the volume of the pile?
 
