@@ -4,6 +4,9 @@
 
 # Workshop 09: Integration over planar regions
 
+% Rewrite all of this so that the integrals have integrand 1, not an anonymous function $f(x,y)$.
+
+
 You saw in [the presentation][d13] how to decompose double integrals over a triangle into iterated integrals. The same technique works for regions whose boundaries have nice algebraic expressions. We will only concern ourselves with regions whose boundaries are made up of line segments, arcs of circles, and pieces of the graphs of functions. Our regions will also all be "connected". This means, roughly speaking, that they are all one piece.
 
 ## More triangles
@@ -42,7 +45,7 @@ The simplest regions meeting our descriptions other than rectangles are triangle
     \end{equation*}
     It is not unusual for one order of integration to be easier. Here, the shape of the boundary gives us a natural preference for the $dy \; dx$ order, because it allows us to use a single iterated integral.
 \end{solution}
-\part The triangle with verticles $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
+\part The triangle with vertices $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
 \begin{solution}
     This is similar to the previous problem. The bounding curves are $y = -1$, $3x - y = -2$, and $x+y = 2$. With horizontal segments we obtain
     \begin{equation*}

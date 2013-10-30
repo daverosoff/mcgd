@@ -26,7 +26,7 @@ The simplest regions meeting our descriptions other than rectangles are triangle
 
     \newpage
 
-    \part The triangle with verticles $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
+    \part The triangle with vertices $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
 
     \dwrspace{1}
 

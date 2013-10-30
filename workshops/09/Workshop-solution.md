@@ -42,7 +42,7 @@ The simplest regions meeting our descriptions other than rectangles are triangle
     \end{equation*}
     It is not unusual for one order of integration to be easier. Here, the shape of the boundary gives us a natural preference for the $dy \; dx$ order, because it allows us to use a single iterated integral.
 \end{solution}
-\part The triangle with verticles $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
+\part The triangle with vertices $(-1, -1)$, $(3, -1)$, and $(0,2)$. 
 \begin{solution}
     This is similar to the previous problem. The bounding curves are $y = -1$, $3x - y = -2$, and $x+y = 2$. With horizontal segments we obtain
     \begin{equation*}
