@@ -111,14 +111,14 @@ section")
  <br />Skim 15.3                          [Desmos online graphing calculator](http://www.desmos.com/calculator) <br />
                                           [Polar graphing applet (GeoGebra)](http://geogebratube.org/student/m31480)
 
-Read 15.3 <br />        Wed 30 Oct        Triple integrals; presentations
-Skim 15.4
+Read 15.3 <br />        Wed 30 Oct      Presentations; a sneaky introduction to triple integrals <br />
+Skim 15.4                                 [In-class problem (PDF)][d14]
 
-Read 15.4 <br />        Fri 1 Nov         Intro to curved coordinates in $\mathbf{R}^3$; cylindrical and spherical coordinates 
-Skim 15.5, 15.6                                                                 
+Read 15.4 <br />        Fri 1 Nov       Triple integrals; Intro to curved coordinates in $\mathbf{R}^3$ <br />
+Skim 15.5, 15.6                           WeBWorK 07 is due at 10pm.                                      
 
-Read 15.6 <br />        Mon 4 Nov         Integrals in curved coordinates; parametrization, families, and curves
-Skim 13.1 <br />
+Read 15.6 <br />        Mon 4 Nov       Cylindrical and spherical coordinates; integrals in curved coordinates <br />
+Skim 13.1 <br />                          Quiz 06 over WeBWorK 07.
 
 Read 13.1--13.2, 11.1   Tue 5 Nov         Parametrized curves: lines and arcs
                                           
