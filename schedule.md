@@ -118,7 +118,8 @@ Read 15.4 <br />        Fri 1 Nov       Triple integrals; Intro to curved coordi
 Skim 15.5, 15.6                           WeBWorK 07 is due at 10pm.                                      
 
 Read 15.6 <br />        Mon 4 Nov       Cylindrical and spherical coordinates; integrals in curved coordinates <br />
-Skim 13.1 <br />                          Quiz 06 over WeBWorK 07.
+Skim 13.1 <br />                          Quiz 06 over WeBWorK 07. <br />
+                                          [Workshop 10][w10]
 
 Read 13.1--13.2, 11.1   Tue 5 Nov         Parametrized curves: lines and arcs
                                           
