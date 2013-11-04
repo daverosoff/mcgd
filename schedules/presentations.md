@@ -33,7 +33,8 @@ Upcoming presentation dates: October 30, November 6
 |                 | 14.2.33*                             |                                         |
 |                 | 14.2.35                              |                                         |
 | October 14      | 14.3.53*                             | Alex and Angelica                       |
-|                 | 14.3.63                              | Chelsea, Tasha, and Kendra              |
+| October ??      | 14.3.63                              | Chelsea, Tasha, and Kendra              |
+| October 30      | 14.3.63                              | Baker, Moha, Fabian                     |
 | October 30      | 14.3.64                              | John and Pragna                         |
 | November 6      | 14.3.74*                             | John and Pragna                         |
 | November 6      | 14.3.79cd                            | John and Pragna                         |
@@ -58,12 +59,12 @@ Upcoming presentation dates: October 30, November 6
 |                 | 14.8.17                              |                                         |
 |                 | 14.8.19                              |                                         |
 |                 | 14.8.2                               |                                         |
-|                 | 14.8.28                              |                                         |
+|                 | 14.8.28                              | Emily and Emilee                                       |
 |                 | 14.8.36                              |                                         |
 |                 | 14.8.37                              |                                         |
 |                 |                                      | UNIT 3                                  |
 |                 | 15.1.12                              |                                         |
-|                 | 15.1.44                              |                                         |
+|                 | 15.1.44                              | Emily and Emilee                        |
 |                 | 15.1.45                              |                                         |
 |                 | 15.1.46                              |                                         |
 |                 | 15.1.47                              |                                         |
