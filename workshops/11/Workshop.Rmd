@@ -1,0 +1,37 @@
+% Workshop 11: integrals in curved coordinates
+% Math 251 Calculus 3
+% November 6, 2013
+
+# Workshop 11: integrals in curved coordinates
+
+This workshop gives you a chance to practice integrals with curved coordinate systems.
+
+\subsection{A polar example with an application}
+
+\begin{questions}
+
+\question The region $D$ is that enclosed by the circle of radius $2$ centered at the origin, but outside the circle of radius $1$ centered at $(1,0)$. Hence the area of $D$ is $3\pi$. Derive this result using an integral. (The polar equation of the small circle is $r = 2\cos\theta$.)
+
+\dwrspace{2}
+
+\question The \emph{center of mass} of a lamina is, roughly speaking, the point on which the lamina will balance if placed on a needle. Consider the region $D$ above with uniform density $\rho(x,y) = 1$. Let $(\hat{x}, \hat{y})$ denote its center of mass.
+
+\begin{parts}
+
+\part Argue by symmetry that $\hat{y} = 0$ for the region $D$. Is this true if the density of the lamina is not required to be uniform?
+
+\dwrspace{1}
+
+\part The definition of the center of mass is formulated using integrals.
+$$ \hat{x} = \frac{1}{M} \iint_D x\rho(x,y) \; dA, \quad \hat{y} = \frac{1}{M} \iint_D y\rho(x,y) \; dA.$$
+Here $M = \iint_D \rho(x,y) \; dA$ is the mass of the solid. Calculate the coordinate $\hat{x}$.
+\dwrspace{4}
+\end{parts}
+
+\newpage
+
+\question Let $E$ be the region of $\R^3$ above the cone $z = \sqrt{x^2 + y^2}$ and below the unit sphere $x^2 + y^2 + z^2 = 1$. Suppose $\rho(x,y,z) = z$ is the density function. Use a curved coordinate system to compute the center of mass of the resulting solid, using symmetry to simplify the argument if appropriate. Consult tables of integrals as necessary. \emph{Hint.} The angle at the cone point is a right angle.
+
+\dwrspace{1}
+
+\end{questions}
