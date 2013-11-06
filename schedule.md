@@ -112,34 +112,37 @@ section")
                                           [Polar graphing applet (GeoGebra)](http://geogebratube.org/student/m31480)
 
 Read 15.3 <br />        Wed 30 Oct      Presentations; a sneaky introduction to triple integrals <br />
-Skim 15.4                                 [In-class problem (PDF)][d14]
+Skim 15.4                                 [In-class problem (PDF)][d14] <br />
+                                          [Solution to Workshop 09][w09sol]
 
 Read 15.4 <br />        Fri 1 Nov       Triple integrals; Intro to curved coordinates in $\mathbf{R}^3$ <br />
 Skim 15.5, 15.6                           WeBWorK 07 is due at 10pm.                                      
 
-Read 15.6 <br />        Mon 4 Nov       Cylindrical and spherical coordinates; integrals in curved coordinates <br />
+Read 15.6 <br />        Mon 4 Nov       Triple integrals <br />
 Skim 13.1 <br />                          Quiz 06 over WeBWorK 07. <br />
                                           [Workshop 10][w10]
 
-Read 13.1--13.2, 11.1   Tue 5 Nov         Parametrized curves: lines and arcs
+Read 13.1--13.2, 11.1   Tue 5 Nov       Integrals in curved coordinates
                                           
-Read 13.3               Wed 6 Nov         Parametrization and vector values; presentations
+Read 13.3               Wed 6 Nov       Cylindrical and spherical coordinates; presentations <br />
+                                          [Workshop 11][w11]
                                                                                                                                                   
-Read 16.1 <br />        Fri 8 Nov         Vector fields; idea of line integrals
-Skim 16.2
+Read 16.1 <br />        Fri 8 Nov       Parametrization and vector values; parametrized curves: lines and arcs <br />
+Skim 16.2                                 Quiz 07 over WeBWorK 08. <br />
 
-Read 16.2 <br />        Mon 11 Nov        Line integrals with parametrization; Review for **Exam 2**
+Read 16.2 <br />        Mon 11 Nov      Vector fields; Review for **Exam 2** <br />
+                                          Exam 2 covers material found in sections 14.3--14.8, 15.1, 15.2, 11.3, and 15.4, including double integrals and polar coordinates.
                                           
-Review                  Tue 12 Nov        **Exam 2**
+Review                  Tue 12 Nov        **Exam 2** <br />
                                           
-Skim 16.3               Wed 13 Nov        More on line integrals; gradient vector fields; presentations
+Skim 16.3               Wed 13 Nov        Line integrals with parametrization; idea of line integrals
                                                                                 
-Read 16.3 <br />        Fri 15 Nov        Gradient fields and path-independence; idea of Green's theorem
+Read 16.3 <br />        Fri 15 Nov        More on line integrals; gradient vector fields; presentations
 Skim 17.1
 
-Read 17.1 <br />        Mon 18 Nov        Green's theorem
+Read 17.1 <br />        Mon 18 Nov        Gradient fields and path-independence; idea of Green's theorem 
                                                                                 
-No reading              Tue 19 Nov        Presentations; flex time 
+No reading              Tue 19 Nov        Green's theorem; presentations 
                                                                                                                       
 Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions
                                                                                 
@@ -191,6 +194,7 @@ Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theore
 [w07]: workshops/07/Workshop.pdf
 [w08]: workshops/08/Workshop.pdf
 [w09]: workshops/09/Workshop.pdf
+[w09sol]: workshops/09/Workshop-solution.pdf
 [w10]: workshops/10/Workshop.pdf
 [w11]: workshops/11/Workshop.pdf
 [w12]: workshops/12/Workshop.pdf

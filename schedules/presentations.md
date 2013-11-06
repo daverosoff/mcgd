@@ -29,15 +29,15 @@ Upcoming presentation dates: October 30, November 6
 |                 | 12.5.61                              |                                         |
 |                 |                                      | UNIT 2                                  |
 | October 4       | 14.2.31                              | Thomas, Emily, Emilee                   |
-|                 | 14.2.32                              |                                         |
+|                 | 14.2.32                              | Matt and Kendra                            |
 |                 | 14.2.33*                             |                                         |
 |                 | 14.2.35                              |                                         |
 | October 14      | 14.3.53*                             | Alex and Angelica                       |
 | October ??      | 14.3.63                              | Chelsea, Tasha, and Kendra              |
 | October 30      | 14.3.63                              | Baker, Moha, Fabian                     |
 | October 30      | 14.3.64                              | John and Pragna                         |
-| November 6      | 14.3.74*                             | John and Pragna                         |
-| November 6      | 14.3.79cd                            | John and Pragna                         |
+| November 15     | 14.3.74*                             | John and Pragna                         |
+| November 15     | 14.3.79cd                            | John and Pragna                         |
 | October 4       | 14.3.80*                             | Gabe                                    |
 |                 | 14.3.84*                             |                                         |
 | October 30      | 14.4.37                              | John and Pragna                         |
@@ -59,14 +59,14 @@ Upcoming presentation dates: October 30, November 6
 |                 | 14.8.17                              |                                         |
 |                 | 14.8.19                              |                                         |
 |                 | 14.8.2                               |                                         |
-|                 | 14.8.28                              | Emily and Emilee                                       |
+| November 6      | 14.8.28                              | Emily and Emilee                                       |
 |                 | 14.8.36                              |                                         |
 |                 | 14.8.37                              |                                         |
 |                 |                                      | UNIT 3                                  |
 |                 | 15.1.12                              |                                         |
-|                 | 15.1.44                              | Emily and Emilee                        |
-|                 | 15.1.45                              |                                         |
-|                 | 15.1.46                              |                                         |
+| November 6      | 15.1.44                              | Emily and Emilee                        |
+| November 6      | 15.1.45                              | RCCE; JMS                                        |
+| November 6      | 15.1.46                              | Matt and Moha                          |
 |                 | 15.1.47                              |                                         |
 | October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
 
