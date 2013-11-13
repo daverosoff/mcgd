@@ -130,12 +130,13 @@ Read 13.3               Wed 6 Nov       Cylindrical and spherical coordinates; p
 Read 16.1 <br />        Fri 8 Nov       Parametrization and vector values; parametrized curves: lines and arcs <br />
 Skim 16.2                                 Quiz 07 over WeBWorK 08. <br />
 
-Read 16.2 <br />        Mon 11 Nov      Vector fields; Review for **Exam 2** <br />
+Read 16.2 <br />        Mon 11 Nov      Review for **Exam 2** <br />
                                           Exam 2 covers material found in sections 14.3--14.8, 15.1, 15.2, 11.3, and 15.4, including double integrals and polar coordinates.
                                           
 Review                  Tue 12 Nov        **Exam 2** <br />
                                           
-Skim 16.3               Wed 13 Nov        Line integrals with parametrization; idea of line integrals
+Skim 16.3               Wed 13 Nov      Parametrization and vector values; parametrized curves: lines and arcs <br />
+                                          [PDF presentation][d15]
                                                                                 
 Read 16.3 <br />        Fri 15 Nov        More on line integrals; gradient vector fields; presentations
 Skim 17.1
@@ -146,16 +147,16 @@ No reading              Tue 19 Nov        Green's theorem; presentations
                                                                                                                       
 Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions
                                                                                 
-                        Fri 22 Nov        No class; Thanksgiving break
+                        Fri 22 Nov        Flux for curved regions; presentations
+                                                                                                                      
+Read 16.4--16.5         Mon 25 Nov        More flux; idea of divergence
                                                                                 
-Read 16.4--16.5         Mon 25 Nov        Flux for curved regions; presentations
-                                                                                
-Skim 17.3               Tue 26 Nov        More flux; idea of divergence
-                                                                                
-Read 17.3 <br />        Wed 27 Nov        Divergence of vector fields
+Skim 17.3               Tue 26 Nov        Divergence of vector fields
+                                          
+Read 17.3 <br />        Wed 27 Nov        The divergence theorem
 Skim 17.2
 
-Read 17.2 <br />        Fri 29 Nov        The divergence theorem
+Read 17.2 <br />        Fri 29 Nov        No class; Thanksgiving break
 Skim 17.1
 
 Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theorem
