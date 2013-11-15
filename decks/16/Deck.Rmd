@@ -1,8 +1,8 @@
-% Pasting parametrizations
+% Gluing parametrizations
 % Math 251 Calculus 3
 % November 15, 2013
 
-# Pasting parametrizations
+# Gluing parametrizations
 
 ## Warm-up
 
@@ -12,9 +12,9 @@
 
 We are very often interested in parametrizations of curves with corners, such as squares and rectangles. The easiest way to parametrize such a curve is to paste together smaller parametrizations of its pieces. To do this, we need to be able to shift parametrizations in time.
 
-Let $\vec{r}(t)$ be a parametrized curve, say for $a \leq t \leq b$. We can *shift* the "time" domain of the parametrization so that $t$ runs over whatever interval we choose. For example, define $\vec{s}(t) = \vec{r}(t - t_0)$, for some real number $t_0$. (The transformation $t \mapsto t - t_0$ is called a *translation*.)
+Let $\vec{r}(t)$ be a parametrized curve, say for $a \leq t \leq b$. We can *shift* the "time" domain of the parametrization so that $t$ runs over whatever interval we choose. For example, define $\vec{s}(t) = \vec{r}(t - t_0)$, for some positive real number $t_0$. (The transformation $t \mapsto t - t_0$ is called a *translation*.)
 
-This shifts the time domain of $\vec{r}$ into the future, since $a \leq t - t_0 \leq b$ if and only if $a + t_0 \leq t \leq b + t_0$.
+This shifts the time domain of $\vec{r}$ into the future, since $a \leq t - t_0 \leq b$ if and only if $a + t_0 \leq t \leq b + t_0$. Thus the domain of $\vec{s}$ is $[a + t_0, b+t_0]$.
 
 ## Reparametrize
 
@@ -26,9 +26,16 @@ We can also speed up or slow down our parametrizations, by scaling in the time d
 \begin{equation*}
     0 \leq t \leq k \quad \text{if and only if} \quad 0 \leq 2t \leq 2k.
 \end{equation*}
-The transformation $t \mapsto 2t$ is called a *scaling* or *dilation*. Evidently, it slows down the motion of our moving particle, doubling the time it takes to traverse its path.
+The transformation $t \mapsto 2t$ is called a *scaling* or *dilation*. Evidently, it speeds up the motion of our moving particle, halving the time it takes to traverse its path. It's counterintuitive, but think of it this way: however long it takes $t$ to move from $a$ to $b$, it takes $2t$ half as long! Because
+\begin{equation*}
+    \frac{b}{2} - \frac{a}{2} = \frac{b-a}{2} = \frac{1}{2}(b-a).
+\end{equation*}
 
-- Can you adjust your parametrization of the circular arc to begin at $t = 0$ and end at $t = 1$?
+## Standardizing the time domain
+
+- Can you find a parametrization of the circular arc that begins at $t = 0$ and ends at $t = 1$? Hint: it's always easier to scale first and then translate. 
+- So first get the time domain to be the appropriate length (1), and then translate so that the starting and ending times are right.
+- Answer: $\vec{r}(t) = \angl{3 \cos{(\pi t - \frac{1}{2})}, 3 \sin{(\pi t - \frac{1}{2})}}$
 
 ## Gluing parametrizations
 
@@ -55,6 +62,8 @@ If a curve comes to you as the graph of some function $y = f(x)$, it is easy to 
 The MAA (Mathematical Association of America) has provided really excellent applets for playing with parametrically described families of curves.
 
 [This text, while not underlined, is a clickable link to the applets.](http://www.maa.org/publications/periodicals/loci/resources/the-beauty-of-parametric-curves-the-applets)
+
+[This clickable sentence links to excellent online graphing calculator Desmos.](http://www.desmos.com) Desmos supports parametrized curves. Enter them in vector form, but use round brackets $()$ instead of angle brackets $\angl{}$.
 
 ## Tangent vectors, velocity, speed, and arclength
 
