@@ -138,22 +138,23 @@ Review                  Tue 12 Nov        **Exam 2** <br />
 Skim 16.3               Wed 13 Nov      Parametrization and vector values; parametrized curves: lines and arcs <br />
                                           [PDF presentation][d15]
                                                                                 
-Read 16.3 <br />        Fri 15 Nov        More on line integrals; gradient vector fields; presentations
-Skim 17.1
+Read 16.3 <br />        Fri 15 Nov      Adjusting parametrizations; presentations <br />
+Skim 17.1                                 [PDF presentation][d16]
 
 Read 17.1 <br />        Mon 18 Nov        Gradient fields and path-independence; idea of Green's theorem 
                                                                                 
 No reading              Tue 19 Nov        Green's theorem; presentations 
                                                                                                                       
-Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions
+Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions <br />
+                                            Submit portfolios.
                                                                                 
                         Fri 22 Nov        Flux for curved regions; presentations
                                                                                                                       
 Read 16.4--16.5         Mon 25 Nov        More flux; idea of divergence
                                                                                 
-Skim 17.3               Tue 26 Nov        Divergence of vector fields
+Skim 17.3               Tue 26 Nov        Divergence of vector fields; presentations
                                           
-Read 17.3 <br />        Wed 27 Nov        The divergence theorem
+Read 17.3 <br />        Wed 27 Nov        The divergence theorem; presentations
 Skim 17.2
 
 Read 17.2 <br />        Fri 29 Nov        No class; Thanksgiving break
@@ -163,7 +164,7 @@ Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theore
                                                                                 
                         Tue 3 Dec         Presentations; flex time
                                                                                                                       
-                        Wed 4 Dec         Calculus on curved surfaces, Stokes, and cosmic topology
+                        Wed 4 Dec         Presentations; flex timeCalculus on curved surfaces, Stokes, and cosmic topology
                                                                                 
                         Fri 6 Dec         Review for final exam
 ---------------------------------------------------------------------------------------------
