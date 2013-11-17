@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-10-25
+% Math 251 Calculus 3 -- last updated 2013-11-15
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,14 +10,14 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: October 30, November 6
+Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
 |                 |                                      | UNIT 1                                  |
 | September 27    | 14.1.38                              | Tasha, Chelsea, and Kendra              |
 |                 | 14.1.40--43                          |                                         |
-|                 | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
+| November 19?    | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
 | September 27    | 12.3.48                              | Pragna                                  |
 | September 27    | 12.3.78 <!-- omit next year -->      | Alex, Angelica, and Hannah              |
 | September 27    | 12.3.91*                             | Ruth, Colton, Conner, and Emanuil       |
@@ -36,11 +36,11 @@ Upcoming presentation dates: October 30, November 6
 | October ??      | 14.3.63                              | Chelsea, Tasha, and Kendra              |
 | October 30      | 14.3.63                              | Baker, Moha, Fabian                     |
 | October 30      | 14.3.64                              | John and Pragna                         |
-| November 15     | 14.3.74*                             | John and Pragna                         |
-| November 15     | 14.3.79cd                            | John and Pragna                         |
+|                 | 14.3.74*                             | John and Pragna                         |
+|                 | 14.3.79cd                            | John and Pragna                         |
 | October 4       | 14.3.80*                             | Gabe                                    |
 |                 | 14.3.84*                             |                                         |
-| October 30      | 14.4.37                              | John and Pragna                         |
+| November 15     | 14.4.37                              | John, Pragna, and Thomas                |
 | October 18      | 14.4.39                              | Mike and Matt                           |
 |                 | 14.4.45                              |                                         |
 | October 14      | 14.5.50,52,53                        | Ruth, Emanuil, Colton, and Conner       |
@@ -51,10 +51,10 @@ Upcoming presentation dates: October 30, November 6
 |                 | 14.5.72*                             |                                         |
 |                 | 14.6.39                              | Colton, Emanuil, and Conner             |
 |                 | 14.6.44                              |                                         |
-|                 | 14.7.24                              |                                         |
-|                 | 14.7.28                              |                                         |
+| November 15     | 14.7.24                              | Jake, Dallas, and Will                  |
+| November 15     | 14.7.28                              | Thomas                                  |
 |                 | 14.7.33                              |                                         |
-|                 | 14.7.37                              |                                         |
+| November 15     | 14.7.37                              | Jake, Dallas, and Will                  |
 |                 | 14.7.49                              |                                         |
 |                 | 14.8.17                              |                                         |
 |                 | 14.8.19                              |                                         |
@@ -65,27 +65,31 @@ Upcoming presentation dates: October 30, November 6
 |                 |                                      | UNIT 3                                  |
 |                 | 15.1.12                              |                                         |
 | November 6      | 15.1.44                              | Emily and Emilee                        |
-| November 6      | 15.1.45                              | RCCE; JMS                                        |
-| November 6      | 15.1.46                              | Matt and Moha                          |
+| November 6      | 15.1.45                              | Ruth, Conner, Colton, Emanuil; John, Martin, Sam |
+| November 6      | 15.1.46                              | Matt and Moha                           |
 |                 | 15.1.47                              |                                         |
 | October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
+|                 | 15.2.26                              |                                         |
+|                 | 15.2.28                              |                                         |
+|                 | 15.2.59                              |                                         |
+|                 | 15.2.60                              |                                         |
+|                 | 11.3.37                              |                                         |
+|                 | 11.3.39                              |                                         |
+|                 | 15.3.24                              |                                         |
+|                 | 15.3.26                              |                                         |
+|                 | 15.3.28                              |                                         |
+|                 | 15.4.22                              |                                         |
+|                 | 15.4.40                              |                                         |
+|                 | 15.4.53                              |                                         |
+|                 | 13.2.63*                             |                                         |
+|                 | 13.2.68                              |                                         |
+|                 | 13.3.15                              |                                         |
+|                 | 11.3.49+53*                          |                                         |
 
-<!-- |                 | 15.2.26                              |                                         | -->
-<!-- |                 | 15.2.28                              |                                         | -->
-<!-- |                 | 15.2.59                              |                                         | -->
-<!-- |                 | 15.2.60                              |                                         | -->
-<!-- |                 | 15.3.24                              |                                         | -->
-<!-- |                 | 15.3.26                              |                                         | -->
-<!-- |                 | 15.3.28                              |                                         | -->
 <!-- |                 | 11.1.87                              |                                         | -->
 <!-- |                 | 11.2.25                              |                                         | -->
 <!-- |                 | 11.2.31                              |                                         | -->
 <!-- |                 | 11.2.32                              |                                         | -->
-<!-- |                 | 11.3.39                              |                                         | -->
-<!-- |                 | 11.3.49+53*                          |                                         | -->
-<!-- |                 | 13.2.63*                             |                                         | -->
-<!-- |                 | 13.2.68                              |                                         | -->
-<!-- |                 | 13.3.15ac                            |                                         | -->
 <!-- |                 | 13.3.29                              |                                         | -->
 <!-- |                 | 13.3.32                              |                                         | -->
 <!-- |                 | 13.4.22                              |                                         | -->
