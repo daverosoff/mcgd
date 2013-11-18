@@ -23,7 +23,7 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | September 27    | 12.3.91*                             | Ruth, Colton, Conner, and Emanuil       |
 | October 4       | 12.3.92 <br /> (after 91)            | Matt, Danny, and Mike                   |
 | September 27    | 12.4.54ab                            | Jacob, Will, and Dallas                 |
-| September 27    | 12.5.55                              | Shelby and Josh                         |
+| November 19     | 12.5.55                              | Shelby and Josh                         |
 |                 | 12.5.56*                             |                                         |
 |                 | 12.5.60 <br /> (after 56 & ch. 13)   |                                         |
 |                 | 12.5.61                              |                                         |
@@ -69,10 +69,10 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | November 6      | 15.1.46                              | Matt and Moha                           |
 |                 | 15.1.47                              |                                         |
 | October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
-|                 | 15.2.26                              | Jake, Will, and Dallas                  |
-|                 | 15.2.28                              | Jake, Will, and Dallas                  |
-|                 | 15.2.59                              | Jordan and Thomas                 |
-|                 | 15.2.60                              | Jordan and Thomas                 |
+| November 19     | 15.2.26                              | Jake, Will, and Dallas                  |
+| November 19     | 15.2.28                              | Jake, Will, and Dallas                  |
+| November 19     | 15.2.59                              | Jordan and Thomas                       |
+| November 19     | 15.2.60                              | Jordan and Thomas                       |
 |                 | 11.3.37                              |                                         |
 |                 | 11.3.39                              |                                         |
 |                 | 15.3.24                              |                                         |
