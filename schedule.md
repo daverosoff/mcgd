@@ -129,7 +129,7 @@ Read 12.7             Wed 6 Nov         Cylindrical and spherical coordinates; p
                                         [Workshop 11][w11]
                                                                                                                            
 Read 15.6 <br />      Fri 8 Nov         Parametrization and vector values; parametrized curves: lines and arcs <br />
-Skim 13.1 <br />                          Quiz 07 over WeBWorK 08. <br />
+Skim 13.1 <br />                        
 
                       Mon 11 Nov        Review for **Exam 2** <br />
                                           Exam 2 covers material found in sections 14.3--14.8, 15.1, 15.2, 11.3, and 15.4, including double integrals and polar coordinates.
