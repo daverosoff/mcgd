@@ -67,15 +67,15 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | November 6      | 15.1.44                              | Emily and Emilee                        |
 | November 6      | 15.1.45                              | Ruth, Conner, Colton, Emanuil; John, Martin, Sam |
 | November 6      | 15.1.46                              | Matt and Moha                           |
-|                 | 15.1.47                              |                                         |
+| October 30      | 15.1.47                              | Alex, Angelica, and Gabe                |
 | October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
 | November 19     | 15.2.26                              | Jake, Will, and Dallas                  |
 | November 19     | 15.2.28                              | Jake, Will, and Dallas                  |
 | November 19     | 15.2.59                              | Jordan and Thomas                       |
 | November 19     | 15.2.60                              | Jordan and Thomas                       |
-|                 | 11.3.37                              |                                         |
-|                 | 11.3.39                              |                                         |
-|                 | 15.3.24                              |                                         |
+| November 22     | 11.3.37                              | Alex, Angelica, and Gabe                |
+| November 22     | 11.3.39                              | Alex, Angelica, and Gabe                |
+| November 22     | 15.3.24                              | Emilee and Emily                        |
 |                 | 15.3.26                              |                                         |
 |                 | 15.3.28                              |                                         |
 |                 | 15.4.22                              |                                         |
