@@ -107,66 +107,69 @@ first part of 11.4                        [Workshop 09][w09] is due Wednesday, O
 (to "we close this
 section")
 
-[Module 10][m10]        Tue 29 Oct      Polar coordinates; more double integrals <br />
+[Module 10][m10]      Tue 29 Oct        Polar coordinates; more double integrals <br />
  <br />Skim 15.3                          [Desmos online graphing calculator](http://www.desmos.com/calculator) <br />
                                           [Polar graphing applet (GeoGebra)](http://geogebratube.org/student/m31480)
 
-Read 15.3 <br />        Wed 30 Oct      Presentations; a sneaky introduction to triple integrals <br />
+Read 15.3 <br />      Wed 30 Oct        Presentations; a sneaky introduction to triple integrals <br />
 Skim 15.4                                 [In-class problem (PDF)][d14] <br />
                                           [Solution to Workshop 09][w09sol]
 
-Read 15.4 <br />        Fri 1 Nov       Triple integrals; Intro to curved coordinates in $\mathbf{R}^3$ <br />
-Skim 15.5, 15.6                           WeBWorK 07 is due at 10pm.                                      
+                      Fri 1 Nov         Triple integrals; Intro to curved coordinates in $\mathbf{R}^3$ <br />
+                                          WeBWorK 07 is due at 10pm.                                      
 
-Read 15.6 <br />        Mon 4 Nov       Triple integrals <br />
-Skim 13.1 <br />                          Quiz 06 over WeBWorK 07. <br />
+                      Mon 4 Nov         Triple integrals <br />
+                                          Quiz 06 over WeBWorK 07. <br />
                                           [Workshop 10][w10]
 
-Read 13.1--13.2, 11.1   Tue 5 Nov       Integrals in curved coordinates
-                                          
-Read 13.3               Wed 6 Nov       Cylindrical and spherical coordinates; presentations <br />
-                                          [Workshop 11][w11]
-                                                                                                                                                  
-Read 16.1 <br />        Fri 8 Nov       Parametrization and vector values; parametrized curves: lines and arcs <br />
-Skim 16.2                                 Quiz 07 over WeBWorK 08. <br />
+Read 15.4 <br />      Tue 5 Nov         Integrals in curved coordinates
+Skim 15.5, 15.6 
 
-Read 16.2 <br />        Mon 11 Nov      Review for **Exam 2** <br />
+Read 12.7             Wed 6 Nov         Cylindrical and spherical coordinates; presentations <br />
+                                        [Workshop 11][w11]
+                                                                                                                           
+Read 15.6 <br />      Fri 8 Nov         Parametrization and vector values; parametrized curves: lines and arcs <br />
+Skim 13.1 <br />                          Quiz 07 over WeBWorK 08. <br />
+
+                      Mon 11 Nov        Review for **Exam 2** <br />
                                           Exam 2 covers material found in sections 14.3--14.8, 15.1, 15.2, 11.3, and 15.4, including double integrals and polar coordinates.
-                                          
-Review                  Tue 12 Nov        **Exam 2** <br />
-                                          
-Skim 16.3               Wed 13 Nov      Parametrization and vector values; parametrized curves: lines and arcs <br />
-                                          [PDF presentation][d15]
-                                                                                
-Read 16.3 <br />        Fri 15 Nov      Adjusting parametrizations; presentations <br />
-Skim 17.1                                 [PDF presentation][d16]
+                   
+                      Tue 12 Nov        **Exam 2** <br />
+                   
+Read 13.1--13.2,      Wed 13 Nov        Parametrization and vector values; parametrized curves: lines and arcs <br />
+  11.1                                    [PDF presentation][d15]
+                                                         
+Read 13.3             Fri 15 Nov        Adjusting parametrizations; presentations <br />
+                                          [PDF presentation][d16]
 
-Read 17.1 <br />        Mon 18 Nov        Gradient fields and path-independence; idea of Green's theorem 
-                                                                                
-No reading              Tue 19 Nov        Green's theorem; presentations 
-                                                                                                                      
-Skim 16.4--16.5         Wed 20 Nov        Flux for rectangular regions <br />
-                                            Submit portfolios.
-                                                                                
-                        Fri 22 Nov        Flux for curved regions; presentations
-                                                                                                                      
-Read 16.4--16.5         Mon 25 Nov        More flux; idea of divergence
-                                                                                
-Skim 17.3               Tue 26 Nov        Divergence of vector fields; presentations
-                                          
-Read 17.3 <br />        Wed 27 Nov        The divergence theorem; presentations
-Skim 17.2
+Read 16.1 <br />      Mon 18 Nov        More parametrizations; vector fields <br />
+Skim 16.2                                 [PDF presentation][d17] <br />
 
-Read 17.2 <br />        Fri 29 Nov        No class; Thanksgiving break
-Skim 17.1
+Read 16.2 <br />      Tue 19 Nov        Line integrals; presentations 
+Skim 16.3              
 
-Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theorem
-                                                                                
-                        Tue 3 Dec         Presentations; flex time
+Read 16.3 <br />      Wed 20 Nov        Conservative vector fields; idea of Green's theorem <br />
+Skim 17.1                                 Submit portfolios.
+                                                                                               
+Read 17.1 <br />      Mon 25 Nov        Green's theorem
+Skim 16.4--16.5        
+
+Read 16.4--16.5       Tue 26 Nov        Parametrized surfaces and surface integrals; presentations
+                   
+                      Wed 27 Nov        Surface integrals of vector fields; presentations
+
+
+                      Fri 29 Nov        No class; Thanksgiving break
+
+
+Read 17.2 <br />      Mon 2 Dec         Curl of vector fields; Stokes's theorem
+Skim 17.3             
+
+Read 17.3             Tue 3 Dec         Idea of the divergence theorem; Presentations; flex time
                                                                                                                       
-                        Wed 4 Dec         Presentations; flex timeCalculus on curved surfaces, Stokes, and cosmic topology
+                      Wed 4 Dec         Presentations; Calculus on curved surfaces, Stokes, and cosmic topology
                                                                                 
-                        Fri 6 Dec         Review for final exam
+                      Fri 6 Dec         Review for final exam
 ---------------------------------------------------------------------------------------------
 
 [m01]: modules/01/Module.html
@@ -221,3 +224,7 @@ Read 17.1 <br />        Mon 2 Dec         Curl of vector fields; Stokes's theore
 [d14]: decks/14/Deck.pdf
 [d15]: decks/15/Deck.pdf
 [d16]: decks/16/Deck.pdf
+[d17]: decks/17/Deck.pdf
+[d18]: decks/18/Deck.pdf
+[d19]: decks/19/Deck.pdf
+[d20]: decks/20/Deck.pdf

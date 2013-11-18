@@ -69,9 +69,9 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | November 6      | 15.1.46                              | Matt and Moha                           |
 |                 | 15.1.47                              |                                         |
 | October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
-|                 | 15.2.26                              |                                         |
-|                 | 15.2.28                              |                                         |
-|                 | 15.2.59                              |                                         |
+|                 | 15.2.26                              | Jake, Will, and Dallas                  |
+|                 | 15.2.28                              | Jake, Will, and Dallas                  |
+|                 | 15.2.59                              | Jordan                                  |
 |                 | 15.2.60                              |                                         |
 |                 | 11.3.37                              |                                         |
 |                 | 11.3.39                              |                                         |
