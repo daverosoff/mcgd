@@ -1,0 +1,33 @@
+% Workshop 12: Helpful parametrizations and a vector field
+% Math 251 Calculus 3
+% November 18, 2013
+
+# Workshop 12: Helpful parametrizations and a vector field
+
+\begin{questions}
+
+\question Let $A = (2,2)$ and let $D = (4,6)$. Let $B$ and $C$ be the other two corners of the rectangle whose opposite corners are $A$ and $D$. Draw a figure and label it clearly.
+
+\begin{parts}
+
+    \part Parametrize the piecewise linear path from $A$ to $D$ passing through $B$.
+    \part Parametrize the piecewise linear path from $A$ to $D$ passing through $C$.
+
+\end{parts}
+
+\dwrspace{1}
+
+\question Draw the following vector fields on the back of this page. Make \emph{big}, \emph{beautiful} pictures. Each picture should include at least 10 vectors.
+
+\begin{parts}
+
+    \part $\vec{F} = \angl{1, 0}$
+    \part $\vec{G} = \angl{0,-2}$
+    \part $\vec{H} = \angl{x,0}$
+    \part $\vec{R} = \angl{0,x}$
+    \part $\vec{S} = \angl{x,y}$
+    \part $\vec{T} = \angl{-y,x}$
+
+\end{parts}
+
+\end{questions}
