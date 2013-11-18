@@ -35,7 +35,7 @@ The average was $74.871$ ($n = 31$) with $\sigma = 12.5638$.
 *Gluing parametrizations*. Let $P$, $Q$, and $R$ be the points $(1,0)$, $(0,1)$, and $(-1,0)$, respectively, and let $\gamma$ be the V-shaped path joining $P$ to $Q$ and thence to $R$ via segments.
 
 - Parametrize $\gamma$ in such a way that $\gamma(0) = P$ and $\gamma(2) = R$.
-- Answer: $\vec{r}(t) = \angl{1-t, t}$ if $0 \leq t \leq 1$ and $\vec{r}(t) = \angl{1-t, 1-t}$ if $1 \leq t \leq 2$.
+- Answer: $\vec{r}(t) = \angl{1-t, t}$ if $0 \leq t \leq 1$ and $\vec{r}(t) = \angl{1-t, 2-t}$ if $1 \leq t \leq 2$.
 
 ## Tangent vectors, velocity, speed, and arclength
 
