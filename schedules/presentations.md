@@ -56,8 +56,8 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 |                 | 14.7.33                              |                                         |
 | November 15     | 14.7.37                              | Jake, Dallas, and Will                  |
 | November 19     | 14.7.49                              | Matt and Moha                           |
-|                 | 14.8.2                               |                                         |
-|                 | 14.8.17                              |                                         |
+| November 22     | 14.8.2                               | Josh, Shelby, and Danny                |
+| November 26     | 14.8.17                              | Josh, Shelby, and Danny                |
 | November 19     | 14.8.19                              | Mike                                    |
 | November 6      | 14.8.28                              | Emily and Emilee                        |
 |                 | 14.8.36                              |                                         |
