@@ -19,20 +19,20 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 |                 | 14.1.40--43                          |                                         |
 | November 19?    | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
 | September 27    | 12.3.48                              | Pragna                                  |
-| September 27    | 12.3.78 <!-- omit next year -->      | Alex, Angelica, and Hannah              |
+| September 27    | 12.3.78 <!-- omit next year -->      | Alex W., Angelica, and Hannah           |
 | September 27    | 12.3.91*                             | Ruth, Colton, Conner, and Emanuil       |
 | October 4       | 12.3.92 <br /> (after 91)            | Matt, Danny, and Mike                   |
-| September 27    | 12.4.54ab                            | Jacob, Will, and Dallas                 |
+| September 27    | 12.4.54ab                            | Jake, Will, and Dallas                  |
 | November 19     | 12.5.55                              | Shelby and Josh                         |
 |                 | 12.5.56*                             |                                         |
 |                 | 12.5.60 <br /> (after 56 & ch. 13)   |                                         |
 |                 | 12.5.61                              |                                         |
 |                 |                                      | UNIT 2                                  |
 | October 4       | 14.2.31                              | Thomas, Emily, Emilee                   |
-|                 | 14.2.32                              | Matt and Kendra                            |
+|                 | 14.2.32                              | Matt and Kendra                         |
 |                 | 14.2.33*                             |                                         |
 |                 | 14.2.35                              |                                         |
-| October 14      | 14.3.53*                             | Alex and Angelica                       |
+| October 14      | 14.3.53*                             | Alex W. and Angelica                    |
 | October ??      | 14.3.63                              | Chelsea, Tasha, and Kendra              |
 | October 30      | 14.3.63                              | Baker, Moha, Fabian                     |
 | October 30      | 14.3.64                              | John and Pragna                         |
@@ -55,11 +55,11 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | November 15     | 14.7.28                              | Thomas                                  |
 |                 | 14.7.33                              |                                         |
 | November 15     | 14.7.37                              | Jake, Dallas, and Will                  |
-|                 | 14.7.49                              |                                         |
-|                 | 14.8.17                              |                                         |
-|                 | 14.8.19                              |                                         |
+| November 19     | 14.7.49                              | Matt and Moha                           |
 |                 | 14.8.2                               |                                         |
-| November 6      | 14.8.28                              | Emily and Emilee                                       |
+|                 | 14.8.17                              |                                         |
+| November 19     | 14.8.19                              | Mike                                    |
+| November 6      | 14.8.28                              | Emily and Emilee                        |
 |                 | 14.8.36                              |                                         |
 |                 | 14.8.37                              |                                         |
 |                 |                                      | UNIT 3                                  |
@@ -67,24 +67,25 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 | November 6      | 15.1.44                              | Emily and Emilee                        |
 | November 6      | 15.1.45                              | Ruth, Conner, Colton, Emanuil; John, Martin, Sam |
 | November 6      | 15.1.46                              | Matt and Moha                           |
-| October 30      | 15.1.47                              | Alex, Angelica, and Gabe                |
-| October 30      | 15.1.48                              | Alex, Angelica, and Gabe                |
+| October 30      | 15.1.47                              | Alex W., Angelica, and Gabe             |
+| October 30      | 15.1.48                              | Alex W., Angelica, and Gabe             |
 | November 19     | 15.2.26                              | Jake, Will, and Dallas                  |
 | November 19     | 15.2.28                              | Jake, Will, and Dallas                  |
 | November 19     | 15.2.59                              | Jordan and Thomas                       |
-| November 19     | 15.2.60                              | Jordan and Thomas                       |
-| November 22     | 11.3.37                              | Alex, Angelica, and Gabe                |
-| November 22     | 11.3.39                              | Alex, Angelica, and Gabe                |
+| November 22     | 15.2.60                              | Jordan and Thomas                       |
+| November 22     | 11.3.37                              | Alex W., Angelica, and Gabe             |
+| November 22     | 11.3.39                              | Alex W., Angelica, and Gabe             |
 | November 22     | 15.3.24                              | Emilee and Emily                        |
-|                 | 15.3.26                              |                                         |
+| November 19     | 15.3.26                              | Ruth                                    |
 |                 | 15.3.28                              |                                         |
 |                 | 15.4.22                              |                                         |
-|                 | 15.4.40                              |                                         |
+| November 22     | 15.4.40                              | Tasha, Chelsea, and Kendra              |
 |                 | 15.4.53                              |                                         |
 |                 | 13.2.63*                             |                                         |
 |                 | 13.2.68                              |                                         |
 |                 | 13.3.15                              |                                         |
-|                 | 11.3.49+53*                          |                                         |
+| November 22     | 11.3.49+53*                          | Colton and Ruth                         |
+
 
 <!-- |                 | 11.1.87                              |                                         | -->
 <!-- |                 | 11.2.25                              |                                         | -->
