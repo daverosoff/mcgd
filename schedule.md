@@ -140,12 +140,13 @@ Read 13.1--13.2,      Wed 13 Nov        Parametrization and vector values; param
   11.1                                    [PDF presentation][d15]
                                                          
 Read 13.3             Fri 15 Nov        Adjusting parametrizations; presentations <br />
-                                          [PDF presentation][d16]
+                                          [PDF presentation][d16] <br />
+                                          WeBWorK 11 is due at 10pm.
 
 Read 16.1 <br />      Mon 18 Nov        More parametrizations; vector fields <br />
 Skim 16.2                                 [PDF presentation][d17] <br />
                                           [Workshop 12][w12] is due Wednesday. <br />
-                                          WeBWorK 11 is due at 10pm.
+                                          WeBWorK 12 is due at 10pm.
 
 Read 16.2 <br />      Tue 19 Nov        Line integrals; presentations 
 Skim 16.3              
@@ -159,7 +160,7 @@ Read 17.1 <br />      Fri 22 Nov        Flux and conservative fields; presentati
 Skim 16.4--16.5                           Quiz 8 on WeBWorK 11.
 
 Read 16.4--16.5       Mon 25 Nov        Green's Theorem; idea of parametrized surfaces and surface integrals <br />
-                                          WeBWorK 12 is due at 10pm.
+                                          WeBWorK 13 is due at 10pm.
                    
 Skim 17.2 <br />      Tue 26 Nov        Surface integrals of vector fields; presentations
 
