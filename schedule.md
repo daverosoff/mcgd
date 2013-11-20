@@ -151,7 +151,8 @@ Read 16.2 <br />      Tue 19 Nov        Line integrals; presentations
 Skim 16.3              
 
 Read 16.3 <br />      Wed 20 Nov        Line integrals of vector fields <br />
-Skim 17.1                                 Submit portfolios. <br />
+Skim 17.1                                 [PDF presentation][d18] <br />
+                                          Submit portfolios. <br />
                                           Quiz 7 on WeBWorK 10.
                                                                                                
 Read 17.1 <br />      Fri 22 Nov        Flux and conservative fields; presentations <br />
