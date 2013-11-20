@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-11-15
+% Math 251 Calculus 3 -- last updated 2013-11-20
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,7 +10,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: Nov 19, Nov 22, Nov 26
+Upcoming presentation dates: Nov 22, Nov 26, 
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
@@ -81,11 +81,21 @@ Upcoming presentation dates: Nov 19, Nov 22, Nov 26
 |                 | 15.4.22                              |                                         |
 | November 22     | 15.4.40                              | Tasha, Chelsea, and Kendra              |
 |                 | 15.4.53                              |                                         |
+|                 |                                      | UNIT 4                                  |
 |                 | 13.2.63*                             |                                         |
 |                 | 13.2.68                              |                                         |
 |                 | 13.3.15                              |                                         |
 | November 22     | 11.3.49+53*                          | Colton and Ruth                         |
-
+|                 | 16.1.36*                             |                                         |
+|                 | 16.2.17                              |                                         |
+|                 | 16.2.32                              |                                         |
+|                 | 16.2.37+38                           |                                         |
+|                 | 16.2.58+59                           |                                         |
+|                 | 16.3.4                               |                                         |
+|                 | 16.3.22                              |                                         |
+|                 | 16.3.26 (physics)                    |                                         |
+|                 | 16.3.27                              |                                         |
+|                 | 16.3.28*                             |                                         |
 
 <!-- |                 | 11.1.87                              |                                         | -->
 <!-- |                 | 11.2.25                              |                                         | -->
