@@ -2,9 +2,8 @@
 % Math 251 Calculus 3
 % November 20, 2013
 
-% ```{r setup, echo=FALSE, include=FALSE}
-% opts_chunk$set(out.width=6, out.height=6, dev='pdf')
-% ```
+
+
 
 # Integrating vector fields along curves
 
