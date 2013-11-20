@@ -1,0 +1,102 @@
+% Integrating vector fields along curves
+% Math 251 Calculus 3
+% November 20, 2013
+
+
+
+
+# Integrating vector fields along curves
+
+## Warm-up
+
+Set up the integral of the function $f(x,y) = 2x^2 y$ along the arc of the parabola $y = x^2$ connecting $(0,0)$ to $(2,4)$.
+
+- Tip: Recall that you can parametrize the graph of any function $y = g(x)$ as $\vec{r}(t) = \angl{t, g(t)}$. 
+- Answer: Let $\vec{r}$ as above; then $\norm{\angl{\vec{r}(t)}} = \sqrt{t^2 + t^4} = t \sqrt{1 + t^2}$. We also have $f(x(t),y(t)) = 2(t)^2 \cdot t^2 = 2t^4$ for points on the parabola. The parameter interval is $0 \leq t \leq 2$, so our integral should be...
+- $\int_0^2 2t^5 \sqrt{1+t^2} \; dt$
+- This integral can be evaluated by substitution; its value is $\frac{16}{105} ( 125 \sqrt{5} - 1 ) \approx 42.4394$.
+
+## Warm-up, II
+
+Use half of the whiteboard to draw some of the vector field $\nabla F$, where $F(x,y) = 2xy$. Try to get the angles right; don't worry so much about the lengths. If you draw four or five vectors in each quadrant you will get the idea.
+
+Then use the other half to draw a few level curves of $F$. Once you're satisfied, overlay the level curves on top of the vector field.
+
+## Integrating vector fields along paths in the plane
+
+The motivating example is a force field $\vec{F}(x,y)$ that acts throughout some region in the plane. If an object is moved by this force along the path $\mathcal{C}$, we want to call the work done 
+\begin{equation*}
+    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s}.
+\end{equation*}
+In the text these vectors are denoted with boldface as opposed to arrows, but the meaning is the same. What is this meaning? On Tuesday (the 19th) we observed that a good definition for $ds$ would be $\norm{\vec{r}(t)} \; dt$.
+
+The scalar line element $ds$ is an incremental bit of arclength along the curve. The vector line element $d\vec{s}$ is an incremental tangent vector to the curve.
+
+## Interpreting the differential
+
+We set $d\vec{s} = \frac{\vec{r}'(t)}{\angl{\vec{r}'(t)}} ds$.
+
+The tangent vector $\vec{r}(t)$ is the velocity vector for the curve. When we divide it by its length, we get a pure direction vector: the quotient is tangent to the curve and has length 1. When we multiply by the "incremental" scalar $ds$, we get an "incremental" vector.
+
+But $ds = \angl{vec{r}'(t)} dt$. 
+
+Hence $d\vec{s} = \vec{r}'(t) dt$. Observe that there is no magnitude operator and hence no square root. For this reason line integrals of vector fields tend to be more tractable for hand calculation than do line integrals of scalar functions.
+
+## Integrals of vector fields along parametrized curves
+
+Putting it all together, if $\vec{r}(t)$ is our parametrized curve with parameter interval $[a,b]$, we can compute the line integral of the vector field $\vec{F}$ by the formula
+\begin{equation*}
+    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{\mathcal{C}} \vec{F}(\vec{r}(t)) \cdot \vec{r}(t) \; dt.
+\end{equation*}
+
+## The geometric meaning of the dot product
+
+Remember that the dot product of two vectors depends on their lengths and the angle $\theta$ between them. In particular, if the vectors are orthogonal, the dot product is zero. You might also remember:
+
+> - If $\theta$ is acute, the dot product is positive, while
+> - if $\theta$ is obtuse, the dot product is negative.
+
+Dotting the vector field with the tangent vector to the curve produces the component of the field in the direction of the curve.
+
+## Another convenient notation
+
+Since $d\vec{s}$ is a vector, it has components. We recognize them as the familiar differentials $dx$ and $dy$ as follows. Let $\vec{F}(x,y) = \angl{F_1(x,y), F_2(x,y)}$ and $\vec{r}(t) = \angl{x, y}$. Then as we have seen
+\begin{align*}
+    \vec{F} \cdot d\vec{s} &= \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \; dt \\
+                           &= \angl{F_1(x, y), F_2(x, y)} \cdot \angl{x', y'} \; dt \\
+                           &= F_1(x, y) x'(t) \; dt + F_2(x, y) y'(t) \; dt.
+\end{align*}
+We recognize some old friends: $dx = x'(t) \; dt$ and $dy = y'(t) \; dt$. Evidently, we have obtained
+\begin{align*}
+    \vec{F} \cdot d\vec{s} &= F_1 \; dx + F_2 \; dy.
+\end{align*}
+
+## Properties of line integrals
+
+> 1. *Linearity*: $\displaystyle\int_{\mathcal{C}} (\vec{F} + \vec{G}) \cdot d\vec{s} = \int_{\mathcal{C}} F \cdot d\vec{s} + \int_{\mathcal{C}} G \cdot d\vec{s}$, $\displaystyle \int_{\mathcal{C}} (k\vec{F}) \cdot d\vec{s} = k\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$
+> 2. *Orientation*: $\displaystyle\int_{-\mathcal{C}} \vec{F} \cdot d\vec{s} = -\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$
+> 3. *Additivity*: If $\mathcal{C}$ is a union of $n$ smooth curves $\mathcal{C}_1, \ldots, \mathcal{C}_n$, then $\displaystyle \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{\mathcal{C}_1} \vec{F} \cdot d\vec{s} + \cdots + \int_{\mathcal{C}_n} \vec{F} \cdot d\vec{s}$
+
+## Generalization to three dimensions
+
+It is pretty straightforward. All the two-dimensional vectors become three-dimensional, but the dimension-free formulas stay the same. Refer to the text for the complete details.
+
+## Flux
+
+The vector line integral $\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$ is the total contribution of the vector field at each point along the curve. The phrase "along the curve" is very important to the interpretation, because we use the tangent vectors to the curve to define the integral. The particulars have been stated here for curves in $\R^2$; see the text for the complete details.
+
+We can also define a vector line integral using *normal vectors to the curve* if we confine ourselves to $\R^2$. 
+
+The resulting integral computes what is called the "flux" of the vector field across the curve.
+
+## What is flux?
+
+Loosely speaking it's the "amount" of something flowing across the curve. Its value depends on the strength of the field, the length of the curve, and how they are oriented relative to one another.
+
+A flux integral is similar to the vector line integrals considered previously, which we might call "flow" integrals in comparison. The difference is that we use a unit *normal* vector where in the flow integral we used a unit *tangent* vector.
+
+\begin{equation*}
+    \text{Flux across $\mathcal{C}$} = \int_{\mathcal{C}} (\vec{F} \cdot \vec{e}_n) \; ds = \int_{\mathcal{C}} \vec{F}(\vec{r}(t)) \cdot \vec{n}(t) \; dt,
+\end{equation*}
+
+where $\vec{n}(t) = \angl{-y'(t), x'(t)}$ and $\vec{e}_n = \vec{n}/\norm{\vec{n}}$.
