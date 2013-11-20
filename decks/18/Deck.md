@@ -2,8 +2,9 @@
 % Math 251 Calculus 3
 % November 20, 2013
 
-
-
+% ```{r setup, echo=FALSE, include=FALSE}
+% opts_chunk$set(out.width=6, out.height=6, dev='pdf')
+% ```
 
 # Integrating vector fields along curves
 
@@ -12,15 +13,9 @@
 Set up the integral of the function $f(x,y) = 2x^2 y$ along the arc of the parabola $y = x^2$ connecting $(0,0)$ to $(2,4)$.
 
 - Tip: Recall that you can parametrize the graph of any function $y = g(x)$ as $\vec{r}(t) = \angl{t, g(t)}$. 
-- Answer: Let $\vec{r}$ as above; then $\norm{\angl{\vec{r}(t)}} = \sqrt{t^2 + t^4} = t \sqrt{1 + t^2}$. We also have $f(x(t),y(t)) = 2(t)^2 \cdot t^2 = 2t^4$ for points on the parabola. The parameter interval is $0 \leq t \leq 2$, so our integral should be...
-- $\int_0^2 2t^5 \sqrt{1+t^2} \; dt$
-- This integral can be evaluated by substitution; its value is $\frac{16}{105} ( 125 \sqrt{5} - 1 ) \approx 42.4394$.
-
-## Warm-up, II
-
-Use half of the whiteboard to draw some of the vector field $\nabla F$, where $F(x,y) = 2xy$. Try to get the angles right; don't worry so much about the lengths. If you draw four or five vectors in each quadrant you will get the idea.
-
-Then use the other half to draw a few level curves of $F$. Once you're satisfied, overlay the level curves on top of the vector field.
+- Answer: Let $\vec{r}$ as above; then $\norm{\angl{\vec{r}'(t)}} = \sqrt{1+t^2}$. We also have $f(x(t),y(t)) = 2(t)^2 \cdot t^2 = 2t^4$ for points on the parabola. The parameter interval is $0 \leq t \leq 2$, so our integral should be...
+- $\int_0^2 2t^4 \sqrt{1+t^2} \; dt$
+- This integral is hideously wretched; its value is $\frac{1}{24} \left( 266 \sqrt{5} + 3 \sinh^{-1}(2) \right) \approx 24.9635$.
 
 ## Integrating vector fields along paths in the plane
 
@@ -28,17 +23,17 @@ The motivating example is a force field $\vec{F}(x,y)$ that acts throughout some
 \begin{equation*}
     \int_{\mathcal{C}} \vec{F} \cdot d\vec{s}.
 \end{equation*}
-In the text these vectors are denoted with boldface as opposed to arrows, but the meaning is the same. What is this meaning? On Tuesday (the 19th) we observed that a good definition for $ds$ would be $\norm{\vec{r}(t)} \; dt$.
+In the text these vectors are denoted with boldface as opposed to arrows, but the meaning is the same. What is this meaning? On Tuesday (the 19th) we observed that a good definition for $ds$ would be $\norm{\vec{r}'(t)} \; dt$.
 
 The scalar line element $ds$ is an incremental bit of arclength along the curve. The vector line element $d\vec{s}$ is an incremental tangent vector to the curve.
 
 ## Interpreting the differential
 
-We set $d\vec{s} = \frac{\vec{r}'(t)}{\angl{\vec{r}'(t)}} ds$.
+We set $d\vec{s} = \frac{\vec{r}'(t)}{\norm{\vec{r}'(t)}} ds$.
 
 The tangent vector $\vec{r}(t)$ is the velocity vector for the curve. When we divide it by its length, we get a pure direction vector: the quotient is tangent to the curve and has length 1. When we multiply by the "incremental" scalar $ds$, we get an "incremental" vector.
 
-But $ds = \angl{vec{r}'(t)} dt$. 
+But $ds = \norm{\vec{r}'(t)} dt$. 
 
 Hence $d\vec{s} = \vec{r}'(t) dt$. Observe that there is no magnitude operator and hence no square root. For this reason line integrals of vector fields tend to be more tractable for hand calculation than do line integrals of scalar functions.
 
@@ -46,7 +41,7 @@ Hence $d\vec{s} = \vec{r}'(t) dt$. Observe that there is no magnitude operator a
 
 Putting it all together, if $\vec{r}(t)$ is our parametrized curve with parameter interval $[a,b]$, we can compute the line integral of the vector field $\vec{F}$ by the formula
 \begin{equation*}
-    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{\mathcal{C}} \vec{F}(\vec{r}(t)) \cdot \vec{r}(t) \; dt.
+    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{a}^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \; dt.
 \end{equation*}
 
 ## The geometric meaning of the dot product
@@ -60,7 +55,7 @@ Dotting the vector field with the tangent vector to the curve produces the compo
 
 ## Another convenient notation
 
-Since $d\vec{s}$ is a vector, it has components. We recognize them as the familiar differentials $dx$ and $dy$ as follows. Let $\vec{F}(x,y) = \angl{F_1(x,y), F_2(x,y)}$ and $\vec{r}(t) = \angl{x, y}$. Then as we have seen
+Since $d\vec{s}$ is a vector, it has components. We recognize them as the familiar differentials $dx$ and $dy$ as follows. Let $\vec{F}(x,y) = \angl{F_1(x,y), F_2(x,y)}$ and $\vec{r}(t) = \angl{x, y}$. Then as we have seen (note the $t$-dependence is suppressed for readability)
 \begin{align*}
     \vec{F} \cdot d\vec{s} &= \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \; dt \\
                            &= \angl{F_1(x, y), F_2(x, y)} \cdot \angl{x', y'} \; dt \\
