@@ -4,6 +4,9 @@
 
 # Workshop 09: Integration over planar regions
 
+% Rewrite all of this so that the integrals have integrand 1, not an anonymous function $f(x,y)$.
+
+
 You saw in [the presentation][d13] how to decompose double integrals over a triangle into iterated integrals. The same technique works for regions whose boundaries have nice algebraic expressions. We will only concern ourselves with regions whose boundaries are made up of line segments, arcs of circles, and pieces of the graphs of functions. Our regions will also all be "connected". This means, roughly speaking, that they are all one piece.
 
 ## More triangles
