@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-11-20
+% Math 251 Calculus 3 -- last updated 2013-11-25
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,14 +10,14 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: Nov 22, Nov 26, 
+Upcoming presentation dates: Nov 22, Nov 26, Dec 3, Dec 4, ???
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
 |                 |                                      | UNIT 1                                  |
 | September 27    | 14.1.38                              | Tasha, Chelsea, and Kendra              |
 |                 | 14.1.40--43                          |                                         |
-| November 19?    | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
+| November 26     | 12.2.53 <br /> (after ch. 13)        | Sam, John, and Martin                   |
 | September 27    | 12.3.48                              | Pragna                                  |
 | September 27    | 12.3.78 <!-- omit next year -->      | Alex W., Angelica, and Hannah           |
 | September 27    | 12.3.91*                             | Ruth, Colton, Conner, and Emanuil       |
@@ -56,8 +56,8 @@ Upcoming presentation dates: Nov 22, Nov 26,
 |                 | 14.7.33                              |                                         |
 | November 15     | 14.7.37                              | Jake, Dallas, and Will                  |
 | November 19     | 14.7.49                              | Matt and Moha                           |
-| November 22     | 14.8.2                               | Josh, Shelby, and Danny                |
-| November 26     | 14.8.17                              | Josh, Shelby, and Danny                |
+| November 22     | 14.8.2                               | Josh, Shelby, Sam, and Danny            |
+| November 26     | 14.8.17                              | Josh, Shelby, and Danny                 |
 | November 19     | 14.8.19                              | Mike                                    |
 | November 6      | 14.8.28                              | Emily and Emilee                        |
 |                 | 14.8.36                              |                                         |
@@ -87,14 +87,14 @@ Upcoming presentation dates: Nov 22, Nov 26,
 |                 | 13.3.15                              |                                         |
 | November 22     | 11.3.49+53*                          | Colton and Ruth                         |
 |                 | 16.1.36*                             |                                         |
-|                 | 16.2.17                              |                                         |
+| November 26     | 16.2.17                              | Moha, Baker, and Fabian                 |
 |                 | 16.2.32                              |                                         |
 |                 | 16.2.37+38                           |                                         |
 |                 | 16.2.58+59                           |                                         |
-|                 | 16.3.4                               |                                         |
+| November 26     | 16.3.4                               | John, Sam, and Martin                   |
 |                 | 16.3.22                              |                                         |
 |                 | 16.3.26 (physics)                    |                                         |
-|                 | 16.3.27                              |                                         |
+| November 26     | 16.3.27                              | John, Sam, and Martin                   |
 |                 | 16.3.28*                             |                                         |
 
 <!-- |                 | 11.1.87                              |                                         | -->
