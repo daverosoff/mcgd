@@ -157,32 +157,34 @@ Skim 17.1                                 [PDF presentation][d18] <br />
                                           Quiz 7 on WeBWorK 10.
                                                                                                
 Read 17.1 <br />      Fri 22 Nov        Flux and conservative fields; presentations <br />
-Skim 16.4--16.5                           Quiz 8 on WeBWorK 11.
+Skim 16.4--16.5                           Quiz 8 on WeBWorK 11. <br />
+                                          [PDF presentation][d19]
 
-Read 16.4--16.5       Mon 25 Nov        Green's Theorem; idea of parametrized surfaces and surface integrals <br />
+Read 16.4--16.5       Mon 25 Nov        More on line integrals and conservativity <br />
                                           WeBWorK 13 is due at 10pm.
                    
-Skim 17.2 <br />      Tue 26 Nov        Surface integrals of vector fields; presentations
+Skim 17.1 <br />      Tue 26 Nov        Idea of Green's theorem; presentations
 
-Read 17.2             Wed 27 Nov        Curl of vector fields; Stokes's theorem
+Read 17.1 <br />      Wed 27 Nov        Curl of vector fields; Green's theorem <br />
+Skim 17.2--17.3                           Submit portfolios. <br />
+                                          Quiz 9 on WeBWorK 13.
 
 
                       Fri 29 Nov        No class; Thanksgiving break <br />
                                         Be thankful for vector fields and surface integrals.
 
 
-Reread 17.2           Mon 2 Dec         Curl of vector fields; Stokes's theorem
-      
-
+Read 17.2             Mon 2 Dec         Curl of vector fields; Stokes's theorem <br />
+                                          
 Skim 17.3             Tue 3 Dec         Idea of the divergence theorem; presentations <br />
-                                          Submit portfolios.
                                                                                                                       
 Read 17.3 <br />      Wed 4 Dec         Presentations; Calculus on curved surfaces, Stokes's Theorem, and cosmic topology
-[Module 11][m11]
+[Module 11][m11]                          WeBWorK 14 is due.
                                                                                 
-                      Fri 6 Dec         Loose ends, possibly including presentations <br />
-                                        Review for final exam <br />
-                                        Final portfolio submission is due at 5pm.
+No reading            Fri 6 Dec         Loose ends, possibly including presentations <br />
+                                          Quiz 10 on WeBWorK 14. <br />
+                                          Review for final exam <br />
+                                          Final portfolio submission is due at 5pm.
 ---------------------------------------------------------------------------------------------
 
 [m01]: modules/01/Module.html
