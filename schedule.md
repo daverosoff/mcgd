@@ -151,22 +151,22 @@ Skim 16.2                                 [PDF presentation][d17] <br />
 Read 16.2 <br />      Tue 19 Nov        Line integrals; presentations 
 Skim 16.3              
 
-Read 16.3 <br />      Wed 20 Nov        Line integrals of vector fields <br />
-Skim 17.1                                 [PDF presentation][d18] <br />
+Read 16.2 <br />      Wed 20 Nov        Line integrals of vector fields <br />
+                                          [PDF presentation][d18] <br />
                                           Submit portfolios. <br />
                                           Quiz 7 on WeBWorK 10.
                                                                                                
-Read 17.1 <br />      Fri 22 Nov        Flux and conservative fields; presentations <br />
-Skim 16.4--16.5                           Quiz 8 on WeBWorK 11. <br />
+Read 16.3 <br />      Fri 22 Nov        Flux and conservative fields; presentations <br />
+                                          Quiz 8 on WeBWorK 11. <br />
                                           [PDF presentation][d19]
 
-Read 16.4--16.5       Mon 25 Nov        More on line integrals and conservativity <br />
+Read 16.3             Mon 25 Nov        More on line integrals and conservativity <br />
                                           WeBWorK 13 is due at 10pm.
                    
 Skim 17.1 <br />      Tue 26 Nov        Idea of Green's theorem; presentations
 
 Read 17.1 <br />      Wed 27 Nov        Curl of vector fields; Green's theorem <br />
-Skim 17.2--17.3                           Submit portfolios. <br />
+Skim 17.2--17.3                           Submit portfolios by 4pm. <br />
                                           Quiz 9 on WeBWorK 13.
 
 
