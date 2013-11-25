@@ -76,22 +76,3 @@ We recognize some old friends: $dx = x'(t) \; dt$ and $dy = y'(t) \; dt$. Eviden
 
 It is pretty straightforward. All the two-dimensional vectors become three-dimensional, but the dimension-free formulas stay the same. Refer to the text for the complete details.
 
-## Flux
-
-The vector line integral $\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$ is the total contribution of the vector field at each point along the curve. The phrase "along the curve" is very important to the interpretation, because we use the tangent vectors to the curve to define the integral. The particulars have been stated here for curves in $\R^2$; see the text for the complete details.
-
-We can also define a vector line integral using *normal vectors to the curve* if we confine ourselves to $\R^2$. 
-
-The resulting integral computes what is called the "flux" of the vector field across the curve.
-
-## What is flux?
-
-Loosely speaking it's the "amount" of something flowing across the curve. Its value depends on the strength of the field, the length of the curve, and how they are oriented relative to one another.
-
-A flux integral is similar to the vector line integrals considered previously, which we might call "flow" integrals in comparison. The difference is that we use a unit *normal* vector where in the flow integral we used a unit *tangent* vector.
-
-\begin{equation*}
-    \text{Flux across $\mathcal{C}$} = \int_{\mathcal{C}} (\vec{F} \cdot \vec{e}_n) \; ds = \int_{\mathcal{C}} \vec{F}(\vec{r}(t)) \cdot \vec{n}(t) \; dt,
-\end{equation*}
-
-where $\vec{n}(t) = \angl{-y'(t), x'(t)}$ and $\vec{e}_n = \vec{n}/\norm{\vec{n}}$.
