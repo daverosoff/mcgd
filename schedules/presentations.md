@@ -24,7 +24,7 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 | October 4       | 12.3.92 <br /> (after 91)            | Matt, Danny, and Mike                   |
 | September 27    | 12.4.54ab                            | Jake, Will, and Dallas                  |
 | November 19     | 12.5.55                              | Shelby and Josh                         |
-|                 | 12.5.56*                             |                                         |
+|                 | 12.5.56*                             | Shelby and Josh                         |
 |                 | 12.5.60 <br /> (after 56 & ch. 13)   |                                         |
 |                 | 12.5.61                              |                                         |
 |                 |                                      | UNIT 2                                  |
