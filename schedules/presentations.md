@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-11-25
+% Math 251 Calculus 3 -- last updated 2013-11-26
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate
@@ -10,7 +10,7 @@ other presentation problems. For example 12.3.92 relies on the result of
 
 ## Schedule of problems 
 
-Upcoming presentation dates: Nov 22, Nov 26, Dec 3, Dec 4, ???
+Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 
 |      Date       | Problem                              |                Presenters               |
 |:---------------:|:------------------------------------:|:----------------------------------------|
@@ -57,7 +57,7 @@ Upcoming presentation dates: Nov 22, Nov 26, Dec 3, Dec 4, ???
 | November 15     | 14.7.37                              | Jake, Dallas, and Will                  |
 | November 19     | 14.7.49                              | Matt and Moha                           |
 | November 22     | 14.8.2                               | Josh, Shelby, Sam, and Danny            |
-| November 26     | 14.8.17                              | Josh, Shelby, and Danny                 |
+| November 27     | 14.8.17                              | Josh, Shelby, and Danny                 |
 | November 19     | 14.8.19                              | Mike                                    |
 | November 6      | 14.8.28                              | Emily and Emilee                        |
 |                 | 14.8.36                              |                                         |
@@ -89,12 +89,12 @@ Upcoming presentation dates: Nov 22, Nov 26, Dec 3, Dec 4, ???
 |                 | 16.1.36*                             |                                         |
 | November 26     | 16.2.17                              | Moha, Baker, and Fabian                 |
 |                 | 16.2.32                              |                                         |
-|                 | 16.2.37+38                           |                                         |
+| November 27     | 16.2.37+38                           | Tasha, Chelsea, and Kendra              |
 |                 | 16.2.58+59                           |                                         |
 | November 26     | 16.3.4                               | John, Sam, and Martin                   |
-|                 | 16.3.22                              |                                         |
+| November 26     | 16.3.22                              | Ruth and Colton                         |
 |                 | 16.3.26 (physics)                    |                                         |
-| November 26     | 16.3.27                              | John, Sam, and Martin                   |
+|                 | 16.3.27                              |                                         |
 |                 | 16.3.28*                             |                                         |
 
 <!-- |                 | 11.1.87                              |                                         | -->
