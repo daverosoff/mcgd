@@ -167,21 +167,23 @@ Skim 17.1 <br />      Tue 26 Nov        Idea of Green's theorem; presentations
 
 Read 17.1 <br />      Wed 27 Nov        Curl of vector fields; Green's theorem <br />
 Skim 17.2--17.3                           Submit portfolios by 4pm. <br />
-                                          Quiz 9 on WeBWorK 13.
-
+                                          
 
                       Fri 29 Nov        No class; Thanksgiving break <br />
                                         Be thankful for vector fields and surface integrals.
 
 
 Read 17.2             Mon 2 Dec         Curl of vector fields; Stokes's theorem <br />
-                                          
+                                          [Group quiz 09] on Green's theorem. (Solutions to follow.)<br />
+                                          WeBWorK 14 is due.
+
 Skim 17.3             Tue 3 Dec         Idea of the divergence theorem; presentations <br />
                                                                                                                       
 Read 17.3 <br />      Wed 4 Dec         Presentations; Calculus on curved surfaces, Stokes's Theorem, and cosmic topology
-[Module 11][m11]                          WeBWorK 14 is due.
+[Module 11][m11]                          
                                                                                 
 No reading            Fri 6 Dec         Loose ends, possibly including presentations <br />
+                                          WeBWorK 15 is due. <br />
                                           Quiz 10 on WeBWorK 14. <br />
                                           Review for final exam <br />
                                           Final portfolio submission is due at 5pm.
@@ -222,6 +224,7 @@ No reading            Fri 6 Dec         Loose ends, possibly including presentat
 [w14]: workshops/14/Workshop.pdf
 [w15]: workshops/15/Workshop.pdf
 [w16]: workshops/16/Workshop.pdf
+[q09]: quizzes/09/Quiz.pdf
 
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
