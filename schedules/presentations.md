@@ -77,8 +77,8 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 | November 22     | 11.3.39                              | Alex W., Angelica, and Gabe             |
 | November 22     | 15.3.24                              | Emilee and Emily                        |
 | November 19     | 15.3.26                              | Ruth                                    |
-|                 | 15.3.28                              |                                         |
-|                 | 15.4.22                              |                                         |
+| December 3      | 15.3.28                              | Jordan and ???                          |
+| December 3      | 15.4.22                              | Jordan and ???                          |
 | November 22     | 15.4.40                              | Tasha, Chelsea, and Kendra              |
 |                 | 15.4.53                              |                                         |
 |                 |                                      | UNIT 4                                  |
@@ -94,7 +94,7 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 | November 26     | 16.3.4                               | John, Sam, and Martin                   |
 | November 26     | 16.3.22                              | Ruth and Colton                         |
 |                 | 16.3.26 (physics)                    |                                         |
-|                 | 16.3.27                              |                                         |
+| December 3      | 16.3.27                              | Martin, Sam?, John?                     |
 |                 | 16.3.28*                             |                                         |
 
 <!-- |                 | 11.1.87                              |                                         | -->
