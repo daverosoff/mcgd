@@ -98,7 +98,7 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 |                 | 16.3.28*                             |                                         |
 | December 4      | 17.1.3                               | Shelby and Josh                         |
 |                 | 17.1.4                               |                                         |
-|                 | 17.1.5                               |                                         |
+| December 4      | 17.1.5                               | Shelby and Josh                         |
 |                 | 17.1.6                               |                                         |
 |                 | 17.1.7                               |                                         |
 |                 | 17.1.8                               |                                         |
