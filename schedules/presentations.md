@@ -96,7 +96,7 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 |                 | 16.3.26 (physics)                    |                                         |
 | December 3      | 16.3.27                              | Martin, Sam, John                       |
 |                 | 16.3.28*                             |                                         |
-|                 | 17.1.3                               |                                         |
+| December 4      | 17.1.3                               | Shelby and Josh                         |
 |                 | 17.1.4                               |                                         |
 |                 | 17.1.5                               |                                         |
 |                 | 17.1.6                               |                                         |
