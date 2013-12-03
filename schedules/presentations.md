@@ -97,9 +97,9 @@ Upcoming presentation dates: Nov 27, Dec 3, Dec 4, ???
 | December 3      | 16.3.27                              | Martin, Sam, John                       |
 |                 | 16.3.28*                             |                                         |
 | December 4      | 17.1.3                               | Shelby and Josh                         |
-|                 | 17.1.4                               |                                         |
+| December 6      | 17.1.4                               | Alex                                    |
 | December 4      | 17.1.5                               | Shelby and Josh                         |
-|                 | 17.1.6                               |                                         |
+| December 6      | 17.1.6                               | Alex                                    |
 |                 | 17.1.7                               |                                         |
 |                 | 17.1.8                               |                                         |
 |                 | 17.1.9                               |                                         |
