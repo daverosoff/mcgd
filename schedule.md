@@ -6,7 +6,7 @@ and other materials here. You should also find a classmate who will share
 more specific notes from the days you were unable to attend.
 
 All of this scheduling data is tentative and subject to change, especially
-module numbering.
+module numbering. 
 
 -------------------------------------------------------------------------------------------
 Reading                  Date           Topics 
@@ -177,7 +177,8 @@ Read 17.2             Mon 2 Dec         Curl of vector fields; Stokes's theorem 
                                           [Group quiz 09] on Green's theorem. (Solutions to follow.)<br />
                                           WeBWorK 14 is due.
 
-Skim 17.3             Tue 3 Dec         Idea of the divergence theorem; presentations <br />
+Skim 17.3             Tue 3 Dec         Presentations; finish group quiz <br />
+                                          [Solutions to group quiz 09 (PDF)][q09sol]
                                                                                                                       
 Read 17.3 <br />      Wed 4 Dec         Presentations; Calculus on curved surfaces, Stokes's Theorem, and cosmic topology
 [Module 11][m11]                          
@@ -225,6 +226,7 @@ No reading            Fri 6 Dec         Loose ends, possibly including presentat
 [w15]: workshops/15/Workshop.pdf
 [w16]: workshops/16/Workshop.pdf
 [q09]: quizzes/09/Quiz.pdf
+[q09sol]: quizzes/09/Quiz-solution.pdf
 
 [d01]: decks/01/Deck.pdf
 [d02]: decks/02/Deck.pdf
@@ -246,3 +248,6 @@ No reading            Fri 6 Dec         Loose ends, possibly including presentat
 [d18]: decks/18/Deck.pdf
 [d19]: decks/19/Deck.pdf
 [d20]: decks/20/Deck.pdf
+[d21]: decks/21/Deck.pdf
+[d22]: decks/22/Deck.pdf
+[d23]: decks/23/Deck.pdf
