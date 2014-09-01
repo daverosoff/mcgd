@@ -1,7 +1,8 @@
-\documentclass[11pt,ignorenonframetext,]{beamer}
+\documentclass[11pt,ignorenonframetext,aspectratio=169]{beamer}
 \usetheme{Szeged}
 \usecolortheme{crane}
 \usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -84,7 +85,7 @@
 express the move from $(2,3)$ to $(-3, 1)$.
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   Notice: it's not a sensible \emph{address} in any city or town. Why
   not?
@@ -99,7 +100,7 @@ express the move from $(2,3)$ to $(-3, 1)$.
 \begin{frame}\frametitle{Universality of displacement}
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   If the town is laid out on a square grid (as opposed to rectangles,
   some other kind of parallelograms, or worse) \ldots
@@ -109,10 +110,14 @@ express the move from $(2,3)$ to $(-3, 1)$.
 \end{itemize}
 
 We call this displacement the \emph{vector} $\langle -5, -2 \rangle$.
-Observe the following na"ive ``equations'':
+Observe the following na\"ive ``equations'':
 
-\[ (2,3) + \langle -5, -2 \rangle$ = (-3, 1) \]
-\[ (2013,2013) + \langle -5, -2 \rangle$ = (2008,2010) \]
+\begin{equation*}
+(2,3) + \langle -5, -2 \rangle = (-3, 1)
+\end{equation*}
+\begin{equation*}
+(2013,2013) + \langle -5, -2 \rangle = (2008,2010)
+\end{equation*}
 
 \end{frame}
 

@@ -1,7 +1,8 @@
-\documentclass[11pt,ignorenonframetext,]{beamer}
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
 \usetheme{Szeged}
 \usecolortheme{crane}
 \usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -56,7 +57,7 @@
 \usepackage{hyperref}
 %%% end dwr insert
 \usepackage{rosoff-vector-macros}
-\usepackage{rosoff}
+\usepackage[beamer]{cofi}
 \usepackage{siunitx}
 \title{Double integrals}
 \author{Math 251 Calculus 3}
@@ -91,7 +92,7 @@ Fubini's theorem.
 \[ \iint_R f(x,y) \; dA = \int_c^d \int_a^b f(x,y) \; dx \; dy = \int_a^b \int_c^d f(x,y) \; dy \; dx \]
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   Observe that the order of integration is different: $dx \; dy$ is not
   the same as $dy \; dx$. The limits change accordingly.
@@ -104,8 +105,8 @@ be easier to compute, but that is the only novelty.
 
 \begin{frame}\frametitle{The secret to thinking about integrals}
 
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+\begin{itemize}
+
 \item
   Do you picture the graph of every 1-variable function you integrate?
 \item
@@ -138,7 +139,7 @@ and $x=b$.
 \begin{frame}\frametitle{Two orders}
 
 Thus,
-$\\int_R f(x,y) \; dA = \int_{x=a}^b A(x) \; dx = \int_{x=a}^b \int_{y=c}^d f(x,y) \; dy \; dx$.
+$\int_R f(x,y) \; dA = \int_{x=a}^b A(x) \; dx = \int_{x=a}^b \int_{y=c}^d f(x,y) \; dy \; dx$.
 
 Writing the ``area element'' $dA$ as $dy \; dx$ this way corresponds to
 this choice of ``slicing'' the domain: first, find the contribution of a

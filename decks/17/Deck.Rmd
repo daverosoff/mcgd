@@ -2,17 +2,18 @@
 % Math 251 Calculus 3
 % November 18, 2013
 
-```{r setup, echo=FALSE, include=FALSE}
-opts_chunk$set(out.width=6, out.height=6, dev='pdf')
-```
+%% begin.rcode setup, echo=FALSE, include=FALSE
+% library(knitr)
+% opts_chunk$set(out.width=6, out.height=6, dev='pdf')
+%% end.rcode
 
 # More practice with parametrizations
 
 ## Exam data
 
-```{r grades, echo=FALSE, include=FALSE}
-grades = c(47,56,57,58,60,60,62,65,66,68,68,73,74,75,76,76,76,78,81,82,82,83,83,84,84,87,88,89,92,95,96)
-```
+%% begin.rcode grades, echo=FALSE, include=FALSE
+% grades = c(47,56,57,58,60,60,62,65,66,68,68,73,74,75,76,76,76,78,81,82,82,83,83,84,84,87,88,89,92,95,96)
+%% end.rcode
 
 The average was $`r mean(grades)`$ ($n = 31$) with $\sigma = `r sd(grades)`$.
 \begin{figure}[ht]
@@ -26,9 +27,9 @@ The average was $`r mean(grades)`$ ($n = 31$) with $\sigma = `r sd(grades)`$.
 \end{tabular}
 \end{minipage} \hspace*{1em} 
 \begin{minipage}[m]{0.6\linewidth}
-```{r hist, echo=FALSE, include=FALSE}
-hist(grades)
-```
+%% begin.rcode hist, echo=FALSE, include=FALSE
+% hist(grades)
+%% end.rcode
 \includegraphics[width=0.8\textwidth, height=0.8\textwidth]{figure/hist.pdf}
 \end{minipage}
 \end{figure}

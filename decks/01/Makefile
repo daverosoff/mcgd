@@ -13,12 +13,23 @@ browser		= SumatraPDF
 
 .PHONY: all compile preview clean
 
-all: compile
+all: compile $(intermed)
 
 compile: $(target)
 
 preview: compile
 	$(browser) $(target)
+
+$(intermed): $(src)
+	pandoc -s -t beamer -i --variable theme=$(theme) \
+	--variable colortheme=$(colortheme) \
+	--variable fonttheme=$(fonttheme) \
+	--variable listings=$(listings) \
+	--variable fontsize=$(fontsize) \
+	--variable numbersections=$(numbersections) \
+	--variable include-pkg="\usepackage{siunitx}" \
+	--mathjax=$(mathjax) --template=$(template) \
+	-o $(intermed) -S $(src)
 
 $(target): $(src)
 	pandoc -s -t beamer -i --variable theme=$(theme) \

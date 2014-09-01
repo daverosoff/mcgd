@@ -1,7 +1,8 @@
-\documentclass[11pt,ignorenonframetext,]{beamer}
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
 \usetheme{Szeged}
 \usecolortheme{crane}
 \usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -56,7 +57,7 @@
 \usepackage{hyperref}
 %%% end dwr insert
 \usepackage{rosoff-vector-macros}
-\usepackage{rosoff}
+\usepackage[beamer]{cofi}
 \title{Higher derivatives and modeling}
 \author{Math 251 Calculus 3}
 \date{October 9, 2013}
@@ -87,8 +88,8 @@ one-variable sense), their derivatives are $f_y(a,y)$ and $f_x(x,b)$.
 These functions are ordinary derivatives, so they compute tangent slopes
 in the usual way.
 
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+\begin{itemize}
+
 \item
   The tangent line equations:
 \item
@@ -109,7 +110,7 @@ of the slices. They tell us about concavity, just like ordinary second
 derivatives. Namely,
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   $f_{xx}(x,b)$ is positive (negative) if $f(x,b)$ is concave up
   (concave down)
@@ -139,9 +140,9 @@ local maxima and minima) and where the second derivative changes sign
 (these are the points of inflection). There are four possible ``curve
 shapes'':
 
-\begin{enumerate}[<+->]
+\begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   Increasing, concave up
 \item

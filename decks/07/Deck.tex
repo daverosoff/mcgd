@@ -1,7 +1,8 @@
-\documentclass[11pt,ignorenonframetext,]{beamer}
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
 \usetheme{Szeged}
 \usecolortheme{crane}
 \usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -56,7 +57,7 @@
 \usepackage{hyperref}
 %%% end dwr insert
 \usepackage{rosoff-vector-macros}
-\usepackage{rosoff}
+\usepackage[beamer]{cofi}
 \title{Tangent planes and differentials}
 \author{Math 251 Calculus 3}
 \date{October 1, 2013}
@@ -88,7 +89,7 @@ These functions are ordinary derivatives, so they compute tangent slopes
 in the usual way.
 
 \begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   The tangent line equations:
 \item
@@ -133,7 +134,7 @@ and so we adopt this as the definition of \emph{differentiability}.
 All of the following are equivalent:
 
 \begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   $f(x,y)$ is differentiable at $(a,b)$
 \item
@@ -174,7 +175,7 @@ $L(x,y) \approx f(x,y)$, because $f$ is locally linear.
 Let us write
 
 \begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   $\Delta x = x - a$,
 \item
@@ -207,7 +208,7 @@ $\Delta f \approx f_x(a,b) \Delta x + f_y(a,b) \Delta y$.
 It is common to write
 
 \begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   $dx = \Delta x$
 \item
@@ -262,16 +263,19 @@ of it.
 
 \begin{frame}\frametitle{Summary}
 
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+\begin{itemize}
+
 \item
-  If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, we can
-  discuss the linearization $L(x,y)$
+  If the partial derivatives $f_x(a,b)$ and $f_y(a,b)$ exist, can
+  discuss linearization,~$L(x,y)$, of the function $f$
+  \pause
 \item
   $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$ is the linearization
-  of $f$ at $(a,b)$
+  of $f$ at the point $(a,b)$
+  \pause
 \item
   The graph of $L$ is a plane passing through $(a,b,f(a,b))$
+  \pause
 \item
   If $f$ is locally linear (=differentiable), then the graph of $L$ is
   tangent to the graph of $f$

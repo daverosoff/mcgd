@@ -16,8 +16,8 @@ rcommand	= -e 'library(knitr); knit(\"$(src)\", \"$(knitted)\")'
 
 .PHONY: all compile preview clean
 
-all: compile 
-
+all: compile $(intermed)
+	
 compile: $(target)
 
 preview: compile

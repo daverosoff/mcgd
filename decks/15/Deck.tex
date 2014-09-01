@@ -1,7 +1,8 @@
-\documentclass[11pt,ignorenonframetext,]{beamer}
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
 \usetheme{Szeged}
 \usecolortheme{crane}
 \usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -56,7 +57,7 @@
 \usepackage{hyperref}
 %%% end dwr insert
 \usepackage{rosoff-vector-macros}
-\usepackage{rosoff}
+\usepackage[beamer]{cofi}
 \title{Practice with parametrizing lines}
 \author{Math 251 Calculus 3}
 \date{November 13, 2013}
@@ -74,7 +75,7 @@ to express a line involves a vector. Instead of a normal vector (which,
 in a way, tells which direction the plane \emph{doesn't} go), we'll use
 a vector $\vv$ \emph{parallel} to the line, called its direction vector.
 
-If $(x_0, y_0, z_0)$ is a point in $\R^3$, there is exactly one line
+If $(x_0, y_0, z_0)$ is a point in $\RR^3$, there is exactly one line
 passing through it parallel to $\vv$. Evidently, these points are all
 obtained by adding multiples of $\vv$ to the vector
 $\vec{r}_0 = \angl{x_0, y_0, z_0}$.
@@ -83,7 +84,7 @@ $\vec{r}_0 = \angl{x_0, y_0, z_0}$.
 
 \begin{frame}\frametitle{Parametrizing the line}
 
-A multiple of $\vv$ is a vector $t \vv$, where $t \in \R$. We usually
+A multiple of $\vv$ is a vector $t \vv$, where $t \in \RR$. We usually
 think of $t$ as a time parameter and the expression
 
 \begin{equation} \label{eq:vecline}
@@ -102,15 +103,13 @@ $\vv$.
 If we write $\vv$ in coordinates $\vv = \angl{a,b,c}$, then we can
 decompose Equation \ref{eq:vecline} into a system of scalar equations.
 Write
-\[\vec{r}(t) = \angl{x_0 + at, y_0 + bt, z_0 + ct} = \angl{x(t), y(t), z(t)},\]
-to obtain
-
-\begin{align*}
-    x(t) &= x_0 + at \\
-    y(t) &= y_0 + bt \\
-    z(t) &= z_0 + ct \\
-\end{align*}
-
+\begin{equation*}
+\vec{r}(t) = \angl{x_0 + at, y_0 + bt, z_0 + ct} = \angl{x(t), y(t), z(t)},
+\end{equation*}
+to obtain three equations:
+\begin{equation*}
+    x(t) &= x_0 + at, \quad y(t) &= y_0 + bt, \quad z(t) &= z_0 + ct.
+\end{equation*}
 These are evidently equivalent to Equation \ref{eq:vecline} and are
 called parametric equations of the line.
 
@@ -123,7 +122,7 @@ lines and scalar (parametric) equations for at least one of them.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   The line passing through $(-5, 6, -1)$ parallel to $\angl{9, 0, -6}$.
 \item
@@ -139,7 +138,7 @@ lines and scalar (parametric) equations for at least one of them.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   $\vec{r}(t) = \angl{-5 + 9t, 6, -1 - 6t}$.
 \item
@@ -162,7 +161,7 @@ Write down parametrizations for the following.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\itemsep1pt\parskip0pt\parsep0pt
+
 \item
   Unit circle
 \item
