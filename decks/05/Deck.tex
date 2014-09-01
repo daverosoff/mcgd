@@ -1,0 +1,223 @@
+\documentclass[11pt,ignorenonframetext,xcolor={svgnames},aspectratio=169]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage[beamer]{cofi}
+\title{Dot and cross product}
+\author{Math 251 Calculus 3}
+\date{September 18, 2013 }
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Dot and cross product}
+
+\begin{frame}\frametitle{Warm-up, I}
+
+\begin{itemize}
+\item
+  Ready?
+  \pause
+\item
+  OK FAST what is the dot product--cosine formula?
+  \pause
+\item
+  $\vv \cdot \ww = \norm{\vv} \norm{\ww} \cos{\theta}$
+  \pause
+\item
+  Here, we agree to always choose $0 \leq \theta \leq \pi$.
+  \pause
+\item
+  Suppose $\norm{\vv} = 3$ and $\norm{\ww} = 2$. What are the maximal
+  and minimal possible values of $\vv \cdot \ww$?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Warm-up, II}
+
+\begin{itemize}
+\item
+  Suppose $\vv \cdot \ww = \norm{\vv} \norm{\ww}$. What can you conclude
+  about the orientation of the vectors? It helps to picture them in
+  standard position.
+  \pause
+\item
+  Suppose $\vv \cdot \ww = -\norm{\vv} \norm{\ww}$. Now what can you
+  conclude?
+  \pause
+\item
+  Suppose $\vv \cdot \ww = 0$. Now what can you conclude?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Frequent uses of dot product}
+
+\begin{itemize}
+
+\item
+  Test for \emph{orthogonality}: i.e., whether two vectors are
+  perpendicular
+\item
+  \emph{Projection}: part 3 of
+  \href{../../workshops/02/Workshop.pdf}{Workshop 02}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Cross product}
+
+\begin{itemize}
+
+\item
+  Cross product of vectors is specific to $\mathbf{R}^3$ \ldots kind of.
+\item
+  It is designed to ``complete'' an independent set.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Fundamental geometric properties:
+
+  \begin{itemize}
+  \item
+    \emph{Complementarity}: $\vv \times \ww$ is orthogonal to each of
+    $\vv$ and $\ww$; in other words,
+    $\vv \cdot (\vv \times \ww) = 0 = \ww \cdot (\vv \times \ww)$
+    \pause
+  \item
+    \emph{Orientation}: The ordered system
+    $\{ \vv, \ww, \vv \times \ww \}$ is right-handed
+    \pause
+  \item
+    \emph{Cross product--sine formula}:
+    $\norm{\vv \times \ww} = \norm{\vv} \norm{\ww} \sin{\theta}$.
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Algebraic properties of cross product}
+
+The cross product has the following algebraic properties, as a
+consequence of its geometric ones.
+
+\begin{itemize}
+\item
+  \emph{Anticommutativity}: $\vv \times \ww = -\ww \times \vv$
+\item
+  \emph{Nilpotence}: $\vv \times \vv = \vec{0}$
+\item
+  \emph{Zerodivisors}: $\vv \times \ww = \vec{0}$ iff
+  $\ww = \lambda \vv$ or $\vv = \vec{0}$
+\item
+  \emph{Bilinearity}:
+
+  \begin{itemize}
+  \item
+    $(\lambda \vv) \times \ww = \vv \times (\lambda \ww) = \lambda (\vv \times \ww)$
+  \item
+    $(\vec{u} + \vv) \times \ww = \vec{u} \times \ww + \vv \times \ww$
+  \item
+    $\vec{u} \times (\vv + \ww) = \vec{u} \times \vv + \vec{u} \times \ww$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Computing cross products}
+
+\begin{itemize}
+\item
+  There is a method based on the formula for $3 \times 3$ determinants
+  outlined in the text.
+\item
+  I prefer to use bilinearity/distributivity, combined with the
+  fundamental relations
+
+  \begin{itemize}
+  
+  \item
+    $\ii \times \jj = \kk$
+  \item
+    $\jj \times \kk = \ii$
+  \item
+    $\kk \times \ii = \jj$
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item
+  With anticommutativity, these generate another three relations
+
+  \begin{itemize}
+  
+  \item
+    $\jj \times \ii= -\kk$
+  \item
+    $\kk \times \jj= -\ii$
+  \item
+    $\ii \times \kk= -\jj$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\end{document}

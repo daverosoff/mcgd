@@ -1,0 +1,299 @@
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage[beamer]{cofi}
+\title{Optimization and the second derivative test}
+\author{Math 251 Calculus 3}
+\date{October 11, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Optimization and the second derivative test}
+
+\begin{frame}\frametitle{Local optima}
+
+If $f(x,y)$ is a function of two variables, it probably has maxima and
+minima.
+
+\begin{itemize}
+\item
+  $f$ has a local maximum at $(x_0,y_0)$ if $f(x_0,y_0) \geq f(x,y)$ for
+  every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+\item
+  $f$ has a local minimum at $(x_0,y_0)$ if $f(x_0,y_0) \leq f(x,y)$ for
+  every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+\item
+  $f$ has a local optimum (or extremum) at $(x_0,y_0)$ if $f(x_0,y_0)$
+  has either a local max or a local min at $(x_0, y_0)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Global extrema}
+
+Change the phrase ``in some small disk containing $(x_0, y_0)$'' to ``in
+the domain of $f$''.
+
+\begin{itemize}
+
+\item
+  $f$ has a global maximum at $(x_0,y_0)$ if $f(x_0,y_0) \geq f(x,y)$
+  for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+\item
+  $f$ has a global minimum at $(x_0,y_0)$ if $f(x_0,y_0) \leq f(x,y)$
+  for every point $(x,y)$ in some small disk containing $(x_0,y_0)$.
+\item
+  $f$ has a global optimum (or extremum) at $(x_0,y_0)$ if $f(x_0,y_0)$
+  has either a global max or a global min at $(x_0, y_0)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Stationary points and critical points}
+
+If we draw a couple of local optima, we notice something about the
+tangent planes. They are horizontal, when they exist. This motivates
+some more definitions.
+
+\begin{itemize}
+
+\item
+  When a function has a horizontal tangent plane at a point $P$, its
+  gradient at $P$ is zero. This is because
+  $\nabla f_{P} = \angl{f_x(P), f_y(P)}$. We say that $P$ is a
+  \emph{stationary point}.
+\item
+  When a function is not differentiable at a point, its gradient is
+  typically undefined, although it's possible that the gradient is 0.
+\item
+  Points at which either of these occur are called \emph{critical
+  points}.
+\end{itemize}
+
+Note that the gradient should be considered to be undefined if
+\emph{either} of its entries is undefined.
+
+\end{frame}
+
+\begin{frame}\frametitle{Local optima occur at critical points}
+
+If $f(x,y)$ has a local optimum at $(x_0, y_0)$, then $(x_0, y_0)$ is a
+critical point of $f$.
+
+\begin{quote}
+Take special note of the logical asymmetry of this statement. Its
+converse is not true!
+\end{quote}
+
+A stationary point that is not a local optimum is called a saddle point.
+
+\end{frame}
+
+\begin{frame}\frametitle{The discriminant}
+
+It is impractical to test critical points of $f(x,y)$ for being local
+optima using the first derivative. But there is a convenient analog of
+the second derivative test, at least if $f(x,y)$ is smooth enough.
+Interestingly, all three second derivatives are involved.
+
+\begin{itemize}
+
+\item
+  Let $f(x,y)$ be a function with continuous second-order partials. The
+  \emph{Hessian discriminant} of $f$ at $(a,b)$ is defined to be
+  $D(a,b) = f_{xx}(a,b) f_{yy}(a,b) - f^2_{xy}(a,b)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Second derivative test}
+
+\begin{itemize}
+
+\item
+  If $D(a,b) > 0$ and $f_{xx}(a,b) > 0$, then $f$ has a local minimum at
+  $(a,b)$.
+\item
+  If $D(a,b) > 0$ and $f_{xx}(a,b) < 0$, then $f$ has a local maximum at
+  $(a,b)$.
+\item
+  If $D(a,b) < 0$, then $f$ has a saddle point at $(a,b)$.
+\item
+  If $D = 0$, the test is inconclusive.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Inconclusive}
+
+Remember, $D = 0$ doesn't mean ``saddle point''. It means ``test
+fails''!
+
+\end{frame}
+
+\begin{frame}\frametitle{Global extrema}
+
+If $f$ is everywhere smooth (everywhere means, on all of $\R^2$) then
+its global optima will also be local optima. Of course it may not have
+global optima.
+
+But, if $f$ has a domain that is a proper subset of $\R^2$, it may have
+global optima that are not local optima. If the domain is \emph{closed
+and bounded}, global optima are guaranteed to exist.
+
+\end{frame}
+
+\begin{frame}\frametitle{A little topology}
+
+Let $S$ be a subset of the plane. It's OK to assume that $S$ has a
+reasonable shape: that it's possible to draw it, that its edges (if it
+has any) are smooth, and so on.
+
+Usually $S$ is defined by algebraic conditions on its coordinates. A
+point qualifies for membership in $S$ if---and only if---its coordinates
+meet the conditions.
+
+\end{frame}
+
+\begin{frame}\frametitle{Set-builder notation}
+
+We describe such sets first via their conditions. You are familiar with
+doing this. If $f$ is some one-variable function, then
+
+\[ \{ (x,y) \in \R^2 : y = f(x) \} \]
+
+is the graph of the function $f$. It is pronounced ``the set of $(x,y)$
+in $\R^2$ such that $y = f(x)$''.
+
+If we want to discuss 2-variable functions whose domain is smaller than
+the plane, we describe their domains this way.
+
+\end{frame}
+
+\begin{frame}\frametitle{Closed and bounded}
+
+A subset $S$ of the plane is called \emph{closed} if it contains all of
+its edge points: that is, if all of the edge points meet the membership
+conditions.
+
+We say $S$ is \emph{bounded} if it is contained in a large enough disk;
+equivalently, if it is contained in a disk centered at $(0,0)$;
+equivalently, if it is possible to draw the set on a finite piece of
+paper.
+
+\begin{quote}
+Note: the textbook calls edge points ``boundary points''. I prefer to
+avoid this terminology because the presence of ``boundary points'' has
+nothing to do with ``boundedness.''
+\end{quote}
+
+\end{frame}
+
+\begin{frame}\frametitle{Existence of global extrema}
+
+The symbol $\subset$ denotes set containment.
+
+\begin{quote}
+\textbf{Theorem}. Let $S \subset \R^2$ be closed and bounded, and let
+$f \colon S \to \R^2$ be continuous. Then $f$ has a global maximum and a
+global minimum on $S$.
+\end{quote}
+
+This is like the ``closed interval method'' from one-variable calculus.
+The closed and bounded subset in that case is a finite closed interval.
+
+The theorem guarantees the existence of global optima, but tells us
+nothing about how to find them.
+
+\end{frame}
+
+\begin{frame}\frametitle{Interior and edge are separate}
+
+We can look for critical points in the interior of the set (interior
+just means the non-edge parts of the set) and make a table of values.
+There will only be finitely many such points.
+
+But \ldots{} we have to check the edge points, just like in the
+one-variable case.
+
+And there are more than just 2 endpoints, usually.
+
+\end{frame}
+
+\begin{frame}\frametitle{Work together:}
+
+From section 14.7:
+
+\begin{itemize}
+
+\item
+  Problem 28
+\item
+  Example 5
+\item
+  Problem 35 (in groups, with whiteboards)
+\item
+  Problem 36 if time permits
+\end{itemize}
+
+\end{frame}
+
+\end{document}

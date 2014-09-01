@@ -1,0 +1,99 @@
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage[beamer]{cofi}
+\usepackage{siunitx}
+\title{Evaluating double integrals}
+\author{Math 251 Calculus 3}
+\date{October 30, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Evaluating double integrals}
+
+\begin{frame}\frametitle{WeBWorK problem 14}
+
+A pile of earth standing on flat ground has height $36$ meters. The
+ground is the $(x,y)$-plane. The origin is directly below the top of the
+pile and the $z$-axis is upward. The cross-section at height $z$ is
+given by $x^2+y^2=36-z$ for $0 \leq z \leq 36$, with $x$, $y$, and $z$
+in meters.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  What equation gives the edge of the base of the pile?
+\item
+  What is the area of the base of the pile?
+\item
+  What equation gives the cross-section of the pile with the plane
+  $z = 6$?
+\item
+  What is the area of the cross-section $z = 6$?
+\item
+  What is $A(z)$, the area of a horizontal cross-section at height $z$?
+\item
+  What is the volume of the pile?
+\end{itemize}
+
+\end{frame}
+
+\end{document}

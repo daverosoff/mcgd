@@ -1,0 +1,219 @@
+\documentclass[11pt,ignorenonframetext,aspectratio=169,xcolor={svgnames}]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\usepackage{rosoff-vector-macros}
+\usepackage[beamer]{cofi}
+\title{Integrating vector fields along curves}
+\author{Math 251 Calculus 3}
+\date{November 20, 2013}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Integrating vector fields along curves}
+
+\begin{frame}\frametitle{Warm-up}
+
+Set up the integral of the function $f(x,y) = 2x^2 y$ along the arc of
+the parabola $y = x^2$ connecting $(0,0)$ to $(2,4)$.
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Tip: Recall that you can parametrize the graph of any function
+  $y = g(x)$ as $\vec{r}(t) = \angl{t, g(t)}$.
+\item
+  Answer: Let $\vec{r}$ as above; then
+  $\norm{\angl{\vec{r}'(t)}} = \sqrt{1+t^2}$. We also have
+  $f(x(t),y(t)) = 2(t)^2 \cdot t^2 = 2t^4$ for points on the parabola.
+  The parameter interval is $0 \leq t \leq 2$, so our integral should
+  be\ldots{}
+\item
+  $\int_0^2 2t^4 \sqrt{1+t^2} \; dt$
+\item
+  This integral is hideously wretched; its value is
+  $\frac{1}{24} \left( 266 \sqrt{5} + 3 \sinh^{-1}(2) \right) \approx 24.9635$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Integrating vector fields along paths in the
+plane}
+
+The motivating example is a force field $\vec{F}(x,y)$ that acts
+throughout some region in the plane. If an object is moved by this force
+along the path $\mathcal{C}$, we want to call the work done
+
+\begin{equation*}
+    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s}.
+\end{equation*}
+
+In the text these vectors are denoted with boldface as opposed to
+arrows, but the meaning is the same. What is this meaning? On Tuesday
+(the 19th) we observed that a good definition for $ds$ would be
+$\norm{\vec{r}'(t)} \; dt$.
+
+The scalar line element $ds$ is an incremental bit of arclength along
+the curve. The vector line element $d\vec{s}$ is an incremental tangent
+vector to the curve.
+
+\end{frame}
+
+\begin{frame}\frametitle{Interpreting the differential}
+
+We set $d\vec{s} = \frac{\vec{r}'(t)}{\norm{\vec{r}'(t)}} ds$.
+
+The tangent vector $\vec{r}(t)$ is the velocity vector for the curve.
+When we divide it by its length, we get a pure direction vector: the
+quotient is tangent to the curve and has length 1. When we multiply by
+the ``incremental'' scalar $ds$, we get an ``incremental'' vector.
+
+But $ds = \norm{\vec{r}'(t)} dt$.
+
+Hence $d\vec{s} = \vec{r}'(t) dt$. Observe that there is no magnitude
+operator and hence no square root. For this reason line integrals of
+vector fields tend to be more tractable for hand calculation than do
+line integrals of scalar functions.
+
+\end{frame}
+
+\begin{frame}\frametitle{Integrals of vector fields along parametrized
+curves}
+
+Putting it all together, if $\vec{r}(t)$ is our parametrized curve with
+parameter interval $[a,b]$, we can compute the line integral of the
+vector field $\vec{F}$ by the formula
+
+\begin{equation*}
+    \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{a}^b \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \; dt.
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}\frametitle{The geometric meaning of the dot product}
+
+Remember that the dot product of two vectors depends on their lengths
+and the angle $\theta$ between them. In particular, if the vectors are
+orthogonal, the dot product is zero. You might also remember:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  If $\theta$ is acute, the dot product is positive, while
+\item
+  if $\theta$ is obtuse, the dot product is negative.
+\end{itemize}
+
+Dotting the vector field with the tangent vector to the curve produces
+the component of the field in the direction of the curve.
+
+\end{frame}
+
+\begin{frame}\frametitle{Another convenient notation}
+
+Since $d\vec{s}$ is a vector, it has components. We recognize them as
+the familiar differentials $dx$ and $dy$ as follows. Let
+$\vec{F}(x,y) = \angl{F_1(x,y), F_2(x,y)}$ and
+$\vec{r}(t) = \angl{x, y}$. Then as we have seen (note the
+$t$-dependence is suppressed for readability)
+
+\begin{align*}
+    \vec{F} \cdot d\vec{s} &= \vec{F}(\vec{r}(t)) \cdot \vec{r}'(t) \; dt \\
+                           &= \angl{F_1(x, y), F_2(x, y)} \cdot \angl{x', y'} \; dt \\
+                           &= F_1(x, y) x'(t) \; dt + F_2(x, y) y'(t) \; dt.
+\end{align*}
+
+We recognize some old friends: $dx = x'(t) \; dt$ and
+$dy = y'(t) \; dt$. Evidently, we have obtained
+
+\begin{align*}
+    \vec{F} \cdot d\vec{s} &= F_1 \; dx + F_2 \; dy.
+\end{align*}
+
+\end{frame}
+
+\begin{frame}\frametitle{Properties of line integrals}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \emph{Linearity}:
+  $\displaystyle\int_{\mathcal{C}} (\vec{F} + \vec{G}) \cdot d\vec{s} = \int_{\mathcal{C}} F \cdot d\vec{s} + \int_{\mathcal{C}} G \cdot d\vec{s}$,
+  $\displaystyle \int_{\mathcal{C}} (k\vec{F}) \cdot d\vec{s} = k\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$
+\item
+  \emph{Orientation}:
+  $\displaystyle\int_{-\mathcal{C}} \vec{F} \cdot d\vec{s} = -\int_{\mathcal{C}} \vec{F} \cdot d\vec{s}$
+\item
+  \emph{Additivity}: If $\mathcal{C}$ is a union of $n$ smooth curves
+  $\mathcal{C}_1, \ldots, \mathcal{C}_n$, then
+  $\displaystyle \int_{\mathcal{C}} \vec{F} \cdot d\vec{s} = \int_{\mathcal{C}_1} \vec{F} \cdot d\vec{s} + \cdots + \int_{\mathcal{C}_n} \vec{F} \cdot d\vec{s}$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}\frametitle{Generalization to three dimensions}
+
+It is pretty straightforward. All the two-dimensional vectors become
+three-dimensional, but the dimension-free formulas stay the same. Refer
+to the text for the complete details.
+
+\end{frame}
+
+\end{document}

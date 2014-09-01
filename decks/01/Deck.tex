@@ -1,0 +1,225 @@
+\documentclass[11pt,ignorenonframetext,aspectratio=169]{beamer}
+\usetheme{Szeged}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+\usefonttheme{professionalfonts}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+\usepackage{listings}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+% \AtBeginPart{
+%   \let\insertpartnumber\relax
+%   \let\partname\relax
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \let\insertsectionnumber\relax
+%   \let\sectionname\relax
+%   \frame{\sectionpage}
+% }
+% \AtBeginSubsection{
+%   \let\insertsubsectionnumber\relax
+%   \let\subsectionname\relax
+%   \frame{\subsectionpage}
+% }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% begin dwr insert
+\usepackage{patchcmd}
+\usepackage{tabulary}   % Support longer table cells
+\usepackage{booktabs}   % Support better tables
+\usepackage[sort&compress]{natbib}
+
+\usepackage{framed}     % Allow background color for images
+\definecolor{shadecolor}{named}{white}
+
+%\usepackage{paralist}
+\usepackage{xparse}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%%% end dwr insert
+\title{Squares of distances and 2-variable functions}
+\author{Math 251 Calculus 3}
+\date{September 9, 2013 }
+
+\usepackage{siunitx}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Squares of distances}
+
+\begin{frame}\frametitle{Distances in the plane}
+
+\begin{itemize}[<+->]
+
+\item
+  Find the distance between $(x_1, y_1), (x_2, y_2)$ in the plane:
+\end{itemize}
+
+\[ d((x_1, y_1), (x_2, y_2)) = \sqrt{(y_2 - y_1)^2 + (x_2 - x_1)^2} \]
+
+Works because $(x_1, y_1), (x_2, y_2)$ are the endpoints of the
+hypotenuse of a right triangle.
+
+\end{frame}
+
+\begin{frame}\frametitle{Cleaning up the square root}
+
+\begin{itemize}[<+->]
+\item
+  Often better to work with squares of distances
+\item
+  This is because there are no square roots involved
+\end{itemize}
+
+\[ d^2 = (y_2 - y_1)^2 + (x_2 - x_1)^2 \]
+
+\begin{itemize}[<+->]
+
+\item
+  Because two positive numbers are equal if and only if their squares
+  are equal.
+\end{itemize}
+
+\end{frame}
+
+\section{Distance from a point to an axis}
+
+\begin{frame}\frametitle{Coordinate planes and axes}
+
+\begin{itemize}[<+->]
+\item
+  Planes $x = 0$, $y = 0$, $z = 0$ are called the \emph{coordinate}
+  planes: the $(y,z)$-plane, $(x,z)$-plane, and $(x,y)$-plane,
+  respectively
+\item
+  Intersect any pair of coordinate planes, we get a line.
+\end{itemize}
+
+Intersection of the $(x,z)$-plane with the $(y,z)$-plane is a line whose
+points evidently all satisfy $y = x = 0$. This line is called the
+$z$-axis.
+
+\end{frame}
+
+\begin{frame}\frametitle{Workshop 00: Distances to axes in the plane}
+
+Measuring distance from a point to an \emph{arbitrary} line sucks, but
+if the line is a coordinate axis, it's easy.
+
+\begin{itemize}[<+->]
+
+\item
+  What's the distance from $(-4,3)$ to the $x$-axis?
+\item
+  The $y$-axis?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Distances in space}
+
+If coordinates of a point in $\mathbf{R}^2$ measure distances to axes,
+what do coordinates of $(2,1,3)$ measure?
+
+\begin{quote}
+The distance from the complementary plane.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}\frametitle{Distances from axes}
+
+It's fine that coordinates tell us distances from the coordinate planes,
+but what about from the axes?
+
+\begin{quote}
+Axes are a more familiar way of picturing points' ``addresses''
+\end{quote}
+
+Imagine looking straight down at the $(x,y)$-plane, so that the positive
+$z$-axis goes right between your eyes.
+
+\end{frame}
+
+\begin{frame}\frametitle{Right between the eyes}
+
+This looks just like the ordinary plane! Here is the most important
+metamathematical technique there is. You have used it hundreds of times
+already.
+
+\begin{quote}
+Replace your problem by an easier problem that has the same solution.
+\end{quote}
+
+That's what we're doing when we visualize the ordinary plane as a
+cross-section of space this way.
+
+\end{frame}
+
+\begin{frame}\frametitle{The distance to the $z$-axis}
+
+Now what's the distance to the $z$-axis? Think in terms of the
+cross-sectional picture.
+
+\begin{quote}
+Notice how the formula has no $z$ in it.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{2-variable functions}
+
+A 2-variable function is a rule $f$ that associates a number, called
+$f(x,y)$, to each point $(x,y)$ in the ordinary plane.
+
+\begin{verbatim}
+cost = trip_cost + s*(shirt_price) + t*(trou_price)
+bill = 10 + 4/100*(pages)*(copies) + 75/100*(copies)
+\end{verbatim}
+
+\[ f(x,y) = x + yx^4 \]
+
+\end{frame}
+
+\begin{frame}\frametitle{Contour plots}
+
+One way to visualize 2-variable functions is with contour plots.
+
+\begin{itemize}[<+->]
+
+\item
+  Each $(x,y)$ gets a value $f(x,y)$
+\item
+  Connect points whose values are the same
+\item
+  The ``contours'' are the connecting lines
+\end{itemize}
+
+\begin{quote}
+In regions where contours are far apart, the values change slowly. If
+contours are closely spaces, values are changing rapidly.
+\end{quote}
+
+\end{frame}
+
+\end{document}
