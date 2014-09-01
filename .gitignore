@@ -11,3 +11,4 @@ decks/*/*.nav
 decks/*/*.snm
 decks/*/*.toc
 quizzes/*/*.pdf
+decks/*/*.vrb
