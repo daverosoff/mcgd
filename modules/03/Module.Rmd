@@ -1,6 +1,6 @@
 % Module 03:
   Slicing graphs; vectors as displacements
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % Fall 2013
 
 ```{r echo=FALSE,results="hide",label="options"}

@@ -1,5 +1,5 @@
 % Dot and cross product
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 18, 2013 <!-- day 07 -->
 
 # Dot and cross product

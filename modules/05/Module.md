@@ -1,6 +1,6 @@
 % Module 05:
   Vectors and dot products
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 17, 2013
 
 <!-- This file requires the  -->

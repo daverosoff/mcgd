@@ -1,5 +1,5 @@
 % Workshop 12: Helpful parametrizations and a vector field
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % November 18, 2013
 
 # Workshop 12: Helpful parametrizations and a vector field

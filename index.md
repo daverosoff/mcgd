@@ -1,12 +1,12 @@
-% Math 251 Fall 2013: Main Page
+% Math 275 Fall 2013: Main Page
 % Dr. Dave Rosoff
 % September 6, 2013
 
-Welcome to the main page for Math 251. You will find these links to be of great assistance when organizing and planning.
+Welcome to the main page for Math 275. You will find these links to be of great assistance when organizing and planning.
 
 * [Syllabus (PDF)][syllabus]
-* [Math 251 Main Schedule][schedule]
-* [Math 251 WeBWorK][webwork]
+* [Math 275 Main Schedule][schedule]
+* [Math 275 WeBWorK][webwork]
 * [Boone Table tutor schedule][tutor_sched]
 * [Presentation Schedule][pres_schedule]
 * [C of I R Studio server][rstudio]

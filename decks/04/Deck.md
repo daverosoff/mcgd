@@ -1,5 +1,5 @@
 % R Markdown and reproducible research
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 16, 2013 <!-- day 05 -->
 
 # R Markdown and reproducible research

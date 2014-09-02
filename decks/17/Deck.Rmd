@@ -1,5 +1,5 @@
 % More practice with parametrizations
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % November 18, 2013
 
 %% begin.rcode setup, echo=FALSE, include=FALSE

@@ -1,5 +1,5 @@
 % Workshop 01: Slicing spheres
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 11, 2013
 
 # Workshop 01

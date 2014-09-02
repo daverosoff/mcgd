@@ -1,5 +1,5 @@
 % Introduction to R Studio
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 13, 2013 <!-- day 04 -->
 
 # A brief history of R

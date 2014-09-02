@@ -1,5 +1,5 @@
 % Displacement in several directions: vectors
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 11, 2013 <!-- day 03 -->
 
 # Displacements in the plane

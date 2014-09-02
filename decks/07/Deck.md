@@ -1,5 +1,5 @@
 % Tangent planes and differentials
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % October 1, 2013
 
 # Tangent planes and differentials

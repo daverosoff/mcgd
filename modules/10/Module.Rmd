@@ -1,6 +1,6 @@
 % Module 10:
   Polar coordinates
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % October 29, 2013
 
 ```{r echo=FALSE,results="hide",label="options"}

@@ -1,0 +1,85 @@
+\documentclass[11pt]{exam}
+% \usepackage{pslatex}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg,.png}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Fall 2012}}
+ {\textbf{Math 275}}
+ {\emph{Page \thepage~of \numpages}}
+\runningheadrule
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+\pagestyle{head}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\begin{document}
+
+% \printanswers
+\addpoints
+
+\noindent
+\textbf{{\large Mathematics 251 \\ Exam 3}}
+% \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
+
+\noindent
+October 30, 2012  \hfill Name: \underline{\hspace{3in}}
+
+
+\noindent
+\textbf{Instructions}: This exam is closed book. You may refer to one double-sided page of handwritten notes, but no electronic aids or other printed references are permitted. Justification of all answers is required for partial credit; please \fbox{\textbf{box}} your final answers. Unless specifically directed, leave all answers in \textbf{exact form}, e.g.\ $\sqrt{3}$ instead of~$1.732$ and~$\pi/2$ instead of~$1.57$.
+
+Show all pertinent work. \emph{Correct answers without accompanying work will receive little or no credit.} Results from class or from homework or from class can be cited freely. It is in your interest to display your solution in a clear, readable fashion.
+
+You need to make sure your work is organized. I suggest you start each problem on a separate page. Problems that stop and start with other problems in between are not acceptable.
+
+%Check and make sure you have all of the pages in the
+%exam; there should be \numpages, including this one. If you have a
+%question, please raise your hand.
+
+Be sure to read all questions carefully and completely.
+
+\vspace*{2in}
+
+\begin{center}
+\combinedgradetable[h]
+\end{center}
+
+\vspace*{0.5in}
+
+\begin{center}
+{\Large \emph{Good luck!}}
+\end{center}
+
+\newpage
+
+\begin{questions}
+\question In this problem, let $f(x,y) = x^3 - 3xy^2 + y^3$ and let $c(t) = \langle 2+t, -3+t/3 \rangle$.
+
+\begin{parts}
+\part Find the gradient of $f$ at the point $c(0)$.
+
+\part A bug is sitting on the graph of $f(x,y)$, directly over the point $c(0)$. In which direction should the bug face if it wants to climb up the surface most quickly? Give your answer as a 2-dimensional vector that points in the appropriate direction (it doesn't have to be a unit vector). 
+
+\part Find the (instantaneous) rate of change of $f(x,y)$ at $c(0)$ in the $y$-direction.
+
+\part Find the directional derivative of $f(x,y)$ at $c(0)$ in the direction given by the vector $\langle 1, 1 \rangle$. 
+
+\part Find the (instantaneous) rate of change of $f(c(t))$ at $t = 0$. It is possible to do this using the earlier parts of this problem.
+\end{parts}
+
+\question In this problem, consider the function $g(x,y) = 7 - 2xy^2$ and the point $P = (1,-1)$. 
+
+\begin{parts}
+\part Give a formula for the linearization $L(x,y)$ of $g$ at $P$. Describe the graph of $L$ geometrically (in a complete sentence).
+
+\part Use the linearization to estimate $g(0.9, -1.1)$.
+\end{parts}
+
+\end{questions}
+\end{document}

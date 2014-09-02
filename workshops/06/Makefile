@@ -1,5 +1,5 @@
 DUEDATE		= "Wednesday, October 9"
-COURSE		= "Math 251"
+COURSE		= "Math 275"
 TERM		= "Fall 2013"
 template 	= workshop.latex
 baseheaderlevel = 1

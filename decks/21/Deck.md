@@ -1,5 +1,5 @@
 % From Green to Stokes
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % December 2, 2013
 
 

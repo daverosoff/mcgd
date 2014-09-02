@@ -1,5 +1,5 @@
 % Workshop 07: Modeling with higher derivatives
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % October 9, 2013
 
 # Workshop 07: Modeling with higher derivatives

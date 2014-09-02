@@ -1,5 +1,5 @@
 % Presentation Schedule
-% Math 251 Calculus 3 -- last updated 2013-11-26
+% Math 275 Calculus 3 -- last updated 2013-11-26
 
 Note that the problem numbers that appear in the table are textbook numbers
 (from the second edition), not WeBWorK problem numbers. Asterisks * indicate

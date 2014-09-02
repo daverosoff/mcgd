@@ -1,5 +1,5 @@
 % Workshop 02: The dot product formula
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 17, 2013
 
 # Workshop 02

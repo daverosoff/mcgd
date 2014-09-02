@@ -1,5 +1,5 @@
 % Workshop 00: Coordinates revisited
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 6, 2013
 
 # Workshop 00

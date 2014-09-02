@@ -1,5 +1,5 @@
 % Workshop 04: Limits and continuity for several variables
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 20, 2013
 
 \newtheorem{fact}{Fact}

@@ -1,4 +1,4 @@
-% Math 251 Schedule of Topics: Fall 2013 
+% Math 275 Schedule of Topics: Fall 2013 
 
 Here, you can find a rough guide to what was discussed in class on any
 particular day. If you missed class, you can also find workshop handouts

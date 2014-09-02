@@ -1,5 +1,5 @@
 % Workshop 08: Introducing the double integral
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % October 18, 2013
 
 # Workshop 08: Introducing the double integral

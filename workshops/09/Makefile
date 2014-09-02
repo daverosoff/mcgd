@@ -1,5 +1,5 @@
 DUEDATE		= "October 30, 2013"
-COURSE		= "Math 251"
+COURSE		= "Math 275"
 TERM		= "Fall 2013"
 template 	= workshop.latex
 soltemplate 	= solution.latex

@@ -1,5 +1,5 @@
 % Optimization of functions with closed and bounded domains
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % October 14, 2013
 
 # Optimization of functions with closed and bounded domains

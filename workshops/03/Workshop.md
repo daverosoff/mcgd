@@ -1,5 +1,5 @@
 % Workshop 03: Cross products and planes
-% Math 251 Calculus 3
+% Math 275 Calculus 3
 % September 20, 2013
 
 # Workshop 03
