@@ -1,6 +1,6 @@
 DUEDATE		= "November 11, 2013"
 COURSE		= "Math 275"
-TERM		= "Fall 2013"
+TERM		= "Fall 2014"
 template 	= workshop.latex
 baseheaderlevel = 1
 src 		= Workshop.Rmd

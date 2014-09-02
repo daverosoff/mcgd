@@ -1,4 +1,4 @@
-% Math 275 Fall 2013: Main Page
+% Math 275 Fall 2014: Main Page
 % Dr. Dave Rosoff
 % September 6, 2013
 
