@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.0in, top=0.5in]{geometry}
+%\setlength{\parskip}{1ex}
+%\setlength{\parindent}{0pt}
+\usepackage{parskip}
+
+\usepackage{rosoff-vector-macros}
+\usepackage{rosoff}
+\usepackage{fourier, MnSymbol}
+\usepackage{enumerate, paralist}
+\title{12.3.48}
+
+\date{2013-10-11}
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+Assume that $\uu$ and $\vv$ are unit vectors with
+$\norm{\uu + \vv} = \sqrt{3/2}$. We calculate $\norm{2\uu - 3\vv}$ using
+some properties of the dot product.
+
+Observe that $\norm{2\uu - 3\vv}^2 = (2\uu - 3\vv) \cdot (2\uu - 3\vv)$.
+We expand using the bilinearity of dot product:
+
+\begin{align*}
+    \norm{2\uu - 3\vv}^2 &= (2\uu - 3\vv) \cdot (2\uu - 3\vv) \\
+         &= 4 \uu \cdot \uu - 6 \vv \cdot \uu - 6 \uu \cdot \vv + 9 \vv \cdot \vv \\
+         &= 4 \norm{\uu}^2 - 12 \uu \cdot \vv + 9 \norm{\vv}^2,
+\end{align*}
+
+where in the last step we use the identity
+$\ww \cdot \ww = \norm{\ww}^2$ and the commutativity of dot product.
+
+Since $\norm{\uu} = \norm{\vv} = 1$, we have shown that
+
+\begin{equation*}
+    \norm{2\uu - 3\vv}^2 = 13 - 12 \uu \cdot \vv.
+\end{equation*}
+
+Therefore, if we can compute $\uu \cdot \vv$, we will be done.
+
+We are given that $\norm{\uu + \vv}^2 = 3/2$. This means that
+
+\begin{align*}
+3/2 &= (\uu + \vv) \cdot (\uu + \vv) \\
+    &= \norm{\uu}^2 + 2 \uu \cdot \vv + \norm{\vv}^2 \\
+    &= 2 + 2 \uu \cdot \vv, 
+\end{align*}
+
+since $\uu$ and $\vv$ are unit vectors. This shows that
+$\uu \cdot \vv = -1/4$.
+
+Putting it all together, we have
+
+\begin{equation*}
+    \norm{2\uu - 3\vv} = \sqrt{13 - 12 \uu \cdot \vv} = \sqrt{13 + 3} = 4.
+\end{equation*}
+
+\end{document}
