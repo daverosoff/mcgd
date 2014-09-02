@@ -1,18 +1,9 @@
 \documentclass[12pt]{exam}
-\usepackage{xparse}
-\usepackage{graphicx}
-\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{cofi}
 \usepackage{fourier}
-
-\usepackage{amsthm}
-\usepackage{paralist,enumerate,listings}
-\usepackage{siunitx}
 \frenchspacing
 \usepackage{parskip}
 \usepackage{rosoff-vector-macros}
-\usepackage{rosoff}
-\usepackage{MnSymbol}
-\usepackage{hyperref}
 \firstpageheader{}{}{}
 \runningheader{\textbf{Fall 2013}}
  {}
@@ -24,7 +15,7 @@
 \theoremstyle{definition}
 \newtheorem{example}{Example}
 \begin{document}
-\lstset{language=R}
+
 \noindent
 \textbf{{\large Math 251 \hfill Workshop 07: Modeling with higher derivatives}}
 % \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
@@ -110,7 +101,7 @@ kelvin or degrees, or whether we measure time in hours, days, or weeks.
   $A$ should be present in our model for $z$? Why or why not?
 \end{enumerate}
 
-\dwrspace{1}
+\flexskip{1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -135,7 +126,7 @@ If it does, then $D$ should be present with a nonzero value (linear
 functions have no optima). Do you think $D$ should be zero, negative, or
 positive in our model? Why? What about $F$?
 
-\dwrspace{1}
+\flexskip{1}
 
 \newpage
 
@@ -162,7 +153,7 @@ appears or doesn't, together with the mixed partial. (Why is this true?)
 Do you think $E$ should be zero, negative, or positive in our model? Why
 or why not?
 
-\dwrspace{1}
+\flexskip{1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -176,7 +167,7 @@ or why not?
 If we had some empirical data, we could determine the statistical ``best
 possible'' values of the nonzero coefficients to fit it.
 
-\dwrspace{1}
+\flexskip{1}
 
 \newpage
 
@@ -190,7 +181,7 @@ properly. Such considerations are beyond the scope of this workshop.)
 Carry out the steps as above, and give a quadric model for $z$ in terms
 of $x$ and $y$.
 
-\dwrspace{1}
+\flexskip{1}
 
 \subsection{Scenario 3: The \emph{Einstellung} effect}
 
@@ -220,6 +211,6 @@ Einstellung move. Assume that move quality is a continuum, with
 
 What do you think a model for this phenomenon would look like?
 
-\dwrspace{1} 
+\flexskip{1} 
 
 \end{document}

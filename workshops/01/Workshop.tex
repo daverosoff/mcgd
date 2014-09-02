@@ -1,45 +1,29 @@
 \documentclass[12pt]{exam}
-\usepackage{xparse}
-\usepackage{graphicx}
-\DeclareGraphicsExtensions{.jpg, .png}
+\usepackage{cofi}
 \usepackage{fourier}
-\usepackage{MnSymbol}
-\usepackage{amsthm}
-\usepackage{paralist,enumerate,listings}
-\usepackage{siunitx}
 \frenchspacing
 \usepackage{parskip}
-\usepackage{hyperref}
 \firstpageheader{}{}{}
-\runningheader{\textbf{Fall 2013}}
+\runningheader{\textbf{Fall 2014}}
  {}
- {\textbf{Math 251}}
+ {\textbf{Math 275}}
  %{\emph{Page \thepage~of \numpages}}
 \runningheadrule
 
 \pagestyle{head}
-%\newcommand{\N}{\mathbb{N}}
-%\newcommand{\Z}{\mathbb{Z}}
-%\newcommand{\R}{\mathbb{R}}
-%\newcommand{\dwrspace}[1]{\vspace*{\stretch{#1}}}
-\NewDocumentCommand\N{}{\mathbf{N}}
-\NewDocumentCommand\R{}{\mathbf{R}}
-\NewDocumentCommand\Z{}{\mathbf{Z}}
-\NewDocumentCommand\Q{}{\mathbf{Q}}
-\NewDocumentCommand\dwrspace{m}{\vspace*{\stretch{#1}}}
-\theoremstyle{definition}
-\newtheorem{example}{Example}
+\extrawidth{1in}
+\extraheadheight[-0.6in]{-0.1in}
+\extrafootheight{-0.5in}
 \begin{document}
-\lstset{language=R}
 \noindent
-\textbf{{\large Math 251 \hfill Workshop 01: Slicing spheres}}
+\textbf{{\large Math 275 \hfill Workshop 01: Slicing spheres}}
 % \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
 
 \noindent
-September 11, 2013 
+\makebox[\textwidth]{September 11, 2013 \hfill} 
 
 \noindent
-Due: Friday, September 13 \hfill Name: \underline{\hspace{3in}} 
+\makebox[\textwidth]{Due: Friday, September 13 \hfill Name: \underline{\hspace{3in}}} 
 
 \noindent
 
@@ -126,25 +110,25 @@ that what appears to be a special case is in fact sufficiently general.
 
 \question Now, we're still solving two equations. What are they? (Hint: one from the sphere and one from the slicing plane.)
 
-\dwrspace{1}
+\flexskip{1}
 
 \question Explain why this situation is algebraically preferable to the brute-force solution outlined above.
 
-\dwrspace{1}
+\flexskip{1}
 
 \question Write down two equations that all the points in the intersection of the sphere and the plane satisfy. (Hint: one equation involves $x$ and $y$ only, and the other involves $z$ only.) These aren't the same as the equations above, but they aren't too terribly different either.
 
-\dwrspace{1}
+\flexskip{1}
 
 \question Identify the flaw in this attempted use of WLOG.
 
 \begin{quote}
     {\em Consider the cylinder of radius 1 with axis the $x$-axis and the $(y,z)$-plane. The intersection is evidently the circle of radius 1, centered at $(0,0,0)$, and contained in the $(y,z)$-plane. 
 
-    Therefore, we can say that WLOG, whenever a cylinder is cut by a plane, the intersection is a circle. This is because we can always "rotate and zoom" to place the cylinder so that its radius is 1 and its axis is the $x$-axis.}
+    Therefore, we can say that WLOG, whenever a cylinder is cut by a plane, the intersection is a circle. This is because we can always ``rotate and zoom'' to place the cylinder so that its radius is 1 and its axis is the $x$-axis.}
 \end{quote}
 
-\dwrspace{1}
+\flexskip{1}
 
 \end{questions} 
 
