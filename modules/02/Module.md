@@ -3,12 +3,6 @@
 % Math 251 Calculus 3
 % Fall 2013 
 
-
-
-
-
-
-
 Welcome to Module 2. You should have been able to make some progress on 
 WeBWorK assignment 1. In this module, we'll discuss the remaining topics 
 you'll need to understand to complete it.

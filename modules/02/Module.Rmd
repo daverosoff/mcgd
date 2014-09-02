@@ -30,17 +30,22 @@ linear <- makeFun(4 + 15*x + 20*y ~ x & y)
 plotFun(linear(x=x,y=y) ~ x & y, x.lim=c(0,10), y.lim=c(0,10), npts=200, nlevels=10)
 ```
 
-> Even though the axes are labeled $x$ and $y$, you can infer from the code above the figure which is which. Use the ```xlab=""``` and ```ylab=""``` options to ```plotFun()``` to specify your own labels. 
+> Even though the axes are labeled $x$ and $y$, you can infer from the code
+> above the figure which is which. Use the ```xlab=""``` and ```ylab=""```
+> options to ```plotFun()``` to specify your own labels.
 
-The points of the plane are grouped into different colors. Each color forms a diagonal line across the plot, called a contour. The colors 
-represent the different output values (the labels on the contours) that are possible with our function. 
-When two points share a color, they give the same value of the function, and 
-when two points have different colors, they give different values of the 
-function. 
+The points of the plane are grouped into different colors. Each color forms a
+diagonal line across the plot, called a contour. The colors  represent the
+different output values (the labels on the contours) that are possible with
+our function.  When two points share a color, they give the same value of the
+function, and  when two points have different colors, they give different
+values of the  function.
 
-For each fixed hue, the points that are colored with it form a curve (or 
-several curves) in the plane, called a *contour*. Mathematicians also call 
-them "level curves". Here is an example of a contour plot of a nonlinear function. What do you notice about this plot that distinguishes it from the first plot?
+For each fixed hue, the points that are colored with it form a curve (or
+several curves) in the plane, called a *contour*. Mathematicians also call
+them "level curves". Here is an example of a contour plot of a nonlinear
+function. What do you notice about this plot that distinguishes it from the
+first plot?
 
 ```{r, quadric_contour_plot}
 quad <- makeFun(x^2 - 4*x*y + 2*y^2 ~ x & y)

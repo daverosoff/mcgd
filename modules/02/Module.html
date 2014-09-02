@@ -27,7 +27,17 @@ code > span.fu { color: #06287e; }
 code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <link rel="stylesheet" href="../../css/master.css" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      "HTML-CSS": { availableFonts: ["TeX"], scale: 100, minScaleAdjust: 90}
+    });
+  </script>
   <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+  <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
 </head>
 <body>
 <div id="header">
@@ -50,56 +60,77 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>Welcome to Module 2. You should have been able to make some progress on WeBWorK assignment 1. In this module, we’ll discuss the remaining topics you’ll need to understand to complete it.</p>
 <h3 id="contour-maps"><a href="#contour-maps">Contour maps</a></h3>
 <p>The easiest way to visualize 2-variable functions is with <em>contour maps</em>.</p>
-<p>In a contour plot, the points in the plane represent different output values coming from the various inputs. Here is a contour plot from the <a href="../01/Module.html#modeling-with-linear-functions">shopping example</a> in <a href="../01/Module.html">Module 01</a>. Shirts are <span class="math">\(\$15\)</span> and trousers are <span class="math">\(\$20\)</span>. The cost of the trip (both ways) is <span class="math">\(\$4\)</span>.</p>
-<pre class="sourceCode r"><code class="sourceCode r">linear &lt;-<span class="st"> </span><span class="kw">makeFun</span>(<span class="dv">4</span> +<span class="st"> </span><span class="dv">15</span> *<span class="st"> </span>x +<span class="st"> </span><span class="dv">20</span> *<span class="st"> </span>y ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
+<p>In a contour plot, the points in the plane represent different output values coming from the various inputs. Recall the function from the <a href="../01/Module.html#modeling-with-linear-functions">shopping example</a> in <a href="../01/Module.html">Module 01</a>. Shirts are \(\$15\) and trousers are <span class="math">$20</span>. The cost of the trip (both ways) is <span class="math">$4</span>.</p>
+<!-- <pre class="sourceCode r"><code class="sourceCode r">linear &lt;-<span class="st"> </span><span class="kw">makeFun</span>(<span class="dv">4</span> +<span class="st"> </span><span class="dv">15</span> *<span class="st"> </span>x +<span class="st"> </span><span class="dv">20</span> *<span class="st"> </span>y ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
 <span class="kw">plotFun</span>(<span class="kw">linear</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">npts =</span> <span class="dv">200</span>, 
-    <span class="dt">nlevels =</span> <span class="dv">10</span>)</code></pre>
-<p><img src="figure/linear_contour_plot.png" title="plot of chunk linear_contour_plot" alt="plot of chunk linear_contour_plot" style="display: block; margin: auto;" /></p>
-<blockquote>
-<p>Even though the axes are labeled <span class="math">\(x\)</span> and <span class="math">\(y\)</span>, you can infer from the code above the figure which is which. Use the <code>xlab=&quot;&quot;</code> and <code>ylab=&quot;&quot;</code> options to <code>plotFun()</code> to specify your own labels.</p>
-</blockquote>
+    <span class="dt">nlevels =</span> <span class="dv">10</span>)</code></pre> -->
+<p>Let's look at a plot of this function via Sage. Hit the evaluate button to
+view a contour map for the shopping function described above.</p>
+<div class="sage">
+  <script type="text/x-sage">
+x, y = var('x,y');
+contour_plot(4+15*x+20*y,(x,0,10),(y,0,10),cmap="hsv",contours=50,labels=true)
+  </script>
+</div>
 <p>The points of the plane are grouped into different colors. Each color forms a diagonal line across the plot, called a contour. The colors represent the different output values (the labels on the contours) that are possible with our function. When two points share a color, they give the same value of the function, and when two points have different colors, they give different values of the function.</p>
-<p>For each fixed hue, the points that are colored with it form a curve (or several curves) in the plane, called a <em>contour</em>. Mathematicians also call them “level curves”. Here is an example of a contour plot of a nonlinear function. What do you notice about this plot that distinguishes it from the first plot?</p>
-<pre class="sourceCode r"><code class="sourceCode r">quad &lt;-<span class="st"> </span><span class="kw">makeFun</span>(x^<span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>x *<span class="st"> </span>y +<span class="st"> </span><span class="dv">2</span> *<span class="st"> </span>y^<span class="dv">2</span> ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
+<p>Now for a more general function, the curves of each color won't be lines. For each fixed hue, the points that are colored with it form a curve (or several curves) in the plane, called a <em>contour</em>. Mathematicians also call them “level curves”. Here is an example of a contour plot of a nonlinear function. What do you notice about this plot that distinguishes it from the first plot?</p>
+<!-- <pre class="sourceCode r"><code class="sourceCode r">quad &lt;-<span class="st"> </span><span class="kw">makeFun</span>(x^<span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>x *<span class="st"> </span>y +<span class="st"> </span><span class="dv">2</span> *<span class="st"> </span>y^<span class="dv">2</span> ~<span class="st"> </span>x &amp;<span class="st"> </span>y)
 <span class="kw">plotFun</span>(<span class="kw">quad</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(-<span class="dv">6</span>, <span class="dv">6</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(-<span class="dv">3</span>, <span class="dv">3</span>), <span class="dt">npts =</span> <span class="dv">200</span>, 
-    <span class="dt">nlevels =</span> <span class="dv">20</span>)</code></pre>
-<p><img src="figure/quadric_contour_plot.png" title="plot of chunk quadric_contour_plot" alt="plot of chunk quadric_contour_plot" style="display: block; margin: auto;" /></p>
-<p>These are easily created in R, as you see above<!-- , and Sage -->. The following R code<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> initializes a random 2-variable function and includes its contour plot into the document, as you see.</p>
-<pre class="sourceCode r"><code class="sourceCode r">random &lt;-<span class="st"> </span><span class="kw">rfun</span>(~x &amp;<span class="st"> </span>y, <span class="dt">seed =</span> <span class="dv">1066</span>)
+    <span class="dt">nlevels =</span> <span class="dv">20</span>)</code></pre> -->
+<p>These are easily created in Sage, as you see above. When you see a Sage
+cell in one of our modules, you can edit the code as well as simply 
+evaluating it. This is one of the best ways to learn how to modify Sage
+commands to do the things you will (eventually) want to do. Don't worry if
+the commands in the cell below don't make sense. We will talk about them
+in more detail soon, but for now just focus on the contour map.</p>
+<!-- <pre class="sourceCode r"><code class="sourceCode r">random &lt;-<span class="st"> </span><span class="kw">rfun</span>(~x &amp;<span class="st"> </span>y, <span class="dt">seed =</span> <span class="dv">1066</span>)
 <span class="kw">plotFun</span>(<span class="kw">random</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y) ~<span class="st"> </span>x &amp;<span class="st"> </span>y, <span class="dt">x.lim =</span> <span class="kw">c</span>(-<span class="dv">4</span>, <span class="dv">4</span>), <span class="dt">y.lim =</span> <span class="kw">c</span>(-<span class="dv">4</span>, <span class="dv">4</span>))</code></pre>
-<p><img src="figure/random_contour_plot.png" title="plot of chunk random_contour_plot" alt="plot of chunk random_contour_plot" style="display: block; margin: auto;" /></p>
-<p>By default, this produces a full-color contour map. Use the <code>plotFun()</code> option <code>filled=FALSE</code> to generate a black and white contour map.</p>
+<p><img src="figure/random_contour_plot.png" title="plot of chunk random_contour_plot" alt="plot of chunk random_contour_plot" style="display: block; margin: auto;" /></p> -->
+<div class="sage">
+  <script type="text/x-sage">
+x, y = var("x,y")
+contour_plot(sin(pi*(x^2+y^2))/2,(x,-3,3),(y,-3,3),cmap="hsv",contours=25)
+  </script>
+</div>
+<!-- <p>By default, this produces a full-color contour map. Use the <code>plotFun()</code> option <code>filled=FALSE</code> to generate a black and white contour map.</p> -->
 <!-- Sage lacks a facility for machine-generated random functions (as far as I am 
-aware), but it can plot a function the user provides quite readily. See the documentation for the ```ContourPlot``` function. 
+aware), but it can plot a function the user provides quite readily. See the documentation for the ```ContourPlot``` function. -->
 
-```{sage}
-
-``` -->
-
-<blockquote>
-<p>Like most plotting commands, the R <!-- and Sage  -->commands mentioned here have many options to configure how the plot is generated. You should train yourself in the habit of looking up unfamiliar commands using R Studio’s builtin help interface. Try <code>?plotFun</code> for a start. Notice that the Help pane has Back/Forward buttons and internal history, like a web browser.</p>
-</blockquote>
+<p>Like most plotting commands, Sage commands that appear above have many options to configure how the plot is generated. You will learn about some
+of these options from the examples in these modules and in class, but there
+are more than we could discuss.</p>
 <p><strong>Exercise</strong>. What do you notice about the contours in the contour plot of the shopping function?</p>
 <h3 id="cross-sectional-functions"><a href="#cross-sectional-functions">Cross-sectional functions</a></h3>
-<p>If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output. <strong>MORE IS NEEDED</strong></p>
-<h3 id="surfaces-and-graphs"><a href="#surfaces-and-graphs">Surfaces and graphs</a></h3>
-<p>Returning to the abstract geometry of <span class="math">\(\mathbf{R}^3\)</span>, it is time to consider the meaning of equations among the three variables <span class="math">\(x\)</span>, <span class="math">\(y\)</span>, and <span class="math">\(z\)</span>.</p>
-<p>It is important to remember that most equations are neither “true” or “false” without further context. For example, the equation <span class="math">\[ a^2 + b^2 = c^2 \]</span> might be either, for certain <span class="math">\(a\)</span>, <span class="math">\(b\)</span>, or <span class="math">\(c\)</span>, either true or false. Because of this, it lacks a truth-value without such context. The equations we graph in calculus are similar. It is just this vagueness that allows us to use equations to describe curves in the plane.</p>
+<p>
+  If you read along a horizontal or vertical line in the plane, you can get an idea of how changes in either of the inputs affect the output. Remember, for the functions of 2 variables we are looking at, <span class="math">x</span> and <span class="math">y</span> are both <em>independent</em> variables. Neither one is what you are used to thinking of as an &ldquo;output&rdquo;. Instead, the inputs are points in the plane (that is, $(x,y)$ pairs) and the outputs correspond to the labels or colors in the contour plot.
+</p>
+<p>So what does it mean to &ldquo;read along a horizontal line&rdquo;?</p>
 <blockquote>
-<p>An equation involving <span class="math">\(x\)</span> and <span class="math">\(y\)</span>, but no other variables, describes a curve in the plane <span class="math">\(\mathbf{R}^2\)</span>. A point of the plane is said to lie on this curve when its coordinates, when substituted in the curve’s equation, yield truth. In this case, the pair <span class="math">\((x,y)\)</span> is said to <em>be a solution</em> of the equation.</p>
+<p><strong>Exercise.</strong> Choose a horizontal line in the $(x,y)$-plane.
+What is its equation? What happens to the values of the shopping function
+as you move from left to right along this line? Why?</p>
 </blockquote>
-<p>Just as above, an equation involving <span class="math">\(x\)</span>, <span class="math">\(y\)</span>, and <span class="math">\(z\)</span>, but no other variables, describes a surface in <span class="math">\(\mathbf{R}^3\)</span>. A particular point lies on the surface precisely when its coordinates are a solution of the equation.</p>
-<p>In <a href="../../Workshops/00/Workshop.html">Workshop 00</a>, you developed formulas giving the distance between any pair of points in <span class="math">\(\mathbf{R}^3\)</span> as well as the distance from any point to a coordinate plane or axis. These formulas suffice to construct all spheres, circular cylinders, and circular cones.</p>
+<blockquote><p><strong>Exercise.</strong> Formulate and complete a similar exercise
+about a vertical line. Which direction will you &ldquo;walk&rdquo; along
+it?</p></blockquote>
+<h3 id="surfaces-and-graphs"><a href="#surfaces-and-graphs">Surfaces and graphs</a></h3>
+<p>Returning to the abstract geometry of $\mathbf{R}^3$, it is time to consider the meaning of equations among the three variables <span class="math">x</span>, <span class="math">y</span>, and <span class="math">z</span>.</p>
+<p>It is important to remember that most equations are neither “true” or “false” without further context. For example, the equation <span class="math">a^2 + b^2 = c^2</span> might be, for certain <span class="math">a</span>, <span class="math">b</span>, or <span class="math">c</span>, either true or false. Because of this, it lacks a truth-value without such context. The equations we graph in calculus are similar. It is just this vagueness that allows us to use equations to describe curves in the plane.</p>
 <blockquote>
-<p><strong>Exercise</strong>. Remind yourself of formulas for the distance from an arbitrary point <span class="math">\((x,y,z)\)</span> to the coordinate planes and axes. Can you think of a mnemonic trick to remember which is which?</p>
+<p>An equation involving <span class="math">x</span> and <span class="math">y</span>, but no other variables, describes a curve in the plane <span class="math">\mathbf{R}^2</span>. A point of the plane is said to <em>lie on</em> this curve when its coordinates, when substituted in the curve’s equation, yield truth. In this case, the pair <span class="math">(x,y)</span> is said to <em>be a solution</em> of the equation.</p>
+</blockquote>
+<p>Just as above, an equation involving <span class="math">x</span>, <span class="math">y</span>, and <span class="math">z</span>, but no other variables, describes a surface in <span class="math">\mathbf{R}^3</span>. A particular point lies on the surface precisely when its coordinates are a solution of the equation.</p>
+<p>In <a href="../../Workshops/00/Workshop.html">Workshop 00</a>, you developed formulas giving the distance between any pair of points in <span class="math">\mathbf{R}^3</span> as well as the distance from any point to a coordinate plane or axis. These formulas suffice to construct all spheres, circular cylinders, and circular cones.</p>
+<blockquote>
+<p><strong>Exercise</strong>. Remind yourself of formulas for the distance from an arbitrary point <span class="math">(x,y,z)</span> to the coordinate planes and axes. Can you think of a mnemonic trick to remember which is which?</p>
 </blockquote>
 <p>Recall also from <a href="../../Workshops/00/Workshop.html">Workshop 00</a> that it is often very convenient to deal with <em>squares</em> of distances, rather than distances themselves.</p>
 <p>The simplest curved surface to describe is a sphere. A sphere is easily described in terms of distance:</p>
 <blockquote>
 <p>A <em>sphere</em> is a closed surface whose interior has a special point, called the <em>center</em>, such that all the segments connecting the center with points of the sphere are equal in length. This length is called the <em>radius</em> of the sphere.</p>
 </blockquote>
-<p>The definition implies that, for any point <span class="math">\((a,b,c)\)</span> and any radius <span class="math">\(r \geq 0\)</span>, there is a unique sphere with center <span class="math">\((a,b,c)\)</span> and radius<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup> <span class="math">\(r\)</span>. If <span class="math">\((x,y,z)\)</span> is a point on the sphere, the distance from it to the center must be <span class="math">\(r\)</span>, and this observation yields the classical equation describing the coordinates of points on the sphere.</p>
-<p><span class="math">\[ (x-a)^2 + (y-b)^2 + (z-c)^2 = r^2 \]</span></p>
+<p>The definition implies that, for any point <span class="math">(a,b,c)</span> and any radius <span class="math">r \geq 0</span>, there is a unique sphere with center <span class="math">(a,b,c)</span> and radius<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup> <span class="math">r</span>. If <span class="math">(x,y,z)</span> is a point on the sphere, the distance from it to the center must be <span class="math">r</span>, and this observation yields the classical equation describing the coordinates of points on the sphere.</p>
+<p><span class="math">(x-a)^2 + (y-b)^2 + (z-c)^2 = r^2</span></p>
 <p>As before, working with squares of distances minimizes how much we must put up with unpleasant square roots.</p>
 <p>The other surfaces which concern us at present—the cones and the circular cylinders—are also obtained by the equating of various distances.</p>
 <blockquote>
@@ -107,11 +138,11 @@ aware), but it can plot a function the user provides quite readily. See the docu
 </blockquote>
 <p>The best, most special lines in the plane are, of course, the coordinate axes.</p>
 <blockquote>
-<p>Use the definition above and the formulas from <a href="../../Workshops/00/Workshop.html">Workshop 00</a> to write down an equation for the coordinates of points on a cylinder of radius <span class="math">\(r\)</span> whose axis is the <span class="math">\(z\)</span>-axis.</p>
+<p>Use the definition above and the formulas from <a href="../../Workshops/00/Workshop.html">Workshop 00</a> to write down an equation for the coordinates of points on a cylinder of radius <span class="math">r</span> whose axis is the <span class="math">z</span>-axis.</p>
 </blockquote>
 <p>The last class of surfaces we will discuss here is the circular cones<sup><a href="#fn3" class="footnoteRef" id="fnref3">3</a></sup>.</p>
 <blockquote>
-<p>A <em>circular cone with aperture <span class="math">\(\pi/2 = \tau/4\)</span></em> is a surface characterized by a line, called the <em>axis</em> of the cone, and a plane perpendicular to the axis. Points on the cone are equidistant from the axis and the plane.</p>
+<p>A <em>circular cone with aperture <span class="math">\pi/2 = \tau/4</span></em> is a surface characterized by a line, called the <em>axis</em> of the cone, and a plane perpendicular to the axis. Points on the cone are equidistant from the axis and the plane.</p>
 </blockquote>
 <p>As with cylinders, it is possible to find equations for arbitrary cones: those whose axes and perpendicular planes are completely random. But in general, it is not so useful to do so. It would be smarter to choose coordinates in a clever way, so that it is not even necessary.</p>
 <blockquote>
@@ -141,9 +172,9 @@ aware), but it can plot a function the user provides quite readily. See the docu
 <p><strong>Exercise</strong>. Formulate the vertical line test for 2-variable functions.</p>
 </blockquote>
 <h4 id="coordinate-slices-and-level-curves"><a href="#coordinate-slices-and-level-curves">Coordinate slices and level curves</a></h4>
-<p>The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane <span class="math">\(z = 0\)</span> (that is, the <span class="math">\((x,y)\)</span>-plane) merits special attention.</p>
+<p>The most important special case of slicing surfaces is when the knife is a plane parallel to one of the coordinate planes. The case of the plane <span class="math">z = 0</span> (that is, the <span class="math">(x,y)</span>-plane) merits special attention.</p>
 <blockquote>
-<p><em>Definition</em>. If <span class="math">\(f(x,y)\)</span> is a 2-variable function, the slice of its graph obtained by slicing with the plane <span class="math">\(z = c\)</span> is called the level curve of <span class="math">\(f(x,y)\)</span> with level <span class="math">\(c\)</span>.</p>
+<p><em>Definition</em>. If <span class="math">f(x,y)</span> is a 2-variable function, the slice of its graph obtained by slicing with the plane <span class="math">z = c</span> is called the level curve of <span class="math">f(x,y)</span> with level <span class="math">c</span>.</p>
 </blockquote>
 <!--document ends; links past here-->
 
@@ -153,7 +184,7 @@ aware), but it can plot a function the user provides quite readily. See the docu
 <li id="fn1">If you are using R Studio installed on your personal computer, you may need to install additional packages, in particular the
 <pre>mosaic</pre> 
 <p>package. I recommend you use <a href="https://rstudio.collegeofidaho.edu/">the College’s server</a> in preference to a local installation.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>We allow the case <span class="math">\(r = 0\)</span>, even though the sphere degenerates to a single point. Such degenerate cases are harmless, and often useful.<a href="#fnref2">↩</a></p></li>
+<li id="fn2"><p>We allow the case <span class="math">r = 0</span>, even though the sphere degenerates to a single point. Such degenerate cases are harmless, and often useful.<a href="#fnref2">↩</a></p></li>
 <li id="fn3"><p>You may be listening, especially if you have taken certain standardized mathematics tests, for the phrases “right circular cylinder” and “right circular cone”. The word “perpendicular” in the definition of the circular cone hints where it has gone; in the definition of the cylinder its absence is a different mystery.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
