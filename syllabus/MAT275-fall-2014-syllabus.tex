@@ -1,0 +1,410 @@
+\documentclass[symmetric]{tufte-handout}
+\usepackage{fontspec}
+\usepackage[beamer]{rosoff}
+\usepackage{xcolor,epigraph,nicefrac,booktabs}
+\usepackage{dcolumn}
+%\usepackage[top=1.0in,bottom=1.0in,left=1.2in,right=1.2in]{geometry}
+\frenchspacing
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+\NewDocumentCommand{\webwork}{}{\textsf{WeBWorK}}
+\NewDocumentCommand{\officehours}{}{MW~9:10--10:10; T~10:20--11:20; F~2:10--3:10}
+\linespread{1.05}
+\setlength{\epigraphwidth}{0.7\linewidth}
+\renewcommand{\epigraphsize}{\normalsize}
+\setlength{\epigraphrule}{0pt}
+\setlength{\beforeepigraphskip}{0\baselineskip}
+\setlength{\afterepigraphskip}{0\baselineskip}
+\setmainfont[Mapping={tex-text},
+    Ligatures={Common},
+    Numbers={OldStyle}]{Palatino Linotype}
+\setsansfont[Mapping={tex-text},
+    Ligatures={Common}]{Museo Sans 500}
+\setmonofont[Mapping={tex-text},
+    Ligatures={Common}]{Inconsolata}
+\RenewDocumentCommand{\textflush}{}{flushright}
+
+\NewDocumentCommand{\webworkpct}{}{0.08}
+\NewDocumentCommand{\workshoppct}{}{0.10}
+\NewDocumentCommand{\portfoliopct}{}{0.10}
+\NewDocumentCommand{\presentationpct}{}{0.08}
+\NewDocumentCommand{\quizpct}{}{0.32}
+\NewDocumentCommand{\midtermonepct}{}{0.08}
+\NewDocumentCommand{\midtermtwopct}{}{0.08}
+\NewDocumentCommand{\finalexampct}{}{0.16}
+
+\title{Mathematics 275 Multivariable Calculus}
+\date{Fall 2014}
+\author{The College of Idaho}
+\begin{document}
+\maketitle
+\begin{fullwidth}
+\epigraph{%
+    The pursuit of knowledge, brother, is the askin' of many questions.%
+}{R\smallcaps{aymond} C\smallcaps{handler} \\ \emph{Farewell, My Lovely}}
+\end{fullwidth}
+
+\subsection{Quick Reference} \label{ssec:quickreference}
+    \begin{minipage}[t]{0.40\linewidth}
+        \vspace{0pt}
+        You have both online \webwork\ problems and written portfolio
+        problems. See below for more details.
+        You are free to work together on problems, but all work
+        you submit must be your own. Portfolios will be collected
+        at least four times. We have frequent quizzes and in-class
+        activities that cannot be made up.
+    \end{minipage}\marginnote{% Office hours and contact info
+        \begin{description}
+            \item[Instructor]
+                Dr.\ Dave Rosoff
+            \item[Office]
+                Boone Hall 102C
+            \item[Office hours]
+                MW~9:10--10:10, T~10:20--11:20, F~2:10--3:10, or by 
+                appointment
+            \item[Email]
+                \href{mailto:drosoff@collegeofidaho.edu}{drosoff@collegeofidaho.edu}
+            \item[Twitter]
+                \texttt{@daverosoff}
+            \item[WeBWorK]
+                \url{https://webwork.collegeofidaho.edu/webwork2/MAT275_F14}
+            \item[Other web resources]
+                \href{https://learn.collegeofidaho.edu/}{Moodle}
+        \end{description}
+        } \hspace{1em}
+    \begin{minipage}[t]{0.44\linewidth}
+        \vspace{0pt}
+        \centering\allcaps{Grading}\vspace*{1.0ex}
+        \begin{tabular}{lcr}
+            \toprule
+            Tier & Weight & Date \\
+            \midrule
+            \webwork      & \webworkpct      & continual    \\
+            Workshops     & \workshoppct     & continual    \\
+            Portfolios    & \portfoliopct    & continual    \\
+            Presentations & \presentationpct & continual    \\  
+            Quizzes       & \quizpct         & 1.5/week     \\
+            Midterm 1     & \midtermonepct   & September 30 \\
+            Midterm 2     & \midtermtwopct   & November 11  \\
+            Final Exam    & \finalexampct    & December 10  \\
+            \bottomrule
+        \end{tabular}
+    \end{minipage} \hspace*{1em}
+
+\subsection{Preface: Learning outcomes}
+
+    This course is designed to provide certain experiences, called “learning
+    outcomes”, to students who successfully complete it. These outcomes are
+    enumerated in the margin.%
+    \sidenote[][-14ex]{\smallcaps{Learning outcomes:}
+        \begin{compactenum}
+            \item \label{lo:ideas} Recognize and describe fundamental ideas from course content described below.
+            \item \label{lo:examp} Illustrate these ideas with examples and translate them into everyday terminology.
+            \item \label{lo:demo} Demonstrate the use of calculus on specific numerical problems.
+            \item \label{lo:class} Classify the techniques of calculus according to their use.
+            \item \label{lo:write} Improve their mathematical writing skills.
+            \item \label{lo:present} Develop their communication skills by presenting mathematical material.
+            \item \label{lo:discuss} Effectively discuss and solve mathematical problems in group settings.
+            \item \label{lo:infer} Infer connections made in arguments without specific direction.
+            \item \label{lo:valid} Explain why arguments making use of calculus are sound or not, as appropriate.
+            \item \label{lo:synth} Plan, organize, and combine arguments to solve new problems, as appropriate.
+            \item \label{lo:generalize} Generalize or modify to create new arguments, as appropriate.
+        \end{compactenum}
+    }
+    I explicitly include these outcomes in the syllabus so that it is clear
+    why I have chosen the various course components (each of which is
+    described below.) Each learning outcome is addressed by one or more
+    components of the course: quizzes, \webwork\ exercises, workshops, portfolios,
+    presentations to the class, and exams.
+    See the \emph{Grading} section below for more information.
+
+\subsection{Introduction}
+
+    Welcome to MAT-275, Multivariable Calculus. I am very pleased to be
+    teaching the course once more. It is the first college mathematics course
+    that is designed specifically for people intending to study higher mathematics, 
+    and as such
+    will form the foundation of your continued work in the mathematical and
+    physical sciences. It is more modern than your previous courses in
+    calculus. The machinery and terminology of \emph{vectors}, in particular,
+    is quite young, dating back to the work of Gibbs and Hamilton in the late
+    19th century---less than 150 years ago, as compared to five centuries or
+    more for the foundational results of single-variable
+    calculus.\sidenote{
+        Newton and Leibniz tend to get all the credit for
+        inventing calculus in the late 1600s, but some key notions go all the
+        way back to Archimedes, who lived about 23 centuries ago.
+    }
+
+    The name of the course is traditional, and at one time all colleges and
+    universities throughout this country had very similar offerings called
+    ``Calculus 3'', but matters have changed in recent years. Quick and reliable
+    hand calculation was once a skill of paramount importance, but is less so
+    today. It is more important that you have a good working understanding of the
+    fundamental concepts of calculus. This understanding will lead to asking the
+    correct questions of software, literature searches, and your eventual
+    colleagues.
+
+    \newthought{One fundamental idea and theme} of the course is what is called
+    ``parametrization''.\footnote{Briefly, to parametrize a collection of
+    objects is to put them in correspondence with some kind of numbers. When
+    we list items, or rank preferences, we are parametrizing them with the
+    positive integers (the collection that \emph{indexes} our list). Many
+    different kinds of numbers can be used to parametrize collections, such as real
+    or complex numbers, vectors, matrices, tensors, and more.} A main goal of
+    the course is for you to have an enduring understanding of this idea that
+    permits you to recognize, employ, and interpret parametrization in your
+    future mathematical enterprises, and understand how it binds the other
+    fundamental concepts of calculus and geometry together. 
+
+    We generalize the main ideas and results of single-variable calculus to
+    multivariate situations, with particular attention to applications and
+    modeling. There are two ways to proceed. First, we allow the domains (inputs)
+    of the functions at hand to be 2-, 3-, or higher-dimensional, while
+    maintaining the restriction that the function's values are real numbers in the
+    usual sense. Here we will meet the essential concepts of \emph{partial
+    derivative} and \emph{total} or \emph{Jacobian derivative} and revisit the
+    familiar themes of differential calculus (rates of change, chain rule, optimization, etc.).
+    We will introduce the powerful modern algebraic framework of \emph{vectors} in
+    which the rest of the theory is cast. At this level of abstraction there are
+    many opportunities to discuss mathematical modeling, of which we avail
+    ourselves as appropriate.
+
+    Just as functions of several variables may be differentiated 
+    via their partial derivatives, so too can they be integrated over
+    appropriate \emph{regions} (other than intervals) in their domains. We
+    study the important change-of-variable  theorem that allows integrals over
+    complicated regions to be reckoned in terms of simpler ones (e.g.,
+    rectangles) and examine some applications.
+
+    \newthought{The dual part of our investigation} is to let the codomains of our functions be
+    higher-dimensional Euclidean spaces while keeping the domains 1-dimensional.
+    This approach entails an investigation into fundamental ideas like
+    \emph{parametrization}.
+
+    We conclude with a study of the important field of \emph{differential
+    geometry}. The laws of electromagnetism, Maxwell's equations, are formulated
+    in this language, as are the laws of aerodynamics. We will make as much
+    progress as we can toward the fundamental theorems of G.\ Green, C.\ F.\
+    Gauss, and G.\ Stokes\footnote{Famously, Stokes's theorem is due not to
+    Stokes, but to Lord Kelvin; Stokes merely \emph{assigned} it, in 1854.}. All
+    three are vast generalizations of the usual Fundamental Theorem of Calculus,
+    and all have extremely important implications for physics, engineering, and
+    the rest of mathematics.
+
+\subsection{Catalog description}
+
+    ``This course is an extension of calculus to higher-dimensional spaces.
+    Main topics include differentiation of functions of two and three
+    variables, an introduction to vector analysis and parameterization, and
+    a study of definite integration in both rectangular and curved
+    coordinate systems. Topics may include a review of functions of several
+    variables, vector geometry of 3-dimensional space, partial derivatives,
+    gradient vectors, optimization techniques, multiple integration in the
+    three classical curvilinear coordinate systems, parametric equations,
+    vector fields, line integrals and Green's Theorem, and the other
+    classical integral theorems of differential geometry.''
+
+\subsection{Text}
+
+    The text is \emph{Calculus: Early Transcendentals} by Jon Rogawski, second
+    edition. \sidenote[][-6ex]{
+        It is OK if you have the first edition, although your section numbers
+        may be different. 
+
+        If you choose to use a different edition than the
+        recommended one, it is your responsibility to make sure the problem numbers
+        are correct (important for presentations/portfolio problems, see below).
+    }
+
+\subsection{Grading}
+
+    Scores are computed as a weighted average, with the following weights:
+    \webwork\ \webworkpct, presentations \presentationpct, portfolios
+    \portfoliopct, workshops \workshoppct, quizzes \quizpct, two in-class
+    exams \midtermonepct\ and \midtermtwopct, and final exam \finalexampct.
+    Observe that the weights sum to 1 = 100\%.\sidenote{  
+        Observe that the exams are relatively lightly weighted, at 32\% in 
+        total, the same as the quizzes! It is my hope that this reduces the
+        incentives and payoffs to cram and realigns them in the appropriate
+        direction, supporting steady incremental effort.
+    } The exact determination of letter grades
+    from these scores depends on the final distribution of scores in the
+    class, but you can expect a C for earning 75\% of the points, a C+ for
+    78\%, a B-- for 80\%, and so on.
+
+\subsection{Workshops} % (fold)
+\label{sub:workshops}
+
+    Experience has taught me that this course functions much better as an
+    interactive course than as a pure lecture. I will use what I call
+    \emph{workshops} to introduce many new ideas and guide you through 
+    examples.\sidenote{
+        Workshops address learning outcomes~\ref{lo:ideas}, \ref{lo:examp},
+        \ref{lo:demo}, and \ref{lo:discuss}, and sometimes others.
+    } Instead of doing these at home, we will use class time to
+    work on them. Occasionally you may need to finish them outside of class,
+    if we don't have enough time to finish. They have proved to be very
+    valuable in helping students get main ideas before tackling \webwork\ or
+    portfolio problems. The workshops and the homework are the heart of the
+    course.\sidenote{
+        When workshops are graded, they are usually graded for completion. You
+        will have plenty of time in class to make sure you understand properly.
+    }
+
+% subsection workshops (end)
+
+\subsection{Homework}
+
+    Homework in this class comprises both online and traditional written assignments.
+    \begin{compactenum}
+        \item \webwork\sidenote{\webwork\ problems address learning 
+        outcomes~\ref{lo:ideas}, \ref{lo:examp}, \ref{lo:demo}, and \ref{lo:class}.} 
+        assigned almost-daily, available at
+        \url{https://webwork.collegeofidaho.edu/webwork2/MAT275_F14/}
+        \item \emph{Portfolio problems}, assigned in weekly batches and collected 
+        regularly throughout the term.\sidenote{Portfolio problems address learning
+        outcomes~\ref{lo:write}, \ref{lo:infer}, \ref{lo:valid}, and 
+        \ref{lo:generalize}.} These problems mostly come from the textbook 
+        and are intended to stretch your thinking beyond the level of the online 
+        homework. It is these problems that you have opportunities to present at 
+        the board. Note that you may record classmates' solutions to these problems 
+        as they present. Your portfolio problems should be stored and submitted in
+        a three-ring binder whose contents are well organized. For more details on
+        the style and format of the portfolio, see the section \emph{How to do 
+        homework}.
+    \end{compactenum}
+
+\subsection{Quizzes}
+
+    To make sure each student is keeping up with the online problems, we will
+    have frequent quizzes.\sidenote{Quizzes address learning
+    outcomes~\ref{lo:ideas}, \ref{lo:demo}, \ref{lo:class}, and
+    \ref{lo:valid}.} Quiz problems are simple  variants of \webwork\ problems
+    and all quizzes are open-note (but not open-book).\sidenote{
+        I would advise you to write up your \webwork\ solutions for reference
+        during quizzes. The more thorough your write-up, the more it will
+        help you.
+    } Therefore, if you have
+    solved the \webwork\ problems prior to the quiz day, a score of 100\% is
+    very possible. Note that quizzes cannot be made up, so it is very
+    important that you come to class each day.  Quizzes begin promptly at
+    8:00.
+
+\subsection{Presentations}
+
+    Each student should attempt to earn 60 \emph{presentation points} during
+    the semester. Presentations of portfolio problems are worth up to 10
+    points each. A presentation consists of two or three active presenters who
+    provide an explanation, a solution, and any justification of the solution
+    requested by the class.\sidenote{Presentations address learning
+    outcomes~\ref{lo:present},  \ref{lo:discuss}, \ref{lo:valid},
+    \ref{lo:synth}, and \ref{lo:generalize}.} I will maintain a list of
+    problems and their presentation metadata online for your reference.
+
+\subsection{Exams}
+
+    Two exams are given in class.\sidenote{
+        Dates for Exams 1 and 2 are tentative.
+        \begin{compactdesc}
+            \item[Exam 1] Tuesday, September 30
+            \item[Exam 2] Tuesday, November 11
+            \item[Final Exam:] Wednesday, December 10, 8:30--11:30 am
+        \end{compactdesc}
+    } Exams comprise both
+    portfolio problems and new problems intended to stretch your thinking. During
+    the exam, you may refer freely to your portfolio. A missed exam results in an
+    exam grade of zero. Arrangements for absences, again, must be made well in
+    advance (two weeks suffices). \emph{If arrangements are not made in advance, I
+    will consider make-ups only with compelling, documented reasons.} The final
+    exam takes place at the indicated date and time. It cannot be rescheduled
+    \emph{for any reason}. Make your travel plans accordingly.
+
+    
+
+\subsection{How to do homework}
+
+Whenever you are writing a solution to a math problem, it is important to
+strive for the clearest exposition you can manage. Good mathematical writing
+is essential for anyone who wishes to think clearly about mathematics. The
+process of making your ideas and reasoning \emph{clear, complete, and
+unambiguously correct} is the most effective amplifier of mathematical power
+there is. Hence your solutions should be composed in brilliant English prose.
+This means employing accepted scientific usage, more or less correct grammar
+and spelling, and above all \emph{complete sentences}---sprinkled here and
+there with tangy, delicious equations. Solutions in the popular 
+``pile-of-equations'' style with little or no explanatory text will not get much credit.
+You must explain what is happening as the action unfolds.
+
+The reason for all this is that the process of such writing and editing will
+implant understanding more firmly in your mind. Similar problems appear on
+exams. If you dash off a quick and dirty solution it is less likely you will
+recall what you did at the appropriate time.
+
+As mentioned above, portfolio problems should be stored and submitted in a
+clean and well organized three-ring binder. About four times during the
+semester, I will collect and assess your work. While I provide extensive
+comments on your work, only two grades are possible on a portfolio problem: 0
+points and 10 points.\sidenote[][-10ex]{
+    Do not be dismayed if your early attempts are graded at 0 points. 
+    Most people do not know how to write mathematically and it is not the kind of
+    writing one learns to do in other classes. That is why I have this 
+    ``revise-and-resubmit'' approach: it allows you to focus on writing once you
+    have solved the problem, or to reëvaluate your solution and try again if
+    it is incomplete.
+} Because of this, portfolio problems may be submitted
+more than once and scores are not final until the last day of class. \emph{No
+portfolios will be accepted after the last day of class without a compelling,
+documented reason.} Your write-ups should be clear, complete, and free of
+typographical errors.\sidenote{
+    If you are interested in typing your solutions, I encourage you to do so
+    using the \href{https://www.writelatex.com/signup?ref=18d26a43be8f}{Write\LaTeX\ 
+    service}. See Moodle for more information and a sign-up link, or ask me 
+    about it any time.
+} I am happy to talk about these problems in office hours
+with you. 
+
+\subsection{A note on studying math}
+
+By now you have studied enough mathematics to have learned something about how
+it is that the material passes through your shapely skull and into your soft,
+wrinkly brain. Nevertheless, you may find that this course is rather more
+difficult than your previous calculus courses. To really understand it, we
+will have to dig into subtle distinctions and nuances that no one has asked
+you to think about before. In the one-dimensional world, these nuances simply
+do not signify, so they are novel by necessity at this time. It is also more
+difficult to picture what is going on mentally, again owing to the presence of
+extra dimensions. Part of what I'm here to tell you is that while the material
+may seem wholly new and unfamiliar, the underlying principles of calculus
+(what do derivatives \emph{do}? what are integrals \emph{for}?) are immutable.
+
+\subsection{Academic integrity}
+
+I encourage all students to form study groups and collaborate on homework;
+each student is of course individually responsible for their own work.
+Collaborators must be acknowledged. 
+
+Students are expected to complete all graded work in accordance with the
+College Honor Code. Plagiarism, cheating, or borrowing without proper credit
+will not be tolerated.  Violations of academic honesty can result in loss of
+credit on an assignment, failure on an exam, or failure in the course.
+Referrals may be made to the Vice President for Academic Affairs for any party
+involved in academic dishonesty.
+
+\subsection{Special accommodations}
+
+Students who have documented disabilities as addressed by the Americans With
+Disabilities Act and who need any test or course materials to be furnished in
+an alternative format should notify me immediately (during the first week of
+class).  Reasonable efforts will be made to accommodate the needs of such
+students.
+
+\vspace*{\stretch{1}}
+
+\begin{fullwidth}
+    \centering {\Huge \allcaps{Good luck this semester!}}
+\end{fullwidth}
+
+\vspace*{\stretch{1}}
+
+\end{document}
