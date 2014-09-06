@@ -21,6 +21,8 @@ Log in to a campus machine or your personal computer and visit the Public drive.
 
 and visit it in Computer. Execute the file ```login``` you find there. Follow the prompts, entering the same username and password you use for email. When the windows close themselves after you read the success message, you are done.
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 [syllabus]: syllabus.pdf
 [schedule]: schedule.html
 [webwork]: https://webwork.collegeofidaho.edu/webwork2/MAT251_01_F13
