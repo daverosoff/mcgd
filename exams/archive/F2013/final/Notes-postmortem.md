@@ -1,1 +1,0 @@
-On the triple integral problem, a student made an integration error, integrating y -> y^2 instead of y^2/2. This made the calculation much easier; maybe shift the plane so that this is the correct calculation?
