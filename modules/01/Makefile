@@ -7,7 +7,7 @@ mathjax		= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=
 browserprefix	= file://
 browser 	= maxthon
 browsertarget	= $(browserprefix)$(targetpath:C\:=)
-up 		= ../../schedule.html
+up 		= ../../schedules/main.html
 next 		= ../02/Module.html
 
 .PHONY: all compile preview clean
