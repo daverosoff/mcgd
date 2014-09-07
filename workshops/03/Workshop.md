@@ -1,5 +1,5 @@
 % Workshop 03: Cross products and planes
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 20, 2013
 
 # Workshop 03

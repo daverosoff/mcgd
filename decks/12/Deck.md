@@ -1,5 +1,5 @@
 % Lagrange multipliers
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 16, 2013
 
 # Lagrange multipliers

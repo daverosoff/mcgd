@@ -1,6 +1,6 @@
 % Module 02:
   Contour maps and some common quadric surfaces
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % Fall 2014 
 
 Welcome to Module 2. You should have been able to make some progress on 

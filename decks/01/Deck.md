@@ -1,5 +1,5 @@
 % Squares of distances and 2-variable functions
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 9, 2013 <!-- day 02 -->
 
 # Squares of distances

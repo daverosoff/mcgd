@@ -1,6 +1,6 @@
 % Module 07:
   Slicing traces, tangent lines, and partial derivatives
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 27, 2013 <!-- day 13 -->
 
 $\newcommand{\R}{\mathbf{R}}$

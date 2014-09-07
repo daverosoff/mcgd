@@ -1,6 +1,6 @@
 % Module 09:
   Level curves and surfaces
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 7, 2013
 
 \newcommand{\angl}[1]{\langle #1 \rangle}

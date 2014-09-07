@@ -1,5 +1,5 @@
 % Practice with parametrizing lines
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 13, 2013
 
 # Practice with parametrizing lines

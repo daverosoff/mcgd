@@ -1,5 +1,5 @@
 % Tangent planes and differentials
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 1, 2013
 
 \newcommand{\angl}[1]{\langle #1 \rangle}

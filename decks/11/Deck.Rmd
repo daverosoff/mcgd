@@ -1,5 +1,5 @@
 % Optimization!
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 15, 2013
 
 # Optimization: with and without constraints

@@ -1,5 +1,5 @@
 % Workshop 00: Coordinates revisited
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 6, 2013
 
 # Workshop 00

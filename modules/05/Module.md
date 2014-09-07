@@ -1,6 +1,6 @@
 % Module 05:
   Vectors and dot products
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 17, 2013
 
 <!-- This file requires the  -->

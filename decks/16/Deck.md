@@ -1,5 +1,5 @@
 % Gluing parametrizations
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 15, 2013
 
 # Gluing parametrizations

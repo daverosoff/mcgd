@@ -1,6 +1,6 @@
 % Module 04:
   Introduction to R Studio
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % September 13, 2013
 
 ```{r echo=FALSE,include=FALSE,results="hide",label="options"}
