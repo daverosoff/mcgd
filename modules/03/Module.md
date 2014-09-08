@@ -7,13 +7,11 @@
 
 
 
-
-
 Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of 2-variable functions, and spheres, cylinders, and cones. We also introduced surface *slicing*. We conclude that discussion with more on slicing.
 
 ### Slices of curved surfaces
 
-Let us analyze the possible slices of a sphere---this time, in greater detail and precision. Here, we must make a choice: are we going to immediately slap coordinates on everything in sight, choosing centers and radii and so on, ending up with a huge pile of equations to solve? This is what we use to call the brute-force approach. It will succeed, with patience and stamina. But it is usually not illuminating. 
+Let us analyze the possible slices of a sphere---this time, in greater detail and precision. Here, we must make a choice: are we going to immediately slap coordinates on everything in sight, choosing centers and radii and so on, ending up with a huge pile of equations to solve? This is what we used to call the brute-force approach. It will succeed, with patience and stamina. But it is usually not illuminating. 
 
 It is always best to use symmetry to our advantage and try to choose coordinates that will best allow us to exploit it. A sphere is a highly symmetric shape, and the center is the most symmetric point: it looks the same from each point of the sphere. Hence we should center our sphere at the origin. By adjusting the scale of the axes, we can also assume that it has radius 1. This sphere is called the "unit" sphere.
 
@@ -55,14 +53,13 @@ Here is a plot of a few paths connecting the points $(1,1)$ and $(2,3)$ in the p
 
 
 ```r
-plot(c(1, 3), c(1, 3), xlab = "x", ylab = "y")
-arrows(1, 1, 2, 2, angle = 30, col = "red")
-arrows(2, 2, 2, 3, angle = 30, col = "red")
-arrows(1, 1, 2, 3, angle = 30, col = "blue")
+plot(c(1,3), c(1,3), xlab="x", ylab="y")
+arrows(1, 1, 2, 2, angle=30, col="red" )
+arrows(2, 2, 2, 3, angle=30, col="red" )
+arrows(1, 1, 2, 3, angle=30, col="blue")
 ```
 
 <img src="figure/first_plot.png" title="plot of chunk first_plot" alt="plot of chunk first_plot" style="display: block; margin: auto;" />
-
 
 A moment's reflection shows that, no matter how you walk from $(1,1)$ to $(2,3)$, your net change in the $x$-direction is $1$. In the $y$-direction, it is evidently $2$. If we start out at $(2,3)$ and end at $(1,1)$, these changes become negative.
 
@@ -91,13 +88,12 @@ Since lines in the plane are not directed, we don't need a word to describe this
 
 
 ```r
-plot(c(1.5, 3), c(1.5, 3), xlab = "x", ylab = "y")
-arrows(1.75, 1.5, 2.75, 2.5, angle = 30, col = "red")
-arrows(3, 3, 2, 2, angle = 30, col = "blue")
+plot(c(1.5,3),c(1.5,3),xlab="x",ylab="y")
+arrows(1.75,1.5,2.75,2.5, angle=30, col="red")
+arrows(3,3,2,2, angle=30, col="blue")
 ```
 
 <img src="figure/second_plot.png" title="plot of chunk second_plot" alt="plot of chunk second_plot" style="display: block; margin: auto;" />
-
 
 Are the vectors parallel, or not? Reasonable people can disagree, and in fact there is not universal agreement on the terminology. We will establish the convention that vectors as pictured above are indeed parallel. Some authors reserve the term "anti-parallel" for this situation.
 

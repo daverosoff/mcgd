@@ -17,7 +17,7 @@ Last time, we discussed surfaces in $\mathbf{R}^3$: in particular, the graphs of
 
 ### Slices of curved surfaces
 
-Let us analyze the possible slices of a sphere---this time, in greater detail and precision. Here, we must make a choice: are we going to immediately slap coordinates on everything in sight, choosing centers and radii and so on, ending up with a huge pile of equations to solve? This is what we use to call the brute-force approach. It will succeed, with patience and stamina. But it is usually not illuminating. 
+Let us analyze the possible slices of a sphere---this time, in greater detail and precision. Here, we must make a choice: are we going to immediately slap coordinates on everything in sight, choosing centers and radii and so on, ending up with a huge pile of equations to solve? This is what we used to call the brute-force approach. It will succeed, with patience and stamina. But it is usually not illuminating. 
 
 It is always best to use symmetry to our advantage and try to choose coordinates that will best allow us to exploit it. A sphere is a highly symmetric shape, and the center is the most symmetric point: it looks the same from each point of the sphere. Hence we should center our sphere at the origin. By adjusting the scale of the axes, we can also assume that it has radius 1. This sphere is called the "unit" sphere.
 
