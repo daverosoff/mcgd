@@ -15,16 +15,17 @@ Reading                  Date           Topics
                                           [Workshop 00][w00].
                                                                            
 [Module 02][m02]      Mon 8 Sept        <strong>2-variable functions; contour plots</strong> <br />
-                                          <!-- [PDF slides][d01]. -->
+                                          [PDF slides][d01]. (Note: we didn't do class quite as I
+                                          planned, so these slides were never shown.)
                
 [Module 02][m02]      Tue 9 Sept        <strong>Spheres, cylinders, cones</strong> <br />
-                                          WeBWorK 01 is due at 8 am.
 
 [Module 03][m03]      Wed 10 Sept       <strong>Slicing graphs; displacement vectors</strong> <br /> 
-<br />                                    [Workshop 01][w01]. <br /><!-- [PDF slides][d02]. <br /> -->
-12.1--12.2 except                         Quiz 01 on Modules 01--02.                
-last section on                           
-parametric equations                                                      
+<br />                                    WeBWorK 01 is due at 8 am.
+12.1--12.2 except                         [Workshop 01][w01]. <br /><!-- [PDF slides][d02]. <br /> -->
+last section on                           Quiz 01 on Modules 01--02.                
+parametric equations                      
+                                                      
          
 [Module 04][m04]      Fri 12 Sept       Introduction to R (bring a computer, if you can). <br />
                                           [R Studio introduction presentation][d03]. <br />
