@@ -55,9 +55,9 @@
 
 \usepackage{subfigure}
 %%% end dwr insert
-\title{Displacement in several directions: vectors}
+\title{Vectors as displacements; a slicing problem}
 \author{Math 275 Multivariable Calculus}
-\date{September 10, 2013 }
+\date{September 10, 2014}
 
 \usepackage{siunitx}
 
@@ -121,4 +121,88 @@ Observe the following na\"ive ``equations'':
 
 \end{frame}
 
+\section{Slicing spheres}
+
+\begin{frame}
+
+\begin{itemize}[<+->]
+\item You should now be pretty convinced that the intersection of a sphere and a
+plane is a circle (provided the intersection contains more than one point). It
+certainly seems \emph{plausible} enough. 
+
+\item But is it completely, unambiguously
+obvious that it's impossible to get an elliptical cross-section?
+
+\item How would we \emph{prove} it?
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+
+\frametitle{Brute force}
+
+\begin{itemize}[<+->]
+\item Solve with coordinates? 
+
+\item A completely coordinatized approach to this problem involves choosing a
+sphere with arbitrary center and radius and an arbitrary plane. 
+
+\item One then solves
+a system of two simultaneous nonlinear equation in eight variables:
+\begin{align*}
+    (x - a)^2 + (y - b)^2 + (z - c)^2 &= r^2 \\
+    Ax + By + Cz &= D 
+\end{align*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}[<+->]
+\item This approach is easy to set up, if you are familiar with the process.
+
+\item Working out the details is horrendous and not very illuminating. 
+
+\item Instead, we'll unleash the kung fu of symmetry to deal with this complicated geometric situation.
+
+\end{itemize}
+\end{frame}
+
+\section{Symmetry and WLOG}
+
+\begin{frame}
+\frametitle{Symmetry arguments}
+Symmetry argument: a ``special'' case that isn't really all that special. 
+
+For us, the special case will be:
+
+\begin{quote}
+The sphere is the unit sphere and the plane is of the form $z = A$.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Close to generic}
+\begin{itemize}[<+->]
+\item It seems very special.
+
+\item After all, there are many, many spheres other than the unit sphere, and many
+planes that are not horizontal.
+
+\item But think of it like a videographer: the right angle and zoom turns any
+situation into this special one.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{WLOG}
+That's what we mean by symmetry, or the mathematical abbreviation WLOG.
+This stands for \textbf{W}ithout \textbf{L}oss \textbf{O}f
+\textbf{G}enerality. The phrase signifies the idea encapsulated above:
+that what appears to be a special case is in fact sufficiently general.
+
+\end{frame}
 \end{document}
