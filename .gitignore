@@ -13,5 +13,5 @@
 decks/*/*.nav
 decks/*/*.snm
 decks/*/*.toc
-quizzes/*/*.pdf
+quizzes/**/*
 decks/*/*.vrb
