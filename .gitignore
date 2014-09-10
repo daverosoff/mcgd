@@ -1,10 +1,13 @@
 **/Makefile.txt
 **/Thumbs.db
 **/*.log
-/*.pdf
+**/*.pdf
 **/*.synctex.gz
 **/*.aux
 **/*.out
+**/*.table
+**/*.dat
+**/*.script
 .Rhistory
 /*.csv
 decks/*/*.nav
