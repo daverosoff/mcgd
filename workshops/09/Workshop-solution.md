@@ -1,5 +1,5 @@
 % Workshop 09: Integration over planar regions
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 28, 2013
 
 # Workshop 09: Integration over planar regions

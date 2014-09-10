@@ -1,9 +1,9 @@
 % Module 01:
   Geometry of 3-dimensional space; 2-variable functions
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % Fall 2014
 
-Welcome to the first online module for Calculus 3. These modules should be read, along with any other assigned readings or videos, prior to attending class. They are carefully designed to fit in with our class discussions, workshop activities, and WeBWorK.
+Welcome to the first online module for Multivariable Calculus. These modules should be read, along with any other assigned readings or videos, prior to attending class. They are carefully designed to fit in with our class discussions, workshop activities, and WeBWorK.
 
 ### Our Context: $\mathbf{R}^3$
 

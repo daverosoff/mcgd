@@ -1,10 +1,10 @@
 % Workshop 01: Slicing spheres
-% Math 275 Calculus 3
-% September 11, 2013
+% Math 275 Multivariable Calculus
+% September 9, 2014
 
 # Workshop 01
 
-This workshop will confirm what is, to varying degrees for various people, intuitively clear: that all the nonempty slices of a sphere by planes are circles (we adopt the severely reasonable convention that a circle of radius 0 is a point). Be ready to submit this paper on Friday. Workshop grades are mostly participation: if you appear in class, make an honest effort, and submit on time, you receive all or nearly all of the points.
+This workshop will confirm what is, to varying degrees for various people, intuitively clear: that all the nonempty slices of a sphere by planes are circles (we adopt the severely reasonable convention that a circle of radius 0 is a point). 
 
 ## Warm-up
 

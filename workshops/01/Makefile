@@ -1,4 +1,4 @@
-DUEDATE		= "Friday, September 13"
+DUEDATE		= 
 COURSE		= "Math 275"
 TERM		= "Fall 2014"
 template 	= workshop.latex

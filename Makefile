@@ -16,7 +16,7 @@ QUIZZES			= $(shell find quizzes -mindepth 1 -maxdepth 1 -type d)
 
 .SUBLIME_TARGETS: all compile preview clean 
 
-compile: $(target) index.html
+compile: index.html
 
 all: $(MODULES) $(WORKSHOPS) $(DECKS) $(QUIZZES) $(target) index.html
 

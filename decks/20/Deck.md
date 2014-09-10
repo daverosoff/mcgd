@@ -1,5 +1,5 @@
 % Conservativity and the idea of Green's theorem
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 26, 2013
 
 

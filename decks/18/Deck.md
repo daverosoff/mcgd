@@ -1,5 +1,5 @@
 % Integrating vector fields along curves
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 20, 2013
 
 

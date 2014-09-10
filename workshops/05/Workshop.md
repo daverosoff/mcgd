@@ -1,5 +1,5 @@
 % Workshop 05: Gradient vectors in 1 and 2 dimensions
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 2, 2013
 
 \newtheorem{fact}{Fact}

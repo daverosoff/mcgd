@@ -1,5 +1,5 @@
 % From Green to Stokes
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % December 2, 2013
 
 

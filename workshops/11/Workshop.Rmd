@@ -1,5 +1,5 @@
 % Workshop 11: integrals in curved coordinates
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 6, 2013
 
 # Workshop 11: integrals in curved coordinates

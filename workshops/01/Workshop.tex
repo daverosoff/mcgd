@@ -16,26 +16,23 @@
 \extrafootheight{-0.5in}
 \begin{document}
 \noindent
-\textbf{{\large Math 275 \hfill Workshop 01: Slicing spheres}}
+\textbf{{\large Math 275 \hfill Workshop 01}}
 % \hfill Name: \underline{\hspace{0.5in}Answers\hspace{2in}}
 
 \noindent
-\makebox[\textwidth]{September 11, 2013 \hfill} 
+\makebox[\textwidth]{September 10, 2013 \hfill} 
 
 \noindent
-\makebox[\textwidth]{Due: Friday, September 13 \hfill Name: \underline{\hspace{3in}}} 
+\makebox[\textwidth]{Due: Friday, September 12 \hfill Name: \underline{\hspace{3in}}} 
 
 \noindent
 
-\section{Workshop 01}
+\section{Slicing spheres}
 
 This workshop will confirm what is, to varying degrees for various
 people, intuitively clear: that all the nonempty slices of a sphere by
 planes are circles (we adopt the severely reasonable convention that a
-circle of radius 0 is a point). Be ready to submit this paper on Friday.
-Workshop grades are mostly participation: if you appear in class, make
-an honest effort, and submit on time, you receive all or nearly all of
-the points.
+circle of radius 0 is a point).
 
 \subsection{Warm-up}
 
@@ -47,52 +44,54 @@ radius 1 centered at $(0,0,0)$. Its equation is
 
 \question Give equations of all the planes parallel to the $(y,z)$-plane that miss the unit sphere. \emph{Hint.} Use an auxiliary variable.
 
+\flexskip{1}
+
 \question How many planes parallel to the $(y,z)$-plane meet the sphere at one point? Give equations for all of them.
+
+\flexskip{1}
  
 \end{questions}
 
-\subsection{Brute force}
+% \subsection{Brute force}
 
-You read in \href{../../Modules/03/Module.html}{Module 03} that it is
-possible to prove algebraically that the intersection of a sphere and a
-plane is a circle (provided the intersection contains more than one
-point). After enough mental aerobics, this certainly seems
-\emph{plausible}. But is it completely, unambiguously obvious that it's
-impossible to get an elliptical cross-section?
+% You should now be pretty convinced that the intersection of a sphere and a
+% plane is a circle (provided the intersection contains more than one point). It
+% certainly seems \emph{plausible} enough. But is it completely, unambiguously
+% obvious that it's impossible to get an elliptical cross-section?
 
-A completely coordinatized approach to this problem involves choosing a
-sphere with arbitrary center and radius and an arbitrary plane. Using a
-result about the classification of planes (we shall do this after we
-have more vector technology ready to deploy), this will involve solving
-a system of two simultaneous nonlinear equation in eight variables:
+% A completely coordinatized approach to this problem involves choosing a
+% sphere with arbitrary center and radius and an arbitrary plane. Using a
+% result about the classification of planes (we shall do this after we
+% have more vector technology ready to deploy), this will involve solving
+% a system of two simultaneous nonlinear equation in eight variables:
 
-\begin{align*}
-    (x - a)^2 + (y - b)^2 + (z - c)^2 &= r^2 \\
-    Ax + By + Cz &= D 
-\end{align*}
+% \begin{align*}
+%     (x - a)^2 + (y - b)^2 + (z - c)^2 &= r^2 \\
+%     Ax + By + Cz &= D 
+% \end{align*}
 
-This approach is easy to set up, but a pain in the rear to work out the
-details, and not very illuminating. Instead, we'll unleash the kung fu
-of symmetry to deal with this complicated geometric situation.
+% This approach is easy to set up, but a pain in the rear to work out the
+% details, and not very illuminating. Instead, we'll unleash the kung fu
+% of symmetry to deal with this complicated geometric situation.
 
-\subsection{Symmetry and WLOG}
+% \subsection{Symmetry and WLOG}
 
-The idea behind a symmetry argument is that a special case might not
-really be all that special. For us, the special case will be:
+% The idea behind a symmetry argument is that a special case might not
+% really be all that special. For us, the special case will be:
 
-\begin{quote}
-The sphere is the unit sphere and the plane is of the form $z = A$.
-\end{quote}
+% \begin{quote}
+% The sphere is the unit sphere and the plane is of the form $z = A$.
+% \end{quote}
 
-It seems very special: after all, there are many, many spheres other
-than the unit sphere, and many planes that are not horizontal. But think
-of it like a videographer: the right angle and zoom turns any situation
-into this special one.
+% It seems very special: after all, there are many, many spheres other
+% than the unit sphere, and many planes that are not horizontal. But think
+% of it like a videographer: the right angle and zoom turns any situation
+% into this special one.
 
-That's what we mean by symmetry, or the mathematical abbreviation WLOG.
-This stands for \textbf{W}ithout \textbf{L}oss \textbf{O}f
-\textbf{G}enerality. The phrase signifies the idea encapsulated above:
-that what appears to be a special case is in fact sufficiently general.
+% That's what we mean by symmetry, or the mathematical abbreviation WLOG.
+% This stands for \textbf{W}ithout \textbf{L}oss \textbf{O}f
+% \textbf{G}enerality. The phrase signifies the idea encapsulated above:
+% that what appears to be a special case is in fact sufficiently general.
 
 \subsection{The unit sphere and a horizontal plane}
 
@@ -105,6 +104,8 @@ that what appears to be a special case is in fact sufficiently general.
     \item The $(x,y)$-plane itself does slice the sphere, but it's very special. Pick a more generic slicing plane.
     \item Don't be afraid to erase.
 \end{compactitem}
+
+\flexskip{5}
 
 \newpage
 

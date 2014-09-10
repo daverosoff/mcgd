@@ -8,7 +8,7 @@ mathjax		= https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=
 browserprefix	= file://
 browser 	= maxthon
 browsertarget	= $(browserprefix)$(targetpath)
-up 		= ../../schedule.html
+up 		= ../../schedules/main.html
 back		= ../06/Module.html
 next 		= ../08/Module.html
 rscript		= Rscript.exe

@@ -1,5 +1,5 @@
 % Workshop 10: Triple integrals: do me a solid
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % November 4, 2013
 
 # Workshop 10: Triple integrals: do me a solid

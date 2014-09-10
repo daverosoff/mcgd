@@ -1,5 +1,5 @@
 % Workshop 06: The chain rule
-% Math 275 Calculus 3
+% Math 275 Multivariable Calculus
 % October 7, 2013
 
 # Workshop 06: The chain rule
